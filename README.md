@@ -18,8 +18,8 @@ Unified Context, Distributed Storage - Provide AI Agents with comprehensive cont
 ### Requirements
 
 - Single workspace: `~/monorepo/` contains everything (code + knowledge)
-- Projects incubate in `lab/`, graduate to `apps/` (public) or `private/` (private)
-- Git Subtree for public collaboration (apps/)
+- Projects incubate in lab code directory, graduate to public or private code directories
+- Git Subtree for public collaboration (public code directory)
 - Syncthing for cross-machine sync
 - PARA + Zettelkasten for knowledge organization
 - AI agents run from `~/monorepo` with full context
@@ -27,8 +27,8 @@ Unified Context, Distributed Storage - Provide AI Agents with comprehensive cont
 ### Key Components
 
 - **Monorepo root**: `~/monorepo/` - Single workspace (opened as Obsidian Vault)
-- **Code**: `apps/` (public), `private/` (private), `lab/` (scratchpad)
-- **Knowledge**: PARA folders (`00_Inbox` through `40_Archives`), `Zettelkasten/`, `notes/`
+- **Code**: Public repos shared via Git Subtree, private mature tools & NixOS config, scratchpad & experiments (incubation)
+- **Knowledge**: PARA folders (Projects, Areas, Resources, Archives), Zettelkasten, Journals
 - **Sync**: Syncthing for cross-machine mirroring, Git for version control
 
 
@@ -40,42 +40,42 @@ Unified Context, Distributed Storage - Provide AI Agents with comprehensive cont
 ~/monorepo/
 ├── .git/                          # Unified history for all notes and code
 ├── .obsidian/                     # Vault settings
-│
-│   # --- Code ---
-├── apps/                          # PUBLIC: Repos shared via Git Subtree
-├── private/                       # PRIVATE: Mature tools & NixOS config
-├── lab/                           # LOCAL: Scratchpad & experiments (incubation)
-│
-│   # --- Knowledge (PARA) ---
-├── 00_Inbox/                      # New inputs & raw thoughts
-├── 10_Projects/                   # Active goals (links to code + deadlines)
-├── 20_Areas/                      # Long-term responsibilities (Finance, Health)
-├── 30_Resources/                  # TOPIC HUBS (Web Scraping, NixOS, AI)
-├── 40_Archives/                   # Inactive notes/projects
-│
-│   # --- Knowledge (Zettelkasten) ---
-├── Zettelkasten/                  # Atomic notes & conceptual insights
-└── notes/                         # Attachments & Daily Notes
+├── 00-inbox/                      # New inputs & raw thoughts
+├── 10-journals/                   # Periodic notes (daily, weekly, monthly)
+├── 20-zettel/                     # Atomic notes & conceptual insights
+├── 30-para/                       # Knowledge by actionable goals
+│   ├── 31-projects/              # Active goals (links to code + deadlines)
+│   ├── 32-areas/                 # Long-term responsibilities (Finance, Health)
+│   ├── 33-resources/             # TOPIC HUBS (Web Scraping, NixOS, AI)
+│   └── 34-archives/              # Inactive notes/projects
+├── 40-code/                       # All code repositories
+│   ├── 41-public/                # PUBLIC: Repos shared via Git Subtree
+│   ├── 42-private/               # PRIVATE: Mature tools & NixOS config
+│   └── 43-lab/                   # LOCAL: Scratchpad & experiments (incubation)
+├── 50-misc/                       # Miscellaneous notes/files
+└── 60-assets/                     # Attachments, images, PDFs, templates
 ```
 
 ### Git Subtree Architecture
 
 The monorepo is the primary repo. For public collaboration, specific folders are split out to standalone repositories.
 
-**Adding a public project to apps/**
+**Adding a public project to your public code directory**
 
 ```bash
 # Add the remote once
 git remote add remote-app1 https://github.com/user/app1.git
 
 # Add as subtree (squash history to keep monorepo clean)
-git subtree add --prefix=apps/app1 remote-app1 main --squash
+# Replace <public-code-dir>/app1 with your actual directory structure
+git subtree add --prefix=<public-code-dir>/app1 remote-app1 main --squash
 ```
 
 **Pushing changes to public GitHub**
 
 ```bash
-git subtree push --prefix=apps/app1 remote-app1 main
+# Replace <public-code-dir>/app1 with your actual directory structure
+git subtree push --prefix=<public-code-dir>/app1 remote-app1 main
 ```
 
 **Migrating a private project to private/**
@@ -93,15 +93,15 @@ git remote rm migrate-temp
 
 Hub-and-spoke model prevents organizational friction.
 
-| Component | Role | Example |
-|-----------|------|---------|
-| Project Note | Actionable Goal | `10_Projects/Launch Scraper.md` |
-| Resource Note | Topic Hub (The Map) | `30_Resources/Web Scraping.md` |
-| Zettel | Atomic Insight | `Zettelkasten/Anti-bot detection logic.md` |
+| Component | Role | Example Path |
+|-----------|------|--------------|
+| Project Note | Actionable Goal | `<projects-dir>/Launch Scraper.md` |
+| Resource Note | Topic Hub (The Map) | `<resources-dir>/Web Scraping.md` |
+| Zettel | Atomic Insight | `<zettel-dir>/Anti-bot detection logic.md` |
 
 **How they connect:**
 
-- Project Notes link to Code (`[[apps/scraper/README]]`) and relevant Zettels
+- Project Notes link to Code and relevant Zettels
 - Resource Notes act as MOCs (Map of Content), listing all Zettels related to that topic
 - Zettels are flat and atomic; discovered via Resource Hubs
 
@@ -111,7 +111,7 @@ Hub-and-spoke model prevents organizational friction.
 
 ### Incubation: Start a New Project
 
-1. Create folder in `lab/My-New-Idea`
+1. Create folder in your lab code directory (e.g., `lab/My-New-Idea`)
 2. Write code alongside notes in the same folder
 3. Syncs automatically via Syncthing to all machines
 4. Benefits: Code + notes in one place during early development
@@ -120,30 +120,32 @@ Hub-and-spoke model prevents organizational friction.
 
 When a project matures or needs collaboration:
 
-**Move to apps/ (public) or private/ (private)**
+**Move to your public or private code directory**
 
 ```bash
-mv ~/monorepo/lab/My-New-Idea ~/monorepo/apps/my-new-idea
+# Adjust paths based on your directory structure
+mv ~/monorepo/<lab-dir>/My-New-Idea ~/monorepo/<public-code-dir>/my-new-idea
 # OR
-mv ~/monorepo/lab/My-New-Idea ~/monorepo/private/my-new-idea
+mv ~/monorepo/<lab-dir>/My-New-Idea ~/monorepo/<private-code-dir>/my-new-idea
 ```
 
-**Initialize Git Subtree (for apps/)**
+**Initialize Git Subtree (for public code)**
 
 ```bash
 cd ~/monorepo
 git remote add remote-mynewidea https://github.com/username/my-new-idea.git
-git subtree add --prefix=apps/my-new-idea remote-mynewidea main --squash
+# Replace <public-code-dir> with your actual directory structure
+git subtree add --prefix=<public-code-dir>/my-new-idea remote-mynewidea main --squash
 ```
 
 **Create reference note in PARA**
 
-Create a note in `10_Projects/` linking to the new project:
+Create a note in your projects directory linking to the new project:
 
 ```markdown
 # My New Idea
 
-**Location:** `apps/my-new-idea`
+**Location:** `<public-code-dir>/my-new-idea`
 **Status:** Active Git Repository
 **Started:** 2025-01-08
 
@@ -165,10 +167,10 @@ Run agents from `~/monorepo`:
 
 ```bash
 cd ~/monorepo
-claude "Look at my project note in 10_Projects and refactor the auth logic in apps/my-new-idea based on those requirements."
+claude "Look at my project note in <projects-dir> and refactor the auth logic in <public-code-dir>/my-new-idea based on those requirements."
 ```
 
-The agent has full access to code (apps/, private/, lab/) and knowledge (PARA, Zettelkasten).
+The agent has full access to code and knowledge (PARA, Zettelkasten).
 
 ## Setup & Migration
 
@@ -223,28 +225,28 @@ Open `~/monorepo` in Obsidian to work with code + knowledge in one interface.
 
 **Phase 1: Sync Test**
 
-1. Move `nix-config` to `~/monorepo/private/nix-config`
+1. Move `nix-config` to your private code directory (e.g., `<private-code-dir>/nix-config`)
 2. Verify Syncthing syncs correctly
 3. Confirm system can rebuild from the new path
 
 **Phase 2: Subtree Test**
 
 1. Choose one public project to migrate
-2. Move to `~/monorepo/apps/your-app`
+2. Move to your public code directory (e.g., `<public-code-dir>/your-app`)
 3. Set up Git Subtree (see Architecture section)
 4. Test subtree push to public GitHub
 
 **Phase 3: Knowledge Migration**
 
 1. Move existing Obsidian vault contents into PARA folders
-2. Organize notes: `00_Inbox`, `10_Projects`, `20_Areas`, `30_Resources`, `40_Archives`
+2. Organize notes: Inbox, Projects, Areas, Resources, Archives
 3. Create Zettelkasten structure
-4. Move attachments to `notes/`
+4. Move attachments to assets directory
 
 **Phase 4: Gradual Migration**
 
-1. Move existing personal projects to `~/monorepo/private/`
-2. Move scratchpad experiments to `~/monorepo/lab/`
+1. Move existing personal projects to your private code directory
+2. Move scratchpad experiments to your lab code directory
 3. Gradually establish graduation workflow
 
 ### Future Sync Strategies
@@ -260,15 +262,15 @@ As workflow needs evolve, consider these hybrid approaches:
 
 **CouchDB for knowledge, Git for code (Most likely)**
 
-- CouchDB for PARA folders, Zettelkasten, notes, lab/ (real-time sync)
-- Git push/pull for apps/ and private/ (normal git workflow)
+- CouchDB for PARA folders, Zettelkasten, Journals, Lab code (real-time sync)
+- Git push/pull for Public and Private code (normal git workflow)
 - Clean separation: knowledge syncs continuously, code syncs via commits
 - Best for: Real-time knowledge editing, native git workflow for code
 
 **CouchDB for knowledge, Syncthing for code**
 
-- CouchDB for knowledge folders only (PARA, Zettelkasten, notes)
-- Syncthing for code folders (apps/, private/, lab/)
+- CouchDB for knowledge folders only (PARA, Zettelkasten, Journals)
+- Syncthing for code folders (Public, Private, Lab)
 - No sync overlap between systems
 - Trade-off: Two sync mechanisms to manage
 
