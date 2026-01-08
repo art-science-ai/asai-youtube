@@ -6,7 +6,7 @@ A unified workspace integrating Git Subtree for public code, Syncthing for cross
 
 ### Philosophy
 
-Unified Context, Distributed Storage - Provide AI Agents with comprehensive context of digital life (Notes + Infrastructure + Active Code) while maintaining strict collaborator isolation. By treating the monorepo as the Vault:
+Unified Context, Distributed Storage - Provide AI Agents with comprehensive context of digital life (Notes + Infrastructure + Active Code) while maintaining strict collaborator isolation. By treating the monorepo as the vault:
 
 - Code and knowledge are co-located, not isolated
 - Direct links from Zettels to specific code files

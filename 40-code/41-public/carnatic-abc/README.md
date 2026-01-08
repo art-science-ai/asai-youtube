@@ -1,5 +1,5 @@
 # carnatic-abc
-Tools for working with Carnatic music in ABC notation.
+Tools for working with Carnatic music in ABC notation. Work in progress!
 
 ## How to use this
 - Provide your input either as `songs/song_name/input/notes.cabc.abc` or `songs/song_name/input/notes-lyrics.cabc.abc`
