@@ -1,0 +1,464 @@
+Consumer Surplus Factor (CSF) studyKraft Heinz – Spoonables17 January 2025
+CSF Introduction
+What is Consumer Surplus Factor (CSF)?
+Based on analysis of real consumer behaviour data (Sales)
+Developed through research collaboration with academics from Columbia University
+Derived from multi-brand econometric analysis to arrive at consumer loyalty
+Successfully implemented at 
+
+
+
+
+
+
+
+
+
+
+
+
+CSF is a measure of value left on the table
+Consumer Surplus Factor (CSF)   = 
+Cohort 1
+Cohort X
+Cohort 2
+Value perceived = $8
+Value perceived = $15
+Value perceived (MAX) = $28
+Maximum Consumer Value (MCV)
+How much is a consumer willing to pay Vs. How much are we charging today?
+MCV is a measure of $ value of emotional and functional attributes, perceived by consumer
+People whose perceived value from brand is more than price charged will be consumers
+
+
+
+
+People whose perceived value from brand is less than price charged will not be consumers
+
+Price to consumer
+Different cohorts of consumers will perceive different value from brand
+Brands with higher CSF can lead price increase and/or target higher market share
+Brands with higher surplus can also increase price without risk of losing market share
+Cohort X
+MCV = $24
+Brand XYZ
+is the best!
+Cohort Y
+MCV = $16
+Strategic price recommendation from this analysis triangulates perceived value, competitive advantage and market share potential
+Brands with higher surplus i.e. ratio of max perceived value to price will be in a position to gain market share
+
+
+
+Price = $10
+CSF = 2.4
+Can increase price by 12% without risking share loss
+Has potential to gain 3% market share
+Price = $10
+CSF = 1.6
+Will lose share
+Will need to reduce price
+Objective of a Consumer Surplus Factor (CSF) study
+Scope of the study
+Channel
+Variant
+Brand
+PPG
+Food- 66%
+Walmart- 31%
+Target- 3%
+Mayo- 80%*
+Whipped Dressing- 14%
+Aioli- 6% 
+
+Jar 8Oz- 1.5%
+Jar 15Oz- 9.5%
+Jar 30Oz- 51%
+Jar 48Oz- 6%
+Squeezy 12Oz- 8%
+Squeezy 18 To 22Oz- 16%
+Others- 8%
+*Mayo includes unflavoured + olive flavoured + avocado flavoured
+Percentages are value MS% for 2024 YTD (Jan-Nov)
+Reading the results: How to determine if a brand should increase or decrease price?
+
+Price Index is calculated as a ratio of Current Price of Kraft to Weighted Price of all available options within a Channel/Retailer (Food / Walmart / Target)
+MCV index is calculated as a ratio of MCV of Kraft divided by Weighted MCV of available options to consumer (Food / Walmart / Target)
+
+MCVs (Max. consumer value) indicates the perceived value provided by each brand and so their ratio is used as a benchmark for the recommended index at which to operate
+The degree of difference (+ve or –ve) between Price and MCV Index show whether the price index is more than perceived value or not. 
+
+If, 
+MCV index > Price Index = Pricing power   Can increase price
+MCV index < Price Index = Overpriced       Can decrease price
+MCV index = Price Index = At parity             Can hold price
+
+
+
+Executive Summary
+Executive Summary: Key Learnings and Recommendations
+Overall CSFs are healthy – implying satisfied consumers with low switching tendency
+
+FOOD Channel
+Kraft Mayo has significant interaction with Dukes, but Duke’s is offering a higher CSF
+This implies that consumers trading down from Hellmanns and up from PL are more likely to switch to Dukes. So, Kraft needs a price cut to arrest value erosion (Primarily in Jars) and stay at 100 SPI to Dukes.
+
+Kraft Aioli has a relatively stronger MCV and CSF – can command ~10% premium in like-to-like packs.
+It should hold the current price to and consider expanding to the cheaper Jar packs.
+
+Miracle whip also has a CSF disadvantage vs competition and needs to cut price (in Jars) and stay at 110 SPI to Dukes to protect share.
+
+WALMART Channel
+While overall prices and MCVs are lesser than Food; the drop in Kraft’s MCVs are worse than competition – will need cuts across Jars and Squeezy to protect share and stay at a 95 SPI to Dukes.
+
+TARGET Channel
+Here, the higher CSF of premium brands is the main threat; will need to maintain an index of 95 to Dukes
+Executive Summary: Kraft Mayo should be indexed to Dukes - 100 SPI in Food, 95 in WM, Target; Miracle whip at 110 SPI to Dukes across channels
+Food
+Variant x Brand -Food Channel - Market Context (Dec’23 to Nov’24 vs P12M )
+Sales through Food : 66%Change in Category : 
+Value = +3.9%
+Volume = +1.7%
+Price = +2.2%
+Summary of change in market share and price across brands and variants
+Food channel has grown in value, volume and price
+
+Except Kraft and Miracle Whip, all the brands have either grown or are stable
+
+At a variant level, Whipped Dressing has lost volume and value share to both Mayo and Aioli
+
+While Mayo is growing, Kraft is losing maximum share here
+
+Kraft is stable in Aioli
+Food: Although KHC brands’ CSFs are healthy at ~2, competition CSFS are higher at ~2.2
+In mayo, Kraft faces challenge Dukes in the mid-tier price segment
+Dukes has better CSF and comparable MCV at a price lower than in Kraft in Mayo. Kraft has risk of losing consumers to Dukes (if consumers are downgrading) and to Hellmanns (if consumers are upgrading)
+Miracle Whip has a CSF disadvantage as well and hence need to cut price in order to protect MS%
+Kraft is stronger in aioli and can maintain its current price
+MCV
+CSF
+Price
+MSP
+C.MS
+
+
+Mayo- 74.4%
+
+Whipped Dressing (WD)- 11.6%
+Aioli- 3.2%
+
+
+
+Food: Cut price in mayo & whipped dressing. Aioli can maintain its price 
+
+
+
+Mayo
+Whipped Dressing
+Aioli
+Price- 3.28
+RPI to Cat-96
+Price- 3.06
+RPI to Cat-90
+Price-3.64
+RPI to Cat- 107
+Price- 3.30
+RPI to Cat- 97
+Price- 6.04
+RPI to Cat- 177
+Price- 6.09
+RPI to Cat- 179
+PPG Level - Food Channel - Market Context 
+Summary of change in market share and price across brands  variants X PPG
+70% of the total PPGs value is in jars
+
+Within Jars, 30 Oz has the largest val. share at 53%
+
+Squeezy bottles have 23% share in food and are relatively expensive than jars 
+
+Within Squeezy bottles, 18-22 Oz has a share of 16% and is declining across variants, possibly due to price increase in the range of 4.5%-8%
+
+Almost all PPGs in Whipped Dressing are declining 
+Please note: All non-KHC PPGs contributing < 1% to the overall channel have been excluded from representation on the slides. For KHC brands, all PPG contributing more than 0.5% to the respective brands have been shown.
+
+
+
+
+
+
+
+
+
+Food: Mayo & WD 30 Oz Jar face maximum risk and needs to cut price 
+Kraft’s 30 Oz variant is facing the maximum risk of loss of share. Dukes in the same price range has a better CSF and a slightly better MCV. Similar competition from Hellman’s as well. This PPG requires price cut to protect loss of share
+Kraft should consider expanding presence of Aioli in 30oz Jars – at a 
+MCV
+CSF
+Price
+MSP
+C.MS
+
+
+
+
+Mayo
+
+
+
+Whipped Dressing
+Aioli
+
+Food: Mayo & WD cut in Jars; consider expanding Aioli to 30oz Jars
+
+
+
+
+Cut
+Cut
+Cut
+Expand
+Category is defined as Mayo + Aioli only
+Recommendation:
+Objective– 
+To minimize Market Share Loss for Kraft
+
+Approach to reach Recommendation –
+Kraft Mayo and Miracle Whip
+Price reduction made where CSFs were low and PPG was at a risk of losing Market Share
+Reduce prices of larger PPGs to price them lower than smaller PPGs
+Kraft Aioli
+Prices kept constant despite having a positive MSP to account for Volume Loss created by reduction in Kraft Mayo and Miracle Whip prices
+Impact of Recommendation:
+Based on Price Changes
+Do Nothing Scenario
+Walmart
+Variant x Brand -Walmart Channel - Market Context (Dec’23 to Nov’24 vs P12M )
+Sales through Walmart : 31%Change in Category : 
+Value = +6.8%
+Volume = +3.5%
+Price = +3.1%
+Summary of change in market share and price across brands and variants
+Unlike in other channels, here Mayo is gaining share, aioli is stable and whipped dressing continues to lose share 
+
+Although Mayo is growing, Kraft has lost max. share in both val. & vol. while in aioli, it has gained maximum share 
+Walmart: Kraft is stronger in Aioli while facing risk in mayo & whipped dressing
+While competition MCVs are ~5% lower in Walmart vs Food, Kraft’s are ~15% lower
+Dukes has better CSF and MCV at a price lower or same price as Kraft in Mayo. Kraft has risk of losing consumers to Dukes (if consumers are downgrading) and to Hellmanns (if consumers are upgrading)
+Miracle Whip is overpriced and hence need to cut price in order to protect MS%
+Kraft is strong in aioli and can maintain its current price
+MCV
+CSF
+Price
+MSP
+C.MS
+
+
+Mayo- 70.7%
+
+Whipped Dressing- 14.4%
+Aioli- 6.7%
+
+
+
+Walmart: Cut price in mayo & whipped dressing. Aioli can maintain its price 
+
+
+
+Mayo
+Whipped Dressing
+Aioli
+Price- 2.90
+RPI to Cat-98
+Price- 2.65
+RPI to Cat-89
+Price-3.36
+RPI to Cat-113
+Price- 2.98
+RPI to Cat-100
+Price- 6.08
+RPI to Cat-205
+Price- 5.53
+RPI to Cat-187
+PPG Level - Walmart Channel - Market Context 
+Summary of change in market share and price across brands  variants X PPG
+70% of the total PPGs are jars
+
+Within Jars, 30 Oz has the largest val. share at 50%
+
+Squeezy bottles have 23% share in food and are relatively expensive than jars 
+
+Within Squeezy bottles, 18-22 Oz has a share of 16% and is declining across variants, possibly due to price increase in the range of 10%-13%
+
+Almost all PPGs in Whipped Dressing are declining 
+
+Please note: All non-KHC PPGs contributing < 1% to the overall channel have been excluded from representation on the slides. For KHC brands, all PPG contributing more than 0.5% to the respective brands have been shown.
+
+
+
+
+
+
+Walmart- Mayo: Both 30oz Jar and 12oz Squeezy have poor MCVs
+Kraft’s 30 Oz variant is facing the maximum risk of loss of share. Dukes in the same price range has a better CSF and MCV. Similar competition from Hellman’s as well. This PPG requires price cut to protect loss of share 
+MCV
+CSF
+Price
+MSP
+C.MS
+Jar 15Oz- 5.8%
+Jar 30Oz- 37.9%
+Sqz 12Oz- 4.3%
+Sqz 18Oz-22Oz- 12.7%
+Others- 5.2%
+Jar 48Oz- 29.3%
+Mayo
+
+
+
+
+
+
+
+
+
+Need to cut price across Miracle Whip PPGs, more in 30 Oz. 
+Aioli can maintain price 
+MCV
+CSF
+Price
+MSP
+C.MS
+
+
+
+
+
+
+Whipped Dressing
+Aioli
+
+Walmart- Miracle whip is overpriced across packs while Aioli has a strong CSF
+Walmart: Mayo & WD cut in 30Oz Jars; consider expanding Aioli to 30oz Jars
+
+
+
+Cut
+Cut
+Expand
+Category is defined as Mayo + Aioli only
+Recommendation:
+Objective– 
+To minimize Market Share Loss for Kraft
+
+Approach to reach Recommendation –
+Kraft Mayo and Miracle Whip
+Price reduction made where CSFs were low and PPG was at a risk of losing Market Share
+Reduce prices of larger PPGs to price them lower than smaller PPGs
+Kraft Aioli
+Prices kept constant despite having a positive MSP to account for Volume Loss created by reduction in Kraft Mayo and Miracle Whip prices
+Impact of Recommendation:
+Based on Price Changes
+Do Nothing Scenario
+Target
+Variant x Brand -Target Channel - Market Context (Dec’23 to Nov’24 vs P12M )
+Sales through Target: 3%Change in Category : 
+Value = +5.6%
+Volume = -1.1%
+Price = +6.7%
+Summary of change in market share and price across brands and variants
+Both Mayo & Whipped Dressing are losing share to Aioli in value and volume
+
+Almost all brands have lost share in Mayo
+
+In Aioli, Kraft has gained the maximum share
+Kraft is strong in Aioli in both CSF & MCV. In mayo, it faces risk from Dukes
+The best CSF is offered by Premium brands sitting in ‘Rest of Category’
+Kraft has a lower MCV than Dukes but a comparable CSF. There is a risk of loss of share and Kraft should decrease price in Mayo
+Whipped Dressing is losing here as well but has lesser threat of further decline than in Food due to better CSF. However, it needs price cut
+Kraft is aioli has a strong position both in terms of CSF and MCV. It should continue to hold price to gain from losses in other variants 
+MCV
+CSF
+Price
+MSP
+C.MS
+
+
+Mayo- 70.1%
+
+Whipped Dressing- 6.7%
+Aioli- 5.6%
+
+
+
+Target: Cut price in mayo & whipped dressing. Aioli can maintain its price 
+
+
+
+Mayo
+Whipped Dressing
+Aioli
+Price- 3.13
+RPI to Cat-79
+Price- 2.89
+RPI to Cat-73
+Price- 3.75
+RPI to Cat-95
+Price- 3.55
+RPI to Cat-90
+Price- 6.22
+RPI to Cat-157
+Price- 5.76
+RPI to Cat-146
+PPG Level - Target Channel - Market Context 
+Summary of change in market share and price across brands  variants X PPG
+Jars have only 43% value share in Target whereas, Squeezy bottles have 38% share
+
+Within jars, 30 Oz continue to have bigger share while in squeezy, 18-22 Oz continue to have a larger share
+
+Here too, 18-22 Oz squeezy is declining across variants
+Please note: All PPGs contributing < 0.5% to the overall channel have been excluded from representation.
+
+
+
+
+
+
+
+Target: Mayo & WD 30 Oz jar has risk due to lower CSF 
+30 Oz jar needs slight price reduction to protect loss of share 
+MCV
+CSF
+Price
+MSP
+C.MS
+Mayo
+Whipped Dressing
+Aioli
+
+
+
+
+
+
+Target: Mayo & WD cut in 30Oz Jars; consider expanding Aioli to 30oz Jars
+
+
+
+Cut
+Cut
+Expand
+Category is defined as Mayo + Aioli only
+Recommendation:
+Objective– 
+To minimize Market Share Loss for Kraft
+
+Approach to reach Recommendation –
+Kraft Mayo and Miracle Whip
+Price reduction made where CSFs were low and PPG was at a risk of losing Market Share
+Reduce prices of larger PPGs to price them lower than smaller PPGs
+Kraft Aioli
+Prices kept constant despite having a positive MSP to account for Volume Loss created by reduction in Kraft Mayo and Miracle Whip prices
+Impact of Recommendation:
+Based on Price Changes
+Do Nothing Scenario
+Thank You

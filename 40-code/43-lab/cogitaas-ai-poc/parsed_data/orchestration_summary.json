@@ -1,0 +1,178 @@
+{
+  "start_time": "2026-01-02T11:04:59.227577",
+  "end_time": "2026-01-02T11:07:09.806863",
+  "duration_seconds": 130.579286,
+  "source_dir": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data",
+  "output_dir": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/parsed_data",
+  "force": false,
+  "file_types": [
+    "pptx",
+    "pdf",
+    "pbix",
+    "docx",
+    "xlsx"
+  ],
+  "total_files": 25,
+  "processed": 25,
+  "skipped": 0,
+  "errors": 0,
+  "files_by_type": {
+    "pptx": 4,
+    "pdf": 1,
+    "pbix": 12,
+    "docx": 2,
+    "xlsx": 6
+  },
+  "results": {
+    "CSF Project workflow.pptx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BBQ/8.Presentation.pptx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BrownSauce/10.Presentation.pptx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/US_Spoonables/12.Presentation.pptx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "AgentAI_PoC.pdf": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/masked_examples/Indonesia_Dishwash_masked_example1/1.EDA.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/masked_examples/Indonesia_Dishwash_masked_example1/RPICURVES_BrandVariant_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/masked_examples/Indonesia_Dishwash_masked_example1/RPICURVES_BrandVariant_PPG_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BBQ/3.EDA.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BBQ/7.RPICURVES_Brand_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BrownSauce/3.EDA.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BrownSauce/8.RPICURVES_Brand_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BrownSauce/9.RPICURVES_Brand_PPG_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/US_Spoonables/10.RPICURVES_Brand_Variant_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/US_Spoonables/11.RPICURVES_Brand_Variant_PPG_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/US_Spoonables/3.EDA.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/US_Spoonables/9.RPICURVES_Brand_Level.pbix": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "CSF_ReadMe.docx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Summary.docx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BBQ/1.Raw_Data.xlsx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BBQ/5.Model_Selection.xlsx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BrownSauce/1.Raw_Data.xlsx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BrownSauce/2.Predefined_Data for EDA and Modelling.xlsx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/UK_BrownSauce/5.Model_Selection.xlsx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    "Data_Sharing/full_examples/US_Spoonables/5.Model_Selection.xlsx": {
+      "success": true,
+      "returncode": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  }
+}

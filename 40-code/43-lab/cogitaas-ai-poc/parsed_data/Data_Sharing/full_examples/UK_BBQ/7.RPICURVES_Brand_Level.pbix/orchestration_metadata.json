@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:15.009381",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BBQ/7.RPICURVES_Brand_Level.pbix",
+  "file_hash": "9d0bb62f07edb3d9d38a27e4e8cf5af11974fbcd0ee2076effa41593259da867",
+  "relative_path": "Data_Sharing/full_examples/UK_BBQ/7.RPICURVES_Brand_Level.pbix",
+  "file_type": "pbix",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

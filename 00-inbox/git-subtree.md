@@ -100,6 +100,25 @@ type: library
     # Push to public GitHub
     git subtree push --prefix=apps/my-app remote-my-app main
     ```
+- **Checking sync status:**
+    ```bash
+    # Check uncommitted changes in subtree
+    git status 40-code/41-public/carnatic-abc
+
+    # Fetch latest from remote
+    git fetch carnatic-abc
+
+    # Check how many commits are ahead (local has commits not pushed)
+    git rev-list --count carnatic-abc/main..HEAD
+
+    # Check how many commits are behind (remote has commits not pulled)
+    git rev-list --count HEAD..carnatic-abc/main
+    ```
+- **Local-only files in subtrees:**
+    - Files ignored in public repo but tracked in monorepo (e.g., `.env.local`, `config.local.json`)
+    - These files exist only in your monorepo commits, never in upstream
+    - Subtree pulls won't affect them since they don't exist in public repo
+    - Perfect for local configs and secrets that stay private in your monorepo
 
 ## Alternatives and related tools
 - **Git Submodules:** Nested .git directories, more complex management, require explicit updates. Not using because Subtree is simpler for my use case - I want to work primarily in the monorepo.

@@ -1,0 +1,142 @@
+Brand-level Result File Logic for Summary
+
+Identify unique brands within each channel.
+
+For each brand-channel combination, capture the key metrics:
+
+CSF
+
+Price Elasticity (PE)
+
+Market Share (MS)
+
+Market Share Change (MSP)
+
+MCV
+
+Price
+
+Identify all competing brands present in the same channel.
+
+Compare CSF within each channel across brands to determine whether the brand’s CSF is higher or lower compared to competition brand.
+
+CSF Interpretation Rules
+
+High CSF (≥ 2)
+
+Customers show strong loyalty to the brand.
+
+Switching to other brands is low.
+
+Brand is relatively protected from competitive pressure.
+
+Medium CSF (1.7 – 1.9)
+
+Customers display moderate loyalty.
+
+Some switching risk exists if competitors offer better value.
+
+Brand performance depends on pricing and promotions.
+
+Low CSF (< 1.6)
+
+Customers have weak loyalty.
+
+High risk of switching to competing brands.
+
+Brand is vulnerable to price changes and competitive actions.
+
+Relative to Competition
+
+CSF lower than competition: Switching threat exists, even if CSF is high.
+
+CSF equal to competition: Neutral position; outcomes driven by price and promotions.
+
+CSF higher than competition: Loyalty advantage; brand is better protected.
+
+
+
+
+
+Price Elasticity Interpretation (at a 5% price change)
+
+Less elastic demand (PE ≥ -4)
+
+Customers are less sensitive to price changes.
+
+Price increases are likely to be absorbed.
+
+Limited volume loss expected.
+
+Moderately elastic demand (PE between -5 and -7)
+
+Customers respond noticeably to price changes.
+
+Some volume decline may occur.
+
+Pricing actions should be taken with caution.
+
+Highly elastic demand (PE < -8)
+
+Customers are very price sensitive.
+
+Even small price increases may lead to significant volume loss.
+
+High risk associated with price increases.
+
+
+
+Market Share Potential (MSP)
+
+Positive MSP
+
+Brand is gaining market share.
+
+Indicates improving competitiveness or stronger customer preference.
+
+Zero MSP
+
+Market share is stable.
+
+Brand is maintaining its position within the channel.
+
+Negative MSP
+
+Brand is losing market share.
+
+Indicates competitive pressure or declining customer preference.
+
+
+Market Share Context and Change Interpretation
+
+• Market Share Higher than competition:
+
+             o Brand is the leader in the channel.
+
+o Majority of customers prefer this brand.
+
+o Competitive pressure is low.
+
+• Market Share Lower than competition
+
+             o Brand is not the leader in the channel.
+
+o Customers are more spread across brands.
+
+o Competitive pressure is higher.
+
+• If new market share is higher than current market share
+
+o Brand is likely to grow in the future as it is gaining market share.
+
+o Indicates positive MSP.
+
+o Suggests stronger customer preference or improved competitiveness.
+
+• If new market share is lower than current market share
+
+o Brand is likely to decline in the future as it is losing market share.
+
+o Indicates negative MSP.
+
+o Suggests increased competition or weaker customer preference.

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:21.433265",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Summary.docx",
+  "file_hash": "6916359c616486f450e9f6a5bc299710cd1c48ad9a0e6761a927036c1206d645",
+  "relative_path": "Summary.docx",
+  "file_type": "docx",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:20.822353",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/CSF_ReadMe.docx",
+  "file_hash": "1fb30da4ebf7c8c3656fc182699b71f7e040fcec163dd7c4ba0ff7ca409bcb63",
+  "relative_path": "CSF_ReadMe.docx",
+  "file_type": "docx",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

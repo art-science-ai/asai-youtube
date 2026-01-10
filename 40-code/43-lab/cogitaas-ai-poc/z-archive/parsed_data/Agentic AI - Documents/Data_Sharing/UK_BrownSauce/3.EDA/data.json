@@ -1,0 +1,1238 @@
+{
+    "metadata": "                            Name                                              Value\n0              PBIDesktopVersion  2.142.928.0 (25.04)+de52df9f0bb74ad93a80d89c52...\n1                 PBI_QueryOrder  [\"D0_Data\",\"Errors in D0_Data\",\"Errors in D0_D...\n2  __PBI_TimeIntelligenceEnabled                                                  1",
+    "tables": [
+        "D0_Data",
+        "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+        "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+        "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011"
+    ],
+    "power_query": [
+        {
+            "TableName": "D0_Data",
+            "Expression": "let\n    Source = Excel.Workbook(File.Contents(\"C:\\Users\\cogit\\CogitaasAVA\\KraftHeinz - Documents\\2025 CSF Projects\\UK Brown Sauce\\Onboard\\3. Dashboard\\D0_Brown_Sauce.xlsx\"), null, true),\n    #\"TK Ketchup_Data_Sheet\" = Source{[Item=\"D0_Data\",Kind=\"Sheet\"]}[Data],\n    #\"Promoted Headers\" = Table.PromoteHeaders(#\"TK Ketchup_Data_Sheet\", [PromoteAllScalars=true]),\n    #\"Changed Type\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"Market\", type text}, {\"Channel\", type text}, {\"Region\", type text}, {\"Category\", type text}, {\"SubCategory\", type text}, {\"Brand\", type text}, {\"Variant\", type text}, {\"PackType\", type text}, {\"PPG\", type text}, {\"PackSize\", type text}, {\"Year\", Int64.Type}, {\"Month\", Int64.Type}, {\"Week\", Int64.Type}, {\"Date\", type date}, {\"BrCatId\", type text}, {\"SalesValue\", type number}, {\"Volume\", type number}, {\"VolumeUnits\", type number}, {\"D1\", type number}, {\"D2\", Int64.Type}, {\"D3\", Int64.Type}, {\"D4\", Int64.Type}, {\"D5\", Int64.Type}, {\"D6\", Int64.Type}, {\"AV1\", Int64.Type}, {\"AV2\", Int64.Type}, {\"AV3\", Int64.Type}, {\"AV4\", Int64.Type}, {\"AV5\", Int64.Type}, {\"AV6\", Int64.Type}, {\"EV1\", Int64.Type}, {\"EV2\", Int64.Type}, {\"EV3\", Int64.Type}, {\"EV4\", Int64.Type}, {\"EV5\", Int64.Type}, {\"EV6\", Int64.Type}, {\"PrepDate\", type date}, {\"ProjCode\", type text}}),\n    #\"Filtered Rows\" = Table.SelectRows(#\"Changed Type\", each ([Brand] <> \"AllBrand\" and [Brand] <> \"cat1\")),\n    #\"Renamed Columns\" = Table.RenameColumns(#\"Filtered Rows\",{{\"Volume\", \"Volume\"}, {\"SalesValue\", \"SalesValue\"}})\nin\n    #\"Renamed Columns\""
+        }
+    ],
+    "m_parameters": [
+        {
+            "ParameterName": "Errors in D0_Data",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-03 06:32:11.044687"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (2)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-04 06:13:57.747742"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (3)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-04 06:22:04.216791"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (4)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-12 03:51:27.636930"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (5)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-12 03:53:37.706980"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (6)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-27 11:31:26.698238"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (7)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-30 04:17:40.725969"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (8)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-30 04:20:16.398811"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (9)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2024-12-30 09:56:49.242943"
+        },
+        {
+            "ParameterName": "Errors in D0_Data (10)",
+            "Description": null,
+            "Expression": "let\nSource = D0_Data,\n  #\"Detected Type Mismatches\" = let\n    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),\n    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),\n    fieldNames = Record.FieldNames(recordTypeFields),\n    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),\n    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = \"The type of the value does not match the type of the column.\", Detail = v], fieldTypes{i}})\nin\n    Table.TransformColumns(Source, pairs),\n  #\"Added Index\" = Table.AddIndexColumn(#\"Detected Type Mismatches\", \"Row Number\" ,1),\n  #\"Kept Errors\" = Table.SelectRowsWithErrors(#\"Added Index\", {\"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"}),\n  #\"Reordered Columns\" = Table.ReorderColumns(#\"Kept Errors\", {\"Row Number\", \"Market\", \"Channel\", \"Region\", \"Category\", \"SubCategory\", \"Brand\", \"Variant\", \"PackType\", \"PPG\", \"PackSize\", \"Year\", \"Month\", \"Week\", \"Date\", \"BrCatId\", \"SalesValue\", \"Volume\", \"VolumeUnits\", \"D1\", \"D2\", \"D3\", \"D4\", \"D5\", \"D6\", \"AV1\", \"AV2\", \"AV3\", \"AV4\", \"AV5\", \"AV6\", \"EV1\", \"EV2\", \"EV3\", \"EV4\", \"EV5\", \"EV6\", \"PrepDate\", \"ProjCode\"})\nin\n  #\"Reordered Columns\"",
+            "ModifiedTime": "2025-04-25 09:57:22.092472"
+        }
+    ],
+    "dax_tables": [
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "Expression": "Calendar(Date(2015,1,1), Date(2015,1,1))"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "Expression": "Calendar(Date(Year(MIN('D0_Data'[Date])), 1, 1), Date(Year(MAX('D0_Data'[Date])), 12, 31))"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "Expression": "Calendar(Date(Year(MIN('D0_Data'[PrepDate])), 1, 1), Date(Year(MAX('D0_Data'[PrepDate])), 12, 31))"
+        }
+    ],
+    "dax_measures": [
+        {
+            "TableName": "D0_Data",
+            "Name": "Avg Price",
+            "Expression": "CALCULATE(DIVIDE(SUM('D0_Data'[SalesValue]),SUM('D0_Data'[Volume])))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Echo Sp",
+            "Expression": "CALCULATE(SUM('D0_Data'[SalesValue]),ALL('D0_Data'[Brand],'D0_Data'[PPG],'D0_Data'[PackType],'D0_Data'[Variant]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Value Sp",
+            "Expression": "DIVIDE(SUM('D0_Data'[SalesValue]),[Market Echo Sp])",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Volume Market Echo Sp",
+            "Expression": "CALCULATE(SUM('D0_Data'[Volume]),ALL('D0_Data'[Brand],'D0_Data'[PPG],'D0_Data'[PackType],'D0_Data'[Variant]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Volume Sp",
+            "Expression": "DIVIDE(SUM('D0_Data'[Volume]),[Volume Market Echo Sp])",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Echo PPG",
+            "Expression": "CALCULATE(SUM('D0_Data'[SalesValue]),ALL('D0_Data'[PPG]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Value PPG",
+            "Expression": "DIVIDE(SUM('D0_Data'[SalesValue]),[Market Echo PPG]) ",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Volume Market Echo PPG",
+            "Expression": "CALCULATE(SUM('D0_Data'[Volume]),ALL('D0_Data'[PPG])) ",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Volume PPG",
+            "Expression": "DIVIDE(SUM('D0_Data'[Volume]),[Volume Market Echo PPG]) ",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Echo Packtype",
+            "Expression": "CALCULATE(SUM('D0_Data'[SalesValue]),ALL('D0_Data'[PackType]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Volume Market Echo Packtype",
+            "Expression": "CALCULATE(SUM('D0_Data'[Volume]),ALL('D0_Data'[PackType]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Contribution Packtype",
+            "Expression": "DIVIDE(SUM('D0_Data'[SalesValue]),[Market Echo Packtype])",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Volume Market Share Contribution Packtype",
+            "Expression": "DIVIDE(SUM('D0_Data'[Volume]),[Volume Market Echo Packtype])",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Echo Variant",
+            "Expression": "CALCULATE(SUM('D0_Data'[SalesValue]),ALL('D0_Data'[Variant]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Volume Market Echo Varaint",
+            "Expression": "CALCULATE(SUM('D0_Data'[Volume]),ALL('D0_Data'[Variant]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Value Variant",
+            "Expression": "DIVIDE(SUM('D0_Data'[SalesValue]),[Market Echo Variant]) ",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Volume Market Share Value Variant",
+            "Expression": "DIVIDE(SUM('D0_Data'[Volume]),[Volume Market Echo Varaint]) ",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Correlation coefficient",
+            "Expression": "\nVAR __CORRELATION_TABLE = VALUES('D0_Data'[Date])\nVAR __COUNT =\n\tCOUNTX(\n\t\tKEEPFILTERS(__CORRELATION_TABLE),\n\t\tCALCULATE([Avg Price] * SUM('D0_Data'[Volume]))\n\t)\nVAR __SUM_X =\n\tSUMX(\n\t\tKEEPFILTERS(__CORRELATION_TABLE),\n\t\tCALCULATE([Avg Price])\n\t)\nVAR __SUM_Y =\n\tSUMX(\n\t\tKEEPFILTERS(__CORRELATION_TABLE),\n\t\tCALCULATE(SUM('D0_Data'[Volume]))\n\t)\nVAR __SUM_XY =\n\tSUMX(\n\t\tKEEPFILTERS(__CORRELATION_TABLE),\n\t\tCALCULATE(\n\t\t\t[Avg Price]\n\t\t\t\t* SUM('D0_Data'[Volume]) * 1.\n\t\t)\n\t)\nVAR __SUM_X2 =\n\tSUMX(\n\t\tKEEPFILTERS(__CORRELATION_TABLE),\n\t\tCALCULATE([Avg Price] ^ 2)\n\t)\nVAR __SUM_Y2 =\n\tSUMX(\n\t\tKEEPFILTERS(__CORRELATION_TABLE),\n\t\tCALCULATE(SUM('D0_Data'[Volume]) ^ 2)\n\t)\nRETURN\n\tDIVIDE(\n\t\t__COUNT * __SUM_XY - __SUM_X * __SUM_Y * 1.,\n\t\tSQRT(\n\t\t\t(__COUNT * __SUM_X2 - __SUM_X ^ 2)\n\t\t\t\t* (__COUNT * __SUM_Y2 - __SUM_Y ^ 2)\n\t\t)\n\t)",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Numeric Distribution",
+            "Expression": "DIVIDE(\n    SUMX(\n        'D0_Data',\n        'D0_Data'[SalesValue] * 'D0_Data'[D1]\n    ),\n    SUM('D0_Data'[SalesValue])\n)",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Weighted Distribution",
+            "Expression": "DIVIDE(\n    SUMX(\n        'D0_Data',\n        'D0_Data'[SalesValue] * 'D0_Data'[D1]\n    ),\n    SUM('D0_Data'[SalesValue])\n)",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Echo Sp Channel",
+            "Expression": "CALCULATE(SUM('D0_Data'[SalesValue]),ALL('D0_Data'[Brand],'D0_Data'[PPG],'D0_Data'[PackType],'D0_Data'[Variant],'D0_Data'[Channel]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Value Sp Channel",
+            "Expression": "DIVIDE(SUM('D0_Data'[SalesValue]),[Market Echo Sp Channel])",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Volume Market Echo Sp Channel",
+            "Expression": "CALCULATE(SUM('D0_Data'[Volume]),ALL('D0_Data'[Brand],'D0_Data'[PPG],'D0_Data'[PackType],'D0_Data'[Variant],'D0_Data'[Channel]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "Market Share Volume Sp Channel",
+            "Expression": "DIVIDE(SUM('D0_Data'[Volume]),[Volume Market Echo Sp Channel])",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "PRICECAT",
+            "Expression": "CALCULATE(SUM('D0_Data'[SalesValue]),ALL('D0_Data'[Brand],'D0_Data'[PPG],'D0_Data'[PackType],'D0_Data'[Variant]))/CALCULATE(SUM('D0_Data'[Volume]),ALL('D0_Data'[Brand],'D0_Data'[PPG],'D0_Data'[PackType],'D0_Data'[Variant]))",
+            "DisplayFolder": null,
+            "Description": null
+        },
+        {
+            "TableName": "D0_Data",
+            "Name": "RPICAT",
+            "Expression": "[Avg Price]/[PRICECAT]",
+            "DisplayFolder": null,
+            "Description": null
+        }
+    ],
+    "dax_columns": [
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Year",
+            "Expression": "YEAR([Date])"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "MonthNo",
+            "Expression": "MONTH([Date])"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Month",
+            "Expression": "FORMAT([Date], \"MMMM\")"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "QuarterNo",
+            "Expression": "INT(([MonthNo] + 2) / 3)"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Quarter",
+            "Expression": "\"Qtr \" & [QuarterNo]"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Day",
+            "Expression": "DAY([Date])"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Year",
+            "Expression": "YEAR([Date])"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "MonthNo",
+            "Expression": "MONTH([Date])"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Month",
+            "Expression": "FORMAT([Date], \"MMMM\")"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "QuarterNo",
+            "Expression": "INT(([MonthNo] + 2) / 3)"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Quarter",
+            "Expression": "\"Qtr \" & [QuarterNo]"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Day",
+            "Expression": "DAY([Date])"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Year",
+            "Expression": "YEAR([Date])"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "MonthNo",
+            "Expression": "MONTH([Date])"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Month",
+            "Expression": "FORMAT([Date], \"MMMM\")"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "QuarterNo",
+            "Expression": "INT(([MonthNo] + 2) / 3)"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Quarter",
+            "Expression": "\"Qtr \" & [QuarterNo]"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Day",
+            "Expression": "DAY([Date])"
+        }
+    ],
+    "schema": [
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Market",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Channel",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Region",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Category",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "SubCategory",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Brand",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Variant",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PackType",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PPG",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PackSize",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Year",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Month",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Week",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Date",
+            "PandasDataType": "datetime64[ns]"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "BrCatId",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "VolumeUnits",
+            "PandasDataType": "Float64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D1",
+            "PandasDataType": "Float64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D2",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D3",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D4",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D5",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D6",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV1",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV2",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV3",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV4",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV5",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV6",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV1",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV2",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV3",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV4",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV5",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV6",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PrepDate",
+            "PandasDataType": "datetime64[ns]"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "ProjCode",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Volume",
+            "PandasDataType": "Float64"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "SalesValue",
+            "PandasDataType": "Float64"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Year",
+            "PandasDataType": "object"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "MonthNo",
+            "PandasDataType": "object"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Month",
+            "PandasDataType": "object"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "QuarterNo",
+            "PandasDataType": "object"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Quarter",
+            "PandasDataType": "object"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Day",
+            "PandasDataType": "object"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Year",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "MonthNo",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Month",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "QuarterNo",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Quarter",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Day",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Year",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "MonthNo",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Month",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "QuarterNo",
+            "PandasDataType": "Int64"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Quarter",
+            "PandasDataType": "string"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Day",
+            "PandasDataType": "Int64"
+        }
+    ],
+    "relationships": [
+        {
+            "FromTableName": "D0_Data",
+            "FromColumnName": "Date",
+            "ToTableName": null,
+            "ToColumnName": null,
+            "IsActive": 1,
+            "Cardinality": "M:1",
+            "CrossFilteringBehavior": "Single",
+            "FromKeyCount": 159,
+            "ToKeyCount": null,
+            "RelyOnReferentialIntegrity": 0
+        },
+        {
+            "FromTableName": "D0_Data",
+            "FromColumnName": "PrepDate",
+            "ToTableName": null,
+            "ToColumnName": null,
+            "IsActive": 1,
+            "Cardinality": "M:1",
+            "CrossFilteringBehavior": "Single",
+            "FromKeyCount": 4,
+            "ToKeyCount": null,
+            "RelyOnReferentialIntegrity": 0
+        }
+    ],
+    "rls": [],
+    "statistics": [
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Market",
+            "Cardinality": 1,
+            "Dictionary": 137,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Channel",
+            "Cardinality": 4,
+            "Dictionary": 231,
+            "HashIndex": 0,
+            "DataSize": 880,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Region",
+            "Cardinality": 1,
+            "Dictionary": 151,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Category",
+            "Cardinality": 1,
+            "Dictionary": 155,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "SubCategory",
+            "Cardinality": 1,
+            "Dictionary": 161,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Brand",
+            "Cardinality": 6,
+            "Dictionary": 289,
+            "HashIndex": 0,
+            "DataSize": 168,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Variant",
+            "Cardinality": 3,
+            "Dictionary": 273,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PackType",
+            "Cardinality": 1,
+            "Dictionary": 155,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PPG",
+            "Cardinality": 3,
+            "Dictionary": 159,
+            "HashIndex": 0,
+            "DataSize": 288,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PackSize",
+            "Cardinality": 3,
+            "Dictionary": 221,
+            "HashIndex": 0,
+            "DataSize": 288,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Year",
+            "Cardinality": 4,
+            "Dictionary": 56,
+            "HashIndex": 0,
+            "DataSize": 1112,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Month",
+            "Cardinality": 1,
+            "Dictionary": 0,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844048",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844048"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Week",
+            "Cardinality": 53,
+            "Dictionary": 252,
+            "HashIndex": 0,
+            "DataSize": 4696,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Date",
+            "Cardinality": 156,
+            "Dictionary": 1288,
+            "HashIndex": 0,
+            "DataSize": 5832,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "BrCatId",
+            "Cardinality": 1,
+            "Dictionary": 143,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "VolumeUnits",
+            "Cardinality": 4302,
+            "Dictionary": 0,
+            "HashIndex": 67189,
+            "DataSize": 15304,
+            "ModifiedTime": "2024-02-21 06:24:47.486876",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D1",
+            "Cardinality": 5500,
+            "Dictionary": 44040,
+            "HashIndex": 0,
+            "DataSize": 11520,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D2",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D3",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D4",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D5",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "D6",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV1",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV2",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV3",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV4",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV5",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "AV6",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV1",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV2",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV3",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV4",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV5",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "EV6",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "PrepDate",
+            "Cardinality": 1,
+            "Dictionary": 48,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "ProjCode",
+            "Cardinality": 1,
+            "Dictionary": 163,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2024-01-29 05:19:15.844553",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "Volume",
+            "Cardinality": 5073,
+            "Dictionary": 40624,
+            "HashIndex": 0,
+            "DataSize": 11520,
+            "ModifiedTime": "2024-08-19 10:55:05.676449",
+            "StructureModifiedTime": "2024-06-14 09:30:37.215977"
+        },
+        {
+            "TableName": "D0_Data",
+            "ColumnName": "SalesValue",
+            "Cardinality": 5262,
+            "Dictionary": 42136,
+            "HashIndex": 0,
+            "DataSize": 11520,
+            "ModifiedTime": "2024-08-19 10:57:53.927050",
+            "StructureModifiedTime": "2024-08-19 10:57:53.927050"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Year",
+            "Cardinality": 1,
+            "Dictionary": 0,
+            "HashIndex": 1133,
+            "DataSize": 152,
+            "ModifiedTime": "2022-05-19 06:50:31.537651",
+            "StructureModifiedTime": "2022-05-03 06:37:44.314102"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "MonthNo",
+            "Cardinality": 1,
+            "Dictionary": 0,
+            "HashIndex": 1133,
+            "DataSize": 152,
+            "ModifiedTime": "2022-05-19 06:50:31.537651",
+            "StructureModifiedTime": "2022-05-03 06:37:44.314102"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Month",
+            "Cardinality": 1,
+            "Dictionary": 147,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2022-05-03 06:39:05.230286",
+            "StructureModifiedTime": "2022-05-03 06:37:44.314102"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "QuarterNo",
+            "Cardinality": 1,
+            "Dictionary": 0,
+            "HashIndex": 1133,
+            "DataSize": 152,
+            "ModifiedTime": "2022-05-19 06:50:31.537651",
+            "StructureModifiedTime": "2022-05-03 06:37:44.314102"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Quarter",
+            "Cardinality": 1,
+            "Dictionary": 143,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2022-05-03 06:39:05.262304",
+            "StructureModifiedTime": "2022-05-03 06:37:44.314102"
+        },
+        {
+            "TableName": "DateTableTemplate_86759c58-d7ca-4931-92e0-34fd975a89b9",
+            "ColumnName": "Day",
+            "Cardinality": 1,
+            "Dictionary": 0,
+            "HashIndex": 1133,
+            "DataSize": 152,
+            "ModifiedTime": "2022-05-19 06:50:31.537651",
+            "StructureModifiedTime": "2022-05-03 06:37:44.314102"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Year",
+            "Cardinality": 1,
+            "Dictionary": 44,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "MonthNo",
+            "Cardinality": 12,
+            "Dictionary": 88,
+            "HashIndex": 0,
+            "DataSize": 328,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Month",
+            "Cardinality": 12,
+            "Dictionary": 391,
+            "HashIndex": 0,
+            "DataSize": 328,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "QuarterNo",
+            "Cardinality": 4,
+            "Dictionary": 56,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2025-04-30 06:21:23.143635",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Quarter",
+            "Cardinality": 4,
+            "Dictionary": 203,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2025-04-30 06:21:23.160046",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_04dd11d2-aaf1-4a98-8e3a-1ad9bb0b7448",
+            "ColumnName": "Day",
+            "Cardinality": 31,
+            "Dictionary": 0,
+            "HashIndex": 1133,
+            "DataSize": 392,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Year",
+            "Cardinality": 4,
+            "Dictionary": 56,
+            "HashIndex": 0,
+            "DataSize": 152,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "MonthNo",
+            "Cardinality": 12,
+            "Dictionary": 88,
+            "HashIndex": 0,
+            "DataSize": 880,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Month",
+            "Cardinality": 12,
+            "Dictionary": 391,
+            "HashIndex": 0,
+            "DataSize": 880,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "QuarterNo",
+            "Cardinality": 4,
+            "Dictionary": 56,
+            "HashIndex": 0,
+            "DataSize": 280,
+            "ModifiedTime": "2025-04-30 06:21:23.143635",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Quarter",
+            "Cardinality": 4,
+            "Dictionary": 203,
+            "HashIndex": 0,
+            "DataSize": 280,
+            "ModifiedTime": "2025-04-30 06:21:23.160046",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        },
+        {
+            "TableName": "LocalDateTable_5c270cfd-bb73-40bd-bca2-b3af96e61011",
+            "ColumnName": "Day",
+            "Cardinality": 31,
+            "Dictionary": 164,
+            "HashIndex": 0,
+            "DataSize": 1120,
+            "ModifiedTime": "2025-04-30 06:21:23.135492",
+            "StructureModifiedTime": "2024-01-29 05:19:15.844553"
+        }
+    ]
+}

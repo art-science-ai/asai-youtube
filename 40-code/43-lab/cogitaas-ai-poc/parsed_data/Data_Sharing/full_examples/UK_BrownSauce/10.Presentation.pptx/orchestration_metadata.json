@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:05.647977",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/10.Presentation.pptx",
+  "file_hash": "41a57489d2a11c7d5fa27a17e917a1923c17ae71205e8f696adf28b873640f2a",
+  "relative_path": "Data_Sharing/full_examples/UK_BrownSauce/10.Presentation.pptx",
+  "file_type": "pptx",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

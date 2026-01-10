@@ -1,0 +1,14 @@
+{
+  "workbook": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/2.Predefined_Data for EDA and Modelling.xlsx",
+  "sheets": [
+    "Sheet1"
+  ],
+  "sheet_count": 1,
+  "sheet_details": {
+    "Sheet1": {
+      "max_row": 6309,
+      "max_column": 38,
+      "dimensions": "A1:AL6309"
+    }
+  }
+}

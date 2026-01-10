@@ -1,0 +1,12 @@
+{
+  "timestamp": "2026-01-02T11:05:05.554892",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/10.Presentation.pptx",
+  "output_dir": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/parsed_data/Data_Sharing/full_examples/UK_BrownSauce/10.Presentation.pptx",
+  "methods": {
+    "method1_python_pptx_basic": true,
+    "method2_markitdown": true,
+    "method3_python_pptx_detailed": true,
+    "method4_python_pptx_images": true
+  },
+  "success_count": 4
+}

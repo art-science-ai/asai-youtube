@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:12.719961",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/masked_examples/Indonesia_Dishwash_masked_example1/1.EDA.pbix",
+  "file_hash": "346f6219f2f27dea2614c57ef9623368fee5fa824a94fba1fe2a2b949c527091",
+  "relative_path": "Data_Sharing/masked_examples/Indonesia_Dishwash_masked_example1/1.EDA.pbix",
+  "file_type": "pbix",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

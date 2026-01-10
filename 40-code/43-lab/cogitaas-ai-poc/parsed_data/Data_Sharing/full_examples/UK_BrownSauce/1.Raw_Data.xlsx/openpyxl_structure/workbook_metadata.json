@@ -1,0 +1,14 @@
+{
+  "workbook": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/1.Raw_Data.xlsx",
+  "sheets": [
+    "Brown_Sauce_CSF_Data_first_pul"
+  ],
+  "sheet_count": 1,
+  "sheet_details": {
+    "Brown_Sauce_CSF_Data_first_pul": {
+      "max_row": 11548,
+      "max_column": 11,
+      "dimensions": "A8:K11548"
+    }
+  }
+}

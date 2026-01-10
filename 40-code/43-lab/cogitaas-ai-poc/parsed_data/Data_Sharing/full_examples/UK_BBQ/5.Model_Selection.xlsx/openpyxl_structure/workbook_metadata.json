@@ -1,0 +1,32 @@
+{
+  "workbook": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BBQ/5.Model_Selection.xlsx",
+  "sheets": [
+    "allpricevariable",
+    "wtdavg",
+    "FinalM0",
+    "Filtered_FinalM0"
+  ],
+  "sheet_count": 4,
+  "sheet_details": {
+    "allpricevariable": {
+      "max_row": 77,
+      "max_column": 39,
+      "dimensions": "A1:AM77"
+    },
+    "wtdavg": {
+      "max_row": 77,
+      "max_column": 26,
+      "dimensions": "A1:Z77"
+    },
+    "FinalM0": {
+      "max_row": 2876,
+      "max_column": 123,
+      "dimensions": "A1:DS2876"
+    },
+    "Filtered_FinalM0": {
+      "max_row": 1260,
+      "max_column": 127,
+      "dimensions": "A1:DW1260"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:52.192880",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/1.Raw_Data.xlsx",
+  "file_hash": "f44edb7b1cc987f27e3178d9b400c8ab95b8a7d96c9ed463e91b535e01c5d586",
+  "relative_path": "Data_Sharing/full_examples/UK_BrownSauce/1.Raw_Data.xlsx",
+  "file_type": "xlsx",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

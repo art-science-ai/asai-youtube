@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:06:00.206725",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/2.Predefined_Data for EDA and Modelling.xlsx",
+  "file_hash": "d6c96bd541a8ab165ce86af4ff78cfb03bf3479ca2981364d2cbe1835b265c6b",
+  "relative_path": "Data_Sharing/full_examples/UK_BrownSauce/2.Predefined_Data for EDA and Modelling.xlsx",
+  "file_type": "xlsx",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}
