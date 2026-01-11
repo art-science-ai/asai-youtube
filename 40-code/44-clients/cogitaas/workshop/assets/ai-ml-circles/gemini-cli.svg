@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <style>
+      .label { font-family: sans-serif; text-anchor: middle; fill: black; }
+      .title { font-size: 24px; font-weight: bold; }
+      .subtitle { font-size: 18px; }
+      .circle { fill: none; stroke: #333; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <!-- Artificial Intelligence (Outer Ellipse) -->
+  <ellipse cx="400" cy="300" rx="380" ry="280" class="circle" />
+  <text x="400" y="80" class="label title">Artificial Intelligence</text>
+
+  <!-- Rules-based Expert Systems (Left Circle) -->
+  <circle cx="200" cy="300" r="110" class="circle" />
+  <text x="200" y="290" class="label subtitle">Rules-based</text>
+  <text x="200" y="315" class="label subtitle">Expert Systems</text>
+
+  <!-- Machine Learning (Right Main Circle) -->
+  <circle cx="560" cy="320" r="190" class="circle" />
+  <text x="560" y="190" class="label subtitle">Machine Learning</text>
+
+  <!-- Neural Nets (Inside ML) -->
+  <circle cx="560" cy="350" r="130" class="circle" />
+  <text x="560" y="280" class="label subtitle">Neural Nets</text>
+
+  <!-- Deep Learning (Inside NN) -->
+  <circle cx="560" cy="380" r="70" class="circle" />
+  <text x="560" y="375" class="label subtitle">Deep</text>
+  <text x="560" y="400" class="label subtitle">Learning</text>
+
+</svg>

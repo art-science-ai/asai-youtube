@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:17.402129",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/US_Spoonables/10.RPICURVES_Brand_Variant_Level.pbix",
+  "file_hash": "e8c956fe817ea1eeadbff26da65b6835149c29c435d4dba593eec066ef6fa63c",
+  "relative_path": "Data_Sharing/full_examples/US_Spoonables/10.RPICURVES_Brand_Variant_Level.pbix",
+  "file_type": "pbix",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

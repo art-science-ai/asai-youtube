@@ -1,0 +1,28 @@
+{
+  "total_files": 23,
+  "files": [
+    "Version",
+    "[Content_Types].xml",
+    "DiagramLayout",
+    "Report/Layout",
+    "Settings",
+    "Metadata",
+    "Connections",
+    "Report/CustomVisuals/PBI_CV_73744D90_4DC9_4F18_8BA5_EE8FA5C98035/package.json",
+    "Report/CustomVisuals/PBI_CV_73744D90_4DC9_4F18_8BA5_EE8FA5C98035/resources/PBI_CV_73744D90_4DC9_4F18_8BA5_EE8FA5C98035.pbiviz.json",
+    "Report/CustomVisuals/multipleAxesChartBC35C88E1D1A49DFA5A9240AFBB4E3BC/package.json",
+    "Report/CustomVisuals/multipleAxesChartBC35C88E1D1A49DFA5A9240AFBB4E3BC/resources/multipleAxesChartBC35C88E1D1A49DFA5A9240AFBB4E3BC.pbiviz.json",
+    "Report/CustomVisuals/wishyoulizationbarchartrace/package.json",
+    "Report/CustomVisuals/wishyoulizationbarchartrace/resources/wishyoulizationbarchartrace.pbiviz.json",
+    "Report/CustomVisuals/ChicletSlicer1448559807354/package.json",
+    "Report/CustomVisuals/ChicletSlicer1448559807354/resources/ChicletSlicer1448559807354.pbiviz.json",
+    "Report/CustomVisuals/linearGauge2EBA8C0A99F94BF297BCCB1CF5427E68/package.json",
+    "Report/CustomVisuals/linearGauge2EBA8C0A99F94BF297BCCB1CF5427E68/resources/linearGauge2EBA8C0A99F94BF297BCCB1CF5427E68.pbiviz.json",
+    "Report/CustomVisuals/InforiverCharts582F6C55AB6442EF8FA129089285CB47/package.json",
+    "Report/CustomVisuals/InforiverCharts582F6C55AB6442EF8FA129089285CB47/resources/InforiverCharts582F6C55AB6442EF8FA129089285CB47.pbiviz.json",
+    "Report/StaticResources/SharedResources/BaseThemes/CY23SU11.json",
+    "Report/StaticResources/SharedResources/BuiltInThemes/Solar.json",
+    "SecurityBindings",
+    "DataModel"
+  ]
+}

@@ -1,0 +1,1117 @@
+[
+  {
+    "slide_number": 1,
+    "layout": "Title",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "PLACEHOLDER",
+        "has_text": true,
+        "text": "Consumer Surplus Factor (CSF) study\u000bskad\u000bKHC \u2013 UK : BBQ and Salad Cream\u000b\u000bJune 2025"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 2,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "PLACEHOLDER",
+        "has_text": true,
+        "text": "Agenda"
+      },
+      {
+        "type": "PLACEHOLDER",
+        "has_text": true,
+        "text": "Overview of methodology (if needed)\n\nBBQ Brand level results and trend\n\nSalad Cream Brand level results and trend\n\n\n"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 3,
+    "layout": "Title",
+    "shapes": [
+      {
+        "type": "PLACEHOLDER",
+        "has_text": true,
+        "text": "CSF Methodology"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 4,
+    "layout": "Title Slide",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Objective of a Consumer Surplus Factor (CSF) study"
+      },
+      {
+        "type": "None",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 5,
+    "layout": "Title Slide",
+    "shapes": [
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF is a measure of value left on the table"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Based on analysis of real consumer behaviour data (Sales)"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 6,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Brands with higher CSF can lead price increase and/or target higher market share"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 7,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF methodology in summary"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "A CSF analysis runs on a proprietary modelling framework which consists of a series of advanced regression models that run through 100K+ combinations of causal variables per brand with four key milestones:"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 8,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Executive Summary \u2013 Main takeaways"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Overall \u2013 Both categories are losing MS in both the channels with Tesco doing better as a channel for the brands\n\nBBQ\n\nHeinz has potential market stability given it\u2019s consolidation at the right price in both the channels\nHP in Supermarkets, while offering a similar value proposition to Heinz has a sub-par CSF as compared to HP in Tesco where it is also priced lower to Heinz\nA marketing focused approach to set a USP is required for Bull\u2019s eye which has the least CSF in both the channels even after price reductions \n\n\nSalad Cream\n\nThe price disparity between Private label and Heinz plays a major role in determining the market share headroom in an almost duopolistic market\nThe category has very less differentiation in terms of channel level CSF of both the channels\nThe CSF of private label is higher than that of Heinz ; the individual brand level CSF of this category are good\nGiven the improving MCV trend, Heinz has improved its CSF after price consolidation from last year where as Private Label has increased prices year on year\n"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 9,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "PLACEHOLDER",
+        "has_text": true,
+        "text": "UK \u2013 BBQ"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 10,
+    "layout": "Title Slide",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Supermarkets\nChange in: \nValue = -3.8%  Vol. = 0.5% , Price = -4.3% "
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "UK \u2013 BBQ \u2013 Market Context - (P52W vs L52W)\u2026.."
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "*Change is 2023 vs 2022; Price is in Euro/kg; Share is in Value terms\n"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Tesco\nChange in: \nValue = -3.0%  Vol. = 6.7% , Price = -9.1% "
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "In Supermarkets, category lost value due to an average price decrease in the present timeframe after consolidating in the previous timeframe whereas in Tesco the loss in value was traded off with gain in volume even after double the average price increase\nHeinz is more expensive in Tesco as compared to Supermarkets\nHP is priced higher than Heinz in supermarkets and priced lower in Tesco, where it is gaining Market share\nPrivate label is aggressively cutting prices in both the channels, more so in Tesco to set a distinct value proposition as compared to other brands\nSweet Baby Rays is the only brand which is increasing prices and growing in MS in both the channels\nThe authentic brands (Bulls Eye, Levi roots and Sweet baby rays) are almost priced similar and at premium to core brands indicating a potential premiumization trend"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 11,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF & MCV Learning: Almost all the brands have a better brand level CSF in Tesco channel"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price\u000b(GBP per Unit)"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Current MS"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "\n\n\n\n\nThe CSF of Supermarkets channel is 3.1 with a MCV of 14.9 and that of Tesco channel is 3.6 with a MCV of 17.1\nIn supermarkets, HP has to be differentiated in price than Heinz to improve MCV which is being reflected in Tesco\nHeinz has a stable market share potential in both the channels with a stable CSF\nBulls Eye need to improve it\u2019s MCV by effective marketing efforts because it has a poor CSF even after correcting its prices over the previous year\nSweet Baby Rays has the highest MCV in both the channels\n\n\n\n\n"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "*All Price and MCVs are in GBP per unit"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Supermarkets"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Tesco"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 12,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Channel level- RPI Curves for Supermarket "
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Heinz"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "HP"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Bull\u2019s Eye"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.57\nRPI PL : 227\nRPI Cat: 116"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.62\nRPI PL Std: 229\nRPI Cat: 117"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.53\nRPI PL Std: 225\nRPI Cat: 115"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.69\nRPI PL : 232\nRPI Cat: 119"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 6.87\nRPI PL : 280\nRPI Cat: 144"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 6.61\nRPI PL Std: 270\nRPI Cat: 137"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 13,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Channel level- RPI Curves for Tesco "
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Heinz"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "HP"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Bull\u2019s Eye"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.75\nRPI PL : 282\nRPI Cat: 120"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.77\nRPI PL Std: 283\nRPI Cat: 120"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 6.34\nRPI PL Std: 311\nRPI Cat: 132"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.47\nRPI PL : 268\nRPI Cat: 114"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 6.89\nRPI PL : 338\nRPI Cat: 144"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.87\nRPI PL Std: 288\nRPI Cat: 122"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 14,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price\u000b(Moving 52 Wks) "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "SUPERMARKET CHANNEL"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF and MCV trends : No brand has an increasing MCV trend in Supermarkets channel indicating price sensitive consumers"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "PRIVATE LABEL"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "REST OF CATEGORY"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Declining  MCV&  CSF"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Declining  MCV"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Heinz and Private Label continue to be on a downward MCV trend even after price reductions\nHP and Bull\u2019s Eye seem to have found a stable MCV in the last two years but their CSF is still below par leaving them little scope to exercise pricing power\nLevi Roots and Sweet Baby Rays offer distinct USP but their MCV also fell when they increased prices indicating a price sensitive category\nOnly ROC maintained a stable MCV because of maintaining stable prices\n\n"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Stable MCV"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 15,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "PLACEHOLDER",
+        "has_text": true,
+        "text": "UK \u2013 Salad Cream"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 16,
+    "layout": "Title Slide",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Supermarkets\nChange in: \nValue = -6.1%  Vol. = -7.0%  Price = 1.0% "
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "UK \u2013 Salad Cream \u2013 Market Context - (P52W vs L52W)\u2026.."
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "* Price is in Euro/kg; Share is in Value terms\n"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Tesco\nChange in: \nValue = -5.9%   Vol. = -7.4%   Price = 1.6% "
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "In both the channels,\n\nTill 2024, category was growing in value and volume terms despite price increases\nPost that the category corrected itself, there is both value & volume growth as prices stabilized\nHeinz has maintained its share with slight decreases in avg. price whereas PL is gaining even with increases in avg. price\n"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 17,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF & MCV Learning: Both the brands have a better brand level CSF in Tesco channel"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price\u000b(GBP per Unit)"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Current MS"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Both the channels have a channel level CSF of 3.6 with Tesco having a marginally better MCV of 17.2 as compared to the MCV of 17.0 of Supermarket\nPrivate Label enjoys a better CSF than Hienz given its pricing headroom in an almost duopoly category \n Heinz has a more negative MSP in Tesco although it has a better MCV and CSF in that channel"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "*All Price and MCVs are in GBP per unit\nThe Bars are sorted in increasing order of CSFs for each channel"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Supermarkets"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Tesco"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 18,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Channel level- RPI Curves "
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Supermarkets"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Tesco"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 6.02\nRPI PL : 217\nRPI Cat: 126"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.56\nRPI PL Std: 200\nRPI Cat: 116"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.95\nRPI PL : 224\nRPI Cat: 126"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price: 5.06\nRPI PL Std: 191\nRPI Cat: 107"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 19,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price\u000b(Moving 52 Wks) "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "SUPERMARKET CHANNEL"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF and MCV trends  : Both the brands have increasing MCV patterns showing category specific consumers"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "PRIVATE LABEL"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Increasing MCV"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Increasing MCV"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Heinz even after reducing the average prices in the last year found it\u2019s MCV increasing thus giving a better CSF and pricing power at the current price point\nPrivate label has increased prices by ~50% yet has seen its MCV rising and CSF still above that of Heinz inferring it still has a better market share headroom than Heinz "
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 20,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TABLE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  }
+]

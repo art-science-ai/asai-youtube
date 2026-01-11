@@ -1,0 +1,51 @@
+{
+  "sheets": [
+    "Sheet1"
+  ],
+  "source": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/2.Predefined_Data for EDA and Modelling.xlsx",
+  "rows": {
+    "Sheet1": 6308
+  },
+  "columns": {
+    "Sheet1": [
+      "Market",
+      "Channel",
+      "Region",
+      "Category",
+      "SubCategory",
+      "Brand",
+      "Variant",
+      "PackType",
+      "PPG",
+      "PackSize",
+      "Year",
+      "Month",
+      "Week",
+      "Date",
+      "BrCatId",
+      "SalesValue",
+      "Volume",
+      "VolumeUnits",
+      "D1",
+      "D2",
+      "D3",
+      "D4",
+      "D5",
+      "D6",
+      "AV1",
+      "AV2",
+      "AV3",
+      "AV4",
+      "AV5",
+      "AV6",
+      "EV1",
+      "EV2",
+      "EV3",
+      "EV4",
+      "EV5",
+      "EV6",
+      "PrepDate",
+      "ProjCode"
+    ]
+  }
+}

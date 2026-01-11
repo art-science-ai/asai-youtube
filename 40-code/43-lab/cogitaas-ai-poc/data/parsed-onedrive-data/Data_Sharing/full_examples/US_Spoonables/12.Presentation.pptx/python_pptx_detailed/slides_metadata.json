@@ -1,0 +1,2550 @@
+[
+  {
+    "slide_number": 1,
+    "layout": "Title",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "PLACEHOLDER",
+        "has_text": true,
+        "text": "Consumer Surplus Factor (CSF) study\u000b\u000bKraft Heinz \u2013 Spoonables\u000b\u000b\u000b\u000b\u000b17 January 2025"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 2,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF Introduction"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 3,
+    "layout": "Subtitle",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "What is Consumer Surplus Factor (CSF)?"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Based on analysis of real consumer behaviour data (Sales)"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Developed through research collaboration with academics from Columbia University"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Derived from multi-brand econometric analysis to arrive at consumer loyalty"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Successfully implemented at \n\n\n\n\n\n\n\n\n\n\n\n"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 4,
+    "layout": "Subtitle",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF is a measure of value left on the table"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Consumer Surplus Factor (CSF)   = "
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cohort 1"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cohort X"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cohort 2"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Value perceived = $8"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Value perceived = $15"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Value perceived (MAX) = $28"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Maximum Consumer Value (MCV)"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "How much is a consumer willing to pay Vs. How much are we charging today?"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "MCV is a measure of $ value of emotional and functional attributes, perceived by consumer"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "People whose perceived value from brand is more than price charged will be consumers\n"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "People whose perceived value from brand is less than price charged will not be consumers\n"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price to consumer"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Different cohorts of consumers will perceive different value from brand"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 5,
+    "layout": "Subtitle",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Brands with higher CSF can lead price increase and/or target higher market share"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Brands with higher surplus can also increase price without risk of losing market share"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cohort X"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "MCV = $24"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Brand XYZ\nis the best!"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cohort Y"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "MCV = $16"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Strategic price recommendation from this analysis triangulates perceived value, competitive advantage and market share potential"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Brands with higher surplus i.e. ratio of max perceived value to price will be in a position to gain market share"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price = $10"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF = 2.4"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Can increase price by 12% without risking share loss\nHas potential to gain 3% market share"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price = $10"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "CSF = 1.6"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Will lose share\nWill need to reduce price"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 6,
+    "layout": "1_Title Slide",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Objective of a Consumer Surplus Factor (CSF) study"
+      },
+      {
+        "type": "None",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 7,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Scope of the study"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Channel"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Variant"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Brand"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "PPG"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Food- 66%\nWalmart- 31%\nTarget- 3%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Mayo- 80%*\nWhipped Dressing- 14%\nAioli- 6% "
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Jar 8Oz- 1.5%\nJar 15Oz- 9.5%\nJar 30Oz- 51%\nJar 48Oz- 6%\nSqueezy 12Oz- 8%\nSqueezy 18 To 22Oz- 16%\nOthers- 8%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "*Mayo includes unflavoured + olive flavoured + avocado flavoured\nPercentages are value MS% for 2024 YTD (Jan-Nov)"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 8,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Reading the results: How to determine if a brand should increase or decrease price?"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price Index is calculated as a ratio of Current Price of Kraft to Weighted Price of all available options within a Channel/Retailer (Food / Walmart / Target)"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV index is calculated as a ratio of MCV of Kraft divided by Weighted MCV of available options to consumer (Food / Walmart / Target)\n\nMCVs (Max. consumer value) indicates the perceived value provided by each brand and so their ratio is used as a benchmark for the recommended index at which to operate"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "The degree of difference (+ve or \u2013ve) between Price and MCV Index show whether the price index is more than perceived value or not. \n\nIf, \nMCV index > Price Index = Pricing power  \uf0e0 Can increase price\nMCV index < Price Index = Overpriced      \uf0e0 Can decrease price\nMCV index = Price Index = At parity            \uf0e0 Can hold price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 9,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Executive Summary"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 10,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Executive Summary: Key Learnings and Recommendations"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Overall CSFs are healthy \u2013 implying satisfied consumers with low switching tendency\n\nFOOD Channel\nKraft Mayo has significant interaction with Dukes, but Duke\u2019s is offering a higher CSF\nThis implies that consumers trading down from Hellmanns and up from PL are more likely to switch to Dukes. So, Kraft needs a price cut to arrest value erosion (Primarily in Jars) and stay at 100 SPI to Dukes.\n\nKraft Aioli has a relatively stronger MCV and CSF \u2013 can command ~10% premium in like-to-like packs.\nIt should hold the current price to and consider expanding to the cheaper Jar packs.\n\nMiracle whip also has a CSF disadvantage vs competition and needs to cut price (in Jars) and stay at 110 SPI to Dukes to protect share.\n\nWALMART Channel\nWhile overall prices and MCVs are lesser than Food; the drop in Kraft\u2019s MCVs are worse than competition \u2013 will need cuts across Jars and Squeezy to protect share and stay at a 95 SPI to Dukes.\n\nTARGET Channel\nHere, the higher CSF of premium brands is the main threat; will need to maintain an index of 95 to Dukes"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 11,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Executive Summary: Kraft Mayo should be indexed to Dukes - 100 SPI in Food, 95 in WM, Target; Miracle whip at 110 SPI to Dukes across channels"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 12,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Food"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 13,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Variant x Brand -Food Channel - Market Context (Dec\u201923 to Nov\u201924 vs P12M )"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Sales through Food : 66%\u000b\u000bChange in Category : \u000b\nValue = +3.9%\nVolume = +1.7%\nPrice = +2.2%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Summary of change in market share and price across brands and variants"
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Food channel has grown in value, volume and price\n\nExcept Kraft and Miracle Whip, all the brands have either grown or are stable\n\nAt a variant level, Whipped Dressing has lost volume and value share to both Mayo and Aioli\n\nWhile Mayo is growing, Kraft is losing maximum share here\n\nKraft is stable in Aioli"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 14,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Food: Although KHC brands\u2019 CSFs are healthy at ~2, competition CSFS are higher at ~2.2"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "In mayo, Kraft faces challenge Dukes in the mid-tier price segment"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Dukes has better CSF and comparable MCV at a price lower than in Kraft in Mayo. Kraft has risk of losing consumers to Dukes (if consumers are downgrading) and to Hellmanns (if consumers are upgrading)\nMiracle Whip has a CSF disadvantage as well and hence need to cut price in order to protect MS%\nKraft is stronger in aioli and can maintain its current price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "C.MS"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Mayo- 74.4%"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Whipped Dressing (WD)- 11.6%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Aioli- 3.2%"
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 15,
+    "layout": "Blank",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Food: Cut price in mayo & whipped dressing. Aioli can maintain its price "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Mayo"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Whipped Dressing"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Aioli"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 3.28\nRPI to Cat-96"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 3.06\nRPI to Cat-90"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price-3.64\nRPI to Cat- 107"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 3.30\nRPI to Cat- 97"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 6.04\nRPI to Cat- 177"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 6.09\nRPI to Cat- 179"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 16,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "PPG Level - Food Channel - Market Context "
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Summary of change in market share and price across brands  variants X PPG"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "70% of the total PPGs value is in jars\n\nWithin Jars, 30 Oz has the largest val. share at 53%\n\nSqueezy bottles have 23% share in food and are relatively expensive than jars \n\nWithin Squeezy bottles, 18-22 Oz has a share of 16% and is declining across variants, possibly due to price increase in the range of 4.5%-8%\n\nAlmost all PPGs in Whipped Dressing are declining "
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Please note: All non-KHC PPGs contributing < 1% to the overall channel have been excluded from representation on the slides. For KHC brands, all PPG contributing more than 0.5% to the respective brands have been shown."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 17,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Food: Mayo & WD 30 Oz Jar face maximum risk and needs to cut price "
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Kraft\u2019s 30 Oz variant is facing the maximum risk of loss of share. Dukes in the same price range has a better CSF and a slightly better MCV. Similar competition from Hellman\u2019s as well. This PPG requires price cut to protect loss of share\nKraft should consider expanding presence of Aioli in 30oz Jars \u2013 at a "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "C.MS"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Mayo"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Whipped Dressing"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Aioli"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 18,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Food: Mayo & WD cut in Jars; consider expanding Aioli to 30oz Jars"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cut"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cut"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cut"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Expand"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Category is defined as Mayo + Aioli only"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 19,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Recommendation:"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Objective\u2013 \nTo minimize Market Share Loss for Kraft\n\nApproach to reach Recommendation \u2013\nKraft Mayo and Miracle Whip\nPrice reduction made where CSFs were low and PPG was at a risk of losing Market Share\nReduce prices of larger PPGs to price them lower than smaller PPGs\nKraft Aioli\nPrices kept constant despite having a positive MSP to account for Volume Loss created by reduction in Kraft Mayo and Miracle Whip prices"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 20,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Impact of Recommendation:"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Based on Price Changes"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Do Nothing Scenario"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 21,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Walmart"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 22,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Variant x Brand -Walmart Channel - Market Context (Dec\u201923 to Nov\u201924 vs P12M )"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Sales through Walmart : 31%\u000b\u000bChange in Category : \u000b\nValue = +6.8%\nVolume = +3.5%\nPrice = +3.1%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Summary of change in market share and price across brands and variants"
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Unlike in other channels, here Mayo is gaining share, aioli is stable and whipped dressing continues to lose share \n\nAlthough Mayo is growing, Kraft has lost max. share in both val. & vol. while in aioli, it has gained maximum share "
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 23,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Walmart: Kraft is stronger in Aioli while facing risk in mayo & whipped dressing"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "While competition MCVs are ~5% lower in Walmart vs Food, Kraft\u2019s are ~15% lower"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Dukes has better CSF and MCV at a price lower or same price as Kraft in Mayo. Kraft has risk of losing consumers to Dukes (if consumers are downgrading) and to Hellmanns (if consumers are upgrading)\nMiracle Whip is overpriced and hence need to cut price in order to protect MS%\nKraft is strong in aioli and can maintain its current price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "C.MS"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Mayo- 70.7%"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Whipped Dressing- 14.4%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Aioli- 6.7%"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 24,
+    "layout": "Blank",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Walmart: Cut price in mayo & whipped dressing. Aioli can maintain its price "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Mayo"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Whipped Dressing"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Aioli"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 2.90\nRPI to Cat-98"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 2.65\nRPI to Cat-89"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price-3.36\nRPI to Cat-113"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 2.98\nRPI to Cat-100"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 6.08\nRPI to Cat-205"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 5.53\nRPI to Cat-187"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 25,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "PPG Level - Walmart Channel - Market Context "
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Summary of change in market share and price across brands  variants X PPG"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "70% of the total PPGs are jars\n\nWithin Jars, 30 Oz has the largest val. share at 50%\n\nSqueezy bottles have 23% share in food and are relatively expensive than jars \n\nWithin Squeezy bottles, 18-22 Oz has a share of 16% and is declining across variants, possibly due to price increase in the range of 10%-13%\n\nAlmost all PPGs in Whipped Dressing are declining \n"
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Please note: All non-KHC PPGs contributing < 1% to the overall channel have been excluded from representation on the slides. For KHC brands, all PPG contributing more than 0.5% to the respective brands have been shown."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 26,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Walmart- Mayo: Both 30oz Jar and 12oz Squeezy have poor MCVs"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Kraft\u2019s 30 Oz variant is facing the maximum risk of loss of share. Dukes in the same price range has a better CSF and MCV. Similar competition from Hellman\u2019s as well. This PPG requires price cut to protect loss of share "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "C.MS"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Jar 15Oz- 5.8%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Jar 30Oz- 37.9%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Sqz 12Oz- 4.3%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Sqz 18Oz-22Oz- 12.7%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Others- 5.2%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Jar 48Oz- 29.3%"
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Mayo"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 27,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Need to cut price across Miracle Whip PPGs, more in 30 Oz. \nAioli can maintain price "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "C.MS"
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Whipped Dressing"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Aioli"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Walmart- Miracle whip is overpriced across packs while Aioli has a strong CSF"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 28,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Walmart: Mayo & WD cut in 30Oz Jars; consider expanding Aioli to 30oz Jars"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cut"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cut"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Expand"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Category is defined as Mayo + Aioli only"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 29,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Recommendation:"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Objective\u2013 \nTo minimize Market Share Loss for Kraft\n\nApproach to reach Recommendation \u2013\nKraft Mayo and Miracle Whip\nPrice reduction made where CSFs were low and PPG was at a risk of losing Market Share\nReduce prices of larger PPGs to price them lower than smaller PPGs\nKraft Aioli\nPrices kept constant despite having a positive MSP to account for Volume Loss created by reduction in Kraft Mayo and Miracle Whip prices"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 30,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Impact of Recommendation:"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Based on Price Changes"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Do Nothing Scenario"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 31,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Target"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 32,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Variant x Brand -Target Channel - Market Context (Dec\u201923 to Nov\u201924 vs P12M )"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Sales through Target: 3%\u000b\u000bChange in Category : \u000b\nValue = +5.6%\nVolume = -1.1%\nPrice = +6.7%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Summary of change in market share and price across brands and variants"
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Both Mayo & Whipped Dressing are losing share to Aioli in value and volume\n\nAlmost all brands have lost share in Mayo\n\nIn Aioli, Kraft has gained the maximum share"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 33,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Kraft is strong in Aioli in both CSF & MCV. In mayo, it faces risk from Dukes"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "The best CSF is offered by Premium brands sitting in \u2018Rest of Category\u2019"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Kraft has a lower MCV than Dukes but a comparable CSF. There is a risk of loss of share and Kraft should decrease price in Mayo\nWhipped Dressing is losing here as well but has lesser threat of further decline than in Food due to better CSF. However, it needs price cut\nKraft is aioli has a strong position both in terms of CSF and MCV. It should continue to hold price to gain from losses in other variants "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "C.MS"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Mayo- 70.1%"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Whipped Dressing- 6.7%"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Aioli- 5.6%"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 34,
+    "layout": "Blank",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Target: Cut price in mayo & whipped dressing. Aioli can maintain its price "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Mayo"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Whipped Dressing"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Aioli"
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 3.13\nRPI to Cat-79"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 2.89\nRPI to Cat-73"
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "LINE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 3.75\nRPI to Cat-95"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 3.55\nRPI to Cat-90"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 6.22\nRPI to Cat-157"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Price- 5.76\nRPI to Cat-146"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 35,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "PPG Level - Target Channel - Market Context "
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Summary of change in market share and price across brands  variants X PPG"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Jars have only 43% value share in Target whereas, Squeezy bottles have 38% share\n\nWithin jars, 30 Oz continue to have bigger share while in squeezy, 18-22 Oz continue to have a larger share\n\nHere too, 18-22 Oz squeezy is declining across variants"
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Please note: All PPGs contributing < 0.5% to the overall channel have been excluded from representation."
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 36,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Target: Mayo & WD 30 Oz jar has risk due to lower CSF "
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "30 Oz jar needs slight price reduction to protect loss of share "
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MCV"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "CSF"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Price"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "MSP"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "C.MS"
+      },
+      {
+        "type": "CHART",
+        "has_text": false
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Mayo"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Whipped Dressing"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Aioli"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 37,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Target: Mayo & WD cut in 30Oz Jars; consider expanding Aioli to 30oz Jars"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cut"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Cut"
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Expand"
+      },
+      {
+        "type": "TABLE",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Category is defined as Mayo + Aioli only"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 38,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Recommendation:"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Objective\u2013 \nTo minimize Market Share Loss for Kraft\n\nApproach to reach Recommendation \u2013\nKraft Mayo and Miracle Whip\nPrice reduction made where CSFs were low and PPG was at a risk of losing Market Share\nReduce prices of larger PPGs to price them lower than smaller PPGs\nKraft Aioli\nPrices kept constant despite having a positive MSP to account for Volume Loss created by reduction in Kraft Mayo and Miracle Whip prices"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 39,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "PICTURE",
+        "has_text": false
+      },
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Impact of Recommendation:"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Based on Price Changes"
+      },
+      {
+        "type": "AUTO_SHAPE",
+        "has_text": true,
+        "text": "Do Nothing Scenario"
+      }
+    ],
+    "notes": ""
+  },
+  {
+    "slide_number": 40,
+    "layout": "Title and Content",
+    "shapes": [
+      {
+        "type": "EMBEDDED_OLE_OBJECT",
+        "has_text": false
+      },
+      {
+        "type": "TEXT_BOX",
+        "has_text": true,
+        "text": "Thank You"
+      },
+      {
+        "type": "GROUP",
+        "has_text": false
+      }
+    ],
+    "notes": ""
+  }
+]

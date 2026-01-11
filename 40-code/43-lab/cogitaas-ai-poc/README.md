@@ -23,121 +23,6 @@ The deliverable is reusable Claude Code skills that automate CSF workflow stages
 
 ---
 
-## Architecture
-
-This project uses a simple three-part structure:
-
-```
-root/
-├── claude/          # Automation: skills, plugins, and scripts
-├── client-data/     # Input: Read-only OneDrive fixtures
-└── runs/            # Output: Timestamped execution results
-```
-
-- **claude/** contains all automation logic
-- **client-data/** contains read-only test fixtures (currently onedrive-data symlink)
-- **runs/** contains outputs from workflow executions
-
-Each workflow run creates a timestamped directory in runs/ with its outputs and logs.
-
----
-
-## Directory structure
-
-### claude/
-
-All automation code: plugins for parsing, skills for workflow stages, and orchestration scripts.
-
-**Key components:**
-- doc-parsing/ - Extract text from pptx, docx, xlsx, pdf, pbix
-- csf-automation/ - Domain-specific CSF workflow skills
-  - pptx-to-markdown/ - Convert presentations to markdown
-  - interpret-csf-results/ - Stage 7a: Interpret model outputs
-  - plan-csf-presentation/ - Stage 7b: Structure presentation outline
-  - generate-csf-presentation/ - Stage 7c: Create PowerPoint files
-
-### client-data/
-
-Read-only test fixtures (currently onedrive-data symlink at root).
-
-- Data_Sharing/full_examples/ - Complete CSF projects
-- Data_Sharing/masked_examples/ - Anonymized test data
-- CSF_Project_workflow.pptx, CSF_ReadMe.docx, and reference materials
-
-**Data access rules:**
-- NEVER edit files in the OneDrive shared folder
-- Only work with copies or process files to output directories
-- Use masked_examples/ for AI workflow development
-- Protect sensitive client data at all times
-
-### runs/
-
-Auto-generated execution history with dual views:
-
-**by-project/** - Vertical view: workflow versions per project
-- Example: runs/by-project/uk_bbq/v3-full-pipeline/
-- Shows the complete workflow for a specific project
-
-**by-stage/** - Horizontal view: method comparison across projects
-- Example: runs/by-stage/01-parse-presentation/method-pdf-conversion/
-- Compares different parsing methods
-
-**Each run contains:**
-- workflow-manifest.yaml - Pipeline definition with stages and dependencies
-- [stage]/output/ - Outputs from each workflow stage
-- execution.log - Complete execution logs
-
----
-
-## Workflow execution
-
-Workflows are driven by workflow-manifest.yaml files that define stages and dependencies.
-
-### Example workflow manifest
-
-```yaml
-run_id: v3-full-pipeline
-project: uk_bbq
-timestamp: 2024-01-10T15:00:00
-
-stages:
-  - name: 01-parse-presentation
-    skill: pptx-to-markdown
-    input: client-data/UK_BBQ/10.Presentation.pptx
-    output: 01-parse-presentation/output/
-    status: completed
-
-  - name: 02-interpret-results
-    skill: interpret-csf-results
-    input: 01-parse-presentation/output/
-    output: 02-interpret-results/output/
-    dependencies:
-      - 01-parse-presentation
-    status: completed
-
-  - name: 03-plan-presentation
-    skill: plan-csf-presentation
-    input: 02-interpret-results/output/
-    output: 03-plan-presentation/output/
-    status: pending
-```
-
-### Execution flow
-
-1. Create timestamped run directory: runs/20240110_1500_uk_bbq/
-2. Execute stages in order (each stage uses previous stage's output)
-3. Save outputs to stage-specific directories
-4. Log all execution details to execution.log
-5. Update runs/latest symlink to newest run
-
-**Key benefits:**
-- Isolation: Original fixtures in client-data/ never modified
-- Reproducibility: Each run is self-contained with logs
-- Debugging: execution.log captures everything
-- Flexibility: Re-run individual stages by updating inputs
-
----
-
 ## CSF workflow stages
 
 The Consumer Surplus Factor (CSF) workflow follows these stages:
@@ -151,74 +36,80 @@ The Consumer Surplus Factor (CSF) workflow follows these stages:
 7. Presentation - PowerPoint generation
 8. Scenario Planner - Strategic planning
 
----
-
-## Directory mapping
-
-This documentation describes the target architecture. Some paths are conceptual and will be implemented in future reorganization.
-
-| Current path | Conceptual path | Purpose |
-| ------------ | --------------- | ------- |
-| .claude/skills/ | claude/ | Automation skills and plugins |
-| .plugins/ | claude/ | Automation plugins |
-| onedrive-data/ | client-data/ | Read-only test fixtures |
-| scripts/ | claude/ | Orchestration scripts |
-| clean_data_manual/ | runs/by-project/ | Project-specific workflows |
-| parsed_data/ | runs/by-stage/ | Cross-project comparisons |
-| z-archive/ | runs/archive/ | Historical iterations |
 
 ---
+## Directory structure
 
-## Plan and todos
+```
+root/
+├── ai-plugins/               # Automation: skills and plugins
+│   ├── csf-automation/       # CSF workflow automation
+│   ├── doc-parsing-v1/       # First version: extract text from files
+│   └── doc-parsing-v2/       # Second version: improved parsing
+├── data/                     # Input data (read-only)
+│   └── parsed-onedrive-data/ # Processed data from OneDrive
+│       ├── Data_Sharing/full_examples/
+│       ├── Data_Sharing/masked_examples/
+│       └── CSF reference materials
+├── tests/                    # Skill execution and validation runs
+└── z-archive/                # Historical iterations (moved from parsed_data/, scripts/, .claude/, .plugins/)
+```
 
-### Phase 0: Reorganization
+**Data access rules:**
+- NEVER edit files in the OneDrive shared folder
+- Only work with copies or process files to output directories
+- Use masked_examples/ for AI workflow development
+- Protect sensitive client data at all times
 
-Restructure project to simplified architecture.
+---
 
-- [x] Design simplified architecture (claude/, client-data/, runs/)
-- [x] Update README with new structure documentation
-- [ ] Move .plugins/ and .claude/skills/ to claude/
-- [ ] Rename onedrive-data/ to client-data/
-- [ ] Organize scripts/ and outputs/ into runs/
-- [ ] Update CLAUDE.md with new structure
+## Testing and validation workflow
 
-### Phase 1: Platform development
+All skill executions are stored in the `tests/` directory for traceability and validation.
 
-Develop automation skills.
+### Test directory structure
 
-#### Doc parsing
+Each test follows the naming convention `{project}_{skill}_{date}`:
 
-- [x] PPTX to markdown conversion (working method: PDF-based conversion)
-- [x] Create pptx-to-markdown skill with examples
-- [ ] Add DOCX, XLSX, PDF, and PBIX parsing skills
-- [ ] Create tests
+```
+tests/
+└── ukbbq_presentation_20250111/
+    ├── inputs/                  # Data provided to the skill
+    ├── outputs/                 # Generated outputs
+    └── evaluation/              # Optional: validation materials
+        ├── presentation-final/  # Ground truth presentation
+        ├── requirements.md      # Semantic requirements from ground truth
+        └── evaluation.md        # Assessment of outputs vs requirements
+```
 
-#### CSF automation
+### Validation workflow
 
-- [x] interpret-csf-results skill (Stage 7a)
-- [ ] Fix PE threshold bug and add CSV schema validation
-- [ ] Document CSF thresholds and edge cases
-- [ ] plan-csf-presentation skill (Stage 7b)
-- [ ] generate-csf-presentation skill (Stage 7c)
-- [ ] Add integration tests
+When developing skills with ground truth data (e.g., existing client presentations):
 
-### Phase 2: CSF application
+1. Create test directory: `tests/{project}_{skill}_{date}/`
+2. If validating, create `evaluation/` subdirectory
+3. Copy templates from the skill:
+   - `ai-plugins/{plugin}/skills/{skill}/templates/REQUIREMENTS_TEMPLATE.md` → `evaluation/requirements.md`
+   - Fill in semantic requirements from ground truth
+4. Run the skill to generate outputs
+5. Copy `templates/EVALUATION_TEMPLATE.md` → `evaluation/evaluation.md`
+6. Assess whether outputs capture required business insights
+7. Iterate on skill definition based on gaps
 
-Apply skills to CSF projects, iterate on methods.
+When working without ground truth, skip the `evaluation/` directory and review outputs directly.
 
-- [x] Test v1-markitdown (didn't work well)
-- [x] Test v2-python-pptx (partial results)
-- [x] Test v3-pdf-conversion (working)
-- [ ] Test v3 on other projects (uk_brownsauce, masked_examples)
-- [ ] Document v3 as current best method in runs/by-stage/
-- [ ] Run interpret-csf-results on uk_bbq data
-- [ ] Execute full presentation generation workflow
-- [ ] Validate with domain expert review and iterate
+---
 
-### Phase 3: Harden and expand
 
-- [ ] Package skills for reuse
-- [ ] Optimize for speed and consistency
-- [ ] Add monitoring and quality assurance
-- [ ] Document runbooks and best practices
-- [ ] Scale to additional CSF projects and markets
+## Roadmap
+
+### Foundations
+- [x] Setup project structure (ai-plugins/, data/, runs/)
+- [x] PPTX to markdown conversion (PDF-based method)
+- [ ] Expand parsing to DOCX, XLSX, PDF, PBIX
+
+### CSF automation
+- [x] Develop presentation generation plugin 
+- [ ] Test on multiple projects 
+- [ ] Validation and feedback from subject matter experts
+- [ ] Build end-to-end workflow

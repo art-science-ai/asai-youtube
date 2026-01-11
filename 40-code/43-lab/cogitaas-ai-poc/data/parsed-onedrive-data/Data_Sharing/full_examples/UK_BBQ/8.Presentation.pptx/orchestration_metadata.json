@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:04.156393",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BBQ/8.Presentation.pptx",
+  "file_hash": "5a1a024a434dfe7efc61011f7349f92ea7a1bcb87a033f6601c2884b14eac78c",
+  "relative_path": "Data_Sharing/full_examples/UK_BBQ/8.Presentation.pptx",
+  "file_type": "pptx",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

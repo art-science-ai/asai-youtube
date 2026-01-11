@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:07:09.806533",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/US_Spoonables/5.Model_Selection.xlsx",
+  "file_hash": "50748dc63542da79368576207c95202247685fa1e16064bf12dbf4a7066ed580",
+  "relative_path": "Data_Sharing/full_examples/US_Spoonables/5.Model_Selection.xlsx",
+  "file_type": "xlsx",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:13.902069",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/masked_examples/Indonesia_Dishwash_masked_example1/RPICURVES_BrandVariant_PPG_Level.pbix",
+  "file_hash": "15d0352841aa970a3453620243919ea91faa7b8785f54f623cb6b0192fcbf715",
+  "relative_path": "Data_Sharing/masked_examples/Indonesia_Dishwash_masked_example1/RPICURVES_BrandVariant_PPG_Level.pbix",
+  "file_type": "pbix",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}

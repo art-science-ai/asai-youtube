@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-01-02T11:05:18.485512",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/US_Spoonables/3.EDA.pbix",
+  "output_dir": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/parsed_data/Data_Sharing/full_examples/US_Spoonables/3.EDA.pbix",
+  "methods": {
+    "method1_pbixray": false,
+    "method2_zipfile": true
+  },
+  "success_count": 1
+}

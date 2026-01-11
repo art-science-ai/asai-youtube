@@ -1,0 +1,91 @@
+{
+  "Untitled_Adhoc_Report": {
+    "shape": [
+      22603,
+      11
+    ],
+    "columns": [
+      "Time",
+      "Sector",
+      "Sub Sector",
+      "Size Group",
+      "MAJOR BRAND_Sauces2 [ MAJOR BRAND_Sauces2 ]",
+      "Product",
+      "Geography",
+      "Value Sales",
+      "Unit Sales",
+      "Volume Sales",
+      "Average Weekly ACV Distribution"
+    ],
+    "dtypes": {
+      "Time": "object",
+      "Sector": "object",
+      "Sub Sector": "object",
+      "Size Group": "object",
+      "MAJOR BRAND_Sauces2 [ MAJOR BRAND_Sauces2 ]": "object",
+      "Product": "object",
+      "Geography": "object",
+      "Value Sales": "float64",
+      "Unit Sales": "int64",
+      "Volume Sales": "float64",
+      "Average Weekly ACV Distribution": "float64"
+    },
+    "missing_values": {
+      "Time": 0,
+      "Sector": 0,
+      "Sub Sector": 0,
+      "Size Group": 0,
+      "MAJOR BRAND_Sauces2 [ MAJOR BRAND_Sauces2 ]": 0,
+      "Product": 0,
+      "Geography": 0,
+      "Value Sales": 0,
+      "Unit Sales": 0,
+      "Volume Sales": 0,
+      "Average Weekly ACV Distribution": 0
+    },
+    "statistics": {
+      "numeric": {
+        "Value Sales": {
+          "count": 22603.0,
+          "mean": 4944.850399946909,
+          "std": 7360.998840437473,
+          "min": 0.02,
+          "25%": 639.1,
+          "50%": 2425.9,
+          "75%": 5950.04,
+          "max": 90082.12
+        },
+        "Unit Sales": {
+          "count": 22603.0,
+          "mean": 2365.9827898951467,
+          "std": 4466.008059016557,
+          "min": 1.0,
+          "25%": 289.0,
+          "50%": 1014.0,
+          "75%": 2558.0,
+          "max": 52467.0
+        },
+        "Volume Sales": {
+          "count": 22603.0,
+          "mean": 1021.4131129496085,
+          "std": 2058.9769965156856,
+          "min": 0.14,
+          "25%": 88.39750000000004,
+          "50%": 376.5,
+          "75%": 1053.0600000000004,
+          "max": 23085.480000000007
+        },
+        "Average Weekly ACV Distribution": {
+          "count": 22603.0,
+          "mean": 54.244964229632615,
+          "std": 34.11818776511127,
+          "min": 0.005610115583895175,
+          "25%": 18.64098010786903,
+          "50%": 65.90358306966446,
+          "75%": 82.40596356727174,
+          "max": 100.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "filename": "slide_06_image_12.png",
+    "slide": 6,
+    "shape_index": 12,
+    "content_type": "image/png",
+    "width": 651,
+    "height": 451,
+    "size_bytes": 42025
+  },
+  {
+    "filename": "slide_06_image_13.png",
+    "slide": 6,
+    "shape_index": 13,
+    "content_type": "image/png",
+    "width": 644,
+    "height": 445,
+    "size_bytes": 38852
+  },
+  {
+    "filename": "slide_06_image_14.png",
+    "slide": 6,
+    "shape_index": 14,
+    "content_type": "image/png",
+    "width": 650,
+    "height": 452,
+    "size_bytes": 42480
+  },
+  {
+    "filename": "slide_06_image_15.png",
+    "slide": 6,
+    "shape_index": 15,
+    "content_type": "image/png",
+    "width": 645,
+    "height": 447,
+    "size_bytes": 39454
+  },
+  {
+    "filename": "slide_06_image_16.png",
+    "slide": 6,
+    "shape_index": 16,
+    "content_type": "image/png",
+    "width": 652,
+    "height": 445,
+    "size_bytes": 39584
+  },
+  {
+    "filename": "slide_06_image_17.png",
+    "slide": 6,
+    "shape_index": 17,
+    "content_type": "image/png",
+    "width": 640,
+    "height": 453,
+    "size_bytes": 35819
+  },
+  {
+    "filename": "slide_08_image_10.png",
+    "slide": 8,
+    "shape_index": 10,
+    "content_type": "image/png",
+    "width": 647,
+    "height": 450,
+    "size_bytes": 44729
+  },
+  {
+    "filename": "slide_08_image_11.png",
+    "slide": 8,
+    "shape_index": 11,
+    "content_type": "image/png",
+    "width": 646,
+    "height": 442,
+    "size_bytes": 42675
+  },
+  {
+    "filename": "slide_08_image_12.png",
+    "slide": 8,
+    "shape_index": 12,
+    "content_type": "image/png",
+    "width": 648,
+    "height": 451,
+    "size_bytes": 46550
+  },
+  {
+    "filename": "slide_08_image_13.png",
+    "slide": 8,
+    "shape_index": 13,
+    "content_type": "image/png",
+    "width": 640,
+    "height": 447,
+    "size_bytes": 42063
+  },
+  {
+    "filename": "slide_08_image_28.png",
+    "slide": 8,
+    "shape_index": 28,
+    "content_type": "image/png",
+    "width": 654,
+    "height": 443,
+    "size_bytes": 46299
+  },
+  {
+    "filename": "slide_08_image_29.png",
+    "slide": 8,
+    "shape_index": 29,
+    "content_type": "image/png",
+    "width": 642,
+    "height": 451,
+    "size_bytes": 43522
+  },
+  {
+    "filename": "slide_10_image_10.png",
+    "slide": 10,
+    "shape_index": 10,
+    "content_type": "image/png",
+    "width": 647,
+    "height": 444,
+    "size_bytes": 38735
+  },
+  {
+    "filename": "slide_10_image_11.png",
+    "slide": 10,
+    "shape_index": 11,
+    "content_type": "image/png",
+    "width": 638,
+    "height": 450,
+    "size_bytes": 35579
+  },
+  {
+    "filename": "slide_10_image_12.png",
+    "slide": 10,
+    "shape_index": 12,
+    "content_type": "image/png",
+    "width": 648,
+    "height": 438,
+    "size_bytes": 44099
+  },
+  {
+    "filename": "slide_10_image_13.png",
+    "slide": 10,
+    "shape_index": 13,
+    "content_type": "image/png",
+    "width": 645,
+    "height": 445,
+    "size_bytes": 41023
+  },
+  {
+    "filename": "slide_10_image_14.png",
+    "slide": 10,
+    "shape_index": 14,
+    "content_type": "image/png",
+    "width": 645,
+    "height": 449,
+    "size_bytes": 43838
+  },
+  {
+    "filename": "slide_10_image_15.png",
+    "slide": 10,
+    "shape_index": 15,
+    "content_type": "image/png",
+    "width": 644,
+    "height": 447,
+    "size_bytes": 42444
+  },
+  {
+    "filename": "slide_12_image_08.png",
+    "slide": 12,
+    "shape_index": 8,
+    "content_type": "image/png",
+    "width": 652,
+    "height": 457,
+    "size_bytes": 44014
+  },
+  {
+    "filename": "slide_12_image_09.png",
+    "slide": 12,
+    "shape_index": 9,
+    "content_type": "image/png",
+    "width": 639,
+    "height": 448,
+    "size_bytes": 42082
+  },
+  {
+    "filename": "slide_12_image_10.png",
+    "slide": 12,
+    "shape_index": 10,
+    "content_type": "image/png",
+    "width": 647,
+    "height": 449,
+    "size_bytes": 43571
+  },
+  {
+    "filename": "slide_12_image_11.png",
+    "slide": 12,
+    "shape_index": 11,
+    "content_type": "image/png",
+    "width": 646,
+    "height": 450,
+    "size_bytes": 42470
+  },
+  {
+    "filename": "slide_14_image_08.png",
+    "slide": 14,
+    "shape_index": 8,
+    "content_type": "image/png",
+    "width": 649,
+    "height": 444,
+    "size_bytes": 43779
+  },
+  {
+    "filename": "slide_14_image_09.png",
+    "slide": 14,
+    "shape_index": 9,
+    "content_type": "image/png",
+    "width": 637,
+    "height": 454,
+    "size_bytes": 39279
+  },
+  {
+    "filename": "slide_14_image_10.png",
+    "slide": 14,
+    "shape_index": 10,
+    "content_type": "image/png",
+    "width": 643,
+    "height": 447,
+    "size_bytes": 44202
+  },
+  {
+    "filename": "slide_14_image_11.png",
+    "slide": 14,
+    "shape_index": 11,
+    "content_type": "image/png",
+    "width": 642,
+    "height": 446,
+    "size_bytes": 41402
+  }
+]

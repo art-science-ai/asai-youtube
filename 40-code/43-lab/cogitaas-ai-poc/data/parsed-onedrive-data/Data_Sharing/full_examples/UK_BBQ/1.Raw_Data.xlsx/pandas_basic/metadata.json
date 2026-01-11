@@ -1,0 +1,24 @@
+{
+  "sheets": [
+    "Untitled_Adhoc_Report"
+  ],
+  "source": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BBQ/1.Raw_Data.xlsx",
+  "rows": {
+    "Untitled_Adhoc_Report": 22603
+  },
+  "columns": {
+    "Untitled_Adhoc_Report": [
+      "Time",
+      "Sector",
+      "Sub Sector",
+      "Size Group",
+      "MAJOR BRAND_Sauces2 [ MAJOR BRAND_Sauces2 ]",
+      "Product",
+      "Geography",
+      "Value Sales",
+      "Unit Sales",
+      "Volume Sales",
+      "Average Weekly ACV Distribution"
+    ]
+  }
+}

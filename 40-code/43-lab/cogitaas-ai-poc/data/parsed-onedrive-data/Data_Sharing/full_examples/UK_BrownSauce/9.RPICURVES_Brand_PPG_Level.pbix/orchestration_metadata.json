@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-01-02T11:05:16.752751",
+  "source_file": "/home/nikhilmaddirala/repos/monorepo/cogitaas-ai-poc/onedrive-data/Data_Sharing/full_examples/UK_BrownSauce/9.RPICURVES_Brand_PPG_Level.pbix",
+  "file_hash": "b1f3767d0aea928a0f01dd296a41e0e0942f94071cca0b5ffad861a080d7f6d0",
+  "relative_path": "Data_Sharing/full_examples/UK_BrownSauce/9.RPICURVES_Brand_PPG_Level.pbix",
+  "file_type": "pbix",
+  "parse_result": {
+    "success": true,
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  }
+}
