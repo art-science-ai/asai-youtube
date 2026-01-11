@@ -44,8 +44,7 @@ The Consumer Surplus Factor (CSF) workflow follows these stages:
 root/
 ├── ai-plugins/               # Automation: skills and plugins
 │   ├── csf-automation/       # CSF workflow automation
-│   ├── doc-parsing-v1/       # First version: extract text from files
-│   └── doc-parsing-v2/       # Second version: improved parsing
+│   └── doc-parsing/          # Document parsing (pptx, docx, xlsx, pdf, pbix)
 ├── data/                     # Input data (read-only)
 │   └── parsed-onedrive-data/ # Processed data from OneDrive
 │       ├── Data_Sharing/full_examples/
