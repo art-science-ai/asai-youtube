@@ -2,6 +2,23 @@
 
 Common issues and solutions when using the conversion script.
 
+## Required System Packages
+
+The script requires two system-level tools:
+
+- libreoffice (provides `soffice` command)
+- poppler-utils (provides `pdftoppm` command)
+
+Install via your package manager:
+
+- Debian/Ubuntu: `sudo apt install libreoffice poppler-utils`
+- macOS: `brew install libreoffice poppler`
+- Fedora/RHEL: `sudo dnf install libreoffice poppler-utils`
+- Arch: `sudo pacman -S libreoffice poppler`
+- NixOS: Add to system packages or use `nix shell nixpkgs#libreoffice nixpkgs#poppler-utils nixpkgs#stdenv.cc.cc.lib`
+
+For NixOS users: The stdenv.cc.cc.lib package provides the C++ standard library needed by markitdown's dependencies (numpy, pandas).
+
 ## LibreOffice Conversion Issues
 
 ### Problem: soffice command not found
@@ -11,10 +28,8 @@ Common issues and solutions when using the conversion script.
 ❌ Error: soffice not found. Install LibreOffice
 ```
 
-**Solutions:**
-1. Install LibreOffice: `sudo apt install libreoffice` (Debian/Ubuntu)
-2. On NixOS: `nix shell nixpkgs#libreoffice --command ./convert_pptx_to_markdown.py ...`
-3. On macOS: Install via Homebrew: `brew install --cask libreoffice`
+**Solution:**
+Install LibreOffice using your package manager. See the "Required System Packages" section above for installation commands for your operating system.
 
 ### Problem: LibreOffice fails to convert
 
@@ -42,11 +57,10 @@ Common issues and solutions when using the conversion script.
 - Error about pdftoppm not found
 
 **Solutions:**
-1. Ensure poppler-utils is available (script uses nix to provide it)
-2. Check nix installation: `nix --version`
-3. Manual fallback without nix:
+1. Ensure poppler-utils is installed on your system (see Required System Packages section above)
+2. Verify pdftoppm is available: `pdftoppm -h`
+3. Manual image extraction:
    ```bash
-   sudo apt install poppler-utils  # Debian/Ubuntu
    pdftoppm -jpeg -r 150 "presentation.pdf" slide-images/slide
    ```
 
@@ -83,26 +97,24 @@ ImportError: libstdc++.so.6: cannot open shared object file
 OSError: library not found
 ```
 
-**Cause:** Markitdown has C extensions (numpy, pandas) requiring system libraries
+**Cause:** Markitdown has C extensions (numpy, pandas) requiring system libraries (libstdc++.so.6)
 
-**Solution:** The script handles this automatically via nix shell wrapper. If still failing:
+**Solutions:**
 
-1. Ensure nix is installed and functional:
+Most systems: The required libraries are installed by default. If you encounter this error:
+
+1. Linux (Debian/Ubuntu): Install build-essential
    ```bash
-   nix --version
-   nix eval --raw nixpkgs#stdenv.cc.cc.lib
+   sudo apt install build-essential
    ```
 
-2. Manual approach:
+2. NixOS: Run the script with C++ standard library available
    ```bash
-   nix shell nixpkgs#stdenv.cc.cc.lib --command bash -c "
-     export LD_LIBRARY_PATH=$(nix eval --raw nixpkgs#stdenv.cc.cc.lib)/lib:\$LD_LIBRARY_PATH &&
-     rm -rf ~/.cache/uv/environments-v2/parse-*-* &&
-     python -m markitdown 'file.pptx' > output.md
-   "
+   nix shell nixpkgs#stdenv.cc.cc.lib --command \
+     ./scripts/convert_pptx_to_markdown.py input.pptx output/
    ```
 
-3. Alternative: Use pure Python extraction (simpler but less formatted):
+3. Alternative: Use pure Python extraction (simpler but less formatted)
    ```python
    # Install: uv pip install python-pptx
    from pptx import Presentation
@@ -192,26 +204,20 @@ mkdir: cannot create directory
    ./convert_pptx_to_markdown.py My_Presentation.pptx output_dir/
    ```
 
-## Nix-Specific Issues
+## NixOS-Specific Issues
 
-### Problem: Nix command not found
+This section is for NixOS users who want to use `nix shell` to provide dependencies.
 
-**Error message:**
+### Using nix shell to provide dependencies
+
+NixOS users can use nix shell instead of installing packages system-wide:
+
+```bash
+nix shell nixpkgs#libreoffice nixpkgs#poppler-utils nixpkgs#stdenv.cc.cc.lib --command \
+  ./scripts/convert_pptx_to_markdown.py input.pptx output/
 ```
-❌ Error: nix not found. Install Nix package manager
-```
 
-**Solutions:**
-1. Install Nix (multi-user installation recommended):
-   ```bash
-   sh <(curl -L https://nixos.org/nix/install) --daemon
-   ```
-2. Single-user installation (simpler):
-   ```bash
-   sh <(curl -L https://nixos.org/nix/install) --no-daemon
-   ```
-3. On NixOS: Already installed, check PATH
-4. Alternative: Install tools directly without nix (poppler-utils, markitdown)
+The stdenv.cc.cc.lib package provides the C++ standard library needed by markitdown.
 
 ### Problem: Nix evaluation fails
 

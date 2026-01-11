@@ -60,9 +60,11 @@ output/
 ```
 
 **Requirements:**
-- LibreOffice (soffice command) - for PPTX→PDF conversion
-- Nix package manager - provides poppler-utils and system libraries
-- Python 3.11+ with uv - script uses uv shebang format
+- LibreOffice (soffice command)
+- poppler-utils (pdftoppm command)
+- Python 3.11+ with uv
+
+See references/troubleshooting.md for installation instructions for your operating system.
 
 **Progress output:** The script shows progress for each step and reports any errors with clear messages.
 

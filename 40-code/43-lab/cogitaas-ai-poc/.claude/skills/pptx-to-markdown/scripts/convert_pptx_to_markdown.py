@@ -1,7 +1,9 @@
 #!/usr/bin/env -S uv run --script
 # /// script
 # requires-python = ">=3.11"
-# dependencies = []
+# dependencies = [
+#   "markitdown[pptx]>=0.0.1a2",
+# ]
 # ///
 
 """
@@ -18,9 +20,8 @@ Example:
 
 Requirements:
     - LibreOffice (soffice command)
-    - poppler-utils (pdftoppm command) - can be provided via nix
-    - markitdown (python package) - installed with system libraries via nix
-    - nix (for system library and tool provisioning)
+    - poppler-utils (pdftoppm command)
+    - Python 3.11+ with uv
 
 Output:
     output_dir/
@@ -30,6 +31,10 @@ Output:
     │   └── presentation.pdf         # Generated PDF (intermediate)
     └── slide-images/
         └── slide-*.jpg              # Exported slide images
+
+Note:
+    See references/troubleshooting.md for OS-specific installation instructions
+    and handling system library dependencies for markitdown.
 """
 
 import sys
@@ -42,9 +47,12 @@ from pathlib import Path
 def check_command(cmd, install_hint):
     """Check if a command is available, provide install hint if not."""
     try:
-        subprocess.run([cmd, "--version"], capture_output=True, check=True)
+        # Try --version first, fall back to -h if that fails
+        result = subprocess.run([cmd, "--version"], capture_output=True)
+        if result.returncode != 0:
+            result = subprocess.run([cmd, "-h"], capture_output=True)
         return True
-    except (subprocess.CalledProcessError, FileNotFoundError):
+    except FileNotFoundError:
         print(f"❌ Error: {cmd} not found. {install_hint}", file=sys.stderr)
         return False
 
@@ -100,7 +108,7 @@ def convert_pdf_to_images(pdf_path, images_dir, dpi=150):
     images_dir.mkdir(parents=True, exist_ok=True)
     output_prefix = images_dir / "slide"
 
-    cmd = f'nix shell nixpkgs#poppler-utils --command pdftoppm -jpeg -r {dpi} "{pdf_path}" "{output_prefix}"'
+    cmd = f'pdftoppm -jpeg -r {dpi} "{pdf_path}" "{output_prefix}"'
     result = run_command(cmd, f"Converting PDF to JPEG images ({dpi} DPI)")
 
     if result is None:
@@ -117,16 +125,10 @@ def convert_pdf_to_images(pdf_path, images_dir, dpi=150):
 
 
 def extract_text(pptx_path, output_file):
-    """Extract text from PPTX using markitdown with system library support."""
+    """Extract text from PPTX using markitdown."""
     output_file.parent.mkdir(parents=True, exist_ok=True)
 
-    # Use nix to provide system libraries for markitdown
-    cmd = f'''nix shell nixpkgs#stdenv.cc.cc.lib --command bash -c "
-        export LD_LIBRARY_PATH=$(nix eval --raw nixpkgs#stdenv.cc.cc.lib)/lib:$LD_LIBRARY_PATH &&
-        rm -rf ~/.cache/uv/environments-v2/parse-*-* &&
-        python -m markitdown '{pptx_path}' > '{output_file}'
-    "'''
-
+    cmd = f"python -m markitdown '{pptx_path}' > '{output_file}'"
     result = run_command(cmd, "Extracting text with markitdown", check=False)
 
     if output_file.exists() and output_file.stat().st_size > 0:
@@ -253,7 +255,7 @@ def main():
     if not check_command("soffice", "Install LibreOffice"):
         sys.exit(1)
 
-    if not check_command("nix", "Install Nix package manager"):
+    if not check_command("pdftoppm", "Install poppler-utils (see references/troubleshooting.md)"):
         sys.exit(1)
 
     # Step 1: PPTX → PDF
