@@ -68,34 +68,58 @@ All skill executions are stored in the `tests/` directory for traceability and v
 
 ### Test directory structure
 
-Each test follows the naming convention `{project}_{skill}_{date}`:
+Each test follows the naming convention `{project}_presentation_{date}`:
 
 ```
 tests/
 └── ukbbq_presentation_20250111/
-    ├── inputs/                  # Data provided to the skill
-    ├── outputs/                 # Generated outputs
-    └── evaluation/              # Optional: validation materials
-        ├── presentation-final/  # Ground truth presentation
-        ├── requirements.md      # Semantic requirements from ground truth
-        └── evaluation.md        # Assessment of outputs vs requirements
+    ├── inputs/                  # Source data (CSV files, optional PPTX)
+    ├── outputs/                 # Generated presentation outline and enhanced CSV
+    ├── presentation-gt/         # Ground truth reference (if PPTX provided)
+    └── evaluation/              # Quality assessment results
+        ├── evaluation-report.md # Completeness, accuracy, consistency analysis
+        ├── requirements.md      # Extracted requirements (if ground truth exists)
 ```
 
-### Validation workflow
+### Using the test command
 
-When developing skills with ground truth data (e.g., existing client presentations):
+The `/test` command orchestrates the complete CSF automation workflow:
 
-1. Create test directory: `tests/{project}_{skill}_{date}/`
-2. If validating, create `evaluation/` subdirectory
-3. Copy templates from the skill:
-   - `ai-plugins/{plugin}/skills/{skill}/templates/REQUIREMENTS_TEMPLATE.md` → `evaluation/requirements.md`
-   - Fill in semantic requirements from ground truth
-4. Run the skill to generate outputs
-5. Copy `templates/EVALUATION_TEMPLATE.md` → `evaluation/evaluation.md`
-6. Assess whether outputs capture required business insights
-7. Iterate on skill definition based on gaps
+**Create a new test:**
+```bash
+/test Set up test for US Spoonables presentation
+/test Test UK Brown Sauce project from ~/client-data/uk_brownsauce/
+```
 
-When working without ground truth, skip the `evaluation/` directory and review outputs directly.
+**Update an existing test:**
+```bash
+/test Regenerate presentation for tests/us_spoonables_presentation_20250111/
+/test Rerun evaluation for UK BBQ test
+```
+
+**What the test command does:**
+
+1. Creates test directory with four-directory structure
+2. Copies input files from source directory
+3. Runs pptx-to-markdown skill (if PPTX provided) → presentation-gt/
+4. Runs generate-presentation skill → outputs/
+5. Runs evaluate-presentation skill → evaluation/
+6. Generates quality report with completeness, accuracy, and ground truth alignment
+
+**Evaluation modes:**
+- With ground truth: Full validation including semantic alignment with existing presentation
+- Without ground truth: Self-evaluation mode (completeness, accuracy, consistency only)
+
+### Manual workflow
+
+For fine-grained control, you can invoke skills individually:
+
+1. Create test directory: `tests/{project}_presentation_{date}/`
+2. Run skills as needed:
+   - `pptx-to-markdown` - Convert PowerPoint to structured markdown
+   - `generate-presentation` - Generate presentation outline from CSV data
+   - `evaluate-presentation` - Validate quality and extract requirements
+3. Review outputs and iterate on skill definitions based on gaps
 
 ---
 

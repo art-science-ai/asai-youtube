@@ -4,11 +4,11 @@
   "description": "Automates Consumer Surplus Factor (CSF) presentation generation from quantitative analysis results",
   "keywords": ["csf", "pricing", "analytics", "presentation", "automation"],
   "commands": [
-    "./commands/test-new.md"
+    "./commands/test.md"
   ],
   "skills": [
-    "./skills/csf-presentation",
+    "./skills/generate-presentation",
     "./skills/pptx-to-markdown",
-    "./skills/csf-evaluation"
+    "./skills/evaluate-presentation"
   ]
 }

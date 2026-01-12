@@ -15,7 +15,6 @@
 # COMMON COMMANDS:
 #   nix develop                  # Enter the development environment
 #   exit                         # Exit the environment
-#   nix develop --command <cmd>  # Run a command in the environment
 #   nix flake update             # Update flake inputs
 #
 # TROUBLESHOOTING:
@@ -34,86 +33,77 @@
   inputs = {
     # Nix packages - using unstable branch for latest versions
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    # flake-utils provides helper functions for multi-platform support
-    flake-utils.url = "github:numtide/flake-utils";
   };
 
-  outputs = { self, nixpkgs, flake-utils }:
-    # Support multiple systems (x86_64-linux, aarch64-linux, x86_64-darwin, etc.)
-    flake-utils.lib.eachDefaultSystem (system:
-      let
-        # Get nixpkgs for this system
-        pkgs = nixpkgs.legacyPackages.${system};
-      in
-      {
-        # Default development shell
-        devShells.default = pkgs.mkShell {
-          # ====================================
-          # BUILD INPUTS (System Dependencies)
-          # ====================================
-          # These packages are installed in the shell environment and available to all scripts.
-          # Python package versions are managed per-script via uv inline metadata.
+  outputs = { self, nixpkgs }:
+    let
+      # Get system architecture (defaults to current system)
+      system = "x86_64-linux";
 
-          buildInputs = with pkgs; [
-            # Python 3.11+ runtime
-            # Note: uv manages actual Python package versions per-script via inline metadata
-            python311
+      # Get nixpkgs for this system
+      pkgs = nixpkgs.legacyPackages.${system};
+    in
+    {
+      # Default development shell
+      devShells.${system}.default = pkgs.mkShell {
+        # ====================================
+        # BUILD INPUTS (System Dependencies)
+        # ====================================
+        # These packages are installed in the shell environment and available to all scripts.
+        # Python package versions are managed per-script via uv inline metadata.
 
-            # uv - Fast Python package manager
-            # Used by scripts via inline # /// script /// metadata
-            # No need to pip install globally - each script declares its own dependencies
-            uv
+        buildInputs = with pkgs; [
+          # Python 3.11+ runtime
+          # Note: uv manages actual Python package versions per-script via inline metadata
+          python311
 
-            # LibreOffice (provides soffice command)
-            # Used by: pptx-to-markdown script
-            # Converts PPTX files to PDF format for text/image extraction
-            libreoffice-fresh
+          # uv - Fast Python package manager
+          # Used by scripts via inline # /// script /// metadata
+          # No need to pip install globally - each script declares its own dependencies
+          uv
 
-            # Poppler (provides pdftoppm command)
-            # Used by: pptx-to-markdown script
-            # Converts PDF pages to JPEG images for slide extraction
-            poppler
+          # LibreOffice (provides soffice command)
+          # Used by: pptx-to-markdown script
+          # Converts PPTX files to PDF format for text/image extraction
+          libreoffice-fresh
 
-            # C++ standard library (provides libstdc++.so.6)
-            # Required by: markitdown, pandas, numpy, and other packages with C extensions
-            # These packages need C++ libraries at runtime, which aren't always available in NixOS
-            stdenv.cc.cc.lib
+          # Poppler utils (provides pdftoppm command)
+          # Used by: pptx-to-markdown script
+          # Converts PDF pages to JPEG images for slide extraction
+          poppler-utils
 
-            # Git version control
-            # Used for general development and version control
-            git
-          ];
+          # C++ standard library (provides libstdc++.so.6)
+          # Required by: markitdown, pandas, numpy, and other packages with C extensions
+          # These packages need C++ libraries at runtime, which aren't always available in NixOS
+          stdenv.cc.cc.lib
 
-          # ====================================
-          # ENVIRONMENT CONFIGURATION
-          # ====================================
+          # zlib compression library (provides libz.so.1)
+          # Required by: numpy, pandas, and other data science packages with C extensions
+          # These packages need zlib for data compression/decompression operations
+          zlib
 
-          # shellHook runs when you enter nix develop
-          shellHook = ''
-            echo ""
-            echo "=================================================================="
-            echo "Cogitaas AI POC - Development Environment"
-            echo "=================================================================="
-            echo ""
-            echo "Available system tools:"
-            echo "  - Python 3.11+ (via nix)"
-            echo "  - uv (Python package manager)"
-            echo "  - LibreOffice (soffice command for PPTX conversion)"
-            echo "  - poppler (pdftoppm for PDF to images)"
-            echo ""
-            echo "Python dependencies are managed via uv inline script metadata."
-            echo "Scripts can be run directly with: ./scripts/script_name.py"
-            echo ""
-            echo "=================================================================="
-            echo ""
-          '';
+          # Git version control
+          # Used for general development and version control
+          git
+        ];
 
-          # LD_LIBRARY_PATH ensures packages with C extensions can find libstdc++.so.6
-          # Without this, imports like 'import markitdown' or 'import pandas' will fail
-          # with errors about missing shared libraries
-          LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
-        };
-      }
-    );
+        # ====================================
+        # ENVIRONMENT CONFIGURATION
+        # ====================================
+
+        # shellHook runs when you enter nix develop
+        shellHook = ''
+          echo ""
+          echo "=================================================================="
+          echo "Cogitaas AI POC - Development Environment"
+          echo "=================================================================="
+          echo ""
+        '';
+
+        # LD_LIBRARY_PATH ensures packages with C extensions can find libstdc++.so.6 and libz.so.1
+        # Without this, imports like 'import markitdown' or 'import pandas' will fail
+        # with errors about missing shared libraries
+        LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.zlib}/lib";
+      };
+    };
 }
