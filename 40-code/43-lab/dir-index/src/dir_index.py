@@ -82,6 +82,7 @@ def traverse_directory(target_dir: Path) -> List[FileItem]:
 def generate_markdown_files(items: List[FileItem], target_dir: Path, output_dir: Path) -> None:
     """
     Generate markdown files with YAML frontmatter for each item
+    Preserves existing markdown body content when updating files
     """
     for item in items:
         # Sanitize path for filename (replace slashes with dashes)
@@ -99,13 +100,39 @@ def generate_markdown_files(items: List[FileItem], target_dir: Path, output_dir:
             "type": item.item_type
         }
 
+        # Check if file already exists
+        if md_file.exists():
+            # Read existing file to preserve markdown body
+            try:
+                with open(md_file, "r") as f:
+                    content = f.read()
+
+                # Split on first '---' separator to extract body
+                parts = content.split("---", 2)
+
+                if len(parts) >= 3:
+                    # Has frontmatter and body - preserve body
+                    body = parts[2].lstrip()
+                else:
+                    # Malformed or no body - start fresh
+                    body = ""
+
+            except Exception as e:
+                print(f"Warning: Could not read existing file {md_file}: {e}")
+                body = ""
+
+        else:
+            # New file - empty body
+            body = ""
+
         # Write markdown file with YAML frontmatter
         with open(md_file, "w") as f:
             f.write("---\n")
             yaml.dump(frontmatter, f, default_flow_style=False)
             f.write("---\n")
-            # Empty body for manual notes
-            f.write("\n")
+            # Write preserved body (or empty if new file)
+            if body:
+                f.write(body)
 
 
 def main():
