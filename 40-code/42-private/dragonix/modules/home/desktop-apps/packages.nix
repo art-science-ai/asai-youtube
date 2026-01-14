@@ -22,6 +22,7 @@ in
       flameshot
       libreoffice
       obsidian
+      obs-studio
     ]))
     (lib.mkIf isDarwin (with pkgs; [
       # Darwin-specific desktop packages

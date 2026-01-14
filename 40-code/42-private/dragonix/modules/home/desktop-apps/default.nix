@@ -8,7 +8,7 @@
     # ./distrobox-config.nix
 
     ./gnome-integration.nix
-    # ./obsidian
+    ./obsidian
     ./packages.nix
     ./vscode.nix
   ];

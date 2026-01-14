@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: monorepo
+created: 2026-01-14T19:14:33+05:30

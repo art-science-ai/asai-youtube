@@ -12,7 +12,7 @@
     ./hardware-configuration.nix
     ./configuration.nix
     ./snapper.nix
-    ./obsidian/obsidian-livesync.nix
+    # ./obsidian/obsidian-livesync.nix
     ./remote-desktop/sunshine.nix
     ./remote-desktop/rustdesk.nix
     ./remote-desktop/gnome-rdp.nix
