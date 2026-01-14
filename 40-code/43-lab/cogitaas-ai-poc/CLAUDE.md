@@ -1,0 +1,1 @@
+- Use "nix develop" for running all scripts
