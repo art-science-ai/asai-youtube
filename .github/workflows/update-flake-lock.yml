@@ -1,0 +1,30 @@
+name: flake-lock-update.yml
+on:
+  schedule:
+    - cron: "25 09 * * 1"   # weekly, Mondays 09:25 UTC
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@v12
+      - uses: DeterminateSystems/magic-nix-cache-action@v7
+
+      # Opens/refreshes a PR only when flake.lock changes
+      - uses: DeterminateSystems/update-flake-lock@v27
+        with:
+          pr-title: "chore: update flake.lock"
+          pr-labels: automated,dependencies
+          branch: auto/update-flake-lock
+          # If you need follow-on "push" workflows to run, uncomment:
+          # token: ${{ secrets.GH_TOKEN_FOR_UPDATES }}

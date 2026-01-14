@@ -1,0 +1,39 @@
+name: Refactor
+description: Improve code quality without changing behavior
+title: "[REFACTOR]: "
+labels: ["tech-debt"]
+body:
+  - type: textarea
+    id: pain
+    attributes:
+      label: Pain Point
+      description: What's causing issues?
+      placeholder: |
+        Duplication: same service config repeated in multiple hosts
+        Confusing options: unclear module interface
+        Performance: slow evaluation times
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: Plan
+      description: Before/after approach
+      placeholder: |
+        Before: services.foo = { config in each host }
+        After: common.services.foo.enable = true; with shared defaults
+        Migration: update all hosts to use new interface
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this is successful?
+      placeholder: |
+        - [ ] No behavior change for existing hosts
+        - [ ] All hosts build successfully
+        - [ ] Documentation updated
+        - [ ] Examples demonstrate new pattern
+    validations:
+      required: true

@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch",
+      "WebSearch",
+      "Read(*)",
+      "Skill(*)"
+    ],
+    "deny": [
+      "SlashCommand"
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh",
+    "padding": 0
+  },
+  "enabledPlugins": {
+    "plugin-dev@claude-code-plugins": true,
+    "agent-sdk-dev@claude-code-plugins": true,
+    "document-skills@anthropic-agent-skills": true,
+    "example-skills@anthropic-agent-skills": true,
+    "web-research@gtd-cc": true,
+    "developing-for-claude-code@gtd-cc": true,
+    "documentation@gtd-cc": true,
+    "github@gtd-cc": true,
+    "obsidian@gtd-cc": true,
+    "random@gtd-cc": true,
+    "doc-parsing@gtd-cc": true
+  },
+  "outputStyle": "Explanatory",
+  "alwaysThinkingEnabled": true
+}

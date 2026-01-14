@@ -1,0 +1,12 @@
+builds:
+  - include: []
+    exclude: []
+    branch: main
+
+  # git push origin HEAD:release
+  - include:
+      - "nixosConfigurations.*"
+      - "darwinConfigurations.*"
+      - "homeConfigurations.*"
+    exclude: []
+    branch: release

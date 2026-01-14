@@ -1,0 +1,27 @@
+keypress_delay_ms: 10
+
+shared:
+  terminals: &terminals
+    - org.gnome.Terminal
+    - org.gnome.Console
+    - org.gnome.Ptyxis
+
+  gui_remaps: &gui_remaps
+    Alt-C: Ctrl-C
+    Alt-V: Ctrl-V
+    Alt-A: Ctrl-A
+    Alt-X: Ctrl-X
+    Alt-Z: Ctrl-Z
+    Alt-Y: Ctrl-Y
+
+keymap:
+  - name: GUI apps - make Alt behave like Ctrl for common shortcuts
+    application:
+      not: *terminals
+    remap: *gui_remaps
+
+  - name: Terminal interrupt fix
+    application:
+      only: *terminals
+    remap:
+      Alt-C: Ctrl-C

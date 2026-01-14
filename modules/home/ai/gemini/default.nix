@@ -1,0 +1,3 @@
+{
+  imports = [ ./gemini-cli.nix ];
+}

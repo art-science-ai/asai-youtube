@@ -1,0 +1,52 @@
+/* Custom link colors - separate from theme accent
+ *
+ * This snippet decouples link colors from the theme's accent color,
+ * allowing you to have different colors for internal vs external links.
+ *
+ * To enable: Settings → Appearance → CSS snippets → Toggle this on
+ */
+
+:root {
+  /* Customize these RGB values (format: R, G, B without rgb() wrapper) */
+  --link-internal: 245, 224, 220;     /* Rosewater - Internal wikilinks [[like this]] */
+  --link-external: 135, 176, 249;     /* Blue - External URLs https://... (closest to browser blue) */
+  --link-unresolved: 249, 226, 175;   /* Yellow - Links to notes that don't exist yet (prominent) */
+}
+
+/* Reading view (preview mode) */
+.markdown-rendered .internal-link,
+.markdown-rendered .internal-link:visited {
+  color: rgb(var(--link-internal)) !important;
+}
+
+.markdown-rendered .external-link,
+.markdown-rendered .external-link:visited {
+  color: rgb(var(--link-external)) !important;
+}
+
+.markdown-rendered .internal-link.is-unresolved,
+.markdown-rendered .internal-link.is-unresolved:visited {
+  color: rgb(var(--link-unresolved)) !important;
+  opacity: 0.9;  /* Slightly dimmed to distinguish from resolved links */
+}
+
+/* Editor view (live preview & source mode) */
+.cm-hmd-internal-link,
+.cm-s-obsidian span.cm-hmd-internal-link {
+  color: rgb(var(--link-internal)) !important;
+}
+
+.cm-link,
+.cm-url,
+.cm-s-obsidian span.cm-link,
+.cm-s-obsidian span.cm-url {
+  color: rgb(var(--link-external)) !important;
+}
+
+/* Override theme's text-accent for links specifically */
+a.internal-link,
+a.external-link {
+  color: inherit !important;
+}
+
+/* Note: !important and increased specificity ensure these override the theme */

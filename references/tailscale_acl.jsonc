@@ -1,0 +1,72 @@
+// TAILSCALE ACL - Nikhil's Personal Network
+// Setup: Tailscale installed and logged in on all devices
+// Goals:
+//   1. Enable networking between all devices in the tailnet
+//   2. Allow passwordless SSH between trusted devices (moondancer, vermax, seasmoke)
+//   3. TV is restricted to only reach vermax (media server)
+
+// Copy into Admin Console ACL editor.
+
+{
+	// Static groups of users
+	"groups": {
+		"group:owner": ["nikhil.maddirala@gmail.com"],
+	},
+
+	// Device hostname to IP mapping
+	"hosts": {
+		"moondancer":    "100.78.209.69",
+		"vermax":        "100.126.196.6",
+		"seasmoke":      "100.100.205.55",
+		"nm-ipad-2025":  "100.111.189.10",
+		"nm-iphone-17":  "100.74.122.121",
+		"tcl-smart-tv":  "100.99.173.5",
+	},
+
+	// Tag owners
+	// IMPORTANT: Tags must be assigned to devices in Tailscale Admin Console:
+	//   1. Go to Machines page
+	//   2. Click on a device
+	//   3. In "Tags" field, enter the tag name (e.g., "tag:untrusted")
+	//   4. Save changes
+	// Tags defined here:
+	//   - tag:untrusted -> tcl-smart-tv (requires re-auth for SSH, restricted access)
+	"tagOwners": {
+		"tag:untrusted": ["group:owner"],
+	},
+
+	// Access control lists
+	"acls": [
+		// IoT restriction: TV can only reach media server (vermax)
+		{"action": "accept", "src": ["tcl-smart-tv"], "dst": ["vermax:*"]},
+
+		// Default: allow all
+		{"action": "accept", "src": ["*"], "dst": ["*:*"]},
+	],
+
+	// SSH access rules
+	// SSH rules use "accept" or "check" action:
+	//   - accept: allow SSH immediately without reauthentication
+	//   - check: require periodic reauthentication
+	"ssh": [
+		// Rule 1: Users can SSH into their own devices
+		//   src: any tailnet member
+		//   dst: only devices owned by the same user (autogroup:self)
+		//   users: both root and non-root SSH users
+		{
+			"action": "accept",
+			"src": ["autogroup:member"],
+			"dst": ["autogroup:self"],
+			"users": ["autogroup:nonroot", "root"],
+		},
+	],
+
+	// ACL tests
+	// Verify that the owner can SSH to moondancer on port 22
+	"tests": [
+		{
+			"src": "nikhil.maddirala@gmail.com",
+			"accept": ["moondancer:22", "vermax:22", "seasmoke:22"],
+		},
+	],
+}

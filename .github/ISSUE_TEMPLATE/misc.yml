@@ -1,0 +1,13 @@
+name: Misc
+description: Other issues that don't fit the above categories
+title: "[MISC]: "
+labels: ["misc"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to be done?
+      placeholder: "Documentation update, configuration cleanup, etc."
+    validations:
+      required: true

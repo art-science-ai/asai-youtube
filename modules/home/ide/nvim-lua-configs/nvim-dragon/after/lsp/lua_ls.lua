@@ -1,0 +1,25 @@
+-- =====================================================================
+-- LUA_LS: LSP server-specific configuration for Lua Language Server
+-- =====================================================================
+--
+-- This file demonstrates how to configure LSP server-specific settings.
+-- It loads after the LSP is attached and can customize behavior per server.
+--
+-- Common lua_ls customizations:
+--   - Add vim global to diagnostics
+--   - Configure workspace library
+--   - Set completion settings
+--   - Adjust diagnostic severity
+--
+-- =====================================================================
+
+-- TODO: Add lua_ls-specific configuration here
+-- Example:
+-- local client = vim.lsp.get_clients({ name = 'lua_ls' })[1]
+-- if client then
+--   client.config.settings.Lua = vim.tbl_deep_extend('force', client.config.settings.Lua or {}, {
+--     diagnostics = {
+--       globals = { 'vim' },
+--     },
+--   })
+-- end
