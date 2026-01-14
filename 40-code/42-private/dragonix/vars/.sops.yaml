@@ -1,0 +1,29 @@
+keys:
+  - &meleys_host_ssh_to_age age107c6405uwmg4xl3xn9wdgcr9qpwyvle0kpghe400mjpxu2nx4vgsw06zru
+  - &seasmoke_host_ssh_to_age age12hz00dvdz7cefd2trr7ndwruu6az423nzyhlke3ykhrt806dayjsm8ykq6
+  - &meleys_host_ssh ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHf2ezgisOyTAZG3Hk+RJbjmNIeFr2tSTk4Jq2LzobJm
+  - &seasmoke_host_ssh ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIM54wepLhOWBFQq2F79mwQ/6JshUVG6WVerGB1woSgR1
+  - &meleys_nikhil_ssh ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHE/91LULBOxTScqjSxmxmNfGZe1QFUjHMyP93QydX6J
+  - &moondancer_nikhil_ssh_to_age age162gaplazc0zv5xkeg4lm50c66gpdaufkvy9wm5cxjglc6swg7dcs9ejs3p
+  - &moondancer_nikhil_ssh ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJLVnE2sv9qxuWDIJQfSueiPsmNpo3PnQJn2h+tortem
+  - &moondancer_host_ssh ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBUHXib+0JavSO4QwzJa/4MDDQIGmSsPGLB/hkvLj+xx root@moondancer
+  - &moondancer_host_ssh_to_age age1w4fam32u4x6rgunyyw0ctj3hfznupayux5aa7f3wvtfgljgx4szqpn7vdu
+  - &vermax_host_ssh_to_age age1xv2amcl5k3v06t0tzejsvrratl89glt56g9l6jthrx7m6trn24aquc02dc
+  - &vermax_host_ssh ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEJuRIKKEWF5PVvEgzoWTg09JbcqjZvMGYHGn7BahI1H root@vermax
+
+
+creation_rules:
+  - path_regex: secrets\.yaml$
+    key_groups:
+      - age:
+          - *meleys_host_ssh
+          - *meleys_nikhil_ssh
+          - *meleys_host_ssh_to_age
+          - *seasmoke_host_ssh
+          - *seasmoke_host_ssh_to_age
+          - *moondancer_nikhil_ssh
+          - *moondancer_nikhil_ssh_to_age
+          - *moondancer_host_ssh
+          - *moondancer_host_ssh_to_age
+          - *vermax_host_ssh
+          - *vermax_host_ssh_to_age

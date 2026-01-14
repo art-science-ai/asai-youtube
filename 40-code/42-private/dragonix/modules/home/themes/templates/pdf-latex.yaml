@@ -1,0 +1,14 @@
+from: markdown
+to: pdf
+pdf-engine: xelatex
+standalone: true
+variables:
+  documentclass: article
+  header-includes:
+    - |
+      \usepackage[colorlinks=true]{hyperref}
+      \usepackage[latte,pagecolor=true,textcolor=true,hyperref=true]{catppuccinpalette}
+      \usepackage{sectsty}
+      \sectionfont{\color{CtpBlue}}
+      \subsectionfont{\color{CtpMauve}}
+      \subsubsectionfont{\color{CtpMaroon}}

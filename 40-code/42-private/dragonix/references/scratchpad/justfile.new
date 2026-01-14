@@ -1,0 +1,401 @@
+# Nix Configuration - Unified Build and Deploy System
+# Context-aware: automatically detects if you're on the target host
+
+# Variables
+current_host := `hostname`
+
+# Show available commands
+default:
+    @just --list
+
+# ============================================================
+# Main deployment commands
+# ============================================================
+
+# Main deployment command (context-aware)
+# Usage: just deploy <host> [profile] [method]
+#   host: meleys, moondancer, seasmoke, vermax
+#   profile: system, home, all (default: all)
+#   method: deploy-rs, nixos-rebuild (default: deploy-rs, only for remote)
+# Examples:
+#   just deploy seasmoke              # Deploy everything (auto-detects local/remote)
+#   just deploy vermax system         # Deploy only system config
+#   just deploy meleys home           # Deploy only home config
+#   just deploy seasmoke all nixos-rebuild  # Use nixos-rebuild --target-host instead of deploy-rs
+deploy host profile="all" method="deploy-rs":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    if [[ "{{ current_host }}" == "{{ host }}" ]]; then
+        just deploy-local {{ host }} {{ profile }}
+    else
+        just deploy-remote {{ host }} {{ profile }} {{ method }}
+    fi
+
+# Local deployment dispatcher
+deploy-local host profile:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    case {{ host }} in
+        meleys|moondancer)
+            just darwin-local {{ host }} {{ profile }}
+            ;;
+        seasmoke|vermax)
+            just nixos-local {{ host }} {{ profile }}
+            ;;
+        *)
+            echo "Error: Unknown host '{{ host }}'"
+            echo "Known hosts: meleys, moondancer, seasmoke, vermax"
+            exit 1
+            ;;
+    esac
+
+# Remote deployment dispatcher
+deploy-remote host profile method="deploy-rs":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    case {{ host }} in
+        meleys|moondancer)
+            just darwin-remote {{ host }} {{ profile }} {{ method }}
+            ;;
+        seasmoke|vermax)
+            just nixos-remote {{ host }} {{ profile }} {{ method }}
+            ;;
+        *)
+            echo "Error: Unknown host '{{ host }}'"
+            echo "Known hosts: meleys, moondancer, seasmoke, vermax"
+            exit 1
+            ;;
+    esac
+
+# ============================================================
+# Platform-specific deployment implementations
+# ============================================================
+
+# Darwin local deployment
+darwin-local host profile:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    git add --intent-to-add .
+
+    case {{ profile }} in
+        system)
+            echo "Deploying system configuration for {{ host }}..."
+            nh darwin switch .#darwinConfigurations.{{ host }}
+            ;;
+        home)
+            echo "Deploying home configuration for nikhilmaddirala@{{ host }}..."
+            export HOME_MANAGER_BACKUP_OVERWRITE=1
+            nh home switch .#homeConfigurations.\"nikhilmaddirala@{{ host }}\".activationPackage -b backup
+            ;;
+        all)
+            echo "Deploying system and home configurations for {{ host }}..."
+            nh darwin switch .#darwinConfigurations.{{ host }}
+            export HOME_MANAGER_BACKUP_OVERWRITE=1
+            nh home switch .#homeConfigurations.\"nikhilmaddirala@{{ host }}\".activationPackage -b backup
+            ;;
+        *)
+            echo "Error: Unknown profile '{{ profile }}'"
+            echo "Valid profiles: system, home, all"
+            exit 1
+            ;;
+    esac
+
+# Darwin remote deployment
+darwin-remote host profile method="deploy-rs":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    git add --intent-to-add .
+
+    if [[ "{{ method }}" != "deploy-rs" ]]; then
+        echo "Error: Only deploy-rs is supported for remote Darwin deployment"
+        exit 1
+    fi
+
+    case {{ profile }} in
+        system)
+            echo "Remotely deploying system configuration for {{ host }}..."
+            deploy .#{{ host }}.system
+            ;;
+        home)
+            echo "Remotely deploying home configuration for {{ host }}..."
+            deploy .#{{ host }}.home-nikhil
+            ;;
+        all)
+            echo "Remotely deploying all configurations for {{ host }}..."
+            deploy .#{{ host }}
+            ;;
+        *)
+            echo "Error: Unknown profile '{{ profile }}'"
+            echo "Valid profiles: system, home, all"
+            exit 1
+            ;;
+    esac
+
+# NixOS local deployment
+nixos-local host profile:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    git add --intent-to-add .
+
+    case {{ profile }} in
+        system)
+            echo "Deploying system configuration for {{ host }}..."
+            sudo nixos-rebuild switch --flake .#{{ host }}
+            ;;
+        home)
+            echo "Deploying home configuration for nikhilmaddirala@{{ host }}..."
+            nh home switch .#homeConfigurations.\"nikhilmaddirala@{{ host }}\".activationPackage -b bkp
+            ;;
+        all)
+            echo "Deploying system and home configurations for {{ host }}..."
+            sudo nixos-rebuild switch --flake .#{{ host }}
+            nh home switch .#homeConfigurations.\"nikhilmaddirala@{{ host }}\".activationPackage -b bkp
+            ;;
+        *)
+            echo "Error: Unknown profile '{{ profile }}'"
+            echo "Valid profiles: system, home, all"
+            exit 1
+            ;;
+    esac
+
+# NixOS remote deployment
+nixos-remote host profile method="deploy-rs":
+    #!/usr/bin/env bash
+    set -euo pipefail
+    git add --intent-to-add .
+
+    case {{ method }} in
+        deploy-rs)
+            case {{ profile }} in
+                system)
+                    echo "Remotely deploying system configuration for {{ host }} via deploy-rs..."
+                    deploy .#{{ host }}.system
+                    ;;
+                home)
+                    echo "Remotely deploying home configuration for {{ host }} via deploy-rs..."
+                    deploy .#{{ host }}.home-nikhil
+                    ;;
+                all)
+                    echo "Remotely deploying all configurations for {{ host }} via deploy-rs..."
+                    deploy .#{{ host }}
+                    ;;
+                *)
+                    echo "Error: Unknown profile '{{ profile }}'"
+                    echo "Valid profiles: system, home, all"
+                    exit 1
+                    ;;
+            esac
+            ;;
+        nixos-rebuild)
+            case {{ profile }} in
+                system)
+                    echo "Remotely deploying system configuration for {{ host }} via nixos-rebuild..."
+                    sudo nixos-rebuild switch --flake .#{{ host }} --target-host {{ host }} --use-remote-sudo
+                    ;;
+                home)
+                    echo "Warning: nixos-rebuild doesn't support standalone home-manager deployments"
+                    echo "Deploying home configuration via SSH..."
+                    ssh {{ host }} "cd {{ justfile_directory() }} && nix run nixpkgs#home-manager -- switch --flake .#nikhilmaddirala@{{ host }}"
+                    ;;
+                all)
+                    echo "Remotely deploying system configuration for {{ host }} via nixos-rebuild..."
+                    sudo nixos-rebuild switch --flake .#{{ host }} --target-host {{ host }} --use-remote-sudo
+                    echo "Deploying home configuration via SSH..."
+                    ssh {{ host }} "cd {{ justfile_directory() }} && nix run nixpkgs#home-manager -- switch --flake .#nikhilmaddirala@{{ host }}"
+                    ;;
+                *)
+                    echo "Error: Unknown profile '{{ profile }}'"
+                    echo "Valid profiles: system, home, all"
+                    exit 1
+                    ;;
+            esac
+            ;;
+        *)
+            echo "Error: Unknown method '{{ method }}'"
+            echo "Valid methods: deploy-rs, nixos-rebuild"
+            exit 1
+            ;;
+    esac
+
+# ============================================================
+# Special commands
+# ============================================================
+
+# Switch moondancer to light theme
+moondancer-light:
+    git add --intent-to-add . && \
+    bash -c '$(nix eval --raw ".#homeConfigurations.\"nikhilmaddirala@moondancer\".activationPackage.outPath")/specialisation/light/activate'
+
+# Switch moondancer to dark theme
+moondancer-dark:
+    git add --intent-to-add . && \
+    bash -c '$(nix eval --raw ".#homeConfigurations.\"nikhilmaddirala@moondancer\".activationPackage.outPath")/activate'
+
+# Deploy home and activate light theme (moondancer only)
+moondancer-home-light: (deploy "moondancer" "home") moondancer-light
+
+# Meleys home deployment without remote builders
+meleys-home-nobuild:
+    git add --intent-to-add .
+    nh home switch .#homeConfigurations.\"nikhilmaddirala@meleys\".activationPackage -b bkp -- --option max-jobs 0 --option builders "" --option fallback false --accept-flake-config
+
+# ============================================================
+# Configuration checks
+# ============================================================
+
+# Check all configurations
+check-all:
+    git add --intent-to-add .
+    nix flake check --extra-experimental-features "nix-command flakes parallel-eval" --all-systems
+
+# Evaluate all configurations without building (fast dry-run)
+check-all-dry:
+    git add --intent-to-add .
+    nix build --dry-run \
+        .#checks.x86_64-linux.seasmoke-config \
+        .#checks.x86_64-linux.home-nikhil-seasmoke \
+        .#checks.x86_64-linux.vermax-config \
+        .#checks.x86_64-linux.home-nikhil-vermax \
+        .#checks.aarch64-darwin.meleys-config \
+        .#checks.aarch64-darwin.home-nikhil-meleys \
+        .#checks.aarch64-darwin.moondancer-config \
+        .#checks.aarch64-darwin.home-nikhil-moondancer
+
+# Check individual host configurations
+check host:
+    #!/usr/bin/env bash
+    set -euo pipefail
+    git add --intent-to-add .
+
+    case {{ host }} in
+        meleys)
+            nix build .#checks.aarch64-darwin.meleys-config --no-link
+            nix build .#checks.aarch64-darwin.home-nikhil-meleys --no-link
+            ;;
+        moondancer)
+            nix build .#checks.aarch64-darwin.moondancer-config --no-link
+            nix build .#checks.aarch64-darwin.home-nikhil-moondancer --no-link
+            ;;
+        seasmoke)
+            nix build .#checks.x86_64-linux.seasmoke-config --no-link
+            nix build .#checks.x86_64-linux.home-nikhil-seasmoke --no-link
+            ;;
+        vermax)
+            nix build .#checks.x86_64-linux.vermax-config --no-link
+            nix build .#checks.x86_64-linux.home-nikhil-vermax --no-link
+            ;;
+        *)
+            echo "Error: Unknown host '{{ host }}'"
+            echo "Known hosts: meleys, moondancer, seasmoke, vermax"
+            exit 1
+            ;;
+    esac
+
+# ============================================================
+# Utility commands
+# ============================================================
+
+# Update flake dependencies
+update:
+    git add --intent-to-add .
+    nix flake update
+
+# Show flake outputs
+show:
+    git add --intent-to-add .
+    nix flake show --all-systems
+
+# Quick commit and push
+push:
+    git add .
+    git commit -m "just update"
+    git push
+
+# ############################################################
+# ############################################################
+# ##                                                        ##
+# ##  DEPRECATED COMMANDS - OLD JUSTFILE (DO NOT MODIFY)   ##
+# ##  These are kept for backward compatibility.           ##
+# ##  Please use the new unified 'deploy' command instead. ##
+# ##                                                        ##
+# ############################################################
+# ############################################################
+
+meleys-system:
+    git add --intent-to-add .
+    nh darwin switch .#darwinConfigurations.meleys
+
+meleys-home:
+    git add --intent-to-add .
+    nh home switch .#homeConfigurations.\"nikhilmaddirala@meleys\".activationPackage -b bkp
+
+meleys-all: meleys-system meleys-home
+
+moondancer-system:
+    git add --intent-to-add .
+    nh darwin switch .#darwinConfigurations.moondancer
+
+moondancer-home:
+    git add --intent-to-add . && \
+      export HOME_MANAGER_BACKUP_OVERWRITE=1 && \
+      nh home switch .#homeConfigurations.\"nikhilmaddirala@moondancer\".activationPackage -b backup
+
+moondancer-all: moondancer-system moondancer-home
+
+seasmoke-remote-system:
+    git add --intent-to-add .
+    deploy .#seasmoke.system
+
+seasmoke-remote-home-nikhil:
+    git add --intent-to-add .
+    deploy .#seasmoke.home-nikhil
+
+seasmoke-remote-all:
+    git add --intent-to-add .
+    deploy .#seasmoke
+
+all-remote: meleys-all seasmoke-remote-all
+
+seasmoke-local-system:
+    git add --intent-to-add .
+    sudo nixos-rebuild switch --flake .#seasmoke
+
+vermax-remote-system:
+    git add --intent-to-add .
+    deploy .#vermax.system
+
+vermax-remote-home-nikhil:
+    git add --intent-to-add .
+    deploy .#vermax.home-nikhil
+
+vermax-remote-all: vermax-remote-system vermax-remote-home-nikhil
+
+vermax-local-system:
+    git add --intent-to-add .
+    sudo nixos-rebuild switch --flake .#vermax
+
+vermax-local-home:
+    git add --intent-to-add .
+    nh home switch .#homeConfigurations.\"nikhilmaddirala@vermax\".activationPackage -b bkp
+
+vermax-local-all: vermax-local-system vermax-local-home
+
+check-meleys:
+    git add --intent-to-add .
+    nix build .#checks.aarch64-darwin.meleys-config --no-link
+    nix build .#checks.aarch64-darwin.home-nikhil-meleys --no-link
+
+check-moondancer:
+    git add --intent-to-add .
+    nix build .#checks.aarch64-darwin.moondancer-config --no-link
+    nix build .#checks.aarch64-darwin.home-nikhil-moondancer --no-link
+
+check-seasmoke:
+    git add --intent-to-add .
+    nix build .#checks.x86_64-linux.seasmoke-config --no-link
+    nix build .#checks.x86_64-linux.home-nikhil-seasmoke --no-link
+
+check-vermax:
+    git add --intent-to-add .
+    nix build .#checks.x86_64-linux.vermax-config --no-link
+    nix build .#checks.x86_64-linux.home-nikhil-vermax --no-link

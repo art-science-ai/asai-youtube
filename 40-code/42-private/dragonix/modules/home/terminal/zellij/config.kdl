@@ -1,0 +1,198 @@
+// Zellij configuration with seamless neovim integration via vim-zellij-navigator
+// Matches WezTerm workflow: Ctrl+hjkl for move, Alt+hjkl for resize
+//
+// Integration with smart-splits.nvim:
+// - vim-zellij-navigator plugin detects if neovim is running in current pane
+// - If neovim: passes Ctrl+hjkl/Alt+hjkl to neovim via smart-splits
+// - If NOT neovim: Zellij handles pane navigation/resizing directly
+// - Same keybindings work seamlessly across neovim and zellij boundaries
+//
+// Note: We keep Zellij's default modes for status bar discoverability.
+// Our keybindings in 'shared' work everywhere including locked mode.
+// This allows Ctrl+hjkl navigation to work even when locked (for vim-zellij-navigator).
+
+keybinds {
+    shared {
+        // Navigation with vim-zellij-navigator (seamless neovim integration)
+        bind "Ctrl h" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus";
+                payload "left";
+                move_mod "ctrl";
+            };
+        }
+        bind "Ctrl j" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus";
+                payload "down";
+                move_mod "ctrl";
+            };
+        }
+        bind "Ctrl k" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus";
+                payload "up";
+                move_mod "ctrl";
+            };
+        }
+        bind "Ctrl l" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "move_focus";
+                payload "right";
+                move_mod "ctrl";
+            };
+        }
+
+        // Resize with vim-zellij-navigator (seamless neovim integration)
+        bind "Alt h" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "resize";
+                payload "left";
+                resize_mod "alt";
+            };
+        }
+        bind "Alt j" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "resize";
+                payload "down";
+                resize_mod "alt";
+            };
+        }
+        bind "Alt k" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "resize";
+                payload "up";
+                resize_mod "alt";
+            };
+        }
+        bind "Alt l" {
+            MessagePlugin "https://github.com/hiasr/vim-zellij-navigator/releases/download/0.3.0/vim-zellij-navigator.wasm" {
+                name "resize";
+                payload "right";
+                resize_mod "alt";
+            };
+        }
+
+        // Pane management
+        bind "Alt n" { NewPane; }
+        bind "Alt x" { CloseFocus; }
+        bind "Alt f" { ToggleFloatingPanes; }
+
+        // Tab management
+        bind "Alt t" { NewTab; }
+        bind "Alt T" { CloseTab; }
+        bind "Alt 1" { GoToTab 1; }
+        bind "Alt 2" { GoToTab 2; }
+        bind "Alt 3" { GoToTab 3; }
+        bind "Alt 4" { GoToTab 4; }
+        bind "Alt 5" { GoToTab 5; }
+        bind "Alt 6" { GoToTab 6; }
+        bind "Alt 7" { GoToTab 7; }
+        bind "Alt 8" { GoToTab 8; }
+        bind "Alt 9" { GoToTab 9; }
+        bind "Alt [" { GoToPreviousTab; }
+        bind "Alt ]" { GoToNextTab; }
+
+        // Scroll/search mode (Alt+s instead of Alt+[ to avoid tab-nav conflict)
+        bind "Alt s" { SwitchToMode "Scroll"; }
+
+        // Lock mode (pass-through to terminal) - use Alt+g to avoid neovim conflicts
+        unbind "Ctrl g"  // Disable default Ctrl+g (conflicts with neovim)
+        bind "Alt g" { SwitchToMode "Locked"; }
+
+        // Quit
+        bind "Ctrl q" { Quit; }
+    }
+
+    // Locked mode - pass all keys through to terminal
+    locked {
+        bind "Alt g" { SwitchToMode "Normal"; }
+    }
+
+    // Scroll/search mode - for copy/paste and searching
+    scroll {
+        bind "Esc" { SwitchToMode "Normal"; }
+        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }
+
+        // Vim-style navigation
+        bind "j" { ScrollDown; }
+        bind "k" { ScrollUp; }
+        bind "h" { PageScrollUp; }
+        bind "l" { PageScrollDown; }
+        bind "d" { HalfPageScrollDown; }
+        bind "u" { HalfPageScrollUp; }
+        bind "Ctrl f" { PageScrollDown; }
+        bind "Ctrl b" { PageScrollUp; }
+
+        // Arrow keys
+        bind "Down" { ScrollDown; }
+        bind "Up" { ScrollUp; }
+        bind "PageDown" { PageScrollDown; }
+        bind "PageUp" { PageScrollUp; }
+
+        // Search
+        bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }
+    }
+
+    search {
+        bind "n" { Search "Down"; }
+        bind "p" { Search "Up"; }
+        bind "c" { SearchToggleOption "CaseSensitivity"; }
+        bind "w" { SearchToggleOption "WholeWord"; }
+        bind "o" { SearchToggleOption "Wrap"; }
+        bind "Esc" { SwitchToMode "Scroll"; }
+        bind "Ctrl c" { SwitchToMode "Normal"; }
+    }
+
+    entersearch {
+        bind "Ctrl c" { SwitchToMode "Scroll"; }
+        bind "Esc" { SwitchToMode "Scroll"; }
+        bind "Enter" { SwitchToMode "Search"; }
+    }
+}
+
+// =============================================================================
+// PLUGINS - Essential plugins only
+// =============================================================================
+plugins {
+    tab-bar location="zellij:tab-bar"
+    status-bar location="zellij:status-bar"
+}
+
+// =============================================================================
+// APPEARANCE & BEHAVIOR
+// =============================================================================
+
+// Enable pane frames to show focus (CRITICAL for visual feedback)
+pane_frames true
+
+// Theme - matches your aesthetic
+theme "catppuccin-mocha"
+
+// Simplified UI without special fonts (if terminal doesn't support powerline)
+simplified_ui false
+
+// Mouse support
+mouse_mode true
+
+// Disable mouse hover effects to avoid focus confusion
+// (Only the focused pane will have colored border)
+advanced_mouse_actions false
+
+// Disable startup tips
+show_startup_tips false
+
+// Session behavior
+on_force_close "detach"
+session_serialization true
+auto_layout true
+
+// Scrollback buffer
+scroll_buffer_size 10000
+
+// Copy on select (like terminal defaults)
+copy_on_select true
+copy_clipboard "system"
+
+// Default shell (uses $SHELL if not specified)
+// default_shell "zsh"

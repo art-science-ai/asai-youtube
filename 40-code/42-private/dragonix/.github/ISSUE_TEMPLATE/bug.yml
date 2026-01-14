@@ -1,0 +1,50 @@
+name: Bug
+description: Report a bug in the nix configuration
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: host
+    attributes:
+      label: Host(s)
+      description: Which host is affected?
+      options:
+        - meleys (nix-darwin)
+        - seasmoke (NixOS)
+        - both
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Environment details
+      placeholder: |
+        OS: nix-darwin/NixOS
+        Flake input versions: (run `nix flake metadata`)
+        Module path: hosts/meleys, home/common, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Exact command and output
+      placeholder: |
+        Command: just meleys
+        Output:
+        error: builder for '/nix/store/...' failed with exit code 1
+        ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this is fixed?
+      placeholder: |
+        - [ ] nix flake check succeeds
+        - [ ] just meleys builds successfully
+        - [ ] CI is green
+    validations:
+      required: true

@@ -1,0 +1,34 @@
+{
+  "Lua Function": {
+    "prefix": "fn",
+    "body": [
+      "function ${1:name}(${2:params})",
+      "  ${3:-- TODO: implement}",
+      "end"
+    ],
+    "description": "Create a Lua function"
+  },
+  "Local Function": {
+    "prefix": "lfn",
+    "body": [
+      "local function ${1:name}(${2:params})",
+      "  ${3:-- TODO: implement}",
+      "end"
+    ],
+    "description": "Create a local Lua function"
+  },
+  "Vim Keymap": {
+    "prefix": "keymap",
+    "body": [
+      "vim.keymap.set('${1:n}', '${2:<leader>}', ${3:action}, { desc = '${4:description}' })"
+    ],
+    "description": "Create a vim keymap"
+  },
+  "Vim Option": {
+    "prefix": "opt",
+    "body": [
+      "vim.opt.${1:option} = ${2:value}"
+    ],
+    "description": "Set a vim option"
+  }
+}

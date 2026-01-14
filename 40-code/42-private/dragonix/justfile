@@ -1,0 +1,190 @@
+# Nix Configuration Build Commands
+
+# Show available commands  
+default:
+    just --list
+
+meleys-system:
+    git add --intent-to-add .
+    nh darwin switch .#darwinConfigurations.meleys  
+
+meleys-home:
+    git add --intent-to-add .
+    nh home switch .#homeConfigurations."nikhilmaddirala@meleys".activationPackage -b bkp
+
+meleys-home-nobuild:
+    git add --intent-to-add .
+    nh home switch .#homeConfigurations."nikhilmaddirala@meleys".activationPackage -b bkp -- --option max-jobs 0 --option builders "" --option fallback false --accept-flake-config
+    
+
+meleys-all: meleys-system meleys-home
+
+moondancer-system:
+    git add --intent-to-add .
+    nh darwin switch .#darwinConfigurations.moondancer
+
+moondancer-home:
+    git add --intent-to-add . && \
+      export HOME_MANAGER_BACKUP_OVERWRITE=1 && \
+      nh home switch .#homeConfigurations."nikhilmaddirala@moondancer".activationPackage -b backup
+
+moondancer-light:
+    git add --intent-to-add . && \
+    bash -c '$(nix eval --raw ".#homeConfigurations.\"nikhilmaddirala@moondancer\".activationPackage.outPath")/specialisation/light/activate'
+
+moondancer-dark:
+    git add --intent-to-add . && \
+    bash -c '$(nix eval --raw ".#homeConfigurations.\"nikhilmaddirala@moondancer\".activationPackage.outPath")/activate'
+
+moondancer-home-light: moondancer-home moondancer-light
+
+moondancer-all: moondancer-system moondancer-home
+
+seasmoke-remote-system:
+    git add --intent-to-add .
+    deploy .#seasmoke.system
+
+seasmoke-remote-home:
+    git add --intent-to-add .
+    deploy .#seasmoke.home
+
+# Deploy both system and all home profiles
+seasmoke-remote-all:
+    git add --intent-to-add .
+    deploy .#seasmoke
+
+# Sync repository to seasmoke (shared function)
+seasmoke-ssh-sync:
+    git add --intent-to-add .
+    echo "Cleaning up previous deployment on local and seasmoke..."
+    rm -rf /var/tmp/nix-config-deploy
+    ssh seasmoke "rm -rf /var/tmp/nix-config-deploy"
+    echo "Creating and transferring deployment archive..."
+    mkdir -p /var/tmp/nix-config-deploy
+    tar -czf /var/tmp/nix-config-deploy/nix-config.tar.gz --exclude=.git --exclude-from=.gitignore .
+    ssh seasmoke "mkdir -p /var/tmp/nix-config-deploy"
+    scp /var/tmp/nix-config-deploy/nix-config.tar.gz seasmoke:/var/tmp/nix-config-deploy/
+    ssh seasmoke "tar -xzf /var/tmp/nix-config-deploy/nix-config.tar.gz -C /var/tmp/nix-config-deploy && rm /var/tmp/nix-config-deploy/nix-config.tar.gz"
+
+# Build and deploy seasmoke system from vermax
+seasmoke-from-vermax-system: seasmoke-ssh-sync
+    echo "Building and activating system configuration on seasmoke..."
+    ssh seasmoke "cd /var/tmp/nix-config-deploy && sudo nixos-rebuild switch --flake .#seasmoke"
+
+# Build and deploy seasmoke home from vermax
+seasmoke-from-vermax-home: seasmoke-ssh-sync
+    echo "Activating home-manager on seasmoke..."
+    ssh seasmoke "cd /var/tmp/nix-config-deploy && unset NH_FLAKE NH_HOME_FLAKE NH_OS_FLAKE NH_DARWIN_FLAKE && nh home switch . -b bkp"
+
+# Build and deploy both seasmoke system and home from vermax
+seasmoke-from-vermax: seasmoke-from-vermax-system
+    echo "Activating home-manager on seasmoke..."
+    ssh seasmoke "cd /var/tmp/nix-config-deploy && unset NH_FLAKE NH_HOME_FLAKE NH_OS_FLAKE NH_DARWIN_FLAKE && nh home switch . -b bkp"
+
+all-remote: meleys-all seasmoke-remote-all
+
+seasmoke-local-system:
+    git add --intent-to-add .
+    sudo nixos-rebuild switch --flake .#seasmoke
+
+# Waiting for https://github.com/serokell/deploy-rs/pull/352 - I think?
+vermax-remote-system:
+    git add --intent-to-add .
+    deploy .#vermax.system
+
+vermax-remote-home:
+    git add --intent-to-add .
+    deploy .#vermax.home
+
+
+# Deploy system and home profile
+vermax-remote-all: vermax-remote-system vermax-remote-home
+
+
+# Sync repository to vermax (shared function)
+vermax-ssh-sync:
+    git add --intent-to-add .
+    echo "Cleaning up previous deployment on local and vermax..."
+    rm -rf /var/tmp/nix-config-deploy
+    ssh vermax "rm -rf /var/tmp/nix-config-deploy"
+    echo "Creating and transferring deployment archive..."
+    mkdir -p /var/tmp/nix-config-deploy
+    tar -czf /var/tmp/nix-config-deploy/nix-config.tar.gz --exclude=.git --exclude-from=.gitignore .
+    ssh vermax "mkdir -p /var/tmp/nix-config-deploy"
+    scp /var/tmp/nix-config-deploy/nix-config.tar.gz vermax:/var/tmp/nix-config-deploy/
+    ssh vermax "tar -xzf /var/tmp/nix-config-deploy/nix-config.tar.gz -C /var/tmp/nix-config-deploy && rm /var/tmp/nix-config-deploy/nix-config.tar.gz"
+
+# Deploy system configuration
+vermax-ssh-system: vermax-ssh-sync
+    echo "Building and activating system configuration on vermax..."
+    ssh vermax "cd /var/tmp/nix-config-deploy && sudo nixos-rebuild switch --flake .#vermax"
+
+# Deploy everything (equivalent to vermax-local-all)
+vermax-ssh-all: vermax-ssh-system
+    echo "Activating home-manager ..."
+    ssh vermax "cd /var/tmp/nix-config-deploy && nix run nixpkgs#home-manager -- switch --flake .#nikhilmaddirala@vermax" 
+
+vermax-local-system:
+    git add --intent-to-add .
+    sudo nixos-rebuild switch --flake .#vermax
+
+vermax-local-home:
+    git add --intent-to-add .
+    nh home switch .#homeConfigurations."nikhilmaddirala@vermax".activationPackage -b bkp
+    # nh home switch .#homeConfigurations."nikhilmaddirala@vermax".activationPackage -b bkp -- --option substitute false
+
+vermax-local-all: vermax-local-system vermax-local-home
+
+push:
+    git add .
+    git commit -m "just update"
+    git push
+
+# Check all configurations
+check-all:
+    git add --intent-to-add .
+    nix flake check --extra-experimental-features "nix-command flakes parallel-eval" --all-systems
+
+# Evaluate all configurations without building (fast, dry-run)
+check-all-dry:
+    git add --intent-to-add .
+    nix build --dry-run \
+        .#checks.x86_64-linux.seasmoke-config \
+        .#checks.x86_64-linux.home-seasmoke \
+        .#checks.x86_64-linux.vermax-config \
+        .#checks.x86_64-linux.home-vermax \
+        .#checks.aarch64-darwin.meleys-config \
+        .#checks.aarch64-darwin.home-meleys \
+        .#checks.aarch64-darwin.moondancer-config \
+        .#checks.aarch64-darwin.home-moondancer
+
+# Check individual configurations
+check-meleys:
+    git add --intent-to-add .
+    nix build .#checks.aarch64-darwin.meleys-config --no-link
+    nix build .#checks.aarch64-darwin.home-meleys --no-link
+
+check-moondancer:
+    git add --intent-to-add .
+    nix build .#checks.aarch64-darwin.moondancer-config --no-link
+    nix build .#checks.aarch64-darwin.home-moondancer --no-link
+
+check-seasmoke:
+    git add --intent-to-add .
+    nix build .#checks.x86_64-linux.seasmoke-config --no-link
+    nix build .#checks.x86_64-linux.home-seasmoke --no-link
+
+check-vermax:
+    git add --intent-to-add .
+    nix build .#checks.x86_64-linux.vermax-config --no-link
+    nix build .#checks.x86_64-linux.home-vermax --no-link
+
+# Update flake dependencies
+update:
+    git add --intent-to-add .
+    nix flake update
+
+# Show flake outputs
+show:
+    git add --intent-to-add .
+    nix flake show --all-systems
