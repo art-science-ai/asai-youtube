@@ -9,21 +9,22 @@ Declarative home-manager configuration for Codex AI assistant.
 ## Configuration
 
 - Model: GPT-5.1 Codex Max
-- Trusted project: `/Users/nikhilmaddirala/repos`
+- Trusted project: `~/repos` (or your preferred projects directory)
 - Migration prompt: Hidden for GPT-5.1 Codex Max
 
 ## Usage
 
-Enable this module by importing it in your home-manager configuration:
+Enable this module by importing it in your home-manager configuration using relative paths:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai/codex ];
+# In home/<user>-<hostname>.nix
+imports = [ ../../modules/home/ai/codex ];
 ```
 
 Or enable via the main AI module:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai ];
+imports = [ ../../modules/home/ai ];
 ```
 
 ## Notes

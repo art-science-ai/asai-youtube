@@ -228,7 +228,7 @@ If you prefer or need to activate home-manager manually:
 nix run home-manager -- switch --flake .#nikhilmaddirala@vermax
 
 # For rukmasen user (use absolute path due to permission restrictions)
-sudo -u rukmasen nix run home-manager -- switch --flake /home/nikhilmaddirala/repos/nix-config#rukmasen@vermax
+sudo -u rukmasen nix run home-manager -- switch --flake ~/.config/nix-config#rukmasen@vermax
 ```
 
 Home-manager enforces that it runs as the target user for security, requiring `sudo -u` when activating for other users.
@@ -309,7 +309,7 @@ creation_rules:
 This allows vermax to decrypt the secrets file:
 
 ```bash
-cd ~/repos/nix-config
+cd ~/.config/nix-config
 sops --config vars/.sops.yaml updatekeys vars/secrets.yaml
 ```
 

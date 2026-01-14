@@ -13,7 +13,7 @@
   # Mutable settings.json using mkOutOfStoreSymlink for Claude Code configuration
   # Place where Claude expects it: ~/.claude/settings.json
   home.file.".claude/settings.json".source =
-    config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/repos/nix-config/modules/home/ai/claude/settings.json";
+    config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-config/modules/home/ai/claude/settings.json";
 
   # Statusline scripts - managed declaratively
   home.file.".claude/statusline.py" = {

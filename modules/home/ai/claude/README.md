@@ -30,16 +30,17 @@ Declarative home-manager configuration for Claude Code AI assistant.
 
 ## Usage
 
-Enable this module by importing it in your home-manager configuration:
+Enable this module by importing it in your home-manager configuration using relative paths:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai/claude ];
+# In home/<user>-<hostname>.nix or similar
+imports = [ ../../modules/home/ai/claude ];
 ```
 
 Or enable via the main AI module:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai ];
+imports = [ ../../modules/home/ai ];
 ```
 
 ## Statusline Features

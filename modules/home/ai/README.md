@@ -13,19 +13,22 @@ This directory contains declarative configurations for various AI-powered develo
 
 ## Usage
 
-Import the entire AI module in your home-manager configuration:
+Modules are imported in your host or home configuration files using relative paths. For example, in a host configuration:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai ];
+# In hosts/<hostname>/default.nix or home/<user>-<hostname>.nix
+imports = [
+  ../../modules/home/ai
+];
 ```
 
-Or import individual tools:
+Or import individual AI tools:
 
 ```nix
 imports = [
-  <nix-config>/modules/home/ai/claude
-  <nix-config>/modules/home/ai/opencode
-  <nix-config>/modules/home/ai/codex
+  ../../modules/home/ai/claude
+  ../../modules/home/ai/opencode
+  ../../modules/home/ai/codex
 ];
 ```
 
@@ -36,7 +39,7 @@ imports = [
 - Status: Active
 - Features: Claude Code AI assistant with statusline scripts
 - Configuration: Mutable settings via mkOutOfStoreSymlink, declarative statusline scripts
-- Settings Location: `~/.claude/settings.json` → `/home/nikhilmaddirala/repos/nix-config/modules/home/ai/claude/settings.json`
+- Settings Location: `~/.claude/settings.json` → `~/.config/nix-config/modules/home/ai/claude/settings.json`
 
 ### Gemini CLI
 - Location: `gemini/`

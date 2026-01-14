@@ -15,7 +15,7 @@
   programs.codex.settings = {
     model = "gpt-5.2-codex-max";
     projects = {
-      "/Users/nikhilmaddirala/repos" = {
+      "${config.home.homeDirectory}/repos" = {
         trust_level = "trusted";
       };
     };

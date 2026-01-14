@@ -15,7 +15,7 @@ Declarative home-manager configuration for Obsidian markdown editor with plugins
 
 ### Obsidian Directory Management
 - `.obsidian-desktop/` is linked using `mkOutOfStoreSymlink` from module
-- Located at: `~/.config/obsidian/obsidian-desktop` → `/home/nikhilmaddirala/repos/nix-config/modules/home/obsidian/.obsidian-desktop`
+- Located at: `~/.config/obsidian/obsidian-desktop` → `~/.config/nix-config/modules/home/desktop-apps/obsidian/obsidian-desktop`
 - Allows Obsidian to modify plugins, settings, and themes freely
 - Preserves all existing configuration and customizations
 
@@ -45,18 +45,19 @@ Declarative home-manager configuration for Obsidian markdown editor with plugins
 
 ## Usage
 
-Enable this module by importing it in your home-manager configuration:
+Enable this module by importing it in your home-manager configuration using relative paths:
 
 ```nix
-imports = [ <nix-config>/modules/home/obsidian ];
+# In home/<user>-<hostname>.nix
+imports = [ ../../modules/home/desktop-apps/obsidian ];
 ```
 
 Or enable via main home-manager configuration:
 
 ```nix
 imports = [
-  <nix-config>/modules/home/base.nix
-  <nix-config>/modules/home/obsidian
+  ../../modules/home/base.nix
+  ../../modules/home/desktop-apps/obsidian
   # ... other modules
 ];
 ```

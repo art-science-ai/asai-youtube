@@ -21,13 +21,13 @@
             };
             options = {
               nixos = {
-                expr = "(builtins.getFlake \"/home/nikhilmaddirala/repos/nix-config\").nixosConfigurations.vermax.options";
+                expr = "(builtins.getFlake (builtins.getEnv \"HOME\" + \"/.config/nix-config\")).nixosConfigurations.vermax.options";
               };
               darwin = {
-                expr = "(builtins.getFlake \"/home/nikhilmaddirala/repos/nix-config\").darwinConfigurations.moondancer.options";
+                expr = "(builtins.getFlake (builtins.getEnv \"HOME\" + \"/.config/nix-config\")).darwinConfigurations.moondancer.options";
               };
               home_manager = {
-                expr = "(builtins.getFlake \"/home/nikhilmaddirala/repos/nix-config\").homeConfigurations.\"nikhilmaddirala@vermax\".options";
+                expr = "(builtins.getFlake (builtins.getEnv \"HOME\" + \"/.config/nix-config\")).homeConfigurations.\"nikhilmaddirala@vermax\".options";
               };
             };
           };
