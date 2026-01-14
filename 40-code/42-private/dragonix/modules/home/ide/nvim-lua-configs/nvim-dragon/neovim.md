@@ -1,1 +1,0 @@
-../../../../references/docs-01-main/neovim.md

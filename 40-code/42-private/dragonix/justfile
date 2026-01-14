@@ -10,11 +10,13 @@ meleys-system:
 
 meleys-home:
     git add --intent-to-add .
-    nh home switch .#homeConfigurations."nikhilmaddirala@meleys".activationPackage -b bkp
+    unset NH_FLAKE NH_HOME_FLAKE NH_OS_FLAKE NH_DARWIN_FLAKE && \
+      nh home switch . -b bkp
 
 meleys-home-nobuild:
     git add --intent-to-add .
-    nh home switch .#homeConfigurations."nikhilmaddirala@meleys".activationPackage -b bkp -- --option max-jobs 0 --option builders "" --option fallback false --accept-flake-config
+    unset NH_FLAKE NH_HOME_FLAKE NH_OS_FLAKE NH_DARWIN_FLAKE && \
+      nh home switch . -b bkp -- --option max-jobs 0 --option builders "" --option fallback false --accept-flake-config
     
 
 meleys-all: meleys-system meleys-home
@@ -26,7 +28,8 @@ moondancer-system:
 moondancer-home:
     git add --intent-to-add . && \
       export HOME_MANAGER_BACKUP_OVERWRITE=1 && \
-      nh home switch .#homeConfigurations."nikhilmaddirala@moondancer".activationPackage -b backup
+      unset NH_FLAKE NH_HOME_FLAKE NH_OS_FLAKE NH_DARWIN_FLAKE && \
+      nh home switch . -b backup
 
 moondancer-light:
     git add --intent-to-add . && \
@@ -130,8 +133,9 @@ vermax-local-system:
 
 vermax-local-home:
     git add --intent-to-add .
-    nh home switch .#homeConfigurations."nikhilmaddirala@vermax".activationPackage -b bkp
-    # nh home switch .#homeConfigurations."nikhilmaddirala@vermax".activationPackage -b bkp -- --option substitute false
+    unset NH_FLAKE NH_HOME_FLAKE NH_OS_FLAKE NH_DARWIN_FLAKE && \
+      nh home switch . -b bkp
+    # nh home switch . -b bkp -- --option substitute false
 
 vermax-local-all: vermax-local-system vermax-local-home
 

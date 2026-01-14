@@ -3,5 +3,5 @@ let
   isLinux = lib.hasSuffix "-linux" system;
 in
 {
-  imports = if isLinux then [ ./google-drive.nix ] else [ ];
+  imports = [ ./syncthing.nix ] ++ (if isLinux then [ ./google-drive.nix ] else [ ]);
 }

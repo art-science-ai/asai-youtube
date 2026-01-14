@@ -13,6 +13,7 @@
     ../modules/home/auth
     ../modules/home/browsing
     ../modules/home/cli
+    ../modules/home/cloud-storage
     ../modules/home/terminal
     ../modules/home/desktop-apps
     ../modules/home/themes

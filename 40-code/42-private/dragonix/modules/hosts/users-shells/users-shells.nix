@@ -1,6 +1,12 @@
 # Unified user and shell configuration for both NixOS and Darwin
 # Provides declarative user management and system shell configuration with platform-specific adaptations
-{ config, pkgs, lib, inputs, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  inputs,
+  ...
+}:
 let
   inherit (pkgs.stdenv) isLinux isDarwin;
 
@@ -17,9 +23,16 @@ let
       shell = pkgs.zsh;
       sshKeys = [ sshKeys.nikhil-1p ];
       isAdmin = true;
-      extraGroups = [ "wheel" "docker" "networkmanager" "input" "uinput" ];
+      extraGroups = [
+        "wheel"
+        "docker"
+        "networkmanager"
+        "input"
+        "uinput"
+        "fuse"
+      ];
       password = "changeme";
-      homeManager = "standalone";  # Use standalone Home Manager
+      homeManager = "standalone"; # Use standalone Home Manager
     };
 
     rukmasen = {
@@ -28,8 +41,11 @@ let
       isAdmin = false;
       extraGroups = [ ];
       password = "changeme";
-      packages = with pkgs; [ flatpak gnome-software ];
-      homeManager = "nixos-module";  # Use NixOS Home Manager module
+      packages = with pkgs; [
+        flatpak
+        gnome-software
+      ];
+      homeManager = "nixos-module"; # Use NixOS Home Manager module
     };
 
     aegon = {
@@ -38,7 +54,7 @@ let
       isAdmin = true;
       extraGroups = [ "wheel" ];
       password = null;
-      homeManager = "nixos-module";  # Use NixOS Home Manager module
+      homeManager = "nixos-module"; # Use NixOS Home Manager module
     };
 
     tyrion = {
@@ -47,7 +63,7 @@ let
       isAdmin = false;
       extraGroups = [ ];
       password = null;
-      homeManager = "nixos-module";  # Use NixOS Home Manager module
+      homeManager = "nixos-module"; # Use NixOS Home Manager module
     };
 
     guest = {
@@ -56,8 +72,11 @@ let
       isAdmin = false;
       extraGroups = [ ];
       password = "guest";
-      packages = with pkgs; [ flatpak gnome-software ];
-      homeManager = "nixos-module";  # Use NixOS Home Manager module
+      packages = with pkgs; [
+        flatpak
+        gnome-software
+      ];
+      homeManager = "nixos-module"; # Use NixOS Home Manager module
     };
 
   };
@@ -67,13 +86,13 @@ let
     isNormalUser = true;
     description = "${username}";
     home = "/home/${username}";
-    extraGroups = profile.extraGroups or [];
+    extraGroups = profile.extraGroups or [ ];
     shell = profile.shell;
-    openssh.authorizedKeys.keys = profile.sshKeys or [];
+    openssh.authorizedKeys.keys = profile.sshKeys or [ ];
     # Set password if provided, otherwise no password (SSH keys only)
     initialPassword = lib.attrByPath [ "password" ] null profile;
     # Include user-specific packages if defined
-    packages = profile.packages or [];
+    packages = profile.packages or [ ];
   };
 
   # Convert profile to Darwin user config. Darwin has minimal user config options.
@@ -85,7 +104,8 @@ in
 {
   # Auto-generate a myUsers.<username>.enable option for each profile.
   # Hosts activate users by setting these booleans.
-  options.myUsers = lib.genAttrs (lib.attrNames userProfiles) (username:
+  options.myUsers = lib.genAttrs (lib.attrNames userProfiles) (
+    username:
     lib.mkOption {
       type = lib.types.submodule {
         options = {
@@ -94,7 +114,7 @@ in
           };
         };
       };
-      default = {};
+      default = { };
     }
   );
 
@@ -102,7 +122,12 @@ in
     # System shell configuration (cross-platform)
     {
       # Add all managed shells to /etc/shells (cross-platform)
-      environment.shells = with pkgs; [ bash fish zsh nushell ];
+      environment.shells = with pkgs; [
+        bash
+        fish
+        zsh
+        nushell
+      ];
     }
 
     # System shell programs for NixOS
@@ -119,21 +144,17 @@ in
 
     # Apply enabled users to NixOS systems.
     (lib.mkIf isLinux {
-      users.users = lib.mapAttrs' (username: profile:
-        lib.nameValuePair username (mkNixOSUser username profile)
-      ) (lib.filterAttrs (username: _:
-        config.myUsers.${username}.enable
-      ) userProfiles);
+      users.users = lib.mapAttrs' (
+        username: profile: lib.nameValuePair username (mkNixOSUser username profile)
+      ) (lib.filterAttrs (username: _: config.myUsers.${username}.enable) userProfiles);
 
-          })
+    })
 
     # Apply enabled users to Darwin systems.
     (lib.mkIf isDarwin {
-      users.users = lib.mapAttrs (username: profile:
-        mkDarwinUser username profile
-      ) (lib.filterAttrs (username: _:
-        config.myUsers.${username}.enable
-      ) userProfiles);
+      users.users = lib.mapAttrs (username: profile: mkDarwinUser username profile) (
+        lib.filterAttrs (username: _: config.myUsers.${username}.enable) userProfiles
+      );
     })
   ];
 }
