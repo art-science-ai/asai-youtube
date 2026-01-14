@@ -18,16 +18,17 @@ Declarative home-manager configuration for Gemini CLI AI assistant.
 
 ## Usage
 
-Enable this module by importing it in your home-manager configuration:
+Enable this module by importing it in your home-manager configuration using relative paths:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai/gemini ];
+# In home/<user>-<hostname>.nix
+imports = [ ../../modules/home/ai/gemini ];
 ```
 
 Or enable via the main AI module (currently commented out):
 
 ```nix
-imports = [ <nix-config>/modules/home/ai ];
+imports = [ ../../modules/home/ai ];
 ```
 
 ## Commands

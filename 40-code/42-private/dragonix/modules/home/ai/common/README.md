@@ -28,11 +28,12 @@ This module is automatically imported by the main AI module and provides:
 ## Import
 
 ```nix
-imports = [ <nix-config>/modules/home/ai/common ];
+# In your home or host configuration
+imports = [ ../../modules/home/ai/common ];
 ```
 
 Or include via main AI module:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai ];
+imports = [ ../../modules/home/ai ];
 ```

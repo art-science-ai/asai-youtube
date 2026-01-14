@@ -8,7 +8,7 @@ A Nix-based declarative Neovim configuration, migrating the original nvim-dragon
 
 The migration is **in progress**. Below is a comprehensive comparison organized by plugin categories, showing implementation status across both configurations.
 
-Original config: /Users/nikhilmaddirala/repos/nix-config/dotfiles/nvim-dragon/.config/nvim-dragon
+Original config: ~/.config/nix-config/dotfiles/nvim-dragon/.config/nvim-dragon
 
 **Legend:**
 - ✅ Implemented in both nvim-dragon and nixvim-dragon

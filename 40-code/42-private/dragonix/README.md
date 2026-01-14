@@ -15,6 +15,41 @@ The key components are:
 - **Infrastructure as Code**: Treat system configuration as a software project, applying best practices like version control, code review, and automation.
 - **GitOps and CI/CD**: Use Git as the single source of truth and automate build/deployment processes.
 
+## Quick Start
+
+### Initial Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone git@github.com:nikhilmaddirala/nix-config.git ~/repos/nix-config
+   cd ~/repos/nix-config
+   ```
+
+2. **Create a symlink for portable paths:**
+   ```bash
+   ln -s ~/repos/nix-config ~/.config/nix-config
+   ```
+
+   This symlink allows all configurations to reference `~/.config/nix-config`, making your setup portable across different machines and directory locations.
+
+3. **Install Nix (if not already installed):**
+   - **macOS**: Use the [Determinate Systems Nix Installer](https://github.com/DeterminateSystems/nix-installer)
+     ```bash
+     curl --proto '=https' --tlsv1.2 -sSf https://install.determinate.systems/nix | sh -s -- install
+     ```
+   - **NixOS**: The Nix package manager is already installed
+
+4. **Apply the configuration:**
+   ```bash
+   # macOS
+   sudo darwin-rebuild switch --flake ~/.config/nix-config#<hostname>
+
+   # NixOS
+   sudo nixos-rebuild switch --flake ~/.config/nix-config#<hostname>
+   ```
+
+See the [Host Configuration](hosts/README.md) documentation for detailed installation instructions.
+
 ## Repository Structure
 
 The repository follows **Pattern 1 — Style B** architecture, where each host and user file is self-contained. Shared functionality is extracted into reusable modules, and flake.nix acts as thin wiring:

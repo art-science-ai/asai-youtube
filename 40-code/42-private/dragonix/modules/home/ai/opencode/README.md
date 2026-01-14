@@ -30,16 +30,17 @@ Declarative home-manager configuration for OpenCode AI-powered development envir
 
 ## Usage
 
-Enable this module by importing it in your home-manager configuration:
+Enable this module by importing it in your home-manager configuration using relative paths:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai/opencode ];
+# In home/<user>-<hostname>.nix
+imports = [ ../../modules/home/ai/opencode ];
 ```
 
 Or enable via the main AI module:
 
 ```nix
-imports = [ <nix-config>/modules/home/ai ];
+imports = [ ../../modules/home/ai ];
 ```
 
 ## Configuration

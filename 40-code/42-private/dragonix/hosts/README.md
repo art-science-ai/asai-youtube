@@ -135,7 +135,7 @@ sudo darwin-rebuild switch --flake .#<hostname>
 **For Moondancer specifically (first time setup):**
 Moondancer uses the Determinate Nix Installer and requires special handling due to its daemon management. After applying the system configuration, you must also activate the home-manager configuration:
 ```bash
-# First, apply the system configuration (from nix-config directory)
+# First, apply the system configuration
 sudo nix run nix-darwin/master#darwin-rebuild -- switch --flake .#moondancer
 
 # Then, activate home-manager for your user

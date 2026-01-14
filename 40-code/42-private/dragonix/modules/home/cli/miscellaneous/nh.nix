@@ -1,7 +1,7 @@
 { config, lib, ... }:
 
 let
-  flakePath = config.home.homeDirectory + "/repos/nix-config";
+  flakePath = "${config.xdg.configHome}/nix-config";
 in
 {
   programs.nh = {

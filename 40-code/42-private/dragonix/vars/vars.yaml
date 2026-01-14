@@ -5,7 +5,7 @@ users:
     ssh_keys: []
   - username: guest
     ssh_keys: []
-machines:
+systems:
   - name: meleys
     hostname: nikhilmaddirala-mac
     system: aarch64-darwin
@@ -15,6 +15,3 @@ machines:
     vendor: hetzner
     system: x86_64-linux
     hostname: seasmoke
-    ip: 91.99.176.80 #secret
-api_keys:
-  openrouter: TODO #secret

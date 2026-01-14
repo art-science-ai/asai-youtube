@@ -11,12 +11,12 @@
 - There is a nix-community poject for Authentik, I haven't tried it myself, but tis could be a starting point: https://github.com/nix-community/authentik-nix
 
 
-### Collaboration notes 
+### Collaboration notes
 Saascha has ssh access to nikhilmaddirala@seasmoke
 
 ```bash
 ssh nikhilmaddirala@91.99.176.80
-cd ~/repos/nix-config
+cd ~/.config/nix-config
 
 # create shared zellij session
 zellij attach --create coaching

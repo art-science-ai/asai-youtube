@@ -1,10 +1,11 @@
-/* === README === 
+/* === README ===
 Setting for surfingkeys chrome extension
 
 Chrome / Chromium
 - You need to manually go to extension settings and load from file
 - You cannot use a symlinked file - must point to actual path
-/Users/nikhilmaddirala/repos/nix-config/dotfiles/surfingkeys/.config/surfingkeys/surfingkeys.js
+- For macOS: ~/.config/nix-config/modules/home/browsing/surfingkeys/surfingkeys.js
+- For Linux: ~/.config/nix-config/modules/home/browsing/surfingkeys/surfingkeys.js
 
 Firefox / Zen
 - Cannot load settings from file; manually copy paste js.
