@@ -37,11 +37,10 @@
 
       # Default (from https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/blob/master/schemas/org.gnome.desktop.wm.keybindings.gschema.xml.in)
       close = [ "<Alt>F4" ];
-      maximize = [ "<Super>Up" ];
-      unmaximize = [
-        "<Super>Down"
-        "<Alt>F5"
-      ];
+      # PaperWM is a tiling WM, so it doesn't use maximize/unmaximize
+      # Disable these to avoid conflict with PaperWM's switch-up/switch-down (<Super>Up/Down)
+      maximize = [ ];
+      unmaximize = [ ];
       begin-move = [ "<Alt>F7" ];
       begin-resize = [ "<Alt>F8" ];
       toggle-maximized = [ "<Alt>F10" ];
@@ -79,10 +78,11 @@
       move-to-workspace-last = [ "<Super><Shift>End" ];
       move-to-workspace-up = [ "<Control><Shift><Alt>Up" ];
       move-to-workspace-down = [ "<Control><Shift><Alt>Down" ];
-      move-to-monitor-left = [ "<Super><Shift>Left" ];
-      move-to-monitor-right = [ "<Super><Shift>Right" ];
-      move-to-monitor-up = [ "<Super><Shift>Up" ];
-      move-to-monitor-down = [ "<Super><Shift>Down" ];
+      # PaperWM handles monitor movement - disable GNOME's to avoid conflicts
+      move-to-monitor-left = [ ];
+      move-to-monitor-right = [ ];
+      move-to-monitor-up = [ ];
+      move-to-monitor-down = [ ];
       switch-input-source = [
         "<Super>space"
         "XF86Keyboard"

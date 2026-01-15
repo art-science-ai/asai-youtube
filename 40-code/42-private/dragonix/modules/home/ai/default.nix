@@ -4,7 +4,7 @@
     ./claude
     ./claude-code-router
     ./codex
-    # ./gemini
+    ./gemini
     ./opencode
     ./common
     ./misc

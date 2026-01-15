@@ -21,6 +21,8 @@ in
       # NixOS-specific desktop packages
       flameshot
       libreoffice
+      # librepods # Not in nixpkgs
+      localsend
       obsidian
       obs-studio
     ]))
