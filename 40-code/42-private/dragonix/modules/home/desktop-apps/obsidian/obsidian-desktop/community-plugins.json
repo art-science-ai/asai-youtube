@@ -1,12 +1,9 @@
 [
   "terminal",
-  "obsidian-git",
   "settings-search",
-  "obsidian-advanced-uri",
   "obsidian-style-settings",
   "tasknotes",
   "obsidian-custom-frames",
-  "cycle-through-panes",
   "darlal-switcher-plus",
   "zenmode",
   "obsidian-zoom",
@@ -15,10 +12,11 @@
   "obsidian-excalidraw-plugin",
   "obsidian-heading-shifter",
   "obsidian-outliner",
-  "table-editor-obsidian",
   "number-headings-obsidian",
   "periodic-notes",
   "show-hidden-files",
   "omnisearch",
-  "better-export-pdf"
+  "better-export-pdf",
+  "d2-obsidian",
+  "obsidian-mind-map"
 ]

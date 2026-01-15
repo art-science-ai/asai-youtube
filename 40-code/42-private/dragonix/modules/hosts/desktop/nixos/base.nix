@@ -33,7 +33,20 @@
     nerd-fonts.caskaydia-mono
   ];
 
-  
+  # Font rendering configuration for sharp fonts
+  fonts.fontconfig = {
+    subpixel = {
+      rgba = "rgb";
+      lcdfilter = "default";
+    };
+    hinting = {
+      enable = true;
+      style = "slight"; # 'slight' makes fonts look sharpest on modern LCDs
+    };
+    # antialias = true; # Default when fontconfig is enabled
+  };
+
+
 
   # Networking utilities
   services.resolved.enable = true;

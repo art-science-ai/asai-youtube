@@ -4,6 +4,6 @@
   "monospaceFontFamily": "JetBrainsMono Nerd Font",
   "interfaceFontFamily": "Calibri,DejaVu Sans",
   "textFontFamily": "DejaVu Sans,Arial",
-  "showRibbon": true,
+  "showRibbon": false,
   "enabledCssSnippets": []
 }

@@ -1,4 +1,9 @@
-{ config, lib, inputs, ... }:
+{
+  config,
+  lib,
+  inputs,
+  ...
+}:
 
 {
   # Browser installations
@@ -34,20 +39,6 @@
     zen-browser.profileNames = [ "default" ];
   };
 
-  # System integration
-  # ---
-  # Set Zen as the default browser (MIME type associations)
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "text/html" = "zen-twilight.desktop";
-      "x-scheme-handler/http" = "zen-twilight.desktop";
-      "x-scheme-handler/https" = "zen-twilight.desktop";
-      "x-scheme-handler/about" = "zen-twilight.desktop";
-      "x-scheme-handler/unknown" = "zen-twilight.desktop";
-    };
-  };
-
-  # Note: 1Password browser integration is configured at the NixOS system level
+  # Note: 1Password browser integration is configured at NixOS system level
   # See modules/hosts/desktop/nixos/base.nix for programs._1password configuration
 }

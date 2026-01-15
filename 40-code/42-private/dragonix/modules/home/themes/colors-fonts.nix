@@ -92,5 +92,8 @@ in
   };
 
   # Font configuration using fontconfig (desktop only)
-  fonts.fontconfig.enable = config.isDesktop;
+  # Note: Font rendering settings (hinting, subpixel) are configured at NixOS system level
+  fonts.fontconfig = lib.mkIf config.isDesktop {
+    enable = true;
+  };
 }

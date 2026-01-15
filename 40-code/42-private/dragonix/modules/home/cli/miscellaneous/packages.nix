@@ -23,8 +23,8 @@
     bind
     btop
     bat
-    chezmoi
     curl
+    d2
     deploy-rs
     devenv
     desktop-file-utils

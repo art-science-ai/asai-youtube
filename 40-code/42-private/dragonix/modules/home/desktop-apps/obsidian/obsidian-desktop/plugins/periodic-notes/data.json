@@ -3,13 +3,13 @@
   "hasMigratedDailyNoteSettings": true,
   "hasMigratedWeeklyNoteSettings": false,
   "daily": {
-    "folder": "01-journals/daily",
+    "folder": "10-journals/daily",
     "enabled": true
   },
   "weekly": {
     "format": "",
     "template": "",
-    "folder": "01-journals/weekly",
+    "folder": "10-journals/weekly",
     "enabled": true
   },
   "monthly": {
@@ -20,13 +20,13 @@
   "quarterly": {
     "format": "",
     "template": "",
-    "folder": "01-journals/quarterly",
+    "folder": "10-journals/quarterly",
     "enabled": true
   },
   "yearly": {
     "format": "",
     "template": "",
-    "folder": "01-journals/yearly",
+    "folder": "10-journals/yearly",
     "enabled": true
   }
 }
