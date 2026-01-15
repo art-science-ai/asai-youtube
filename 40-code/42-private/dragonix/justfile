@@ -192,3 +192,64 @@ update:
 show:
     git add --intent-to-add .
     nix flake show --all-systems
+
+# ============================================================
+# NEW REFACTORED COMMANDS
+# ============================================================
+# These commands use parameterized recipes to reduce duplication.
+# Gradually migrate from the old commands above to these new ones.
+# ============================================================
+
+# Common variables for refactored commands
+_DEPLOY_DIR := "/var/tmp/nix-config-deploy"
+
+# ============================================================
+# Darwin (macOS) - Parameterized
+# ============================================================
+
+# Deploy Darwin system and home
+darwin host="meleys":
+    git add --intent-to-add .
+    nh darwin switch .#darwinConfigurations.{{host}}
+    nh home switch . -b bkp
+
+# ============================================================
+# NixOS - Parameterized
+# ============================================================
+
+# Deploy NixOS system and home locally
+nixos host="vermax":
+    git add --intent-to-add .
+    sudo nixos-rebuild switch --flake .#{{host}}
+    nh home switch . -b bkp
+
+# Deploy NixOS via SSH to remote host
+nixos-ssh host="vermax":
+    git add --intent-to-add .
+    echo "Cleaning up previous deployment on local and {{host}}..."
+    rm -rf {{_DEPLOY_DIR}}
+    ssh {{host}} "rm -rf {{_DEPLOY_DIR}}"
+    echo "Creating and transferring deployment archive..."
+    mkdir -p {{_DEPLOY_DIR}}
+    tar -czf {{_DEPLOY_DIR}}/nix-config.tar.gz --exclude=.git --exclude-from=.gitignore .
+    ssh {{host}} "mkdir -p {{_DEPLOY_DIR}}"
+    scp {{_DEPLOY_DIR}}/nix-config.tar.gz {{host}}:{{_DEPLOY_DIR}}/
+    ssh {{host}} "tar -xzf {{_DEPLOY_DIR}}/nix-config.tar.gz -C {{_DEPLOY_DIR}} && rm {{_DEPLOY_DIR}}/nix-config.tar.gz"
+    echo "Building and activating system configuration on {{host}}..."
+    ssh {{host}} "cd {{_DEPLOY_DIR}} && sudo nixos-rebuild switch --flake .#{{host}}"
+    echo "Activating home-manager on {{host}}..."
+    ssh {{host}} "cd {{_DEPLOY_DIR}} && nh home switch . -b bkp"
+
+# ============================================================
+# Validation - Parameterized
+# ============================================================
+
+# Check any configuration by platform and hostname
+check platform host:
+    git add --intent-to-add .
+    nix build .#checks.{{platform}}.{{host}}-config --no-link
+    nix build .#checks.{{platform}}.home-{{host}} --no-link
+
+# Usage examples:
+#   just check aarch64-darwin meleys
+#   just check x86_64-linux vermax
