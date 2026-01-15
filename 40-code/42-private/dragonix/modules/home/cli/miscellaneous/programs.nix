@@ -4,8 +4,7 @@
   pkgs,
   lib,
   ...
-}:
-{
+}: {
   imports = [
   ];
 
@@ -23,9 +22,23 @@
       };
     };
 
-     fzf = {
-       enable = true;
-     };
+    eza = {
+      enable = true;
+      extraOptions = [
+        "--color=always"
+        "--git"
+        "--icons=always"
+        "--no-filesize"
+        "--no-user"
+        "--no-permissions"
+      ];
+      git = true;
+      icons = "always";
+    };
+
+    fzf = {
+      enable = true;
+    };
 
     zoxide = {
       enable = true;
@@ -35,8 +48,8 @@
     ripgrep = {
       enable = true;
       arguments = [
-        "--hidden"  # Show hidden files (dotfiles) in searches
-        "--glob=!.git/*"  # Exclude .git directory
+        "--hidden" # Show hidden files (dotfiles) in searches
+        "--glob=!.git/*" # Exclude .git directory
       ];
     };
 

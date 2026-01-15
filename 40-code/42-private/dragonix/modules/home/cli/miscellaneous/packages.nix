@@ -27,7 +27,9 @@
     d2
     deploy-rs
     devenv
+    devbox
     desktop-file-utils
+    eza
     fastfetch
     fd
     ffmpeg
@@ -44,6 +46,7 @@
     jq
     lazygit
     marp-cli
+    mutagen
     ncdu
     nh
     pandoc

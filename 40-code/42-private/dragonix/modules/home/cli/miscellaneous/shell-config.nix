@@ -41,6 +41,9 @@ let
   commonShellAliases = {
     hello = "echo hello from nix home manager shell alias";
 
+    # eza aliases
+    ez = "eza --color=always -lh --git --no-filesize --icons=always --no-user --no-permissions";
+
     # npm packages
     xccr = "command npx -y @musistudio/claude-code-router@latest";
     xgemini = "command npx -y @google/gemini-cli@latest";
@@ -50,8 +53,6 @@ let
 
     # uvx python
     xyta = "uvx --from youtube-transcript-api youtube_transcript_api";
-
-    ".just" = "just --justfile ~/.config/just/justfile --working-directory .";
 
   };
 
