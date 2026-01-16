@@ -1,0 +1,12 @@
+# Ignore tmp directories anywhere in the repository
+tmp/
+
+# Nix
+result
+
+# Whisper model files (should be in ~/.local/share/whisper/models/)
+*.bin
+
+# Mutagen sync configuration
+mutagen.yml
+mutagen.yml.lock
