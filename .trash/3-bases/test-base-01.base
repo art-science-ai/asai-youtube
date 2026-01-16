@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: daily-notes-table
+    filters:
+      and:
+        - file.folder == "1-daily"
+    order:
+      - file.name
+      - file.ctime
+      - file.mtime
+      - file.basename
+  - type: table
+    name: macos tools

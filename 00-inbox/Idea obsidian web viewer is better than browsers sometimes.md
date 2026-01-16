@@ -1,0 +1,2 @@
+- When I migrated from Macbook Pro 16" to Macbook Air 13" I noticed that my sidebar browser window is too narrow to properly load some websites like chatgpt etc. 
+- However, when I open the sidebar sites in obsidian web viewer I don't have this problem

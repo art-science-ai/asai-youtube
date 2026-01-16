@@ -1,0 +1,267 @@
+{
+  "tasksFolder": "03-para/tasks",
+  "moveArchivedTasks": true,
+  "archiveFolder": "03-para/archive",
+  "taskTag": "task",
+  "taskIdentificationMethod": "property",
+  "taskPropertyName": "global-type",
+  "taskPropertyValue": "task",
+  "excludedFolders": "",
+  "defaultTaskPriority": "p4",
+  "defaultTaskStatus": "todo",
+  "taskOrgFiltersCollapsed": false,
+  "taskFilenameFormat": "zettel",
+  "storeTitleInFilename": true,
+  "customFilenameTemplate": "{title}",
+  "taskCreationDefaults": {
+    "defaultContexts": "",
+    "defaultTags": "",
+    "defaultProjects": "",
+    "useParentNoteAsProject": false,
+    "defaultTimeEstimate": 0,
+    "defaultRecurrence": "none",
+    "defaultDueDate": "none",
+    "defaultScheduledDate": "none",
+    "bodyTemplate": "08-system/templates/03-para-task",
+    "useBodyTemplate": true,
+    "defaultReminders": []
+  },
+  "calendarViewSettings": {
+    "defaultView": "timeGridWeek",
+    "customDayCount": 3,
+    "slotDuration": "00:30:00",
+    "slotMinTime": "00:00:00",
+    "slotMaxTime": "24:00:00",
+    "scrollTime": "08:00:00",
+    "firstDay": 1,
+    "timeFormat": "24",
+    "showWeekends": true,
+    "locale": "",
+    "defaultShowScheduled": true,
+    "defaultShowDue": true,
+    "defaultShowDueWhenScheduled": true,
+    "defaultShowTimeEntries": false,
+    "defaultShowRecurring": true,
+    "defaultShowICSEvents": true,
+    "enableTimeblocking": false,
+    "defaultShowTimeblocks": true,
+    "nowIndicator": true,
+    "selectMirror": true,
+    "weekNumbers": true,
+    "showTodayHighlight": true,
+    "eventMinHeight": 15
+  },
+  "pomodoroWorkDuration": 25,
+  "pomodoroShortBreakDuration": 5,
+  "pomodoroLongBreakDuration": 15,
+  "pomodoroLongBreakInterval": 4,
+  "pomodoroAutoStartBreaks": true,
+  "pomodoroAutoStartWork": false,
+  "pomodoroNotifications": true,
+  "pomodoroSoundEnabled": true,
+  "pomodoroSoundVolume": 50,
+  "pomodoroStorageLocation": "plugin",
+  "enableTaskLinkOverlay": true,
+  "enableInstantTaskConvert": true,
+  "useDefaultsOnInstantConvert": true,
+  "enableNaturalLanguageInput": true,
+  "nlpDefaultToScheduled": true,
+  "nlpLanguage": "en",
+  "uiLanguage": "system",
+  "statusSuggestionTrigger": "*",
+  "singleClickAction": "edit",
+  "doubleClickAction": "openNote",
+  "projectAutosuggest": {
+    "enableFuzzy": false,
+    "rows": [
+      "{title|n(Title)}",
+      "{aliases|n(Aliases)}",
+      "{file.path|n(Path)}"
+    ],
+    "showAdvanced": false,
+    "requiredTags": [],
+    "includeFolders": [
+      "03-para/projects"
+    ],
+    "propertyKey": "",
+    "propertyValue": ""
+  },
+  "inlineTaskConvertFolder": "03-para/tasks",
+  "disableNoteIndexing": false,
+  "suggestionDebounceMs": 0,
+  "fieldMapping": {
+    "title": "task-title",
+    "status": "task-status",
+    "priority": "task-priority",
+    "due": "task-due",
+    "scheduled": "task-scheduled",
+    "contexts": "task-contexts",
+    "projects": "para-projects",
+    "timeEstimate": "task-timeEstimate",
+    "completedDate": "task-completedDate",
+    "dateCreated": "task-dateCreated",
+    "dateModified": "task-dateModified",
+    "recurrence": "task-recurrence",
+    "archiveTag": "task-archived",
+    "timeEntries": "task-timeEntries",
+    "completeInstances": "task-complete_instances",
+    "blockedBy": "task-blockedBy",
+    "pomodoros": "task-pomodoros",
+    "icsEventId": "task-icsEventId",
+    "icsEventTag": "task-ics_event",
+    "reminders": "task-reminders"
+  },
+  "customStatuses": [
+    {
+      "id": "open",
+      "value": "todo",
+      "label": "todo",
+      "color": "#808080",
+      "isCompleted": false,
+      "order": 0,
+      "autoArchive": false,
+      "autoArchiveDelay": 5
+    },
+    {
+      "id": "in-progress",
+      "value": "doing",
+      "label": "doing",
+      "color": "#0066cc",
+      "isCompleted": false,
+      "order": 1,
+      "autoArchive": false,
+      "autoArchiveDelay": 5
+    },
+    {
+      "id": "done",
+      "value": "done",
+      "label": "Done",
+      "color": "#00aa00",
+      "isCompleted": true,
+      "order": 2,
+      "autoArchive": true,
+      "autoArchiveDelay": 5
+    }
+  ],
+  "customPriorities": [
+    {
+      "id": "none",
+      "value": "p4",
+      "label": "p4",
+      "color": "#cccccc",
+      "weight": 0
+    },
+    {
+      "id": "low",
+      "value": "p3",
+      "label": "p3",
+      "color": "#6a77d7",
+      "weight": 1
+    },
+    {
+      "id": "normal",
+      "value": "p2",
+      "label": "p2",
+      "color": "#ffaa00",
+      "weight": 2
+    },
+    {
+      "id": "high",
+      "value": "p1",
+      "label": "p1",
+      "color": "#ff0000",
+      "weight": 3
+    }
+  ],
+  "recurrenceMigrated": true,
+  "showTrackedTasksInStatusBar": false,
+  "autoStopTimeTrackingOnComplete": true,
+  "autoStopTimeTrackingNotification": false,
+  "showProjectSubtasks": true,
+  "showExpandableSubtasks": true,
+  "projectSubtasksPosition": "bottom",
+  "showTaskCardInNote": true,
+  "subtaskChevronPosition": "right",
+  "viewsButtonAlignment": "right",
+  "hideCompletedFromOverdue": true,
+  "icsIntegration": {
+    "defaultNoteTemplate": "",
+    "defaultNoteFolder": "",
+    "icsNoteFilenameFormat": "title",
+    "customICSNoteFilenameTemplate": "{title}",
+    "enableAutoExport": false,
+    "autoExportPath": "tasknotes-calendar.ics",
+    "autoExportInterval": 60
+  },
+  "savedViews": [
+    {
+      "id": "mh8uqjpcb1h01ynvu",
+      "name": "tasknotes-view-01",
+      "query": {
+        "type": "group",
+        "id": "filter_1761551869849_2",
+        "conjunction": "and",
+        "children": [
+          {
+            "type": "condition",
+            "id": "filter_1761552053482_3",
+            "property": "status",
+            "operator": "is-not",
+            "value": "done"
+          }
+        ],
+        "sortKey": "due",
+        "sortDirection": "asc",
+        "groupKey": "none"
+      },
+      "visibleProperties": [
+        "status",
+        "priority",
+        "scheduled",
+        "projects",
+        "contexts",
+        "tags",
+        "blocked",
+        "blocking",
+        "timeEstimate"
+      ]
+    }
+  ],
+  "enableNotifications": true,
+  "notificationType": "system",
+  "enableAPI": false,
+  "apiPort": 8080,
+  "apiAuthToken": "",
+  "webhooks": [],
+  "userFields": [],
+  "defaultVisibleProperties": [
+    "status",
+    "priority",
+    "due",
+    "scheduled",
+    "projects",
+    "contexts",
+    "tags",
+    "blocked",
+    "blocking",
+    "timeEstimate"
+  ],
+  "enableBases": true,
+  "maintainDueDateOffsetInRecurring": false,
+  "useFrontmatterMarkdownLinks": false,
+  "lastSeenVersion": "3.25.2",
+  "icsSubscriptions": [
+    {
+      "name": "Meta",
+      "url": "https://outlook.office365.com/owa/calendar/a3aa1e5a19e942d884226931659b5ddf@meta.com/1036a0e049ee4b959237a6fb7cb718ef2968587449237826819/calendar.ics",
+      "color": "#6366f1",
+      "enabled": true,
+      "type": "remote",
+      "refreshInterval": 60,
+      "id": "ics_qcez6ksxomgjuhfd7",
+      "lastFetched": "2025-11-30T19:30:03.994Z",
+      "lastError": "Invalid ICS format"
+    }
+  ],
+  "autoArchiveQueue": []
+}

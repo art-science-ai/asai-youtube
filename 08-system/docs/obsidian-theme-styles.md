@@ -1,0 +1,5 @@
+- General principles
+- Plugins
+	- Theme: Anupuccin
+		- Extensive integration w/ Style Settings plugin + extra CSS Snippets provided in repo for additional features (copy into ./obsidian/snippets)
+	- Style settings

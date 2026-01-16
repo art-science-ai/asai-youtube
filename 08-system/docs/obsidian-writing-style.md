@@ -1,0 +1,13 @@
+
+- **Frontmatter**: Top of the doc has yaml frontmatter properties based on the appropriate template type. After yaml frontmatter, we start the main markdown doc.
+- **Headers and sections**: markdown content should be organized into sections and sub-sections demarcated by headers, starting with H2 all the way down to H5/H6. 
+	- The first H2 header should be an Overview / TLDR section that summarizes the entire document. 
+	- The final H2 header should usually be titled "Appendix" (if needed) with subheaders underneath for various appendices.
+	- Aim to have no more than 3-5 top level H2 sections. Within each section, no more than 3-5 sub-sections. 
+	- Keep essential information on top and more detailed information at the bottom. 
+- **Formatting**
+	- Use unordered lists for organization - don't use numbered lists
+	- Use title case for all titles and headers. Only the first word should start with a capital letter, not all words.
+- **Writing style**
+	- Keep documents brief and concise - only including essential information
+	- Documents should not be a log of conversations and discussions (unless there is a specific section in the doc for that). Documents should reflect the outcome and decisions resulting from those conversations.
