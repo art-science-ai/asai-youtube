@@ -1,0 +1,23 @@
+
+- Categories (auto created by Gmail)
+	- social
+	- updates
+	- forums
+	- promotions
+	- [Some others](https://support.google.com/mail/answer/3094499?hl=en-CA&co=GENIE.Platform%3DDesktop)
+- Labels
+	- !Temp - for temporary holding
+	- Notes - from Apple Notes
+	- Labels created from filters - see filters section below
+- Filters
+	- Spam (filter)
+		- `(to:(milleniumfinance@nikhilmaddirala.com) OR to:(millenniumfinance@nikhilmaddirala.com) OR to:(scripbox@nikhilmaddirala.com) OR to:(lamakaan@freelists.org) OR from:(no-reply@explore.bookmyshow.com) OR from:(info.hyderabad@chugh.com) OR from:(*@iiflstatements.com) OR from:(*@iiflindia.com) OR from:(*sbi.co.in) OR from:(*@legacyphoto.com) OR from:(*@mailer.airtel.com) OR from:(*@irctc.co.in) OR from:(*tataneu.com) OR from:(*tatacliq.com) OR from:(IIDS_Outreach@isb.edu) )`
+		- Do this: Skip Inbox, Apply label "Spam (filter)"
+	- Newsletters (filter)
+		- `(from:(noreply@bitsaboutmoney.com) OR from:(hello@every.to) OR from:(bensbites@mail.bensbites.co) OR from:(support@strongerbyscience.com) OR from:(*@mail.beehiiv.com) OR from:(*@substack.com) OR from:(hello@justinwelsh.me) OR from:(peter@peterattiamd.com)) -from:(no-reply@substack.com)`
+		- Do this: Skip Inbox, Apply label "Newsletters (filter)", Forward to reader12-89UGmuSle@inbox.omnivore.app, Never send it to Spam
+	- categories (filter)
+		- `(category:social OR category:updates OR category:forums OR category:promotions)`
+		- Do this: Apply label "not-important-categories"	
+	- Amazon locker (filter)
+		- 

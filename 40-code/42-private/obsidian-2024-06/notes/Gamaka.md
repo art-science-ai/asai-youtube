@@ -1,0 +1,2 @@
+- Simple rules
+	- When two notes in unison, apply gamaka on second note

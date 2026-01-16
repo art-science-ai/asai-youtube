@@ -1,0 +1,65 @@
+---
+title: Ramayana podcast
+---
+
+- Vision
+	- Retelling of the Ramayana story in full for modern audiences
+- Target audience
+	- Indians in USA + Modern Indians
+- Other ideas beyond podcast
+- Structure
+- Project plan #[[[[Projects]]-EC-Side-Projects]]
+	- MVP Chapter 1
+	- TODO Select full translation for base
+		- Goldman
+		- Gutenberg
+		- IIT
+	- TODO Experiment with styles of translation
+		- Options
+			- Modern American
+			- Gen Z slang
+			- Hip hop style?
+	- TODO Execute translations
+	- TODO Experiment with text to speech engines (or AI + voice recording)
+	- TODO Explore image / video creation (optional extra)
+		- Q: can I create persistent characters for animation? E.g. like Rama and Sita?
+- Goldman full text
+  collapsed:: true
+	- sarga 1 - page 1
+		- 1. Valmiki, the ascetic, questioned the eloquent Narada, bull among sages, always devoted to asceticism and study of the sacred texts. 2. "Is there a man in the world today who is truly virtuous? Who is there who is mighty and yet knows both what is right and how to act upon it? Who always speaks the truth and holds firmly to his vows? 3. "Who exemplifies proper conduct and is benevolent to all creatures? Who is learned, capable, and a pleasure to behold? 4. "Who is self-controlled, having subdued his anger? Who is both judicious and free from envy? Who, when his fury is aroused in battle, is feared even by the gods? 5. "This is what I want to hear, for my desire to know is very strong. Great seer, you must know of such a man." 6. When Narada, who was familiar with all the three worlds, heard Valmiki's words, he was delighted. "Listen," he replied and spoke these words: 7. "The many virtues you have named are hard to find. Let me think a moment, sage, before I speak. Hear now of a man who has them all. 8. "His name is Rama and he was born in the House of Ik~vaku. All men know of him, for he is self-controlled, mighty, radiant, steadfast, and masterful. 9. "He is wise and grounded in proper conduct. Eloquent and majestic, he annihilates his enemies. His shoulders are broad and his arms mighty. His neck is like a conch shell and his jaws are powerful. 10. "His chest is vast, and a subduer of his enemies, he wields a huge bow. His collarbone is set deep in muscle, his arms reach down to his knees, and his head is finely made. His brow is noble and his gait full of grace. 11. "His proportions are perfect and his limbs well-formed and symmetrical. Dark is his complexion and he is valorous. His chest is fully fleshed; he has large eyes. He is splendid and marked with all auspicious signs.
+		- 12. "He knows the ways of righteousness and is always true to his word. The welfare of his subjects is his constant concern. He is renowned, learned, pure, disciplined, and contemplative. 13. "He is the protector of all living things and the guardian of righteousness. Versed in the essence of the vedas and their subsidiary sciences, he is equally expert in the science of arms. 14. "He is versed in the essence of every science, learned in traditional lore, and highly intelligent. All the people love him, for he is good, cheerful, and clever. 15. "He is the constant resort of good men, as is the ocean of rivers. For he is noble and equable in all circumstances and always a pleasure to behold. 16. "The delight of his mother Kausalya, he is gifted with every virtue. For he is as deep as the ocean and as unyielding as the Himalayas. 17. "He is as mighty. as Vi~I:IU, but as pleasant to behold as the moon. In his wrath he resembles the fire at the end of time, yet he rivals the earth in forbearance. 18-19. "In charity he is the equal of Kubera, giver of wealth, and in truthfulness like a second Dharma, the god of righteousness. Moved by affection for him, Dasaratha, lord of the earth, wished to appoint this Rama, his beloved eldest son, as prince regent. For he was truly valorous, possessed all these virtues, and was gifted with other excellent virtues. 20. "Seeing the preparations for the consecration, the king's wife, Queen Kaikeyi, who had long before been granted a boon, now asked for it. She demanded that Rama be exiled and that Bharata be consecrated in his place. 21. "Because he was a man true to his word, King Dasaratha was caught in the trap of his own righteousness and had to exile his dear son Rama. 22. "Keeping the promise, the hero entered the forest, because of the command implicit in a father's word and in order to please Kaikeyi. 23. "Out of love for him, his beloved and obedient brother Lak~­ mai:Ia, the delight of Sumitra, followed him as he set forth.
+		- 24. "And his wife Sita, the best of women, possessed of every grace, followed .Rama as RohiQ.i does the hare-marked moon. 25. "He was followed far on his way by his father, Dasaratha, and the people of the city. But at the town of Sp'igavera on the banks of the Ganges he dismissed his charioteer. 26. "Wandering from wood to wood, they crossed great rivers until, on the instructions of Bharadvaja, they came to Mount Citrakiita. 27. "There the three of them built a pleasant dwelling. Delighting in the forest and resembling celestial gandharvas, they lived there happily. 28. "When Rama had gone to Mount Citrakiita, King Dasaratha was stricken with grief for his son and loudly lamenting him, went to heaven. 29. "When he was dead, the brahmans, led by VasiHha, urged Bharata to become king, but that mighty man did not desire kingship. Instead the hero went to the forest to beg for grace at Rama's feet. 30. "But Bharata's elder brother only gave his sandals as a token of his sovereignty and repeatedly urged Bharata to return. 31. "Unable to accomplish his desire, Bharata touched Rama's feet and ruled the kingdom from the village of Nandigrama in expectation of Rama's return. 32. "But Rama, seeing that the people of the city had come there, entered the DaQ.c;laka forest with single-minded resolution. 33. "He killed the rii~asa Viradha and met Sarabhaiiga, Sutik~Q.a, Agastya, and Agastya's brother. 34. "On the advice of Agastya, and with the greatest pleasure, he accepted Indra's bow as well as a sword and two quivers, whose arrows were inexhaustible. 35. "While Rama was living in the forest with the woodland creatures, all the seers came to see him about killing the asuras and rii~asas. 36. "While dwelling there, he disfigured the rii~asa woman SiirpaQ.akha, who lived inJanasthana and could take any form at will. 37-38. "Then Rama slew in battle all the ra~asas who had been sent
+		-
+		- 1. Valmiki, the ascetic, questioned the eloquent Narada, bull among
+		- sages, always devoted to asceticism and study of the sacred texts.
+		- 2. "Is there a man in the world today who is truly virtuous? Who
+		- is there who is mighty and yet knows both what is right and how
+		- to act upon it? Who always speaks the truth and holds firmly to his
+		- vows?
+		- 3. "Who exemplifies proper conduct and is benevolent to all creatures? Who is learned, capable, and a pleasure to behold?
+		- 4. "Who is self-controlled, having subdued his anger? Who is both
+		- judicious and free from envy? Who, when his fury is aroused in
+		- battle, is feared even by the gods?
+		- 5. "This is what I want to hear, for my desire to know is very strong.
+		- Great seer, you must know of such a man."
+		- 6. When Narada, who was familiar with all the three worlds, heard
+		- Valmiki's words, he was delighted. "Listen," he replied and spoke
+		- these words:
+		- 7. "The many virtues you have named are hard to find. Let me
+		- think a moment, sage, before I speak. Hear now of a man who has
+		- them all.
+		- 8. "His name is Rama and he was born in the House of Ik~vaku.
+		- All men know of him, for he is self-controlled, mighty, radiant,
+		- steadfast, and masterful.
+		- 9. "He is wise and grounded in proper conduct. Eloquent and
+		- majestic, he annihilates his enemies. His shoulders are broad and
+		- his arms mighty. His neck is like a conch shell and his jaws are
+		- powerful.
+		- 10. "His chest is vast, and a subduer of his enemies, he wields a
+		- huge bow. His collarbone is set deep in muscle, his arms reach
+		- down to his knees, and his head is finely made. His brow is noble
+		- and his gait full of grace.
+		- 11. "His proportions are perfect and his limbs well-formed and
+		- symmetrical. Dark is his complexion and he is valorous. His chest
+		- is fully fleshed; he has large eyes. He is splendid and marked with
+		- all auspicious signs.

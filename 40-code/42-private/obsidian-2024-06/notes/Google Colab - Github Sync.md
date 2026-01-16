@@ -1,0 +1,11 @@
+- Create new notebook
+	- Colab > new notebook > rename
+	- Edit in Colab
+	- File > Save a copy as github gist
+	- This saves a copy in github gist. Now we can safely delete the Drive version.
+- Edit existing notebook
+	- Github gists > open in colab (DO NOT directly open from Colab)
+	- Edit in colab
+	- File > Save (DO NOT select "save a copy")
+- Renaming
+	- Avoid renaming notebooks - new names don't sync w GH

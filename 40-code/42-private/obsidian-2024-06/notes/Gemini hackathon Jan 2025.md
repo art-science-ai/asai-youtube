@@ -1,0 +1,28 @@
+- Brainstorming ideas
+	- Interests - for idea generation
+		- Music
+		- AI
+		- Knowledge graphs
+		- RAG
+	- Dimensions - for idea prioritization
+		- Persona
+		- Value proposition
+		- Use cases
+		- UI/UX
+		- Data sources
+		- Tools / frameworks
+	- Ideas
+		- Geoshred player
+		- Carnatic theory Q&A chatbot
+		- RAG heygen chatbot
+		- Piyush podcast clone video call
+			- Reqs
+				- Real time video chat with AI avatar - like a zoom call with a real person
+				- AI can you your camera input and your screenshare
+				- Can have long conversation
+				- Access to knowledge base via RAG / MCP
+			- Refs
+				- https://huggingface.co/blog/freddyaboulton/realtime-video-chat-with-gradio-webrtc
+				- https://www.youtube.com/watch?v=c-B7N8i_trs
+				- https://www.youtube.com/watch?v=M4hCsztDXq4
+- 

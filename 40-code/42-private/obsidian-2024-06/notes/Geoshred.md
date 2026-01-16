@@ -1,0 +1,28 @@
+- [[iPad]] - Mac setup
+	- Tools
+		- Quicktime - capture audio + video
+			- Not compatible with audio midi > enable audio
+		- Auido MIDI > iPad audio input enable
+		- Airpods 
+			- Delayed audio input - microphone
+			- Delayed audio output - metronome / background track
+			- Input sample rate 24 kHz per audio midi setup
+		- Blackhole
+			- Logic pro - error w/ sample rate of 24k - but error doesn't occur w/ individual ipad or mic inputs
+			- Makes separate channels L/R for mic and iPad
+		- Logic Pro
+			- iPad input (Audio MIDI): works
+			- BH input (aggregate: iPad only): works
+			- 
+	- Use cases
+		- Zoom call
+			- Zoom call output (other people talking) > headphones
+			- Headphones + iPad audio input > Zoom call
+			- No screen
+		- Recording
+			- Headphones + iPad audio input > Recording software (Logic / OBS)
+			- iPad audio output > headphones
+		- Recording with screen
+	- Connect to Mac DAW
+		- Create audio track in DAW
+		- Enable iPad audio capture in Mac via Audio MIDI setup

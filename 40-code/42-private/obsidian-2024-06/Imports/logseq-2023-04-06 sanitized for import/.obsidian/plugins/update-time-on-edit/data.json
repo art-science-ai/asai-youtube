@@ -1,0 +1,15 @@
+{
+  "dateFormat": "yyyy-MM-dd'T'HH:mm",
+  "enableCreateTime": true,
+  "headerUpdated": "updated",
+  "headerCreated": "created",
+  "minMinutesBetweenSaves": 1,
+  "ignoreGlobalFolder": [],
+  "ignoreCreatedFolder": [],
+  "enableExperimentalHash": false,
+  "fileHashMap": {
+    "smart-chats/UNTITLED CHAT 2024-05-07 19 28 12.md": "b90275d303373936282ca93d01d87636cb1794a223ceb4282cdb135315ff352b",
+    "smart-chats/Testing chat.md": "53e1ef72a33c55e49d0b2ae7d390edac45f575b20d78607ef91c010188f99901",
+    "journals/2024_05_08.md": "cc22bb0eb4dbf7a59970f7078c39ae94605101f44b1c50cf34221344246041bc"
+  }
+}

@@ -1,0 +1,8 @@
+- Projects
+- Areas
+	- Work
+	- Side projects
+	- Personal
+	- Rukma Nikhil
+- References
+- Archive

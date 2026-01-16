@@ -1,0 +1,42 @@
+[[RN life vision]]
+- Notion areas
+	- Self esteem and actualization
+		- Career
+		- Learning and creativity
+	- Love and belonging
+		- Bhalu family
+		- Community
+		- Recreation
+	- Scaffolding
+		- Physical health
+		- Emotional health
+		- Home & environment
+		- Wealth
+- Maslow areas
+	- Self actualization: meaningful activities
+	- Self esteem: status, respect, accomplishment
+	- Love and belonging: marriage, family, friends, community
+	- Safety and security: health, wealth
+- Johann Hari areas
+	- Meaningful work
+		- Changing jobs, crafting existing job
+	- Meaningful activities
+		- Creative expression
+		- Learning and development
+	- Community
+		- Family
+		- Close friends
+		- Outer circles
+		- Existing communities
+	- Emotional health
+		- Therapy: overcoming trauma, etc.
+		- Group activities: IPD group, etc.
+		- Meditation: individual, group / community
+	- Physical health
+		- Exercise - individual, group
+		- Nutrition
+	- Other
+		- Nature
+		- Meaningful values
+		- Status and respect
+		- Hope for future

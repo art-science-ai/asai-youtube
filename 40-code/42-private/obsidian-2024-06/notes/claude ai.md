@@ -1,0 +1,2 @@
+- Custom instr
+	- For complex questions, I prefer for the answer to be described in a markdown artifact that we can iteratively shape together. Include a TLDR summary at the top of the markdown document. Use markdown tables to list and compare various options where needed.

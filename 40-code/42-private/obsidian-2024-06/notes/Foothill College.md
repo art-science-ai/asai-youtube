@@ -1,0 +1,20 @@
+- Journey
+	- [x] Application
+	- [ ] Orientation
+		- [ ] Completed online orientation
+	- [ ] Create education plan (not required for registration)
+	- [ ] 2025-Q1 registration
+- References - college
+	- Fees per quarter
+		- Enrollment Fee: $31 per unit (e.g. 4-unit class = $124)
+		- Basic fees = ~$55
+	- Priority enrollment criteria
+		- declared a major,
+		- selected an educational goal of transfer, degree, or certificate,
+		- have an English and math placement,
+		- SEP: Student Education Plan up-to-date including current registration term
+		- ✅ completed orientation, and
+- References - Music dept
+	- Music (MUS): https://catalog.foothill.edu/courses-az/mus/
+	- Music Technology: https://catalog.foothill.edu/degrees-certificates/music-technology/
+		- Program: Certificate of Achievement in Music Technology; complete 40 unites in Core and Support Courses

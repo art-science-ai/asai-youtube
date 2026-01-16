@@ -1,0 +1,16 @@
+- Aha!
+	- Roadmap tool
+	- Good templates
+		- Pricing: https://www.aha.io/roadmapping/guide/product-strategy/how-should-i-price-my-product
+		- Also good templates for product vision and strategy
+	- $30 / month
+- Reforge
+	- Courses and templates
+	- $2000 / yr
+- Product School
+- SVPG
+- Mind the product
+	- Articles
+	- Community - slack
+	- No templates
+	- 

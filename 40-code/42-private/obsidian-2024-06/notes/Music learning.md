@@ -1,0 +1,54 @@
+- Goals
+	- **Piano performance**: perform beginner to intermediate level pieces across multiple genres including Western classical, Jazz, Carnatic
+	- **Singing performance**: sing beginner level songs in Carnatic and Western genres
+	- **Composition and production**: Compose (in Musescore) and produce (in Logic Pro) my own pieces fusing together my favorite genres (inspiration: Kinsmen - Carnatic Jazz saxophone fusion album)
+- Skills
+	- Piano
+	- Singing
+	- Music composition
+	- Music production
+	- Ear training and transcription
+- Courses
+	- How to make desi covers
+		- https://indianraga.com/product/how-to-make-desi-covers/
+		- $30 video, self-paced, online
+		- Status: unavailable
+	- GeoShred Masterclass w Mahesh Raghvan Livdemy
+		- https://www.livdemy.com/followingmahesh/course/play-music-on-your-ipad/about
+		- $24 videos  include scales, and some notu swaras
+		- Self-paced, online
+		- Status: want to do
+	- Swar Laya Madan Pisharody
+		- https://swarlaya.com/ipad-music/master-geoshred-course-details/
+		- Status: registered; weekly class starting Jan
+	- Piano I at San Mateo college
+		- Status: registered; weekly class starting Jan
+	- Voice I at San Mateo college
+		- Status: registered; weekly class starting Jan
+- Projects
+	- Projects - pieces I want to perform and/or produce
+		- Shakti sahita - piano, vocal (AI vocal), production
+		- Happy birthday - piano, vocal
+		- Fly me to the moon - piano, vocal
+	- Projects - tools I want to build
+		- Carnatify app
+			- Convert melodies to Carnatic ragas with gamakas output MIDI
+- Exercises
+	- Piano exercises
+		- PM method, technique, SASR
+		- Min: 10 min / day
+	- Geoshred exercises
+		- TBD
+		- Min: 10 min / day
+	- Voice exercises
+		- Swaras
+		- Min: 5 min / day
+	- Ear training
+		- Interval recognition, transcription
+		- Min: 5 min / day
+- Resources
+	- San Mateo College free drop-in individual music tutoring
+		- M 12:45pm - 2:15pm
+		- Tu 8:30am - 9:30am; 2p-4p
+		- W 8:15am - 9:45am; 2pm - 3pm
+		- Th 8:30am - 9:30am; 2p-4p

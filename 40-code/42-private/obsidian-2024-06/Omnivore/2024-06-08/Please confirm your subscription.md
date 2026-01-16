@@ -1,0 +1,22 @@
+---
+id: e1869aa4-2619-11ef-ada2-0f46919acae3
+---
+
+# Please confirm your subscription
+Tags: #Omnivore
+
+[Read on Omnivore](https://omnivore.app/me/please-confirm-your-subscription-18ffb48db88)
+[Read Original](https://omnivore.app/no_url?q=b887c55f-8527-4ff6-bc87-bb9e846b3d0f)
+
+
+## Content
+Before we send you emails, we need to confirm your subscription to [Art and Science of AI](https://email.mg-d1.substack.com/c/eJx0kEuO6yAQRVdjZrH4GewBgzfJNqwCyjaKAYtPpOz-KWm11D3ocanOPfc6aLjn8jJbQbzVsKd-3VxOWygRWsiJeCMWS2enCBqmmV6oniklGCGc644JCzT0K7Tvq170zBg5jF8mmK0Au3GGlk-KTd5qoWFCPVOnSDCcckkVXagUSqhRjBtawZzSgEIB5du4syPT%5FgyDpHG%5FeTbWbmsD9xhdjiTU9S3-djGtdCSnOVq76iD-Dfw-8DuUVl3A5BDC79er29XlGHsK7bViAnui%5F4Jc3Z7BfeqvwRuupknyiRRzQcHHMUja3REc7HlE30nt1ucIIZmfaaT9vWmvWD5kKWYuueTkafj%5FAAAA%5F%5F%5FuLIPQ). Please click the button below.
+
+[Confirm subscription](https://email.mg-d1.substack.com/c/eJx8k01vozwcxD8N3Br5BUw4cOAp5VmjBpRtmja5IGNMMOEtYKeBT78i3Urdw-7RHs9o7N%5FfnClx6obJKwYhHkZ5anX%5FwLu2kEPDlOxaM%5Fewm4E1J6bwoAMdFzhrAEzRMFmnJ9GKgSmRp0x9qY7rrCE0Sw-40MaYrYnIXIfnkBMXs4KzNcgcyJFrSg8BZAECXGBhgskKrwqRYciJwwQmDKBidYJlB%5FRVGhZoTg85XI06GxXj5xXvGlOO6VJ86eKpQQuz9kql-tHAvoFCA4VsUCOXouWCyT-si9ZLA4VXaKBwCTFQ-PviBg5VdxatgQMxRZCj%5FfSO6jOtuikONtam2k5xQEfaxjXHcZ8hOzo-UkKr6LKfcyze3Ev2lhcv8%5F56rDnYtqePPIgsNh-3z7vyeS8BpvJDsndfJpJOceXfkuoANkFnbQJ%5FSqqNlex8ckDROamOMm4OZNPQW7LryzjYl3fvWwho1d3i-QknOx%5FH8xk9P0a1-OHLpHrCm8oHye6Mk91hpE0984kS2v4HDxJMcfUK44DCJYfjvaRVJ49tVB9fYJUhu2HvkaItWB2E9fKEPuTMS1GRKSy2tA8vrxo%5F8vWMt%5FEFuYfCH3%5F-n3MDkVbclIGDz-dH9gLAXhDY%5F4Rgo3DZ4IPMxOIKtWrSsdMDvy-D76OY3jkvHlLpUaXLtIo81f395B1%5Fr7OUd02jW6mmVLQsq0XufUm15J9BMvcQsW0L2ebg9WwQ59KwgOal5OzUrUSuzVFnedcw2Xrf25vq7x9Fj2K4J1t4jSxkIfPqoV8BAAD%5F%5FwDXIYU)
+
+© 2024 Nikhil Maddirala  
+548 Market Street PMB 72296, San Francisco, CA 94104
+
+[![Get the app](https://proxy-prod.omnivore-image-cache.app/131x40,sVZacVCPMvxUAAhuNosJXMJgSp1TvlIbjdR8H0w1I7Qw/https://substackcdn.com/image/fetch/w_262,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Femail%2Fgeneric-app-button%402x.png)](https://email.mg-d1.substack.com/c/eJx0kcGK7CoQhp9GdwlGjSYLFxeGfo1Q0Uoi3WrQcmDe%5FtI9HDibs6nN%5F1H1Ub8HwrPUH3dUxKHFM%5Fd78CUfsSagWDIPTq27WLzh6CY72VXYRQiOCeJrOzFjBcKwAf1J7WqXaeKXk0rPUq9WwaTlovVhFmvAHGZRdoYgeXRSSC2MWIVWRplRjQfuavLGAioDQh7jOV1F9O%5FItEjnEKax9b0R-OfoS-KxbW%5Fxt4uj2pG%5F3EV0N6b-Y%5FLB5ONvmskH3PfvHBqVikPFECt6YurRKW0e0g3xzEx9vZkE9YkU88mk-cQlE2Zi6utzcThKIazD3olK5nffN19S6jnSz4YZ9heGX6u776%5FoP%5F%5FcYnDSzLOWM6%5FuhorPi2nR%5FRU9nGXE0HnreygJYnZQqfmI2SNETv8uqTesn81aLVJLLfm3k%5F8HAAD%5F%5F0jhn9I)[![Start writing](https://proxy-prod.omnivore-image-cache.app/135x40,sMBBMczf5GGvEog8E7bzggxHWLrxGFJUrOyLF55KnXSU/https://substackcdn.com/image/fetch/w_270,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack.com%2Fimg%2Femail%2Fpublish-button%402x.png)](https://email.mg-d1.substack.com/c/eJx0kU2O3CAUhE8Du7b4a2wvWERy5gI5gPWAZxuNAQvDSDOnj-ykoyySJUXpe1UqBxXXXD7NUhAfZ1hTOx4upyWUCDXkRL2Ro2WD0xQN73k%5Fsn5gjGKEsM8rJixQ0c9QX7%5F92A-c081YIfUwIhMLF8p65q1cmHgCDIoPzC40GMGEYpqNTEktdSe7Ba3kTveAUgMTS7fyLbP2EYhicX143p3NnhXce-dypOGcr-BXFlNLQ7qbrdbjJPIbEW9EvP3tvp53QSLfWo3zmVtxSOT0MhGhLz2iDy0SOd3c36LLqWKqRE5LzhXLS4Z4QFgTkRO0mpew7-gffyxXuB%5F3ze83S04HFHzfiGLNbcHBmjv0jQhdiJwUf359RXo0O7scY0uhfs6YwO7of9U7mt2Du4eZgzdCP59KPGkx%5F8TSs1mfI4RkoNTTBUwOIdD6%5F7XbieUmKzkIJZSgH0b8DAAA%5F%5F-PM7nL)
+
+603

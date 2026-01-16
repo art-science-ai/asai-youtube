@@ -1,0 +1,2 @@
+- [[Geico]] policy, 2022 - 2023, $125/yr, Property $10k / Liability $300k
+- [[Lemonade insurance]] - purchased for $7/mo

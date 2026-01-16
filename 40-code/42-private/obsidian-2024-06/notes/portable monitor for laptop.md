@@ -1,0 +1,33 @@
+- Two screens attached to laptop
+	- General
+		- + convenient two monitors w/ less desk real estate
+		- - weight and bulk
+	- Options
+		- [Domyfan](https://www.amazon.com/domyfan-Extender-Portable-Monitor-Windows/dp/B0CC2LY1HP/) 14 x2
+			- $170
+			- May not be compatible w/ m4 - but should work w/ pro I think
+		- [Keefya](https://www.amazon.com/KEFEYA-Extender-Portable-Extended-Compatible/dp/B0CPL3R2ZX) 14 x2
+			- $190
+		- APILDELLA-Extender-Portable-Monitor
+			- https://www.amazon.com/APILDELLA-Extender-Portable-Monitor-Plug-play/dp/B0CDW485BJ
+			- $199
+			- 14" x 2
+			- 1.6 kgs = 3.5 lbs (product weight says more, but manufacturer claims that's packaging, cables, etc.)
+		- Teamgee 14 x2
+			- https://www.amazon.com/Teamgee-Portable-Monitor-Extender-Speakers/dp/B0CDGFXHV7/
+			- $189
+		- KYY 15.6"
+			- https://www.amazon.com/KYY-Extender-Monitor-Portable-Extended/dp/B0DK6HJ1TB
+			- $250
+			- 7 lbs
+		- QQH 15.6
+			- https://www.amazon.com/QQH-Extender-Portable-Ultra-Slim-Compatible
+			- $250
+			- Claims 4lbs
+		- Teamgee 15.6” 
+			- https://a.co/d/gGVo6yA
+			- $299
+			- Unique rotating stand
+		- Domyfan 15.6
+			- $299
+			- Similar to Teamgee 15.6 but bit better reviews

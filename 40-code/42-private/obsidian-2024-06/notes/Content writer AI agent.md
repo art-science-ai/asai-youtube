@@ -1,0 +1,7 @@
+- Newsletter
+	- Make database of possible newsletter articles
+- Linkedin posts
+	- Make list of possible Linkedin posts
+- Other
+	- SEO agent
+	- Reviewing

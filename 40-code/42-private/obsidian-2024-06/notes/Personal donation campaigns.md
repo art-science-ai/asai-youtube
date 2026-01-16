@@ -1,0 +1,14 @@
+- Features
+	- Eligible for donation matching
+	- Public feed with comments / notes
+	- Permanent campaign
+- Tools / platforms
+	- [[Facebook fundraiser page]]
+		- Limited to 3 months duration
+	- [[JustGiving]]
+		- Tried; works; UI is not great!
+	- [[Gofundme]]
+		- Good UI; works
+	- [[Givewheel]]
+		- Supports multiple charities
+		- Most USA charities not supported

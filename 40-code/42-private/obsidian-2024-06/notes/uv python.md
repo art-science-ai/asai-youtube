@@ -1,0 +1,9 @@
+- Installation
+	- `brew install uv`
+- Setup
+	- `uv init my_project`
+- Python dependencies
+	- `uv `
+	- `uv add package_1 package_2 ...`
+	- `uv remove package_1`
+	- 

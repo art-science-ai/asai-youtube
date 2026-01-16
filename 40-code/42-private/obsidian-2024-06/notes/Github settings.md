@@ -1,0 +1,10 @@
+- Dotfiles repo
+	- .env
+- Project repos
+	- .gitignore
+		- .clinerules
+		- .env
+- Starting a new codespace
+	- Update all extensions
+- Starting a new project
+	- Add dotfiles submodule
