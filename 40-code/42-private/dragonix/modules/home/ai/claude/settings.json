@@ -17,16 +17,16 @@
   },
   "enabledPlugins": {
     "plugin-dev@claude-code-plugins": true,
-    "agent-sdk-dev@claude-code-plugins": true,
-    "document-skills@anthropic-agent-skills": true,
-    "example-skills@anthropic-agent-skills": true,
+    "agent-sdk-dev@claude-code-plugins": false,
+    "document-skills@anthropic-agent-skills": false,
+    "example-skills@anthropic-agent-skills": false,
     "web-research@gtd-cc": true,
-    "developing-for-claude-code@gtd-cc": true,
-    "documentation@gtd-cc": true,
-    "github@gtd-cc": true,
-    "obsidian@gtd-cc": true,
+    "developing-for-claude-code@gtd-cc": false,
+    "documentation@gtd-cc": false,
+    "github@gtd-cc": false,
+    "obsidian@gtd-cc": false,
     "random@gtd-cc": true,
-    "doc-parsing@gtd-cc": true
+    "doc-parsing@gtd-cc": false
   },
   "outputStyle": "Explanatory",
   "alwaysThinkingEnabled": true

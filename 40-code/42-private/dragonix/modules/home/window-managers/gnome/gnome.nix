@@ -233,4 +233,43 @@
       "x-scheme-handler/unknown" = "vivaldi-stable.desktop";
     };
   };
+
+  # Custom PaperWM stylesheet with Catppuccin accent colors
+  xdg.configFile."gnome-shell/extensions/PaperWM@paperwm.github.com/stylesheet.css".text =
+    ''
+      /* PaperWM Custom Border Highlights - Catppuccin Accent Colors */
+
+      /* Focused window border - Mauve accent (primary) */
+      .paperwm-window-tile:focus {
+        border: 2px solid #cba6f7;
+        box-shadow: 0 0 10px rgba(203, 166, 247, 0.5);
+      }
+
+      /* Unfocused window border - Lavender (subtle) */
+      .paperwm-window-tile:not(:focus) {
+        border: 1px solid rgba(180, 190, 254, 0.3);
+      }
+
+      /* Tile preview when dragging/rearranging - Sky */
+      .tile-preview {
+        background-color: rgba(137, 220, 235, 0.2);
+        border: 2px dashed #89dceb;
+      }
+
+      /* Active workspace indicator - Mauve */
+      .paperwm-workspace:focus .paperwm-workspace-bar {
+        background-color: #cba6f7;
+      }
+
+      /* Scratch window (popup) highlight - Pink */
+      .paperwm-scratch-window {
+        border: 2px solid #f5c2e7;
+        box-shadow: 0 0 15px rgba(245, 194, 231, 0.6);
+      }
+
+      /* Monitor border - Sapphire */
+      .paperwm-monitor-tiling {
+        outline: 1px solid rgba(116, 199, 236, 0.2);
+      }
+    '';
 }
