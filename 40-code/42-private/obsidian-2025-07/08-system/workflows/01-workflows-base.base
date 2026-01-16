@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - note["global-type"] == "misc-workflows"
+    order:
+      - file.name
+      - workflow-implementation
+      - workflow-inputs
+      - workflow-outputs
+      - file.path
+    columnSize:
+      note.workflow-implementation: 84
+      note.workflow-outputs: 175
+  - type: table
+    name: View

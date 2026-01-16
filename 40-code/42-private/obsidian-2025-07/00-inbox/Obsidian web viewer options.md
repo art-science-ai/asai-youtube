@@ -1,0 +1,7 @@
+- Plugins
+	- [[Web viewer - Obsidian core plugin]]
+		- Core plugin I use to view web pages in Obsidian. Commonly used for ChatGPT, Todoist, Calendar, etc.
+		- Integrates with bookmarks core plugin!
+	- [[Surfing - Obsidian community plugin]]
+	- [[Custom frames - Obsidian community]]
+		- Save frames inside pages

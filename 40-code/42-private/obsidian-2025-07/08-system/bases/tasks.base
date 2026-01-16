@@ -1,0 +1,16 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - note["global-type"] == "task"
+    order:
+      - file.name
+      - task-priority
+      - task-status
+      - task-scheduled
+      - file.path
+      - task-contexts
+      - task-projects
+      - test-property
+      - global-type

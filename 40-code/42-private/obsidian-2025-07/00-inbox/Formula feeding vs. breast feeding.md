@@ -1,0 +1,6 @@
+- Notes from CHERISH first six weeks book
+	- formula is easier to measure and control quantity
+	- Formula feeding is much faster - like 10 mins vs 40 mins
+	- Formula keeps the baby fuller and can sleep for longer
+	- Formula is independent of the mom - doesn’t require effort from mom to produce and manage supply
+	- Breastfeeding requires mom to be careful about diet

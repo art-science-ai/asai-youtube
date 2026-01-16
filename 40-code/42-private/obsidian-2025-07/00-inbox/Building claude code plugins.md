@@ -1,0 +1,6 @@
+- First start by listing the workflows and tasks
+- For each task, make corresponding slash commands and agents
+- For each command and agent, use this format
+	- Inputs
+	- Process
+	- Outputs

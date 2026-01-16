@@ -1,0 +1,10 @@
+- Home dir
+	- MCPs
+	- Commands: `~/.claude/commands`
+- Project dir
+	- commands: `.claude/commands`
+	- 
+- References
+	- PRP templates on github - from [[Cole Medin]] video
+- TODO
+	- Migrate claude.json to settings.json etc.

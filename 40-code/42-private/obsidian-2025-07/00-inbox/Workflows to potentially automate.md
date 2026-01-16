@@ -1,0 +1,13 @@
+- Google photos 
+	- Setup
+		- Whatsapp auto-save to iPhone
+		- iPhone photos and screenshots
+		- Sync to google photos app on iphone
+	- Workflow: Clear iPhone space
+		- Delete local iphone photos backed up to google photos (1 min / month)
+	- Workflow: inbox processing (10 mins / week)
+		- Delete photos I don't ever want - to free up space - screenshots, temp photos
+		- Archive photos I want to save but are not "my photos" - to declutter feed - photos of other people
+		- Favorite photos to remember for later
+		- Add photos to albums if they belong
+	- 

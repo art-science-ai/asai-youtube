@@ -1,0 +1,26 @@
+- 0-21 days
+	- Ram mummy - pre-birth - 100k
+	- Shikha mashi - 15k
+	- Ram mummy - 50k
+	- Prem mummy - 25k
+	- TVS gopal - 5g gold
+	- Richa mami - clothes
+- 21st day
+	- Ram mummy - golden spoon
+	- Pranay - golden ring
+	- Ma + Baba: 1 gold chain, 2 gold bangles, gold buttons 
+	- Amma (Rukma's grandma): 1 golden chain + locket
+	- Tinnu / haritha - clothes and toys from US
+	- Vijay babai - 5g gold
+	- Chinna + bujji - 100g silver
+	- Ramana + Gouri - 100g silver + baby clothes
+	- Meera - silver bowl
+	- Prem mummy - cash 50k 
+	- Manohar / padma - 11k cash + clothes for baby + rukma
+	- Paula Mashi: Clothes 
+	- Shonai: Clothes + toys 
+	- Rupa Mashi: Clothes + toys 
+	- Unknown - silver bowl
+	- Unknown - silver bowl ~ 100g
+	- Unknown - baby sweater
+

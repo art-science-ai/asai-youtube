@@ -1,0 +1,5 @@
+- My use cases
+	- [[nix darwin]] for managing [[macos]]
+	- [[nixos]] for a linux os
+	- [[nix home manager]] for managing home configuration across multiple environments
+- 

@@ -1,0 +1,5 @@
+- Recently laid off from Meta
+- Not looking for a job immediately - have some runway
+- Passionate about AI and open source
+- Interested in solopreneur life
+- Looking to get started building independent AI products and services

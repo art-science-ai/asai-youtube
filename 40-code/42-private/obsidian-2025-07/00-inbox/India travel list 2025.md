@@ -1,0 +1,69 @@
+- [x] Moni
+	- [x] Costco - contacts + airpods return
+	- [x] Visit apt 1x/month - mail + packages + check-in 
+- [x] Todo
+	- [x] Packages - laptop monitor, car seat
+	- [x] Rukma's items
+		- [x] Amazon items - already at home
+		- [x] 3 amazon items + Sephora
+		- [x] Jewelry from safe - one bag
+	- [x] Locker set up +/ cash deposit
+	- [x] Passport + marriage cert
+- [ ] Apartment cleanup
+	- [ ] Thermostat 
+	- [ ] Kitchen + Fridge + trash
+	- [ ] Windows
+	- [ ] General cleanup
+	- [ ] Balcony - bike / cooler
+- ===============
+- === REGULAR PACKING LIST ===
+- ===============
+- [ ] Bedroom - clothes
+	- [ ] Underwear + socks (1 / day)
+	- [ ] Handkerchief (2 / week)
+	- [ ] Pants (1 / week)
+	- [ ] Shirts (3 / week)
+	- [ ] Gym shirts (2 / week)
+	- [ ] Sweatpants (1 / week)
+	- [ ] Swim shorts + slippers
+	- [ ] Sports - shoes, gear
+	- [ ] Winter clothes - hat, gloves, long johns
+- [x] Bedroom - bedside
+    - [x] Sleep mask + earplugs
+    - [x] Kindle
+    - [x] Extra apple watch
+    - [x] Charging: pad + wall plug + cables
+- [x] Bathroom
+    - [x] Medicines
+    - [x] Toothbrush + paste
+    - [x] Face wash
+    - [x] Moisturizer
+    - [x] Hair brush
+    - [x] Contacts + glasses
+    - [x] Toilet spray
+    - [x] Lube
+- [x] Office
+    - [x] Laptop + charger
+    - [x] iPad
+    - [x] External monitor + cable
+    - [x] Power bank - mini
+    - [x] Wired headphones
+    - [x] Extra cables
+    - [x] Backpack / laptop bag
+    - [x] Mini PC
+- [ ] Kitchen
+    - [ ] Protein powder + shaker
+    - [ ] Protein snacks: bars / jerkey
+    - [ ] Drinks
+- [x] Personal item
+    - [x] Hand sanitizer
+    - [x] Wallet
+    - [x] Phone
+    - [x] Lip balm
+- [ ] Misc
+    - [x] Sling bag
+    - [x] Smart glasses
+    - [ ] Water bottle
+    - [ ] Content - Kindle, YouTube, Audible, Podcasts, Shows
+    - [x] Exercise gear - weight plates
+    - [ ] Sports gear - pickleball, TT
