@@ -58,36 +58,15 @@ Unified Context, Distributed Storage - Provide AI Agents with comprehensive cont
 
 ### Git Subtree Architecture
 
-The monorepo is the primary repo. For public collaboration, specific folders are split out to standalone repositories.
+The monorepo is the primary repo. For public collaboration, specific folders are split out to standalone repositories using Git Subtree.
 
-**Adding a public project to your public code directory**
+**Key concepts:**
+- Monorepo is the source of truth
+- Subtree splits code to standalone GitHub repos for external collaboration
+- Squashed history keeps monorepo clean
+- Normal Git workflow for collaborators on standalone repos
 
-```bash
-# Add the remote once
-git remote add remote-app1 https://github.com/user/app1.git
-
-# Add as subtree (squash history to keep monorepo clean)
-# Replace <public-code-dir>/app1 with your actual directory structure
-git subtree add --prefix=<public-code-dir>/app1 remote-app1 main --squash
-```
-
-**Pushing changes to public GitHub**
-
-```bash
-# Replace <public-code-dir>/app1 with your actual directory structure
-git subtree push --prefix=<public-code-dir>/app1 remote-app1 main
-```
-
-**Migrating a private project to private/**
-
-```bash
-git remote add migrate-temp ~/old/path/to/repo
-git fetch migrate-temp
-git merge --allow-unrelated-histories migrate-temp/main
-mkdir -p private/project-name
-# Move files into subfolder, then:
-git remote rm migrate-temp
-```
+**Detailed setup and workflows:** See [Code Architecture](40-code/README.md#git-strategy)
 
 ### Knowledge Architecture: PARA & Zettelkasten
 
@@ -109,68 +88,30 @@ Hub-and-spoke model prevents organizational friction.
 
 ## Workflows
 
-### Incubation: Start a New Project
+### Project Lifecycle
 
-1. Create folder in your lab code directory (e.g., `lab/My-New-Idea`)
-2. Write code alongside notes in the same folder
-3. Syncs automatically via Syncthing to all machines
-4. Benefits: Code + notes in one place during early development
+Projects flow through three stages:
 
-### Graduation: Move to Production
+1. **Incubation** (`lab/`) - Early development with rapid iteration
+2. **Production** (`public/` or `private/`) - Mature projects with Git history
+3. **Archive** (`archive/`) - Preserved but inactive projects
 
-When a project matures or needs collaboration:
+**Detailed workflows:** See [Code Architecture](40-code/README.md) for complete documentation on:
+- Starting new projects in the lab
+- Graduating projects to production
+- Git Subtree setup and management
+- Project lifecycle management
 
-**Move to your public or private code directory**
+### AI Context Sessions
 
-```bash
-# Adjust paths based on your directory structure
-mv ~/monorepo/<lab-dir>/My-New-Idea ~/monorepo/<public-code-dir>/my-new-idea
-# OR
-mv ~/monorepo/<lab-dir>/My-New-Idea ~/monorepo/<private-code-dir>/my-new-idea
-```
-
-**Initialize Git Subtree (for public code)**
+Run agents from `~/monorepo` to give them full access to code and knowledge:
 
 ```bash
 cd ~/monorepo
-git remote add remote-mynewidea https://github.com/username/my-new-idea.git
-# Replace <public-code-dir> with your actual directory structure
-git subtree add --prefix=<public-code-dir>/my-new-idea remote-mynewidea main --squash
+claude "Look at my project note in 30-para/31-projects and refactor the auth logic in 40-code/41-public/my-app"
 ```
 
-**Create reference note in PARA**
-
-Create a note in your projects directory linking to the new project:
-
-```markdown
-# My New Idea
-
-**Location:** `<public-code-dir>/my-new-idea`
-**Status:** Active Git Repository
-**Started:** 2025-01-08
-
-## Overview
-Brief description of the project.
-
-## Key Files
-- `src/main.ts` - Entry point
-- `README.md` - Documentation
-
-## Related Notes
-- [[Project Architecture]]
-- [[Initial Ideas]]
-```
-
-### AI Context Session
-
-Run agents from `~/monorepo`:
-
-```bash
-cd ~/monorepo
-claude "Look at my project note in <projects-dir> and refactor the auth logic in <public-code-dir>/my-new-idea based on those requirements."
-```
-
-The agent has full access to code and knowledge (PARA, Zettelkasten).
+Agents have comprehensive context (notes + infrastructure + active code) without context switching.
 
 ## Setup & Migration
 

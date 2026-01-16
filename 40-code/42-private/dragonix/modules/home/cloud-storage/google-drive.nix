@@ -13,6 +13,7 @@
     };
 
     Service = {
+      ExecStartPre = "${pkgs.coreutils}/bin/mkdir -p %h/GDrive";
       ExecStart = "${pkgs.rclone}/bin/rclone mount gdrive: %h/GDrive"
         + " --vfs-cache-mode full"
         + " --vfs-cache-max-age 24h"
