@@ -24,16 +24,16 @@
 
     eza = {
       enable = true;
-      extraOptions = [
-        "--color=always"
-        "--git"
-        "--icons=always"
-        "--no-filesize"
-        "--no-user"
-        "--no-permissions"
-      ];
-      git = true;
-      icons = "always";
+      # extraOptions = [
+      #   "--color=always"
+      #   "--git"
+      #   "--icons=always"
+      #   "--no-filesize"
+      #   "--no-user"
+      #   "--no-permissions"
+      # ];
+      # git = true;
+      # icons = "always";
     };
 
     fzf = {
