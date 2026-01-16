@@ -68,8 +68,8 @@
 
       # Plugins
       plugin = [
-        "opencode-openai-codex-auth"
-        "opencode-skills"
+        # "opencode-openai-codex-auth"
+        # "opencode-skills"
         # "oh-my-opencode"
       ];
 
