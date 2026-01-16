@@ -113,109 +113,45 @@ claude "Look at my project note in 30-para/31-projects and refactor the auth log
 
 Agents have comprehensive context (notes + infrastructure + active code) without context switching.
 
-## Setup & Migration
+### Cross-Machine Sync with Mutagen
 
-### Current State
+**Using Mutagen instead of Syncthing** for cross-machine synchronization.
 
-Individual git repos are currently used for each project. No cross-machine sync infrastructure is in place yet.
+**Configuration:** See [mutagen.yml](mutagen.yml)
 
-### Immediate Next Steps: Migrate to Syncthing
-
-**Create monorepo directory**
-
-```bash
-mkdir -p ~/monorepo
-cd ~/monorepo
-git init
-gh repo create monorepo --private --source=. --remote=origin
-git add .
-git commit -m "Initial commit"
-git push -u origin main
-```
-
-**Configure Syncthing**
-
-1. Install Syncthing
-2. Add `~/monorepo` as a shared folder
-3. Configure `.stignore`:
-
-```
-node_modules/
-target/
-dist/
-.sync-conflict-*
-.git/*.lock
-.obsidian/workspace.json
-```
-
-4. Sync across machines
+**Current status:** Manual sync only
+- Start sync manually: `mutagen create` (first time) or `mutagen sync`
+- Stop sync manually: `mutagen terminate`
+- Monitor sync: `mutagen list`
+- Not yet automated with systemd/service on startup
 
 **Golden Rule**
 
 Avoid running Git commands on two machines at the exact same time. Save/Close Machine A before opening Machine B.
 
-**Role of Git**
+## Setup & Migration
 
-Git is for version control and commit history tracking, not for syncing. Push code changes to their respective remotes (GitHub, GitLab) for backup and collaboration.
+### Migration Progress
 
-**Open as Obsidian Vault**
+- [x] Foundation - Monorepo structure, Git repo, NixOS config migrated
+- [x] Git Subtree Integration - Added 3 private subtrees (piyush-nikhil, obsidian vaults)
+- [ ] Automate Mutagen sync with systemd/service
+- [ ] Knowledge Migration - Organize notes into PARA structure and create resource hubs
 
-Open `~/monorepo` in Obsidian to work with code + knowledge in one interface.
+### Future Improvements
 
-### Migration Strategy
+**Automate Mutagen**
 
-**Phase 1: Sync Test**
+Create a systemd service to automatically start Mutagen sync.
 
-1. Move `nix-config` to your private code directory (e.g., `<private-code-dir>/nix-config`)
-2. Verify Syncthing syncs correctly
-3. Confirm system can rebuild from the new path
-
-**Phase 2: Subtree Test**
-
-1. Choose one public project to migrate
-2. Move to your public code directory (e.g., `<public-code-dir>/your-app`)
-3. Set up Git Subtree (see Architecture section)
-4. Test subtree push to public GitHub
-
-**Phase 3: Knowledge Migration**
-
-1. Move existing Obsidian vault contents into PARA folders
-2. Organize notes: Inbox, Projects, Areas, Resources, Archives
-3. Create Zettelkasten structure
-4. Move attachments to assets directory
-
-**Phase 4: Gradual Migration**
-
-1. Move existing personal projects to your private code directory
-2. Move scratchpad experiments to your lab code directory
-3. Gradually establish graduation workflow
-
-### Future Sync Strategies
-
-As workflow needs evolve, consider these hybrid approaches:
-
-**CouchDB for entire monorepo**
+**CouchDB for real-time sync** (Optional, if Mutagen proves insufficient)
 
 - Use CouchDB LiveSync plugin for real-time sync across all machines
 - Configure exclusions for heavy folders (`.git/`, build artifacts)
 - Enables simultaneous multi-machine editing
 - Trade-off: Plugin designed for documents, may be slower with large codebases
 
-**CouchDB for knowledge, Git for code (Most likely)**
-
-- CouchDB for PARA folders, Zettelkasten, Journals, Lab code (real-time sync)
-- Git push/pull for Public and Private code (normal git workflow)
-- Clean separation: knowledge syncs continuously, code syncs via commits
-- Best for: Real-time knowledge editing, native git workflow for code
-
-**CouchDB for knowledge, Syncthing for code**
-
-- CouchDB for knowledge folders only (PARA, Zettelkasten, Journals)
-- Syncthing for code folders (Public, Private, Lab)
-- No sync overlap between systems
-- Trade-off: Two sync mechanisms to manage
-
-Evaluate migration when:
+**Evaluate migration when:**
 - Need for simultaneous multi-machine editing emerges
 - Current serialized workflow becomes a bottleneck
 - Team collaboration patterns change
