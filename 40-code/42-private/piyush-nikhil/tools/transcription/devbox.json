@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
+  "name": "transcription-tools",
+  "description": "Transcription tools environment for cross-OS compatibility",
+  "packages": [
+    "ffmpeg-full@latest",
+    "uv@latest",
+    "whisper-cpp@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "echo \"🎙️  Transcription Environment Ready\"",
+      "echo \"\"",
+      "echo \"Tools available:\"",
+      "echo \"  - whisper-cpp: Standalone C++ transcription binary\"",
+      "echo \"  - ffmpeg: Audio/video conversion\"",
+      "echo \"  - uv: Python package manager for faster-whisper\"",
+      "echo \"\"",
+      "echo \"Quick start:\"",
+      "echo \"  ./transcribe-tdrz.sh INPUT.m4a OUTPUT_DIR\"",
+      "echo \"\"",
+      "echo \"See README.md for full documentation.\""
+    ]
+  }
+}
