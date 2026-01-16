@@ -44,8 +44,15 @@ git log --oneline origin/main..HEAD --name-only | grep "40-code/" | cut -d/ -f1-
 
 For each changed directory that has a subtree remote:
 
+**IMPORTANT**: Use ONLY `git subtree push`. Do NOT use `git subtree split` + `git push`.
+
 ```bash
 git subtree push --prefix=40-code/directory-name remote-name main
+```
+
+**Concrete example** (if directory is `40-code/42-private/piyush-nikhil/` and remote is `remote-piyush-nikhil`):
+```bash
+git subtree push --prefix=40-code/42-private/piyush-nikhil remote-piyush-nikhil main
 ```
 
 **Before pushing**, check for conflicts:
@@ -82,3 +89,19 @@ If verification fails, identify which push failed and retry.
 **Divergent subtree history**: Pull first, resolve conflicts, then push
 
 **No subtree remotes**: This is normal - only monorepo push needed
+
+## Common Mistakes
+
+**WRONG**: Do NOT use `git push` with command substitution:
+```bash
+# Don't do this:
+git push remote-name $(git subtree split --prefix=40-code/directory-name main) main
+```
+
+**CORRECT**: Use `git subtree push` directly:
+```bash
+# Do this instead:
+git subtree push --prefix=40-code/directory-name remote-name main
+```
+
+The `git subtree push` command handles split+push atomically and is safer.

@@ -16,6 +16,32 @@ Git workflows for the unified monorepo with subtree awareness.
 
 **Conventional commits**: Follow format in AGENTS.md.
 
+## Workflow Routing
+
+Based on user intent and repo state, select the appropriate workflow(s):
+
+### User: "what's the status", "what's changed", "git status"
+→ Run **status.md** only
+
+### User: "commit", "commit my changes", "save changes"
+→ Run **commit.md**
+→ After successful commits, prompt: "Run `/monorepo-git push` to push these changes? (y/n)"
+
+### User: "push", "push to monorepo", "push changes"
+→ Check git status first
+→ If unstaged/unstaged changes exist, run **commit.md** first
+→ Then run **push.md**
+
+### User: "commit and push", "save and push"
+→ Run **commit.md**
+→ After successful commits, immediately run **push.md**
+
+### User: "push subtrees", "push to [subtree-name]"
+→ Run **push.md** directly (skip commit unless there are uncommitted changes)
+
+### User: "add subtree", "add [repo] as subtree"
+→ Run **add-subtree.md**
+
 ## Workflows
 
 **Daily Operations**:
