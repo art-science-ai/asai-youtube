@@ -1,0 +1,33 @@
+For home office redeisgn
+
+- Corner shelf (optional)
+- Cube shelf
+	- Requirements
+		- Ideal dimensions: 3-4' wide; 4 - 6' high
+		- Current black ugly shelf: 3' x 6'
+	- Ikea Kallax
+		- 9-cube shelf = 44" x 44" = $99
+		- 13.25" cubes
+	- [Closetmaid Cubeicals 47.56" H x 35.91" W Cube Bookcase](https://www.wayfair.com/furniture/pdp/closetmaid-cubeicals-4756-h-x-3591-w-cube-bookcase-clop1021.html?piid=16731419)
+- Storage organizers
+	- Existing storage boxes
+		- Small: 8" x 12" x 4"
+		- Large: 12" x 16" x 8"
+		- Cube bins: 13"
+	- Stackable drawers
+		- Container Store Tint Stacking Drawers 
+			- Large: 20" x 16" x 8", $20
+			- Small: 16" x 9" x 6", $10
+		- Sterilite - Amazon 
+			- 27Qt: 17" x 15" x 10", $17
+			- 16Qt: 17" x 14.4" x 7"; $12
+			- 6Qt: 13" x 9" x 6", $6
+		- IRIS 6 Qt: 13" x 8.5" x 6", $8
+	- Standard cube storage bins
+		- Amazon basics, etc. - 11" cube
+	- Dividers
+		- [OJYUDD Drawer dividers](https://www.amazon.com/OJYUDD-Adjustable-Underwear-Organizers-Stationary/dp/B07VD69Y1R) 3" x 14" grids
+		- HBlife 6 Pack Closet Organizers, 11.3" x 7.5" clear divider with shelf attachment
+		- Cardboard dividers
+		- Akro-Mils bin dividers
+	- Office shelf setup

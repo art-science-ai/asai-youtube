@@ -1,0 +1,16 @@
+- Organization structure
+	- Libraries
+		- Options
+			- 1 library for everything
+			- 1 library per project (e.g. individual music video)
+			- 1 library per collection of projects 
+	- Events
+		- Organized by dates - for footage
+		- Holds files - footage, music, etc.
+	- Projects (think of each project as a "video")
+		- Individual timelines
+		- Projects live inside events
+		- Options
+			- 1 project per export - e.g. short, long, etc.
+	- Collections
+		- Automatically generated from folder names; e.g. folder_1 > file_1 will tag file_1 with keyword folder_1

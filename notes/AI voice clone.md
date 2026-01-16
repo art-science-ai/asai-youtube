@@ -1,0 +1,24 @@
+- Audio clone
+	- Cloning process
+		- Create audio sample - extract from podcast - 3 hours of audio
+		- Need different samples for different languages due to accent (only one voice per subscription for eleven labs)
+- Video clone
+	- Process
+		- Create video for clone
+	- Heygen video clone instructions
+		- Recommended
+			- Submit 2-5 mins of footage (required)
+			- Use a high resolution camera
+			- Record in a well-lit, quiet environment
+			- Look directly into the camera
+			- Pause between each sentence with your mouth closed
+			- Use generic gestures and keep hands below your chest
+		- Things to avoid
+			- Stitched or cut footage
+			- Talking without pauses
+			- Changing positions while recording
+			- Loud background noise
+			- Shadows on or overexposure of your face
+			- Diverting your gaze or looking around
+			- Hand gestures above the chest
+			- Use of pointing gestures

@@ -1,0 +1,3 @@
+## Notion database
+
+## GEDCOM

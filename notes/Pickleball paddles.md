@@ -1,0 +1,13 @@
+- Friday pickleball paddle
+	- $69 each or $99 for two
+	- 8 - 8.3 oz
+	- Spin: A
+	- Control: B+
+	- Power: A-
+- Vatic pro prism
+	- $99
+	- Good control and spin, not power
+- Aiso centric
+	- $99
+	- High control and spin
+- 

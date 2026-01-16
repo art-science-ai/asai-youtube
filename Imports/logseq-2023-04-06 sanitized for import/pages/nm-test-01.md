@@ -1,0 +1,175 @@
+- - Framework - Meta Product sense
+	- ## Clarify understanding
+		- Who is building the product and where?
+		- Clarify understanding of product / product space (e.g. what type of travel?)
+		- Constraints: platform / geography
+	- ## Introduce structure - let me first discuss how I'd like to approach this question:
+		- WHY are we building this product? What's our mission and objective?
+		- WHO are we building this product for? Who are the target users?
+		- Then discuss WHAT are the user problems that we want this product to solve.
+		- Finally I'll discuss potential solutions for what to build.
+		- If there's more time at the end, we can briefly discuss risks and success metrics for this product.
+	- WHY do/did we build this product? What's our mission and objective?
+	  id:: 66399d79-4a28-4d20-9ed5-d763f1cc38b4
+	  collapsed:: true
+		- State company mission: Give people the power to build community and bring the world closer together.
+		- __Connect product to company mission__
+			- X is aligned to the company mission, because...
+			-
+			- --
+			- Ref
+				- Already many communities around XYZ
+		- __Connect product to company strategy__
+			- X is also a good strategic fit within the Meta ecosystem, because...
+			-
+			- --
+			- Ref
+				- Potentially brings new users into the Meta ecosystem and gives existing users additional value from the ecosystem.
+				- One of Meta's key goals is to enable meaningful interactions between people - X will definitely enable.
+				- Leveraging the Meta ecosystem will give us powerful data that will make X great.
+				- As we transition into the Metaverse, X will become important
+				- Virtuous cycle of engagement.
+				- Competition
+				- Industry trends
+		- __State product mission__
+			-
+			- --
+			- Ref
+				- Bring people together and enable meaningful interactions through ...
+				- Enable meaningful interactions through ...
+				- FB Stories (mock): Bring people closer together through daily moments.
+				- Sweetgreen: To inspire healthier communities by connecting people to real food.
+				- Workday: To put people at the center of enterprise software.
+				- Warby Parker: To offer designer eyewear at a revolutionary price while leading the way for socially conscious businesses.
+	- WHY - non-Meta product
+		- What does the company do?
+			- Customers
+				-
+			- Products / services
+				-
+			- Other stakeholders
+				-
+			- Key differentiators
+				-
+		- Mission
+			-
+			- --
+			- Ref
+				- Sweetgreen: To inspire healthier communities by connecting people to real food.
+				- Workday: To put people at the center of enterprise software.
+				- Warby Parker: To offer designer eyewear at a revolutionary price while leading the way for socially conscious businesses.
+	- WHO are we building this product for? Who are the target users?
+		- __Stakeholders: users / creators / businesses / suppliers / partners / vendors / regulators / govt / employees / etc.__
+			-
+			- --
+			- Ref
+				- User's friends and family
+		- Prioritize by
+			- Mission and strategy - Meta and product (new users / value to existing)
+			- Large group with underserved needs
+			- A great user experience will ultimately benefit all other stakeholders of the product
+		- __User segments__
+			-
+			- --
+			- Ref
+				- Goals / needs
+				- Stage of event: before / during / after
+				- User himself vs. friends and family
+				- Engagement level by feature
+				- Frequency
+				- With whom? solo / friends / family / classmates
+				- Level of knowledge / sophistication / interest / access / skill / coordination
+				- Demographics
+					- Life stage - student / young professional / family w kids / elderly
+					- Location
+					- Money
+					- Time
+		- Prioritization
+			- Mission and strategy - Meta ecosystem and product (new users / value to existing)
+				- Young adults at risk for FB
+			- Large group with underserved needs
+	- WHAT are the user problems faced by our target users?
+		- Recap so far: mission > who
+		- __List user journey steps__
+			-
+			- --
+			- Ref: user journey
+				- Stages: before, during, after
+				- Two sides: creator / producer
+		- __List user needs and pain points__
+			-
+			- --
+			- Ref: pain points
+				- Takes too long
+				- Is frustrating
+				- Inefficient
+		- Prioritize
+			- Mission and strategy - Meta ecosystem and product (new users / value to existing)
+			- Frequency and severity (for user and MISSION)
+			- Alternatives
+	- What / solution ideas
+		- __List solution ideas (include one moonshot)__
+			-
+			- --
+			- Ref: FB ideas
+				- Wizard: user inputs + magic = results to solve problem
+				- Chatbot / AI concierge
+				- FB custom group
+				- Social: connecting people, creating community, collaborating
+			- Ref: general Ideas
+				- AI/ML
+				- AR/VR: in-home product experience
+				- Metaverse
+				- Ambient computing
+				- Growth: Targeted reminders, gamification
+		- Prioritize
+			- Solves specific user problem
+			- Mission and strategy - Meta and product (new users / value to existing)
+			- Confidence - adoption / engagement
+			- Effort
+			- Competition / Risks
+		- __Solution deep dive__
+			-
+			- Post-MVP (AI / learning from data)
+			- --
+			- Ref
+				- Entry point; main steps and call to action; afterwards
+				- Make sure to solve user problem!
+	- Risks and success metrics
+		- Explain mini-framework
+		- __Risks and trade-offs__
+			-
+			- --
+			- Ref
+				- Privacy / trust
+				- Competition
+				- Cannibalization
+				- Time to market
+				- Necessary partnerships
+				- Difficulty in technology
+				- Scaling risks
+		- __List metrics: adoption / engagement / retention / monetization__
+			- --
+			- Ref
+				- Adoption: Sign-ups / downloads
+				- Engagement: Daily usage / %
+				- Retention
+				- Monetization
+				- Guardrail metrics
+					- Ecosystem level metrics
+		- __Prioritize metric: usually engagement %__
+			-
+			- --
+			- Ref
+				- Adoption / engagement / retention / monetization
+				- Default: Engagement is the best measure of how much value our product is providing to users.
+		- __Downsides of metric__
+			-
+			- --
+			- Ref
+	- Closing
+		- Recap: mission > user > pain point > solution > metric
+		- Paint vision for future
+			- This is just the starting point - we just picked one use case and MVP solution.
+			- The mission is much broader... Meta can become the destination for X
+

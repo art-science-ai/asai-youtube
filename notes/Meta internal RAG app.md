@@ -1,0 +1,27 @@
+- TODO
+	- [ ] Google Docs API method for crawling
+	- [ ] Setup Github enterprise account - figure out account linking implications for private repos, etc.
+	- [ ] Stan script to search given list of google docs
+- Tools
+	- Metamate Retrieval
+	- Metamate RAG
+	- MetaGen RAG platform + XDB vector store
+- Learning mini-project: RAG app for Sagar comp research
+	- Extract transcripts
+	- Vector embeddings
+- Potential mentors
+	- [[Adam Noakes]] - Adv AI
+	- [[Bharath Navalpakkam]] - SAIL
+- Random coding questions
+	- How to open VS Code on demand with root as /data/sandcastle/boxes/fbsource/fbcode/scripts/nikhilmaddirala/test-project-01
+		- What is /data/sandcastle/boxes/?
+- Key concepts
+	- XDB: Meta internal MySQL database service
+		- XDB shard: single MySQL db
+		- XDB collection: logical grouping of embeddings; e.g. "wiki_collection" referes to a record in langchain_xdb_collection table
+		- ASOC: Automatic Online Schema Change
+		- Refs
+			- https://www.internalfb.com/wiki/Infra_Cloud/Databases/MySQL_XDB/XDB
+- References
+	- https://fb.workplace.com/groups/metamate.stan/permalink/931763045213976/
+	- https://fb.workplace.com/groups/metamate.stan/permalink/753464129710536/

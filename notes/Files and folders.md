@@ -1,0 +1,10 @@
+- Macbook
+	- Desktop - temp and inbox
+	- /usr/documents/repos - git repos - synced to github
+	- Application data
+		- MuseScore
+			- Plugins
+			- Scores - cloud
+			- Templates - local
+- Google drive personal
+- iPhone

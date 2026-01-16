@@ -1,0 +1,5 @@
+- [[AI Jason]] community - AI Builder Club
+- [[All About AI]] Youtuber
+	- YT membership w/ private discord $5/mo
+	- 1-1 calls 15 mins @ $40
+-  w/ 

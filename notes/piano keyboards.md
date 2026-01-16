@@ -1,0 +1,45 @@
+- Types of keyboards / pianos
+	- Acoustic piano
+		- Grand piano: $20k+
+		- Upright piano: $5k+
+	- Digital piano
+		- $500+
+		- more bulky; have speakers which I don't need
+	- MIDI keyboard
+		- $100+
+		- less bulky, more DAW controls; hard to find fully weighted
+- Features
+	- Digital piano vs. MIDI keyboard
+		- Digital piano: more expensive; 
+		- MIDI keyboard: cheaper, 
+	- Keybed action / weight
+		- Unweighted / synth-action: was good in the beginning, but it sucks now after I've tried fully weighted.
+		- Semi-weighted:
+		- Fully-weighted / hammer action: hard to find in MIDI keyboards; mostly in digital pianos
+	- Number of keys
+		- 61 is my sweet-spot
+		- 88 is too large, and 49 is too few keys for two hands
+- Main options
+	- 61-key portable: stick with existing desk setup
+	- 88-key weighted: need to improve desk stup
+		- https://microship.com/building-piano-drawer/
+- Products
+	- Nektar SE61
+		- $100
+		- unweighted
+		- Used for many months - good, but want to upgrade to weighted
+	- M-Audio Keystation 61 MK3
+		- $200
+		- synth action / semi-weighted
+	- Casiotone 61 key portable CTS1 $219
+		- 🟡 Not fully weighted
+		- 🟢 Lightweight and small
+		- Impression: Feels decent to me - Pretty good action
+		- Research: it is somewhere between unweighted and semi-weighted; apparently similar to Yamaha NP32, Korg B2N, Alesis Recital
+	- Novation Launchkey 61 MK4 $299
+		- Semi-weighted, but lot of extra MIDI controls
+	- Donner DEP-20 88 key weighted $299
+		- 🟢 Fully weighted
+		- 🔴 Heavy and large: 31 lbs | 57.1" x 13.4" x 9.25"
+	- Casio CDP-S160 – 88-Key Weighted $383
+		- 🟡 Medium size: 23.15 Pounds | 9.13"D x 52.05"W x 3.9"H

@@ -1,0 +1,21 @@
+- Writing GPS framework
+	- Go
+		- Goal
+		- So what?
+		- Add data and examples
+		- Organize
+	- Push
+		- First draft
+		- Walk away
+		- Second draft
+		- Rewrite to one person
+		- Add voice
+		- Headline
+	- Shine
+		- Robot edit
+		- Human edit
+		- Read out loud
+		- Eyeball for scanners
+		- Publish
+		- Let it go with love
+		- Reconcile your emotions

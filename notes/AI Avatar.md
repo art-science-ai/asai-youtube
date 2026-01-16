@@ -1,0 +1,18 @@
+- Tools
+	- Realistic
+		- HeyGen
+		- Synthesia
+	- Animated - video
+		- RunwayML
+	- Animated - image
+		- Picsart - https://aiavatar.com
+			- Is it the same as https://aiavatar.com?
+			- $2.99 for 10 gens
+		- aragon.ai - professional headshots
+			- $35 for 20 photos
+		- Fotor
+			- Not specific to avatar creation
+	- Lip sync video
+		- vozo.ai
+	- Misc
+		- LTX Studio

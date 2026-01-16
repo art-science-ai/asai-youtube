@@ -1,0 +1,9 @@
+- Tshirt
+	- Shoulder: 17"
+	- Length: 26"
+- Shirt
+- Jacket
+	- Chest: 36"
+	- Neck: 14"
+	- US Size: 36
+- Pant

@@ -1,0 +1,10 @@
+{
+  "newLinkFormat": "relative",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "pages",
+  "useMarkdownLinks": true,
+  "userIgnoreFilters": [
+    "logseq/",
+    "logseq/bak/"
+  ]
+}
