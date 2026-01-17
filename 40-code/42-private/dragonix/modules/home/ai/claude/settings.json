@@ -15,9 +15,21 @@
     "command": "~/.claude/statusline.sh",
     "padding": 0
   },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/langfuse_hook.py"
+          }
+        ]
+      }
+    ]
+  },
   "enabledPlugins": {
     "plugin-dev@claude-code-plugins": true,
-    "agent-sdk-dev@claude-code-plugins": false,
+    "agent-sdk-dev@claude-code-plugins": true,
     "document-skills@anthropic-agent-skills": false,
     "example-skills@anthropic-agent-skills": false,
     "web-research@gtd-cc": true,
@@ -26,7 +38,8 @@
     "github@gtd-cc": false,
     "obsidian@gtd-cc": false,
     "random@gtd-cc": true,
-    "doc-parsing@gtd-cc": false
+    "doc-parsing@gtd-cc": false,
+    "ralph-wiggum@claude-code-plugins": false
   },
   "outputStyle": "Explanatory",
   "alwaysThinkingEnabled": true

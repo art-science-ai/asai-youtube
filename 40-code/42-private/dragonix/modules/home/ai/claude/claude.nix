@@ -26,6 +26,12 @@
     executable = true;
   };
 
+  # Hooks directory with langfuse integration
+  home.file.".claude/hooks/langfuse_hook.py" = {
+    source = ./hooks/langfuse_hook.py;
+    executable = true;
+  };
+
   # Documentation symlink to shared AGENTS.md
   home.file.".claude/CLAUDE.md".source = ../common/AGENTS.md;
 }
