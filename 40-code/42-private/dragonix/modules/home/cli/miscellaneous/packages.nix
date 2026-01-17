@@ -44,6 +44,7 @@
     jujutsu
     just
     jq
+    python313Packages.langfuse
     lazygit
     marp-cli
     mutagen

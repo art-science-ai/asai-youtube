@@ -190,8 +190,8 @@
         "<Super>Return"
         "<Super>n"
       ];
-      switch-next = [ "<Super>period" ];
-      switch-previous = [ "<Super>comma" ];
+      switch-next = [ ];
+      switch-previous = [ ];
       switch-first = [ "<Super>Home" ];
       switch-last = [ "<Super>End" ];
       take-window = [ "<Super>t" ];
@@ -208,10 +208,10 @@
       switch-previous-workspace-backwards = [ "<Super><Shift>grave" ];
       move-previous-workspace = [ "<Super><Ctrl>grave" ];
       move-previous-workspace-backwards = [ "<Super><Shift><Ctrl>grave" ];
-      switch-up-workspace = [ "<Super>Page_Up" ];
-      switch-down-workspace = [ "<Super>Page_Down" ];
-      move-up-workspace = [ "<Super><Ctrl>Page_Up" ];
-      move-down-workspace = [ "<Super><Ctrl>Page_Down" ];
+      switch-up-workspace = [ "<Super>period" ];
+      switch-down-workspace = [ "<Super>comma" ];
+      move-up-workspace = [ "<Super><Ctrl>period" ];
+      move-down-workspace = [ "<Super><Ctrl>comma" ];
       toggle-scratch-window = [ "<Super>Escape" ];
       toggle-scratch-layer = [ "<Super><Shift>Escape" ];
       toggle-scratch = [ "<Super><Ctrl>Escape" ];
