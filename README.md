@@ -2,6 +2,22 @@
 
 A unified workspace integrating Git Subtree for public code, Syncthing for cross-machine mirroring, and PARA/Zettelkasten for knowledge management.
 
+## Setup
+
+- Clone the monorepo on a new machine into `~/monorepo`:
+
+```bash
+git clone git@github.com:nikhilmaddirala/monorepo.git ~/monorepo
+```
+
+- Enter the workspace and make the root folder the AI agent context:
+
+```bash
+cd ~/monorepo
+```
+
+- Follow any project-specific instructions located in `README.md` files under `40-code` before working on individual projects.
+
 ## Overview
 
 ### Philosophy
