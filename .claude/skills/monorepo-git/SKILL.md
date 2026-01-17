@@ -1,6 +1,6 @@
 ---
 name: monorepo-git
-description: This skill should be used when the user asks to "commit my changes", "push to monorepo", "what's the git status", "commit and push", "push subtrees", or any git operations in this monorepo. Handles intelligent commits, subtree-aware pushes, and comprehensive status overviews.
+description: This skill should be used when the user asks to "commit my changes", "push to monorepo", "what's the git status", "commit and push", "push subtrees", or any git operations in this monorepo. Handles intelligent commits, subtree-aware pushes, comprehensive status overviews, and full CRUD operations for managing subtrees (add, list, pull, move, update, remove).
 version: 0.1.0
 ---
 
@@ -40,7 +40,25 @@ Based on user intent and repo state, select the appropriate workflow(s):
 → Run **push.md** directly (skip commit unless there are uncommitted changes)
 
 ### User: "add subtree", "add [repo] as subtree"
-→ Run **add-subtree.md**
+→ Run **subtree-operations.md** → Add Subtree section
+
+### User: "list subtrees", "show subtrees", "what subtrees exist", "show all subtrees"
+→ Run **subtree-operations.md** → List All Subtrees section
+
+### User: "subtree status", "check subtree sync", "subtree status for [name]", "is subtree synced"
+→ Run **subtree-operations.md** → Check Subtree Status section
+
+### User: "pull subtree", "update subtree", "sync subtree from upstream", "pull latest from subtree"
+→ Run **subtree-operations.md** → Pull Subtree Changes section
+
+### User: "move subtree", "rename subtree", "relocate subtree", "move subtree to [dir]"
+→ Run **subtree-operations.md** → Move Subtree Directory section
+
+### User: "update subtree remote", "change subtree URL", "update subtree repo URL"
+→ Run **subtree-operations.md** → Update Subtree Remote URL section
+
+### User: "remove subtree", "delete subtree", "uninstall subtree"
+→ Run **subtree-operations.md** → Remove Subtree section (with safety confirmation)
 
 ## Workflows
 
@@ -50,5 +68,5 @@ Based on user intent and repo state, select the appropriate workflow(s):
 - **status.md**: Quick overview with subtree sync status
 
 **One-Time Setup**:
-- **add-subtree.md**: Add existing GitHub repo as subtree to monorepo
+- **subtree-operations.md**: Complete CRUD operations for managing subtrees (add, list, pull, move, update, remove)
 - **graduate.md**: Graduate lab project to production (public/private) with subtree setup
