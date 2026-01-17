@@ -3,5 +3,12 @@ let
   isDarwin = lib.hasSuffix "-darwin" system;
 in
 {
-  imports = if isDarwin then [ ./karabiner.nix ] else [ ./kanata.nix ];
+  imports =
+    [
+      ./kanata.nix  # Linux only (handled internally with mkIf)
+      ./karabiner.nix  # macOS only (handled internally with mkIf)
+    ]
+    ++ lib.optionals (!isDarwin) [
+      ./clipboard.nix
+    ];
 }
