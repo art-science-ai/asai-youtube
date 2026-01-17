@@ -22,17 +22,11 @@ Group by logical changes, not just by directory. A single directory may have mul
 - Group related changes together (same feature/fix/topic)
 - Split unrelated changes within the same directory
 
-**Specific grouping rules**:
-- **Project infrastructure** (.claude/, AGENTS.md, root docs) → 1 commit
-- **Subtree content** (40-code/42-private/project-a/) → separate commits by logical change
-- **Personal config** (dragonix, personal settings) → separate commit OR consider excluding
-- **DO NOT mix** project infrastructure with personal config
-
 **Example groupings**:
 - Root docs + AGENTS.md + .claude/ → `docs: add project infrastructure`
 - `40-code/project-a/` template changes → `feat(project-a): add user templates`
 - `40-code/project-b/` bug fix → `fix(project-b): resolve auth issue`
-- Personal NixOS config → `chore(dragonix): update window manager settings` (or skip)
+- Personal NixOS config → `chore(dragonix): update window manager settings`
 
 **CRITICAL: Present plan BEFORE executing**:
 1. Analyze changes (read files, check diffs)
