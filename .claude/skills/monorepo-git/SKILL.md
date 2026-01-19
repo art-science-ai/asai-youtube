@@ -16,6 +16,10 @@ Git workflows for the unified monorepo with subtree awareness.
 
 **Conventional commits**: Follow format in AGENTS.md.
 
+## General guidelines
+- NEVER perform destructive git operations like `git reset`
+- NEVER assume that any changes made by the user need to be discarded.
+
 ## Workflow Routing
 
 Based on user intent and repo state, select the appropriate workflow(s):

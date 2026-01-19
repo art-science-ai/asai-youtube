@@ -71,6 +71,10 @@ in
       hostname = "91.99.176.80";
       user = "nikhilmaddirala";
       forwardAgent = true;
+      extraOptions = {
+        StrictHostKeyChecking = "no";
+        UserKnownHostsFile = "/dev/null";
+      };
     };
     matchBlocks."vermax" = {
       hostname = "192.168.1.19";

@@ -71,8 +71,8 @@ tabline.apply_to_config(config)
 -- ==================================================================================
 -- This is where you actually apply your config choices.
 -- For example, changing the initial geometry for new windows:
--- config.initial_cols = 120
--- config.initial_rows = 28
+config.initial_cols = 120
+config.initial_rows = 28
 
 -- or, changing the font size and color scheme.
 config.font_size = 12

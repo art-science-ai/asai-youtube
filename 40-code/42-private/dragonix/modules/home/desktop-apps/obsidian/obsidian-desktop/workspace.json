@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "40-code/42-private/piyush-nikhil/projects/sparsh/proposal.md",
+                "file": "10-journals/daily/2026-01-19.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "proposal"
+              "title": "2026-01-19"
             }
           }
         ],
@@ -217,22 +217,25 @@
   },
   "active": "1f1e4de19baa63e2",
   "lastOpenFiles": [
-    ".claude/skills/monorepo-git/SKILL.md.tmp.340786.1768629634744",
-    ".claude/skills/monorepo-git/SKILL.md.tmp.340786.1768629518828",
+    "40-code/42-private/dragonix/modules/hosts/desktop/nixos/base.nix~",
+    "40-code/43-lab/youtube",
+    "10-journals/daily/2026-01-19.md",
+    "40-code/42-private/piyush-nikhil/projects/sparsh/proposal.md",
+    ".obsidian/themes/Catppuccin/theme.css",
+    ".obsidian/themes/Catppuccin/manifest.json",
+    ".obsidian/themes/AnuPpuccin/theme.css",
+    ".obsidian/themes/AnuPpuccin/manifest.json",
+    ".obsidian/plugins/zenmode/styles.css",
+    ".obsidian/plugins/zenmode/manifest.json",
+    ".obsidian/plugins/zenmode/main.js",
+    ".obsidian/plugins/zenmode/data.json",
+    ".obsidian/plugins/terminal/styles.css",
+    ".obsidian/plugins/show-hidden-files/README.md",
     ".claude/skills/monorepo-git/workflows/subtree-operations.md",
-    ".claude/skills/monorepo-git/workflows/subtree-operations.md.tmp.340786.1768629465583",
     "40-code/41-public/gtd-cc/references/docs/plugin-marketplaces.md",
     "40-code/41-public/gtd-cc/references/docs/architecture-principles.md",
-    "40-code/41-public/gtd-cc/references/docs",
     "40-code/41-public/gtd-cc/references/README.md",
-    "40-code/41-public/gtd-cc/references",
     "40-code/41-public/gtd-cc/plugins/documentation/skills/docs-management/workflows/shared/folder-exploration.md",
-    "40-code/41-public/gtd-cc/plugins/web-research/skills/site-crawling/examples/intelligent-crawler.py",
-    "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/tests/test_markdown_generation.py",
-    "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/tests/test_data_extraction.py",
-    "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/tests/test_basic_crawling.py",
-    "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/tests/test_advanced_patterns.py",
-    "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/tests/run_all_tests.py",
     "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/tests/README.md",
     "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/references/troubleshooting.md",
     "40-code/41-public/gtd-cc/plugins/web-research/skills/crawl4ai-toolkit/references/complete-sdk-reference.md",
@@ -249,9 +252,6 @@
     "40-code/41-public/gtd-cc/plugins/github/skills/gh-ops/workflows/commit.md",
     "40-code/41-public/gtd-cc/plugins/github/skills/gh-manage/workflows/triage.md",
     "40-code/41-public/gtd-cc/plugins/github/skills/gh-manage/workflows/orchestrate.md",
-    "40-code/41-public/gtd-cc/plugins/github/skills/gh-build/workflows/build-new.md",
-    "40-code/41-public/gtd-cc/plugins/github/skills/gh-build/workflows/build-iterate.md",
-    "40-code/41-public/gtd-cc/plugins/github/skills/_common/templates/pr-review-checklist.md",
-    "40-code/41-public/gtd-cc/plugins/github/skills/_common/templates/plan-comment.md"
+    "40-code/41-public/gtd-cc/plugins/github/skills/gh-build/workflows/build-new.md"
   ]
 }

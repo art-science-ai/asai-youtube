@@ -1,8 +1,83 @@
-# Nix Configuration Build Commands
 
 # Show available commands  
 default:
     just --list
+
+# ============================================================
+# Simple build commands 
+# ============================================================
+
+# Switch Home Manager configuration (auto-detects based on user@hostname)
+nh-home:
+    git add --intent-to-add .
+    nh home switch --backup-extension backup
+
+# Switch Home Manager configuration using seasmoke as remote builder
+nh-home-remote:
+    git add --intent-to-add .
+    NIX_CONFIG="builders = ssh://seasmoke?system=x86_64-linux&max-jobs=10&speed=1&features=big-parallel" \
+    nh home switch --backup-extension backup
+
+# Switch Home Manager configuration using seasmoke as remote builder (verbose)
+nh-home-remote-verbose:
+    git add --intent-to-add .
+    NIX_CONFIG="builders = ssh://seasmoke?system=x86_64-linux&max-jobs=10&speed=1&features=big-parallel" NIX_LOG_LEVEL=debug \
+    nh home switch --backup-extension backup -- --print-build-logs
+
+# Switch Home Manager using home-manager directly with remote builder (bypasses nh)
+hm-home-remote:
+    git add --intent-to-add .
+    nix run nixpkgs#home-manager -- switch --flake . -b backup \
+      --option builders "ssh://seasmoke?system=x86_64-linux&max-jobs=10&speed=1&features=big-parallel"
+
+# Verify remote builder configuration is active
+check-remote-builder:
+    @echo "Checking if seasmoke builder is configured..."
+    NIX_CONFIG="builders = ssh://seasmoke?system=x86_64-linux&max-jobs=10&speed=1&features=big-parallel" \
+    nix build --dry-run --expr 'derivation { name = "test"; system = "x86_64-linux"; builder = "/bin/sh"; args = [ "-c" "echo test > $out" ]; }' 2>&1 | grep -E "(ssh|seasmoke|localhost|builder)" || echo "Check completed"
+
+# Switch Darwin system configuration (auto-detects based on hostname)
+nh-darwin:
+    git add --intent-to-add .
+    nh darwin switch
+
+# Switch NixOS system configuration (auto-detects based on hostname)
+nh-os:
+    git add --intent-to-add .
+    nh os switch
+
+# Update flake inputs
+nh-update:
+    git add --intent-to-add .
+    nh flake update
+
+# Check all configurations
+nh-check:
+    git add --intent-to-add .
+    nh flake check
+
+# Clean Nix store and user profile
+nh-clean:
+    git add --intent-to-add .
+    nh clean all
+
+# Evaluate all configurations without building (fast, dry-run)
+check-all-dry:
+    git add --intent-to-add .
+    nix build --dry-run \
+        .#checks.x86_64-linux.seasmoke-config \
+        .#checks.x86_64-linux.home-seasmoke \
+        .#checks.x86_64-linux.vermax-config \
+        .#checks.x86_64-linux.home-vermax \
+        .#checks.aarch64-darwin.meleys-config \
+        .#checks.aarch64-darwin.home-meleys \
+        .#checks.aarch64-darwin.moondancer-config \
+        .#checks.aarch64-darwin.home-moondancer
+
+
+# ============================================================
+# ARCHIVED: System specific build commands
+# ============================================================
 
 meleys-system:
     git add --intent-to-add .
@@ -149,18 +224,6 @@ check-all:
     git add --intent-to-add .
     nix flake check --extra-experimental-features "nix-command flakes parallel-eval" --all-systems
 
-# Evaluate all configurations without building (fast, dry-run)
-check-all-dry:
-    git add --intent-to-add .
-    nix build --dry-run \
-        .#checks.x86_64-linux.seasmoke-config \
-        .#checks.x86_64-linux.home-seasmoke \
-        .#checks.x86_64-linux.vermax-config \
-        .#checks.x86_64-linux.home-vermax \
-        .#checks.aarch64-darwin.meleys-config \
-        .#checks.aarch64-darwin.home-meleys \
-        .#checks.aarch64-darwin.moondancer-config \
-        .#checks.aarch64-darwin.home-moondancer
 
 # Check individual configurations
 check-meleys:

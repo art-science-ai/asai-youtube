@@ -19,8 +19,24 @@
   };
 
   # Bluetooth support
-  hardware.bluetooth.enable = true;
   services.blueman.enable = true;
+
+  hardware.bluetooth = {
+    enable = true;
+
+    # For airpods pairing - comment out after pairing airpods
+    settings = {
+      General = {
+        # This forces "Classic" mode, hiding the "Find My" identity
+        ControllerMode = "bredr";
+        # Tells the AirPods you are an Apple-compatible device
+        DeviceID = "bluetooth:004C:0000:0000";
+        Experimental = true;
+      };
+    };
+
+  };
+
 
   # Power management services (required for desktop environments like Noctalia)
   services.power-profiles-daemon.enable = true;

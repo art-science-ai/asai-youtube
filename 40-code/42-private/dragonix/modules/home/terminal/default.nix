@@ -14,6 +14,7 @@
   imports = [
     ./wezterm
     ./zellij
+    ./tmux
     ./misc
   ];
 }

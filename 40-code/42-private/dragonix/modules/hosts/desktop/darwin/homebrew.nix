@@ -77,6 +77,7 @@
     "selfcontrol"
     "signal"
     "todoist-app"
+    "voiceink"
     "visual-studio-code"
     "zed"
     # "zen"

@@ -84,7 +84,7 @@
       move-to-monitor-up = [ ];
       move-to-monitor-down = [ ];
       switch-input-source = [
-        "<Super>space"
+        # "<Super>space"  # Removed - used for vicinae launcher
         "XF86Keyboard"
       ];
       switch-input-source-backward = [
@@ -107,7 +107,7 @@
 
       # Custom keybindings
       custom-keybindings = [
-        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/vicinae/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/vicinae"
       ];
     };
 
@@ -217,6 +217,18 @@
       toggle-scratch = [ "<Super><Ctrl>Escape" ];
 
     };
+
+    # NOTE: Vicinae floating window configuration
+    # PaperWM window rules need to be configured manually for now:
+    # 1. Open PaperWM settings (Super+Alt+. )
+    # 2. Go to Window Rules
+    # 3. Add rule for vicinae:
+    #    - App ID: vicinae
+    #    - Scale: Free
+    #    - Open Center: enabled
+    #
+    # TODO: Figure out correct dconf format for window-rules
+    # The setting might not exist or use a different GVariant format
 
     "org/gnome/gnome-session" = {
       auto-save-session = true;

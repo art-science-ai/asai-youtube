@@ -17,18 +17,24 @@ in
       # Common packages
       musescore
     ])
-    (lib.mkIf isLinux (with pkgs; [
-      # NixOS-specific desktop packages
-      flameshot
-      libreoffice
-      # librepods # Not in nixpkgs
-      localsend
-      obsidian
-      obs-studio
-    ]))
-    (lib.mkIf isDarwin (with pkgs; [
-      # Darwin-specific desktop packages
-      pngpaste 
-    ]))
+    (lib.mkIf isLinux (
+      with pkgs;
+      [
+        # NixOS-specific desktop packages
+        flameshot
+        gearlever
+        libreoffice
+        localsend
+        obsidian
+        obs-studio
+      ]
+    ))
+    (lib.mkIf isDarwin (
+      with pkgs;
+      [
+        # Darwin-specific desktop packages
+        pngpaste
+      ]
+    ))
   ];
 }

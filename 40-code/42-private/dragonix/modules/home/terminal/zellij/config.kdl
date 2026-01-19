@@ -77,6 +77,7 @@ keybinds {
         bind "Alt n" { NewPane; }
         bind "Alt x" { CloseFocus; }
         bind "Alt f" { ToggleFloatingPanes; }
+        bind "Alt z" { TogglePaneFrames; }
 
         // Tab management
         bind "Alt t" { NewTab; }
@@ -99,6 +100,24 @@ keybinds {
         // Lock mode (pass-through to terminal) - use Alt+g to avoid neovim conflicts
         unbind "Ctrl g"  // Disable default Ctrl+g (conflicts with neovim)
         bind "Alt g" { SwitchToMode "Locked"; }
+
+        // Which-Key Help Menu (Alt + /)
+        bind "Alt /" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/zellij_forgot.wasm" {
+                LOAD_ZELLIJ_BINDINGS "false"
+                "New Pane"      "alt n"
+                "Close Pane"    "alt x"
+                "Float Pane"    "alt f"
+                "New Tab"       "alt t"
+                "Close Tab"     "alt T"
+                "Rename Tab"    "alt r"
+                "Next Tab"      "alt ]"
+                "Prev Tab"      "alt ["
+                "Zen Mode"      "alt z"
+                "Quit Zellij"   "ctrl q"
+                floating true
+            }
+        }
 
         // Quit
         bind "Ctrl q" { Quit; }
@@ -186,6 +205,7 @@ show_startup_tips false
 on_force_close "detach"
 session_serialization true
 auto_layout true
+default_layout "default"
 
 // Scrollback buffer
 scroll_buffer_size 10000
