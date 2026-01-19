@@ -18,41 +18,10 @@
   home.file.".gemini/commands/gh-issue.toml".source = ./commands/gh-issue.toml;
   home.file.".gemini/AGENTS.md".source = ../common/AGENTS.md;
 
-  # Configure settings from settings.json
-  programs.gemini-cli.settings = {
-    security = {
-      auth = {
-        selectedType = "oauth-personal";
-      };
-    };
-    general = {
-      vimMode = true;
-      preferredEditor = "hx";
-      previewFeatures = true;
-    };
-    ui = {
-      theme = "GitHub";
-      hideBanner = true;
-      hideTips = false;
-    };
-    tools = { };
-    mcpServers = { };
-    telemetry = { };
-    privacy = { };
-    model = { };
-    context = {
-      fileName = [
-        "AGENTS.md"
-      ];
-      includeDirectories = [ ];
-      loadFromIncludeDirectories = false;
-      discoveryMaxDirs = 2;
-      fileFiltering = {
-        respectGitIgnore = true;
-      };
-    };
-    advanced = { };
-  };
+  # Mutable settings.json using mkOutOfStoreSymlink for Gemini CLI configuration
+  # Place where Gemini CLI expects it: ~/.gemini/settings.json
+  home.file.".gemini/settings.json".source =
+    config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/nix-config/modules/home/ai/gemini/settings.json";
 
   # Note: google_accounts.json contains authentication data and is not managed declaratively.
   # It should be symlinked manually from dotfiles/gemini/.gemini/google_accounts.json to ~/.gemini/google_accounts.json

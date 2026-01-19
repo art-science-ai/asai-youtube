@@ -8,7 +8,7 @@
   programs.helix = {
     enable = true;
     package = pkgs.evil-helix;
-    defaultEditor = true;
+    defaultEditor = false;
 
     settings = {
       editor = {
@@ -49,7 +49,11 @@
         };
 
         statusline = {
-          left = [ "mode" "spinner" "version-control" ];
+          left = [
+            "mode"
+            "spinner"
+            "version-control"
+          ];
           center = [ "file-name" ];
           right = [
             "diagnostics"
@@ -76,7 +80,10 @@
         };
         taplo = {
           command = "taplo";
-          args = [ "lsp" "stdio" ];
+          args = [
+            "lsp"
+            "stdio"
+          ];
         };
         yaml-language-server = {
           command = "yaml-language-server";
@@ -114,7 +121,10 @@
           language-servers = [ "taplo" ];
           formatter = {
             command = "taplo";
-            args = [ "format" "-" ];
+            args = [
+              "format"
+              "-"
+            ];
           };
         }
         {
@@ -123,7 +133,10 @@
           auto-format = true;
           formatter = {
             command = "prettier";
-            args = [ "--stdin-filepath" "%{buffer_name}" ];
+            args = [
+              "--stdin-filepath"
+              "%{buffer_name}"
+            ];
           };
         }
         {
@@ -132,7 +145,10 @@
           auto-format = true;
           formatter = {
             command = "prettier";
-            args = [ "--stdin-filepath" "%{buffer_name}" ];
+            args = [
+              "--stdin-filepath"
+              "%{buffer_name}"
+            ];
           };
         }
         {
@@ -141,7 +157,10 @@
           auto-format = true;
           formatter = {
             command = "prettier";
-            args = [ "--stdin-filepath" "%{buffer_name}" ];
+            args = [
+              "--stdin-filepath"
+              "%{buffer_name}"
+            ];
           };
         }
         {
@@ -150,7 +169,10 @@
           auto-format = true;
           formatter = {
             command = "prettier";
-            args = [ "--stdin-filepath" "%{buffer_name}" ];
+            args = [
+              "--stdin-filepath"
+              "%{buffer_name}"
+            ];
           };
         }
         {
@@ -168,7 +190,10 @@
           auto-format = true;
           formatter = {
             command = "prettier";
-            args = [ "--stdin-filepath" "%{buffer_name}" ];
+            args = [
+              "--stdin-filepath"
+              "%{buffer_name}"
+            ];
           };
         }
       ];

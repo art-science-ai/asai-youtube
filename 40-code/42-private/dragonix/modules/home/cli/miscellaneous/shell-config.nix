@@ -9,7 +9,12 @@
 let
   # Import shared secrets registry (single source of truth for all secrets)
   secretsRegistry = import ../../../common/secrets-registry.nix { inherit lib; };
-  inherit (secretsRegistry) secretDefinitions mkBashSecretLoader mkFishSecretLoader mkNushellSecretEnvVars;
+  inherit (secretsRegistry)
+    secretDefinitions
+    mkBashSecretLoader
+    mkFishSecretLoader
+    mkNushellSecretEnvVars
+    ;
 
   # Transform alias for Nushell compatibility
   # Converts "VAR=value command" to "with-env { VAR: value } { command }"
@@ -61,8 +66,8 @@ let
 in
 {
   # Set base environment variables with defaults that can be overridden per host
-  home.sessionVariables = lib.mkDefault {
-    EDITOR = "nxd";  # nixvim-dragon (Nix-based configuration)
+  home.sessionVariables = {
+    EDITOR = lib.mkForce "nxd"; # nixvim-dragon (Nix-based configuration)
     TERMINAL = "wezterm";
     SOPS_AGE_KEY_FILE = "$HOME/.config/sops/age/keys.txt";
   };
@@ -92,7 +97,7 @@ in
       enable = true;
     };
     oh-my-zsh.enable = true;
-    oh-my-zsh.plugins = [];
+    oh-my-zsh.plugins = [ ];
     initContent = ''
       # Load secrets from /run/secrets/ if available
       ${mkBashSecretLoader secretDefinitions}

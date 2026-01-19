@@ -1,0 +1,33 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  },
+  "general": {
+    "vimMode": true,
+    "previewFeatures": true
+  },
+  "ui": {
+    "theme": "GitHub",
+    "hideBanner": true,
+    "hideTips": false
+  },
+  "tools": {},
+  "mcpServers": {},
+  "telemetry": {},
+  "privacy": {},
+  "model": {},
+  "context": {
+    "fileName": [
+      "AGENTS.md"
+    ],
+    "includeDirectories": [],
+    "loadFromIncludeDirectories": false,
+    "discoveryMaxDirs": 2,
+    "fileFiltering": {
+      "respectGitIgnore": true
+    }
+  },
+  "advanced": {}
+}

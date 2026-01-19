@@ -5,15 +5,80 @@
   pkgs,
   ...
 }:
-
 {
+  # ===========================================
+  # ===========================================
+
+  # Extensions
+  ## Installed GNOME extensions
+
+  # ===========================================
+  # ===========================================
+
   home.packages = with pkgs; [
     gnomeExtensions.dash-to-dock
     gnomeExtensions.appindicator
     gnomeExtensions.blur-my-shell
   ];
 
+  xdg.configFile."gnome-shell/extensions/PaperWM@paperwm.github.com/stylesheet.css".text = ''
+    /* PaperWM Custom Border Highlights - Catppuccin Accent Colors */
+
+    /* Focused window border - Mauve accent (primary) */
+    .paperwm-window-tile:focus {
+      border: 2px solid #cba6f7;
+      box-shadow: 0 0 10px rgba(203, 166, 247, 0.5);
+    }
+
+    /* Unfocused window border - Lavender (subtle) */
+    .paperwm-window-tile:not(:focus) {
+      border: 1px solid rgba(180, 190, 254, 0.3);
+    }
+
+    /* Tile preview when dragging/rearranging - Sky */
+    .tile-preview {
+      background-color: rgba(137, 220, 235, 0.2);
+      border: 2px dashed #89dceb;
+    }
+
+    /* Active workspace indicator - Mauve */
+    .paperwm-workspace:focus .paperwm-workspace-bar {
+      background-color: #cba6f7;
+    }
+
+    /* Scratch window (popup) highlight - Pink */
+    .paperwm-scratch-window {
+      border: 2px solid #f5c2e7;
+      box-shadow: 0 0 15px rgba(245, 194, 231, 0.6);
+    }
+
+    /* Monitor border - Sapphire */
+    .paperwm-monitor-tiling {
+      outline: 1px solid rgba(116, 199, 236, 0.2);
+    }
+  '';
+
+  xdg.mimeApps = {
+    enable = true;
+    defaultApplications = {
+      "text/html" = "vivaldi-stable.desktop";
+      "x-scheme-handler/http" = "vivaldi-stable.desktop";
+      "x-scheme-handler/https" = "vivaldi-stable.desktop";
+      "x-scheme-handler/about" = "vivaldi-stable.desktop";
+      "x-scheme-handler/unknown" = "vivaldi-stable.desktop";
+    };
+  };
+
   dconf.settings = {
+    # ===========================================
+    # ===========================================
+
+    # GNOME Shell
+    ## Core shell settings and enabled extensions
+
+    # ===========================================
+    # ===========================================
+
     "org/gnome/shell" = {
       enabled-extensions = [
         "dash-to-dock@micxgx.gmail.com"
@@ -25,20 +90,35 @@
       attach-modal-dialogs = false;
     };
 
+    # ===========================================
+    # ===========================================
+
+    # Desktop UI
+    ## Desktop interface settings
+
+    # ===========================================
+    # ===========================================
+
     "org/gnome/desktop/interface" = {
       clock-show-date = true;
     };
 
+    # ===========================================
+    # ===========================================
+
+    # WM Keybindings
+    ## Window manager keybindings (mix of defaults and custom overrides)
+    ## Default: https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas
+
+    # ===========================================
+    # ===========================================
+
     "org/gnome/desktop/wm/keybindings" = {
-      # Customized
       minimize = [ "<Super>m" ];
       switch-to-workspace-left = [ ];
       switch-to-workspace-right = [ ];
 
-      # Default (from https://gitlab.gnome.org/GNOME/gsettings-desktop-schemas/-/blob/master/schemas/org.gnome.desktop.wm.keybindings.gschema.xml.in)
       close = [ "<Alt>F4" ];
-      # PaperWM is a tiling WM, so it doesn't use maximize/unmaximize
-      # Disable these to avoid conflict with PaperWM's switch-up/switch-down (<Super>Up/Down)
       maximize = [ ];
       unmaximize = [ ];
       begin-move = [ "<Alt>F7" ];
@@ -78,13 +158,11 @@
       move-to-workspace-last = [ "<Super><Shift>End" ];
       move-to-workspace-up = [ "<Control><Shift><Alt>Up" ];
       move-to-workspace-down = [ "<Control><Shift><Alt>Down" ];
-      # PaperWM handles monitor movement - disable GNOME's to avoid conflicts
       move-to-monitor-left = [ ];
       move-to-monitor-right = [ ];
       move-to-monitor-up = [ ];
       move-to-monitor-down = [ ];
       switch-input-source = [
-        # "<Super>space"  # Removed - used for vicinae launcher
         "XF86Keyboard"
       ];
       switch-input-source-backward = [
@@ -93,19 +171,31 @@
       ];
     };
 
+    # ===========================================
+    # ===========================================
+
+    # Mutter
+    ## Window manager settings (disabling incompatible defaults)
+
+    # ===========================================
+    # ===========================================
+
     "org/gnome/mutter" = {
       workspaces-only-on-primary = false;
       edge-tiling = false;
     };
 
+    # ===========================================
+    # ===========================================
+
+    # Media Keys
+    ## Keyboard media shortcuts and custom keybindings
+
+    # ===========================================
+    # ===========================================
+
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      # Customized
       screensaver = [ "<Super><Shift>l" ];
-
-      # Default (from https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/blob/main/plugins/media-keys/org.gnome.settings-daemon.plugins.media-keys.gschema.xml.in)
-      # screensaver = ["<Super>l"];
-
-      # Custom keybindings
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/vicinae"
       ];
@@ -117,8 +207,17 @@
       binding = "<Super>space";
     };
 
+    # ===========================================
+    # ===========================================
+
+    # PaperWM
+    ## Custom keybindings and styling for PaperWM
+    ## Only non-default modifications; defaults: https://github.com/paperwm/PaperWM
+
+    # ===========================================
+    # ===========================================
+
     "org/gnome/shell/extensions/paperwm/keybindings" = {
-      # Customized
       close-window = [ "<Super>w" ];
       switch-left = [
         "<Super>h"
@@ -185,103 +284,32 @@
         "<Super><Shift><Ctrl>Down"
       ];
 
-      # Default (from https://github.com/paperwm/PaperWM)
-      new-window = [
-        "<Super>Return"
-        "<Super>n"
-      ];
-      switch-next = [ ];
-      switch-previous = [ ];
-      switch-first = [ "<Super>Home" ];
-      switch-last = [ "<Super>End" ];
-      take-window = [ "<Super>t" ];
-      cycle-windows = [ "<Super>Tab" ];
-      cycle-windows-backwards = [ "<Super><Shift>Tab" ];
-      center-horizontal = [ "<Super>c" ];
-      cycle-width = [ "<Super>r" ];
-      cycle-height = [ "<Super><Shift>r" ];
-      toggle-maximize-width = [ "<Super>f" ];
-      toggle-fullscreen = [ "<Super><Shift>f" ];
-      slurp-in = [ "<Super>i" ];
-      barf-out = [ "<Super>o" ];
-      switch-previous-workspace = [ "<Super>grave" ];
-      switch-previous-workspace-backwards = [ "<Super><Shift>grave" ];
-      move-previous-workspace = [ "<Super><Ctrl>grave" ];
-      move-previous-workspace-backwards = [ "<Super><Shift><Ctrl>grave" ];
-      switch-up-workspace = [ "<Super>period" ];
-      switch-down-workspace = [ "<Super>comma" ];
-      move-up-workspace = [ "<Super><Ctrl>period" ];
-      move-down-workspace = [ "<Super><Ctrl>comma" ];
-      toggle-scratch-window = [ "<Super>Escape" ];
-      toggle-scratch-layer = [ "<Super><Shift>Escape" ];
-      toggle-scratch = [ "<Super><Ctrl>Escape" ];
-
+      # Workspace navigation (comma/period instead of pgup/pgdown)
+      switch-up-workspace = [ "<Super>comma" ];
+      switch-down-workspace = [ "<Super>period" ];
+      move-up-workspace = [ "<Super><Ctrl>comma" ];
+      move-down-workspace = [ "<Super><Ctrl>period" ];
     };
 
-    # NOTE: Vicinae floating window configuration
-    # PaperWM window rules need to be configured manually for now:
-    # 1. Open PaperWM settings (Super+Alt+. )
-    # 2. Go to Window Rules
-    # 3. Add rule for vicinae:
-    #    - App ID: vicinae
-    #    - Scale: Free
-    #    - Open Center: enabled
-    #
-    # TODO: Figure out correct dconf format for window-rules
-    # The setting might not exist or use a different GVariant format
+    # ===========================================
+
+    # MIME Apps
+    ## Default applications for URL schemes and file types
+
+    # ===========================================
+    # ===========================================
+
+    # Session
+    ## Session and application settings
+
+    # ===========================================
+    # ===========================================
 
     "org/gnome/gnome-session" = {
       auto-save-session = true;
     };
+
+    # ===========================================
+    # ===========================================
   };
-
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "text/html" = "vivaldi-stable.desktop";
-      "x-scheme-handler/http" = "vivaldi-stable.desktop";
-      "x-scheme-handler/https" = "vivaldi-stable.desktop";
-      "x-scheme-handler/about" = "vivaldi-stable.desktop";
-      "x-scheme-handler/unknown" = "vivaldi-stable.desktop";
-    };
-  };
-
-  # Custom PaperWM stylesheet with Catppuccin accent colors
-  xdg.configFile."gnome-shell/extensions/PaperWM@paperwm.github.com/stylesheet.css".text =
-    ''
-      /* PaperWM Custom Border Highlights - Catppuccin Accent Colors */
-
-      /* Focused window border - Mauve accent (primary) */
-      .paperwm-window-tile:focus {
-        border: 2px solid #cba6f7;
-        box-shadow: 0 0 10px rgba(203, 166, 247, 0.5);
-      }
-
-      /* Unfocused window border - Lavender (subtle) */
-      .paperwm-window-tile:not(:focus) {
-        border: 1px solid rgba(180, 190, 254, 0.3);
-      }
-
-      /* Tile preview when dragging/rearranging - Sky */
-      .tile-preview {
-        background-color: rgba(137, 220, 235, 0.2);
-        border: 2px dashed #89dceb;
-      }
-
-      /* Active workspace indicator - Mauve */
-      .paperwm-workspace:focus .paperwm-workspace-bar {
-        background-color: #cba6f7;
-      }
-
-      /* Scratch window (popup) highlight - Pink */
-      .paperwm-scratch-window {
-        border: 2px solid #f5c2e7;
-        box-shadow: 0 0 15px rgba(245, 194, 231, 0.6);
-      }
-
-      /* Monitor border - Sapphire */
-      .paperwm-monitor-tiling {
-        outline: 1px solid rgba(116, 199, 236, 0.2);
-      }
-    '';
 }

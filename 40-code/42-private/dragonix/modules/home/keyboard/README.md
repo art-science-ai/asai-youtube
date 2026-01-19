@@ -19,7 +19,7 @@ This module implements a universal keyboard remapping system that works consiste
 - Maintain home row position during keyboard shortcuts
 
 **Custom Hyper Keys:**
-- Hyper1 (Caps Lock): Cmd+Ctrl+Alt (primary modifier)
+- Hyper1 (Caps Lock): Cmd+Ctrl+Alt (maps to `<Super><Ctrl><Alt>` in GNOME keybindings)
 - Hyper2 (Right Meta): Cmd+Ctrl+Shift
 - Hyper3 (Right Alt): Cmd+Alt+Shift
 - Hyper4 (Right Ctrl): Ctrl+Alt+Shift
