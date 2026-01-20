@@ -124,7 +124,13 @@
          };
 
         "nikhilmaddirala@seasmoke" = home-manager.lib.homeManagerConfiguration {
-           pkgs = nixpkgs.legacyPackages.x86_64-linux.extend (import ./overlays/whisper-diarization.nix);
+           pkgs = import nixpkgs {
+             system = "x86_64-linux";
+             overlays = [
+               (import ./overlays/whisper-diarization.nix)
+               (import ./overlays/nerd-dictation.nix)
+             ];
+           };
            extraSpecialArgs = {
              inherit inputs;
              hostname = "seasmoke";
@@ -134,7 +140,13 @@
          };
 
         "nikhilmaddirala@vermax" = home-manager.lib.homeManagerConfiguration {
-           pkgs = nixpkgs.legacyPackages.x86_64-linux.extend (import ./overlays/whisper-diarization.nix);
+           pkgs = import nixpkgs {
+             system = "x86_64-linux";
+             overlays = [
+               (import ./overlays/whisper-diarization.nix)
+               (import ./overlays/nerd-dictation.nix)
+             ];
+           };
            extraSpecialArgs = {
              inherit inputs;
              hostname = "vermax";
