@@ -1,76 +1,86 @@
 ---
 name: monorepo-git
 description: This skill should be used when the user asks to "commit my changes", "push to monorepo", "what's the git status", "commit and push", "push subtrees", or any git operations in this monorepo. Handles intelligent commits, subtree-aware pushes, comprehensive status overviews, and full CRUD operations for managing subtrees (add, list, pull, move, update, remove).
-version: 0.1.0
 ---
 
 # Monorepo Git Management
 
-Git workflows for the unified monorepo with subtree awareness.
+## Overview
 
-## Unique Aspects of This Repo
+This skill manages git operations for the unified monorepo with subtree awareness. It handles the complexity of keeping the monorepo synchronized with multiple external GitHub repositories via git subtree.
 
-**Subtree remotes**: Some directories have corresponding subtree remotes. Detect with `git remote -v`. If a directory has a subtree remote, push changes to it after pushing monorepo.
+The monorepo is always the source of truth. Changes flow outward: commit to monorepo first, then push to subtree remotes.
 
-**Push order**: Always push to monorepo first (`git push origin main`), then push subtrees.
 
-**Conventional commits**: Follow format in AGENTS.md.
+## Context
 
-## General guidelines
-- NEVER perform destructive git operations like `git reset`
-- NEVER assume that any changes made by the user need to be discarded.
+User wants to perform git operations in the monorepo. This may be daily operations (commit, push, status) or subtree management (add, remove, sync). The skill routes to the appropriate sub-skill based on user intent.
 
-## Workflow Routing
 
-Based on user intent and repo state, select the appropriate workflow(s):
+## Sub-skills
 
-### User: "what's the status", "what's changed", "git status"
-→ Run **status.md** only
+CRITICAL: Load the appropriate sub-skill from `sub-skills/` based on user intent.
 
-### User: "commit", "commit my changes", "save changes"
-→ Run **commit.md**
-→ After successful commits, prompt: "Run `/monorepo-git push` to push these changes? (y/n)"
+- **status.md**: Show git status, changed files, subtree sync state
+  - Triggers: "what's the status", "what's changed", "git status"
 
-### User: "push", "push to monorepo", "push changes"
-→ Check git status first
-→ If unstaged/unstaged changes exist, run **commit.md** first
-→ Then run **push.md**
+- **commit.md**: Analyze changes and create logical commits
+  - Triggers: "commit", "commit my changes", "save changes"
+  - After success, prompt user about pushing
 
-### User: "commit and push", "save and push"
-→ Run **commit.md**
-→ After successful commits, immediately run **push.md**
+- **push.md**: Push to monorepo and detected subtrees
+  - Triggers: "push", "push to monorepo", "push subtrees"
+  - If uncommitted changes exist, run commit.md first
 
-### User: "push subtrees", "push to [subtree-name]"
-→ Run **push.md** directly (skip commit unless there are uncommitted changes)
+- **subtree-operations.md**: CRUD operations for subtree management
+  - Triggers: "add subtree", "list subtrees", "pull subtree", "move subtree", "remove subtree"
+  - Routes internally to Create/Read/Update/Delete sections
 
-### User: "add subtree", "add [repo] as subtree"
-→ Run **subtree-operations.md** → Add Subtree section
+- **graduate.md**: Move lab project to production with subtree setup
+  - Triggers: "graduate project", "move to public", "move to production"
 
-### User: "list subtrees", "show subtrees", "what subtrees exist", "show all subtrees"
-→ Run **subtree-operations.md** → List All Subtrees section
 
-### User: "subtree status", "check subtree sync", "subtree status for [name]", "is subtree synced"
-→ Run **subtree-operations.md** → Check Subtree Status section
+## Process
 
-### User: "pull subtree", "update subtree", "sync subtree from upstream", "pull latest from subtree"
-→ Run **subtree-operations.md** → Pull Subtree Changes section
+1. Determine user intent from their request
+2. Load the appropriate sub-skill
+3. Execute sub-skill process
 
-### User: "move subtree", "rename subtree", "relocate subtree", "move subtree to [dir]"
-→ Run **subtree-operations.md** → Move Subtree Directory section
 
-### User: "update subtree remote", "change subtree URL", "update subtree repo URL"
-→ Run **subtree-operations.md** → Update Subtree Remote URL section
+## Resources
 
-### User: "remove subtree", "delete subtree", "uninstall subtree"
-→ Run **subtree-operations.md** → Remove Subtree section (with safety confirmation)
+- **sub-skills/**: Individual operation workflows
 
-## Workflows
 
-**Daily Operations**:
-- **commit.md**: Group by logical changes, aim for 1-3 commits per subtree/group, prompt for push
-- **push.md**: Ensure committed first, push monorepo, detect and push subtrees
-- **status.md**: Quick overview with subtree sync status
+## Guidelines
 
-**One-Time Setup**:
-- **subtree-operations.md**: Complete CRUD operations for managing subtrees (add, list, pull, move, update, remove)
-- **graduate.md**: Graduate lab project to production (public/private) with subtree setup
+- NEVER perform destructive git operations like `git reset --hard` or `git push --force`
+- NEVER assume user changes should be discarded
+- Always push monorepo before subtrees
+- Use conventional commit format from AGENTS.md
+- For "commit and push" requests, run commit.md then push.md sequentially
+
+
+## Appendix
+
+### Subtree remotes
+
+Some directories have corresponding subtree remotes. Detect with `git remote -v`. Pattern: `remote-*` indicates subtree remotes.
+
+Example mapping:
+- `remote-project-a` → `40-code/41-public/project-a/`
+- `remote-my-config` → `40-code/42-private/my-config/`
+
+### Push order
+
+Always push in this order:
+1. `git push origin main` (monorepo)
+2. `git subtree push --prefix=<dir> <remote> main` (each subtree with changes)
+
+### Conventional commits
+
+Format: `type(scope): description`
+
+Types: feat, fix, docs, style, refactor, test, chore
+
+Scope: Directory or project name (e.g., `feat(project-a):`, `chore(dragonix):`)
