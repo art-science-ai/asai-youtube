@@ -9,6 +9,7 @@
     ../../modules/hosts/nixos-server
     ./disk-config.nix
     ./swap.nix
+    ./hibernate.nix
     ./hardware-configuration.nix
     ./configuration.nix
     ./snapper.nix

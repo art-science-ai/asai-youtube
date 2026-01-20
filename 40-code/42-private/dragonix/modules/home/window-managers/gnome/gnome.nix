@@ -15,6 +15,7 @@
     gnomeExtensions.dash-to-dock
     gnomeExtensions.appindicator
     gnomeExtensions.blur-my-shell
+    gnomeExtensions.hibernate-status-button
   ];
 
   xdg.configFile."gnome-shell/extensions/PaperWM@paperwm.github.com/stylesheet.css".text = ''
@@ -82,6 +83,7 @@
         "blur-my-shell@aunetx"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "paperwm@paperwm.github.com"
+        "hibernate-status-button@dromi"
       ];
       attach-modal-dialogs = false;
     };

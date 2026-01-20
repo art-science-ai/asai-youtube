@@ -33,7 +33,7 @@
     "document-skills@anthropic-agent-skills": false,
     "example-skills@anthropic-agent-skills": false,
     "web-research@gtd-cc": true,
-    "developing-for-claude-code@gtd-cc": false,
+    "gtd-cc-plugin-dev@gtd-cc": true,
     "documentation@gtd-cc": false,
     "github@gtd-cc": false,
     "obsidian@gtd-cc": false,

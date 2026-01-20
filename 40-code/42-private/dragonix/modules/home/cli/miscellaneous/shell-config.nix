@@ -66,10 +66,18 @@ let
 in
 {
   # Set base environment variables with defaults that can be overridden per host
+  # home.sessionVariables: sourced via ~/.profile (login shells only)
+  # systemd.user.sessionVariables: set via systemd user session (graphical apps, non-login terminals)
   home.sessionVariables = {
     EDITOR = lib.mkForce "nxd"; # nixvim-dragon (Nix-based configuration)
     TERMINAL = "wezterm";
     SOPS_AGE_KEY_FILE = "$HOME/.config/sops/age/keys.txt";
+  };
+
+  # For GNOME/Wayland: ensures env vars are set for graphical terminals (non-login shells)
+  systemd.user.sessionVariables = {
+    EDITOR = "nxd";
+    TERMINAL = "wezterm";
   };
 
   # Configure bash
