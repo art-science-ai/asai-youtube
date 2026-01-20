@@ -7,13 +7,9 @@
 }:
 {
   # ===========================================
+  # === Extensions ===
   # ===========================================
 
-  # Extensions
-  ## Installed GNOME extensions
-
-  # ===========================================
-  # ===========================================
 
   home.packages = with pkgs; [
     gnomeExtensions.dash-to-dock
@@ -198,6 +194,7 @@
       screensaver = [ "<Super><Shift>l" ];
       custom-keybindings = [
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/vicinae"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/nerd-dictation"
       ];
     };
 
@@ -205,6 +202,12 @@
       name = "Toggle Vicinae";
       command = "vicinae toggle";
       binding = "<Super>space";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/nerd-dictation" = {
+      name = "Toggle Nerd Dictation";
+      command = "nerd-dictation toggle";
+      binding = "<Super>d";
     };
 
     # ===========================================
@@ -285,8 +288,8 @@
       ];
 
       # Workspace navigation (comma/period instead of pgup/pgdown)
-      switch-up-workspace = [ "<Super>comma" ];
-      switch-down-workspace = [ "<Super>period" ];
+      switch-up-workspace = [ "<Super><Alt>k" ];
+      switch-down-workspace = [ "<Super><Alt>j" ];
       move-up-workspace = [ "<Super><Ctrl>comma" ];
       move-down-workspace = [ "<Super><Ctrl>period" ];
     };

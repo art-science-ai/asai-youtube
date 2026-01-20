@@ -28,7 +28,7 @@
     "padding": 0
   },
   "enabledPlugins": {
-    "plugin-dev@claude-code-plugins": false,
+    "plugin-dev@claude-code-plugins": true,
     "agent-sdk-dev@claude-code-plugins": false,
     "document-skills@anthropic-agent-skills": false,
     "example-skills@anthropic-agent-skills": false,

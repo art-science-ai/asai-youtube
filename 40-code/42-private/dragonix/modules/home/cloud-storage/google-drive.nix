@@ -1,6 +1,14 @@
 # Google Drive integration via rclone
 # Fully imperative setup - see README.md for configuration details
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
+let
+  gdrivePath = config.home.homeDirectory + "/cloud-storage/gdrive";
+in
 {
   home.packages = [ pkgs.rclone ];
 
@@ -13,14 +21,14 @@
     };
 
     Service = {
-      ExecStartPre = "${pkgs.coreutils}/bin/mkdir -p %h/GDrive";
-      ExecStart = "${pkgs.rclone}/bin/rclone mount gdrive: %h/GDrive"
+      ExecStartPre = "${pkgs.coreutils}/bin/mkdir -p ${gdrivePath}";
+      ExecStart =
+        "${pkgs.rclone}/bin/rclone mount gdrive: ${gdrivePath}"
         + " --vfs-cache-mode full"
         + " --vfs-cache-max-age 24h"
         + " --vfs-cache-max-size 10G"
-        + " --vfs-read-ahead 128M"
         + " --log-level INFO";
-      ExecStop = "${pkgs.fuse}/bin/fusermount -u %h/GDrive";
+      ExecStop = "${pkgs.fuse}/bin/fusermount -u ${gdrivePath}";
       Restart = "on-failure";
       RestartSec = "5s";
     };
