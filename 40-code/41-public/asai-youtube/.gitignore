@@ -1,0 +1,26 @@
+# Personal
+.env
+
+# Virtual environment
+.venv/
+venv/
+__pycache__/
+
+# Python
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Chainlit
+.chainlit/translations/

@@ -1,0 +1,28 @@
+[project]
+# Project name displayed in the UI
+name = "Healthcare AI Assistant"
+
+# Show or hide the chain of thought in the UI
+# Set to false in production, true during development
+hide_cot = false
+
+# Theme configuration
+[UI]
+# Default theme
+theme = "default"
+
+# Name of the assistant
+name = "Healthcare AI Assistant"
+
+# Description shown in the UI
+description = "AI-powered medical documentation assistant"
+
+# Show the readme in the UI
+show_readme_as_content = false
+
+[UI.theme]
+# Default layout
+layout = "default"
+
+# Allow the user to switch themes
+allow_user_switch = false
