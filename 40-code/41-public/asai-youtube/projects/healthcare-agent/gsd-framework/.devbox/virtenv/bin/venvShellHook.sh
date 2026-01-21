@@ -1,1 +1,0 @@
-/home/nikhilmaddirala/repos/yt/stark/02/.devbox/virtenv/python311/bin/venvShellHook.sh
