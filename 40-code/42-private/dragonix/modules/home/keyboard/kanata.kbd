@@ -3,12 +3,15 @@
 )
 
 (defsrc
-  caps rctl ralt rmet
+  esc caps rctl ralt rmet
   a s d f j k l ;
   up down left rght
 )
 
 (defalias
+  ;; Physical Escape: tap = Escape, hold = Caps Lock (400ms to avoid accidents)
+  esc_caps (tap-hold 400 400 esc caps)
+
   hyper1 (multi lmet lctl lalt)  ;; Cmd+Ctrl+Opt
   hyper2 (multi lmet lctl lsft)  ;; Cmd+Ctrl+Shift
   hyper3 (multi lmet lalt lsft)  ;; Cmd+Opt+Shift
@@ -29,7 +32,7 @@
 )
 
 (deflayer base
-  (tap-hold 200 200 esc @hyper1) @hyper4 @hyper3 @hyper2
+  @esc_caps (tap-hold 200 200 esc @hyper1) @hyper4 @hyper3 @hyper2
   @hm_a @hm_s @hm_d @hm_f @hm_j @hm_k @hm_l @hm_;
   _ _ _ _
 )

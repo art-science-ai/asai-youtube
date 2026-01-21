@@ -2,7 +2,9 @@
   # Import AI-related programs configuration
   imports = [
     ./claude
-    ./claude-code-router
+    # TODO: Re-enable after fixing file management strategy
+    # See: modules/home/ai/claude-code-router/README.md#known-issues
+    # ./claude-code-router
     ./codex
     ./gemini
     # TODO: Re-enable nerd-dictation after simplification

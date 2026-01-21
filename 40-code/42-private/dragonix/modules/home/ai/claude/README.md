@@ -19,6 +19,20 @@ Declarative home-manager configuration for Claude Code AI assistant.
 - Placed in Claude's expected location for maximum compatibility
 - Base configuration managed within module for version control
 
+### Settings Architecture
+Global settings (`~/.claude/settings.json`) contain user-wide preferences:
+- Hooks (langfuse tracing)
+- Status line configuration
+- Output style and thinking mode
+
+Project-specific settings are managed per-project in `.claude/settings.local.json`:
+- Sandbox configuration
+- Permissions (allow/deny rules)
+- Enabled plugins
+- Environment variables
+
+See [Sandboxing documentation](https://code.claude.com/docs/en/sandboxing) for configuration options.
+
 ### Statusline Scripts
 - Both Python and Bash statusline scripts are managed declaratively
 - Made executable and placed in `~/.claude/`

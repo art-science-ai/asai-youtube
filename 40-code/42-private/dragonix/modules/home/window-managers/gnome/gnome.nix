@@ -152,10 +152,10 @@
       cycle-panels-backward = [ "<Shift><Control><Alt>Escape" ];
       panel-run-dialog = [ "<Alt>F2" ];
       activate-window-menu = [ "<Alt>space" ];
-      move-to-workspace-1 = [ "<Super><Shift>Home" ];
-      move-to-workspace-last = [ "<Super><Shift>End" ];
-      move-to-workspace-up = [ "<Control><Shift><Alt>Up" ];
-      move-to-workspace-down = [ "<Control><Shift><Alt>Down" ];
+      move-to-workspace-1 = [ ];
+      move-to-workspace-last = [ ];
+      move-to-workspace-up = [ ];
+      move-to-workspace-down = [ ];
       move-to-monitor-left = [ ];
       move-to-monitor-right = [ ];
       move-to-monitor-up = [ ];
@@ -292,8 +292,8 @@
       # Workspace navigation (comma/period instead of pgup/pgdown)
       switch-up-workspace = [ "<Super><Alt>k" ];
       switch-down-workspace = [ "<Super><Alt>j" ];
-      move-up-workspace = [ "<Super><Ctrl>comma" ];
-      move-down-workspace = [ "<Super><Ctrl>period" ];
+      move-up-workspace = [ "<Super><Ctrl>k" ];
+      move-down-workspace = [ "<Super><Ctrl>j" ];
     };
 
     # ===========================================

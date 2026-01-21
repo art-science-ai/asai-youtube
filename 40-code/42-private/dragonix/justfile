@@ -12,11 +12,26 @@ nh-home:
     git add --intent-to-add .
     nh home switch --backup-extension backup
 
-# Switch Home Manager configuration using seasmoke as remote builder
+# Switch Home Manager using seasmoke's store as substituter (fetches pre-built packages)
+nh-home-sub:
+    git add --intent-to-add .
+    nh home switch --backup-extension backup -- \
+      --option extra-substituters "ssh-ng://nikhilmaddirala@91.99.176.80" \
+      --option builders-use-substitutes true
+
+# Switch Home Manager using seasmoke as remote builder (builds on seasmoke)
 nh-home-remote:
     git add --intent-to-add .
-    NIX_CONFIG="builders = ssh://seasmoke?system=x86_64-linux&max-jobs=10&speed=1&features=big-parallel" \
-    nh home switch --backup-extension backup
+    NIX_CONFIG="builders = ssh://nikhilmaddirala@91.99.176.80 x86_64-linux /root/.ssh/id_ed25519_nix_build 8 2 big-parallel" \
+    nh home switch --backup-extension backup -- --max-jobs 0
+
+# Switch Home Manager using seasmoke as remote builder (recommended)
+nh-home-seasmoke:
+    git add --intent-to-add .
+    NIX_CONFIG="builders = ssh://nikhilmaddirala@91.99.176.80 x86_64-linux /root/.ssh/id_ed25519_nix_build 8 2 big-parallel" \
+    nh home switch --backup-extension backup -- \
+      --max-jobs 0 \
+      --option builders-use-substitutes true
 
 # Switch Home Manager configuration using seasmoke as remote builder (verbose)
 nh-home-remote-verbose:

@@ -19,15 +19,40 @@
     mouse = true;
     
     plugins = with pkgs.tmuxPlugins; [
-      # Theme
-      catppuccin
-      
+      # Theme (config must load BEFORE plugin)
+      {
+        plugin = catppuccin;
+        extraConfig = ''
+          # Catppuccin configuration (loaded before plugin)
+          # Use #W (window name) not #T (hostname) for tab names
+          set -g @catppuccin_window_text " #W"
+          set -g @catppuccin_window_current_text " #W"
+          set -g @catppuccin_status_modules_right "directory session"
+        '';
+      }
+
       # Utilities
       yank
-      tmux-which-key 
-      
+
+      # Which-Key (config must load BEFORE plugin)
+      {
+        plugin = tmux-which-key;
+        extraConfig = ''
+          # which-key configuration (loaded before plugin)
+          set -g @tmux-which-key-xdg-enable 1
+        '';
+      }
+
       # Session Manager
-      tmux-sessionx
+      {
+        plugin = tmux-sessionx;
+        extraConfig = ''
+          # tmux-sessionx configuration (loaded before plugin)
+          set -g @sessionx-bind 'f'
+          set -g @sessionx-window-mode 'on'
+          set -g @sessionx-tree-mode 'on'
+        '';
+      }
     ];
 
     extraConfig = ''
@@ -41,8 +66,17 @@
       # Active Pane Borders (Zellij style)
       # Heavy lines for a clearer "frame" effect
       set -g pane-border-lines heavy
-      set -g pane-border-style "fg=#494d64" # surface0
-      set -g pane-active-border-style "fg=#f4dbd6" # rosewater
+      set -g pane-border-style "fg=#494d64" # surface0 (inactive)
+      set -g pane-active-border-style "fg=#f4dbd6" # rosewater (active)
+
+      # Pane title bar (like Zellij pane headers)
+      set -g pane-border-status top
+      set -g pane-border-format " #{pane_current_command} "
+      set -g pane-border-indicators both # arrows + color
+
+      # Dim inactive panes for clearer focus
+      set -g window-style "bg=#1e2030" # mantle (dimmed)
+      set -g window-active-style "bg=#24273a" # base (normal)
 
       # ==========================
       # Sensible Defaults
@@ -87,34 +121,17 @@
       bind q confirm-before -p "Kill session #S? (y/n)" kill-session
 
       # ==========================
-      # Plugin Configuration
-      # ==========================
-
-      # Catppuccin Theme Configuration
-      set -g @catppuccin_window_default_text "#W"
-      set -g @catppuccin_window_current_text "#W"
-      set -g @catppuccin_window_text "#W"
-      set -g @catppuccin_status_modules_right "directory session"
-
-      # tmux-sessionx configuration
-      set -g @sessionx-bind 'f'
-      set -g @sessionx-window-mode 'on'
-      set -g @sessionx-tree-mode 'on'
-
-      # which-key configuration
-      set -g @tmux-which-key-xdg-enable 1
-
-      # ==========================
       # Automation
       # ==========================
-      
+
       # Auto-name tabs to current directory
       set-option -g status-interval 1
       set-option -g automatic-rename on
       set-option -g automatic-rename-format '#{b:pane_current_path}'
-      
+
       # Default Layout Hook (Left 70%, Right 30%)
-      set-hook -g after-new-session 'select-layout main-vertical; resize-pane -t 0 -x 70%'
+      # Creates a horizontal split on new session, giving left pane 70% width
+      set-hook -g after-new-session 'split-window -h -l 30%; select-pane -L'
     '';
   };
 }

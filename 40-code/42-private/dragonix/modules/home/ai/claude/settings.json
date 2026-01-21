@@ -1,15 +1,4 @@
 {
-  "permissions": {
-    "allow": [
-      "WebFetch",
-      "WebSearch",
-      "Read(*)",
-      "Skill(*)"
-    ],
-    "deny": [
-      "SlashCommand"
-    ]
-  },
   "hooks": {
     "Stop": [
       {
@@ -24,23 +13,36 @@
   },
   "statusLine": {
     "type": "command",
-    "command": "~/.claude/statusline.sh",
+    "command": "~/.claude/statusline.py",
     "padding": 0
   },
   "enabledPlugins": {
-    "plugin-dev@claude-code-plugins": true,
-    "agent-sdk-dev@claude-code-plugins": false,
-    "document-skills@anthropic-agent-skills": false,
-    "example-skills@anthropic-agent-skills": false,
-    "web-research@gtd-cc": true,
-    "gtd-cc-plugin-dev@gtd-cc": true,
-    "documentation@gtd-cc": false,
+    "web-research@gtd-cc": false,
+    "gtd-cc-plugin-dev@gtd-cc": false,
+    "random@gtd-cc": false,
     "github@gtd-cc": false,
     "obsidian@gtd-cc": false,
-    "random@gtd-cc": true,
-    "doc-parsing@gtd-cc": false,
-    "ralph-wiggum@claude-code-plugins": false
+    "document-skills@anthropic-agent-skills": false,
+    "example-skills@anthropic-agent-skills": false
   },
   "outputStyle": "Explanatory",
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true,
+    "allowUnsandboxedCommands": true,
+    "network": {
+      "allowUnixSockets": [
+        "/var/run/docker.sock",
+        "~/.ssh/agent-socket"
+      ],
+      "allowLocalBinding": false
+    },
+    "enableWeakerNestedSandbox": false,
+    "excludedCommands": [
+      "docker",
+      "podman",
+      "nix-shell"
+    ]
+  },
   "alwaysThinkingEnabled": true
 }
