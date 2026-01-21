@@ -1,6 +1,10 @@
+## Project
+
+This video covers the [healthcare-agent](./healthcare-agent/) project.
+
 ## Overview
 
-- Build a healthcare AI agent application using Claude Code: extract patient records from transcripts and generate summary reports (see [product requirements](product-requirements.md))
+- Build a healthcare AI agent application using Claude Code: extract patient records from transcripts and generate summary reports (see [product requirements](./healthcare-agent/product-requirements.md))
 - Explore the GSD framework for Claude Code and compare vs. vanilla Claude Code vs. Claude Code specific skills / plugins
 - Learn the trade-offs between each approach and when to use which
 
