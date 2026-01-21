@@ -31,7 +31,7 @@ A healthcare AI assistant that helps doctors populate medical records from conve
 ## Tech details
 
 - UI: Simple web chat interface (text, images, file uploads/downloads)
-- AI Agent: Claude Agent with specialized sub-agents / skills for Records and Referrals
+- AI Agent: Claude Agent SDK with specialized sub-agents / skills for Records and Referrals
 - Knowledge base: SQLite database with patient records
 
 
