@@ -105,6 +105,7 @@ graph TB
     D -->|Edit & Resubmit| B
 ```
 
+
 **Key capabilities:**
 - AI transcribes voice notes in real-time from in-person conversations (future: phone calls, WhatsApp)
 - Automatically extracts structured data (patient details, symptoms, urgency level)

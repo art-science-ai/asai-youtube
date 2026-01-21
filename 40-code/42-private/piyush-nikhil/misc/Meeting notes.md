@@ -1,0 +1,22 @@
+
+## Meeting 1/21
+- Sparsh architecture for transcription
+	- How to record the conversation?
+		- User's existing phone - built in iOS / Android recording apps
+		- Our custom app for recording and transcription (transcription can be either on-device or upload cloud)
+		- ~~Custom hardware - microphone?~~
+	- **Issue**: Research: How to transcribe and share transcript from mobile?
+		- User uploads audio file - email / messaging / some other app
+		- User transcribes audio using some other app and then uploads transcript
+			- iOS - built in to voice memos iOS 18+ - just share transcript
+				- Does it handle other languages??
+			- Android
+				- Pixel devices have good native google app
+				- Other devices - ??
+	- **Issue**: Research HIPPAA equivalent / requirements in India
+	- **Issue**: Get examples of PWENs records - and ideally conversations?
+		- Understand format of PWENS database - what are the fields - does it have API? How to update it?
+- Sparsh digital audit??
+	- Can we find any other potential clients??
+	- **Piyush**: look into potential pipeline / clients for this
+-  
