@@ -1,3 +1,0 @@
-- Plant identification
-	- Ficus Ginseng (a.k.a. Ficus microcarpa)
-	- 

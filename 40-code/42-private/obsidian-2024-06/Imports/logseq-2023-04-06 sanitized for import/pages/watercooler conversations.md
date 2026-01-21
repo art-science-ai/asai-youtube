@@ -1,9 +1,0 @@
-- Have you used any AI tools or apps that have really made an impact on your day-to-day life? How have they helped you?
-- Are there any areas in your personal or professional life that you wish an AI tool could help you with?
-- How do you see AI changing the way we live or work in the next few years? Do you have any predictions or hopes for new AI-based solutions?
-- Do you know of any industries where you feel like AI could make a big difference, but hasn't yet? What kind of opportunities do you think are waiting there?
-- What do you think are some essential skills for people working at AI startups? Any tips on how to develop those skills?
-- Have you ever tried using an AI tool or service that didn't live up to your expectations? What went wrong, and how do you think it could be improved?
-- Can you think of any personal or professional pain points you've experienced that could be solved by AI? How would you envision the solution?
-- In your experience, what are some examples of AI being used creatively or in unexpected ways? Did it inspire any ideas for potential AI solutions?
--

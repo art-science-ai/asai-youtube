@@ -1,6 +1,0 @@
-- Tools
-	- [[Cognee]] - alternative to graphrag with dspy
-	- [[InfraNodus]] - knowledge graph visualization for Obsidian
-- Resources
-	- Neo4j resources: https://graphrag.com/
-	- 

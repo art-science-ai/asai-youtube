@@ -1,2 +1,0 @@
-- Commands - scratch
-	- `aerospace fullscreen --window-id 353`

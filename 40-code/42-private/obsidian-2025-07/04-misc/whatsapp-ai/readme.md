@@ -1,4 +1,0 @@
-- This project is about various whatsapp ai chatbot implementations
-- [[whatsapp-ai-architecture]] describes a generic architecture patterns common to all projects
-- [[sparsh-chatbot]] describes implementation for Sparsh
-- 

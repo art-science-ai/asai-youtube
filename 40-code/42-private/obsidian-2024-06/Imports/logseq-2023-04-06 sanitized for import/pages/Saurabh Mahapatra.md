@@ -1,3 +1,0 @@
-Linkedin review
-
-Saurabh is one of the best managers I’ve ever worked with. Though I was new to product management, he empowered me to take full ownership of products without any micromanagement, trusted me completely, and encouraged my growth as a product manager. As a mentor and coach, he was always available to guide me through both product challenges and interpersonal issues, making me feel comfortable asking for help. His leadership made me feel validated both as an employee and as an individual through thoughtful gestures such as handwritten notes during my annual review and rallying my colleagues to celebrate my wedding!

@@ -1,5 +1,0 @@
----
-title: Mock PM Interview
----
-
-- 

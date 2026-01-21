@@ -1,2 +1,0 @@
-- Sonara – continuously searches and applies for you to matching roles. Good for long-tail coverage while you sleep; poor for curated PM targets. Best when rate-limited to lower-priority roles. 
-- Teal – AI matching + tracker; fast capture from boards, keyword guidance, salary intel, and a clean pipeline view. Not a bot, but feels agentic for sourcing + orchestration. 

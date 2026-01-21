@@ -1,1 +1,0 @@
-Welcome to Rukma Sen's delivery room

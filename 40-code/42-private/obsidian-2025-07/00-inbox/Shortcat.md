@@ -1,3 +1,0 @@
----
-software-category: macos-productivity
----

@@ -1,3 +1,0 @@
-- Cline (VS Code)
-- Cursor
-- Windsurf

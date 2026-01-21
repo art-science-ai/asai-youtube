@@ -1,5 +1,0 @@
-from: markdown
-to: pdf
-pdf-engine: typst
-standalone: true
-template: catppuccin.typ

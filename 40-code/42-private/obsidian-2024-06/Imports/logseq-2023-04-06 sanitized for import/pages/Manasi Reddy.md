@@ -1,5 +1,0 @@
----
-title: Manasi Reddy
----
-
-- 

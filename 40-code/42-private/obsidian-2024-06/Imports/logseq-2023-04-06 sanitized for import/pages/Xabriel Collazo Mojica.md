@@ -1,5 +1,0 @@
----
-title: Xabriel Collazo Mojica
----
-
-- 

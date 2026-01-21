@@ -1,9 +1,0 @@
-from: markdown
-to: pdf
-pdf-engine: typst
-standalone: true
-template: catppuccin.typ
-variables:
-  pagewidth: "90mm"
-  pageheight: "160mm"
-  margin: "10mm"

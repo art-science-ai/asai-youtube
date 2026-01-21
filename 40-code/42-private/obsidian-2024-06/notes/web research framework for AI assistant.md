@@ -1,6 +1,0 @@
-- Follow this research process:
-	- 1. Brainstorming to generate a long list of potential options. Perform general web searches on the topic - e.g. "top options for XYZ". Look for Reddit threads, community discussions, and reputable sources articles on top lists. Make a long list of potential options. Think broadly and creatively at this stage for various kinds of options without any filters. Aim for 20-50 options.
-	- 2. Develop an understanding of the key dimensions for each option and a prioritization criteria based on these dimensions.
-	- 3. Do quick research on each option against the key dimensions and prioritization criteria. Use this to prioritize the top 10-20 options.
-	- 4. Do deep research on the 10-20 prioritized options with a detailed write-up on each option. 
-	- 5. Summarize the final top 5-10 options in a table with each option in one row and columns for relevant criteria. Include at least one metric column that computes the total score for each option and sort the table by highest to lowest total score.

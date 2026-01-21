@@ -1,7 +1,0 @@
-- Finish season 2 - episodes
-	- S2-E11: Is AI stealing, w44
-	- S2-E12: AI conference episode, w45
-- Comms
-	- Email request for support
-	- Guest request - post
-- S3 prep

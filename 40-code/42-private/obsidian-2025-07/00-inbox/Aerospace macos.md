@@ -1,7 +1,0 @@
-- My setup overview
-	- 
-- My issues
-	- Fullscreen mode for accordion stack instead of individual window
-	- Accordion should have "tab view" like i3, i.e., instead of padding between the windows I should see a tabline - vertical or horizontal
-- Extensions
-	- 

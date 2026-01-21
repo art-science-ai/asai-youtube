@@ -1,8 +1,0 @@
-- shankaraabharaNam
-	- 29 dheera shankaraabharaNam mela
-	- Aa: S R2 G3 M1 P D2 N3 S
-	- Av: S N3 D2 P M1 G3 R2 S
-- mOhanam
-	- 28 harikaambhOji janya
-	- Aa: S R2 G3 P D2 S
-	- Av: S D2 P G3 R2 S

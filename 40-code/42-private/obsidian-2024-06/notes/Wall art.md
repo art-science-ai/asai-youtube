@@ -1,4 +1,0 @@
-- Art
-	- [[School of Athens]]
-- Printing
-	- Canvas

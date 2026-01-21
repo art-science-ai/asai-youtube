@@ -1,9 +1,0 @@
-- Methods of storing secrets
-	- Github Codespaces secrets
-		- They are available to any codespace you create using repositories with access to that secret. [Learn more](https://docs.github.com/codespaces/managing-your-codespaces/managing-your-account-specific-secrets-for-github-codespaces).
-		- Need to provide access to each new repo - cumbersome process
-	- Git submodule for .env file
-		- Create a repo with .env file
-		- Add this repo as submodule to other repos
-	- vault.dotenv.org
-		- Create env vaults and sync to multiple github repos

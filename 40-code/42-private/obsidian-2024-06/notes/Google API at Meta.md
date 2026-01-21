@@ -1,7 +1,0 @@
-- Process
-	- [x] Request test access: https://www.internalfb.com/butterfly/form/592286151690558 (task 214793106)
-	- [ ] Request production access: https://www.internalfb.com/butterfly/form/592286151690558
-- Info
-	- nikhilmaddirala@gsuitetest.fb.com
-	- 1Password
-	- 

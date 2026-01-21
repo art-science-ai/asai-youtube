@@ -1,2 +1,0 @@
-- Downloading personal data from FB - https://timelinize.com/docs/data-sources/facebook
-- 

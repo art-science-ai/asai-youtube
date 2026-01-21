@@ -1,5 +1,0 @@
-- Problems with default workflow - chatgpt interactive
-	- Synchronous
-	- No shared context
-	- No learning
-	- Small tasks we don't delegate

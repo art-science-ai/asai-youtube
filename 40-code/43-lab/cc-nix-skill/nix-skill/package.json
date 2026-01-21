@@ -1,8 +1,0 @@
-{
-  "name": "skill-unnamed-mcp-server",
-  "version": "1.0.0",
-  "description": "Claude Skill wrapper for unnamed-mcp-server MCP server",
-  "scripts": {
-    "setup": "pip install mcp"
-  }
-}
