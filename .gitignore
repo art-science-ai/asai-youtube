@@ -1,5 +1,6 @@
-# Personal
+# Local
 .env
+.local/
 
 # Virtual environment
 .venv/
