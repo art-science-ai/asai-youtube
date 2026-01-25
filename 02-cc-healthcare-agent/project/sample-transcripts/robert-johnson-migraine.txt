@@ -1,0 +1,13 @@
+Patient: Robert Johnson
+Date of Birth: 1978-11-08
+Visit Date: 2026-01-15
+
+Doctor: Good afternoon Robert, what's going on today?
+Patient: I've been getting these bad headaches almost every day for the past month. They're usually on one side.
+Doctor: Any nausea or sensitivity to light?
+Patient: Yes, both actually. And sometimes I see these weird zigzag lines before it starts.
+Doctor: How long do these episodes typically last?
+Patient: Usually about 4-6 hours. I can barely function during them.
+Doctor: This sounds like classic migraine with aura. The visual disturbances you're describing are typical aura symptoms. I'm going to prescribe Sumatriptan 50mg for acute episodes — take it at the first sign of an aura. We'll also start you on a daily preventive with Topiramate 25mg, gradually increasing to 100mg over a month.
+Patient: Are there any side effects I should watch for?
+Doctor: Topiramate can cause tingling in your hands and feet, and some people notice cognitive effects. If those become bothersome, we'll switch to an alternative. I'd like to see you back in 6 weeks to check how you're responding.

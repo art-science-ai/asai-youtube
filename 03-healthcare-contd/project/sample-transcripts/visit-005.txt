@@ -1,0 +1,18 @@
+Patient: Elijah Rodriguez
+Date of Birth: 1951-07-06
+Visit Date: 2026-01-22T15:45:00
+
+Doctor: Hi there, I see that you have a history of pulmonary sarcoidosis, hypertension, premature ventricular contractions (PVCs), and obesity. Can you tell me how you're feeling today?
+Patient: Well, I was doing some yard work earlier, and I suddenly had trouble seeing out of my right eye and had difficulty remembering names and events.
+Doctor: I see. Let's discuss some of your previous test results to better understand your situation. Last year, during a preoperative evaluation for dental work, a 12-lead electrocardiogram found incidental PVCs. Holter monitoring showed a 12% PVC burden over 24 hours, which indicates an indeterminate degree of ventricular dysfunction. Do you remember these tests?
+Patient: Yes, I remember going through those tests.
+Doctor: Following those tests, we performed a transthoracic echocardiogram which revealed hypokinesis of the left inferior ventricular wall with an ejection fraction of 35%. Cardiac catheterization was also done to investigate structural blockages of coronary vessels, but it yielded no significant CAD. These findings were suspicious for an infiltrative process. Can you recall that?
+Patient: Yeah, I remember the doctors mentioning something about that.
+Doctor: We then conducted a cardiac MRI which showed sarcoid infiltrates on T2-weighted images, and a pulmonary node biopsy revealed noncaseating granulomas. Based on these findings, you were diagnosed with cardiac sarcoidosis three months after your initial presentation. At that time, you showed no clinical symptoms of systemic sarcoidosis or heart failure. An implantable cardioverter defibrillator was placed for primary prevention of arrhythmias secondary to cardiac sarcoid. Have you been feeling well since then?
+Patient: Yes, I've been doing well for the past year until these recent stroke-like symptoms started.
+Doctor: During your examination today, your speech and language seemed normal. I asked you to write a simple sentence, which you did without difficulty. However, when asked to read the sentence, you were unable to do so. This represents alexia without agraphia. Additionally, you showed right homonymous hemianopia. The rest of your physical exam was normal. 
+Patient: Oh, I see. What does that mean for me?
+Doctor: At admission, we performed an initial computed tomography (CT) scan which came back negative. We will conduct a subsequent brain magnetic resonance imaging (MRI) to further investigate the cause of your symptoms.
+Patient: Okay, thank you for explaining everything to me. What should I do next?
+Doctor: We'll closely monitor your symptoms and follow up with the MRI results. In the meantime, please report any changes in your condition or any new symptoms that may arise. We'll work together to determine the best course of action for your situation.
+Patient: Thank you, doctor. I appreciate your help.

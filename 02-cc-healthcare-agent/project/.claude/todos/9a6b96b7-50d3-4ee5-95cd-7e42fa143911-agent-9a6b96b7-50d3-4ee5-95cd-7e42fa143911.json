@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Extract patient information and visit details from transcript",
+    "status": "in_progress",
+    "activeForm": "Extracting patient information and visit details from transcript"
+  },
+  {
+    "content": "Confirm extracted data with user before saving",
+    "status": "pending",
+    "activeForm": "Confirming extracted data with user before saving"
+  },
+  {
+    "content": "Add patient record to database",
+    "status": "pending",
+    "activeForm": "Adding patient record to database"
+  }
+]

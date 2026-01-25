@@ -1,0 +1,11 @@
+Patient: Maria Garcia
+Date of Birth: 1990-07-22
+Visit Date: 2026-01-18
+
+Doctor: Hi Maria, you're back for your follow-up. How's the cough?
+Patient: Much better actually! The cough is mostly gone, but now I'm having this recurring sore throat and my ears feel full.
+Doctor: Let me take a look. Your throat is red and I can see some post-nasal drip. Your ears show some fluid behind the eardrums. This is likely a secondary sinus infection that developed from the original upper respiratory infection.
+Patient: That makes sense. It feels like it moved up into my sinuses.
+Doctor: Exactly. At this point I think we need to treat this with antibiotics. I'm going to prescribe Amoxicillin 875mg twice daily for 10 days. Continue with the fluids and rest. I also recommend a saline nasal rinse twice a day to help clear the sinuses.
+Patient: And if it doesn't get better?
+Doctor: If you're not significantly improved after 5 days on the antibiotics, call us and we may need to switch to a different antibiotic or get imaging of your sinuses.
