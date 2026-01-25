@@ -1,0 +1,74 @@
+2026-01-23T08:41:36.196Z [DEBUG] Watching for changes in setting files /app/.claude...
+2026-01-23T08:41:36.225Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-23T08:41:36.225Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-23T08:41:36.225Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-23T08:41:36.225Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-23T08:41:36.247Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-23T08:41:36.248Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-23T08:41:36.248Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-23T08:41:36.248Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-23T08:41:36.248Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-23T08:41:36.250Z [DEBUG] [STARTUP] MCP configs loaded in 3ms
+2026-01-23T08:41:36.252Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T08:41:36.253Z [DEBUG] [STARTUP] Running setup()...
+2026-01-23T08:41:36.261Z [DEBUG] Stats cache does not exist, returning empty cache
+2026-01-23T08:41:36.289Z [DEBUG] Stats cache empty, processing all historical data in background
+2026-01-23T08:41:36.354Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/app/.claude/skills, project=[]
+2026-01-23T08:41:36.387Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-01-23T08:41:36.393Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/etc/claude-code/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at LJ (/$bunfs/root/claude:11:34882)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at J5$ (/$bunfs/root/claude:1480:380)
+    at J5$ (/$bunfs/root/claude:1480:1350)
+    at <anonymous> (/$bunfs/root/claude:1480:4440)
+    at <anonymous> (/$bunfs/root/claude:1480:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at gU1 (/$bunfs/root/claude:4123:4342)
+    at async <anonymous> (/$bunfs/root/claude:5410:2332)
+2026-01-23T08:41:36.393Z [DEBUG] Error log sink initialized
+2026-01-23T08:41:36.418Z [DEBUG] Writing to temp file: /app/.claude/todos/833a18f0-2aec-4daa-b074-c1f671beb0c4-agent-833a18f0-2aec-4daa-b074-c1f671beb0c4.json.tmp.14.1769157696418
+2026-01-23T08:41:36.420Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-23T08:41:36.420Z [DEBUG] Renaming /app/.claude/todos/833a18f0-2aec-4daa-b074-c1f671beb0c4-agent-833a18f0-2aec-4daa-b074-c1f671beb0c4.json.tmp.14.1769157696418 to /app/.claude/todos/833a18f0-2aec-4daa-b074-c1f671beb0c4-agent-833a18f0-2aec-4daa-b074-c1f671beb0c4.json
+2026-01-23T08:41:36.421Z [DEBUG] File /app/.claude/todos/833a18f0-2aec-4daa-b074-c1f671beb0c4-agent-833a18f0-2aec-4daa-b074-c1f671beb0c4.json written atomically
+2026-01-23T08:41:36.425Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-23T08:41:36.425Z [DEBUG] Total plugin skills loaded: 0
+2026-01-23T08:41:36.425Z [DEBUG] Total plugin commands loaded: 0
+2026-01-23T08:41:36.433Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-23T08:41:36.450Z [DEBUG] [STARTUP] setup() completed in 196ms
+2026-01-23T08:41:36.450Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-23T08:41:36.456Z [DEBUG] Total plugin agents loaded: 0
+2026-01-23T08:41:36.456Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-01-23T08:41:36.459Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-23T08:41:36.467Z [DEBUG] [STARTUP] Commands and agents loaded in 17ms
+2026-01-23T08:41:36.468Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-23T08:41:36.468Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-23T08:41:36.468Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-23T08:41:36.470Z [DEBUG] Total LSP servers loaded: 0
+2026-01-23T08:41:36.470Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-23T08:41:36.470Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-23T08:41:36.470Z [DEBUG] LSP server manager initialized successfully
+2026-01-23T08:41:36.472Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-23T08:41:36.475Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T08:41:36.476Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-01-23T08:41:36.478Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-23T08:41:36.493Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-23T08:41:36.493Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T08:41:36.495Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-23T08:41:36.519Z [DEBUG] Session index: added 1, updated 0, removed 0, summaries generated 0 (total: 1)
+2026-01-23T08:41:36.635Z [DEBUG] Watching for changes in skill/command directories: /app/.claude/skills, /app/.claude/skills...
+2026-01-23T08:41:36.651Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-23T08:41:36.653Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T08:41:36.663Z [DEBUG] Skills and commands included in Skill tool:
+2026-01-23T08:41:36.664Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T08:41:36.664Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T08:41:36.669Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T08:41:36.680Z [ERROR] "Error: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the \"X-Api-Key\" or \"Authorization\" headers to be explicitly omitted\n    at validateHeaders (/$bunfs/root/claude:900:1013)\n    at buildHeaders (/$bunfs/root/claude:900:8517)\n    at async buildRequest (/$bunfs/root/claude:900:7583)\n    at async makeRequest (/$bunfs/root/claude:900:3411)\n    at processTicksAndRejections (native:7:39)"
+2026-01-23T08:41:36.680Z [DEBUG] countTokensWithFallback: API returned null, trying haiku fallback (17 tools)
+2026-01-23T08:41:36.681Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T08:41:36.681Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T08:41:36.681Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T08:41:36.682Z [DEBUG] countTokensWithFallback: haiku fallback failed: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the "X-Api-Key" or "Authorization" headers to be explicitly omitted
+2026-01-23T08:41:36.683Z [ERROR] "Error: Error: Could not resolve authentication method. Expected either apiKey or authToken to be set. Or for one of the \"X-Api-Key\" or \"Authorization\" headers to be explicitly omitted\n    at validateHeaders (/$bunfs/root/claude:900:1013)\n    at buildHeaders (/$bunfs/root/claude:900:8517)\n    at async buildRequest (/$bunfs/root/claude:900:7583)\n    at async makeRequest (/$bunfs/root/claude:900:3411)\n    at processTicksAndRejections (native:7:39)"
+2026-01-23T08:41:36.683Z [DEBUG] countToolDefinitionTokens returned null for 17 tools: Task, TaskOutput, Bash, Glob, Grep, ExitPlanMode, Read, Edit, Write, NotebookEdit, WebFetch, TodoWri...

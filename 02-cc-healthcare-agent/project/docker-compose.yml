@@ -1,0 +1,16 @@
+x-podman:
+  in_pod: false
+
+services:
+  app:
+    build: .
+    userns_mode: keep-id
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL}
+      - API_TIMEOUT_MS=${API_TIMEOUT_MS}
+    volumes:
+      - .:/app
+    restart: unless-stopped

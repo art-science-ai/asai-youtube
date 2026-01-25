@@ -1,0 +1,18 @@
+# Podman: disable pod grouping (each service gets its own network namespace)
+x-podman:
+  in_pod: false
+
+services:
+  app:
+    build: .
+    # Podman: map container UID to host UID (avoids permission issues with bind mount)
+    userns_mode: keep-id
+    ports:
+      - "8000:8000"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - ANTHROPIC_BASE_URL=${ANTHROPIC_BASE_URL}
+      - API_TIMEOUT_MS=${API_TIMEOUT_MS}
+    volumes:
+      - .:/app
+    restart: unless-stopped

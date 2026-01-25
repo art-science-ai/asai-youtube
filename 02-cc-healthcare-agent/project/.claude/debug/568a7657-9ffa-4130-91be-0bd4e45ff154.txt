@@ -1,0 +1,113 @@
+2026-01-23T08:28:53.140Z [DEBUG] Watching for changes in setting files /app/.claude...
+2026-01-23T08:28:53.157Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-23T08:28:53.157Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-23T08:28:53.157Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-23T08:28:53.157Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-23T08:28:53.165Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-23T08:28:53.166Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-23T08:28:53.166Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-23T08:28:53.166Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-23T08:28:53.166Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-23T08:28:53.166Z [DEBUG] [STARTUP] MCP configs loaded in 1ms
+2026-01-23T08:28:53.169Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T08:28:53.173Z [DEBUG] [STARTUP] Running setup()...
+2026-01-23T08:28:53.221Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/app/.claude/skills, project=[]
+2026-01-23T08:28:53.259Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-01-23T08:28:53.264Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/etc/claude-code/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at LJ (/$bunfs/root/claude:11:34882)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at J5$ (/$bunfs/root/claude:1480:380)
+    at J5$ (/$bunfs/root/claude:1480:1350)
+    at <anonymous> (/$bunfs/root/claude:1480:4440)
+    at <anonymous> (/$bunfs/root/claude:1480:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at gU1 (/$bunfs/root/claude:4123:4342)
+    at async <anonymous> (/$bunfs/root/claude:5410:2332)
+2026-01-23T08:28:53.265Z [DEBUG] Error log sink initialized
+2026-01-23T08:28:53.284Z [DEBUG] Writing to temp file: /app/.claude/todos/568a7657-9ffa-4130-91be-0bd4e45ff154-agent-568a7657-9ffa-4130-91be-0bd4e45ff154.json.tmp.23.1769156933284
+2026-01-23T08:28:53.286Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-23T08:28:53.286Z [DEBUG] Renaming /app/.claude/todos/568a7657-9ffa-4130-91be-0bd4e45ff154-agent-568a7657-9ffa-4130-91be-0bd4e45ff154.json.tmp.23.1769156933284 to /app/.claude/todos/568a7657-9ffa-4130-91be-0bd4e45ff154-agent-568a7657-9ffa-4130-91be-0bd4e45ff154.json
+2026-01-23T08:28:53.286Z [DEBUG] File /app/.claude/todos/568a7657-9ffa-4130-91be-0bd4e45ff154-agent-568a7657-9ffa-4130-91be-0bd4e45ff154.json written atomically
+2026-01-23T08:28:53.288Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-23T08:28:53.288Z [DEBUG] Total plugin skills loaded: 0
+2026-01-23T08:28:53.288Z [DEBUG] Total plugin commands loaded: 0
+2026-01-23T08:28:53.293Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-23T08:28:53.299Z [DEBUG] [STARTUP] setup() completed in 126ms
+2026-01-23T08:28:53.299Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-23T08:28:53.304Z [DEBUG] Total plugin agents loaded: 0
+2026-01-23T08:28:53.304Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-01-23T08:28:53.304Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-23T08:28:53.310Z [DEBUG] [STARTUP] Commands and agents loaded in 11ms
+2026-01-23T08:28:53.310Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-23T08:28:53.310Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-23T08:28:53.310Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-23T08:28:53.311Z [DEBUG] Total LSP servers loaded: 0
+2026-01-23T08:28:53.311Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-23T08:28:53.312Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-23T08:28:53.312Z [DEBUG] LSP server manager initialized successfully
+2026-01-23T08:28:53.312Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-23T08:28:53.315Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T08:28:53.317Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-01-23T08:28:53.320Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-23T08:28:53.337Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-23T08:28:53.337Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T08:28:53.337Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-23T08:28:53.472Z [DEBUG] Watching for changes in skill/command directories: /app/.claude/skills, /app/.claude/skills...
+2026-01-23T08:28:53.492Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-23T08:28:53.499Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T08:28:53.528Z [DEBUG] Skills and commands included in Skill tool:
+2026-01-23T08:28:53.529Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T08:28:53.529Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T08:28:53.529Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T08:28:54.110Z [ERROR] "Error: Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid bearer token\"},\"request_id\":\"req_011CXPzf5dChdN9tGgiAYtLa\"}\n    at generate (/$bunfs/root/claude:883:2120)\n    at makeRequest (/$bunfs/root/claude:900:5435)\n    at processTicksAndRejections (native:7:39)"
+2026-01-23T08:28:54.110Z [DEBUG] countTokensWithFallback: API returned null, trying haiku fallback (17 tools)
+2026-01-23T08:28:54.113Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T08:28:54.113Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T08:28:54.113Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T08:28:54.628Z [DEBUG] countTokensWithFallback: haiku fallback failed: 401 {"type":"error","error":{"type":"authentication_error","message":"Invalid bearer token"},"request_id":"req_011CXPzf7oR8UrXh9Sb2NUE2"}
+2026-01-23T08:28:54.628Z [ERROR] "Error: Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid bearer token\"},\"request_id\":\"req_011CXPzf7oR8UrXh9Sb2NUE2\"}\n    at generate (/$bunfs/root/claude:883:2120)\n    at makeRequest (/$bunfs/root/claude:900:5435)\n    at processTicksAndRejections (native:7:39)"
+2026-01-23T08:28:54.628Z [DEBUG] countToolDefinitionTokens returned null for 17 tools: Task, TaskOutput, Bash, Glob, Grep, ExitPlanMode, Read, Edit, Write, NotebookEdit, WebFetch, TodoWri...
+2026-01-23T08:29:12.335Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T08:29:12.338Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T08:29:12.338Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T08:29:12.338Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T08:29:12.376Z [DEBUG] Writing to temp file: /app/.claude.json.tmp.23.1769156952376
+2026-01-23T08:29:12.376Z [DEBUG] Preserving file permissions: 100600
+2026-01-23T08:29:12.378Z [DEBUG] Temp file written successfully, size: 915 bytes
+2026-01-23T08:29:12.379Z [DEBUG] Applied original permissions to temp file
+2026-01-23T08:29:12.379Z [DEBUG] Renaming /app/.claude.json.tmp.23.1769156952376 to /app/.claude.json
+2026-01-23T08:29:12.379Z [DEBUG] File /app/.claude.json written atomically
+2026-01-23T08:29:12.382Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-23T08:29:12.382Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T08:29:12.382Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-23T08:29:12.411Z [DEBUG] Writing to temp file: /app/.claude.json.tmp.23.1769156952411
+2026-01-23T08:29:12.411Z [DEBUG] Preserving file permissions: 100600
+2026-01-23T08:29:12.413Z [DEBUG] Temp file written successfully, size: 961 bytes
+2026-01-23T08:29:12.413Z [DEBUG] Applied original permissions to temp file
+2026-01-23T08:29:12.413Z [DEBUG] Renaming /app/.claude.json.tmp.23.1769156952411 to /app/.claude.json
+2026-01-23T08:29:12.414Z [DEBUG] File /app/.claude.json written atomically
+2026-01-23T08:29:12.417Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-23T08:29:12.425Z [DEBUG] Writing to temp file: /app/.claude.json.tmp.23.1769156952425
+2026-01-23T08:29:12.425Z [DEBUG] Preserving file permissions: 100600
+2026-01-23T08:29:12.427Z [DEBUG] Temp file written successfully, size: 1028 bytes
+2026-01-23T08:29:12.428Z [DEBUG] Applied original permissions to temp file
+2026-01-23T08:29:12.428Z [DEBUG] Renaming /app/.claude.json.tmp.23.1769156952425 to /app/.claude.json
+2026-01-23T08:29:12.428Z [DEBUG] File /app/.claude.json written atomically
+2026-01-23T08:29:12.440Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T08:29:12.441Z [DEBUG] attribution header x-anthropic-billing-header: cc_version=2.1.15.097; cc_entrypoint=sdk-py
+2026-01-23T08:29:12.443Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T08:29:12.443Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T08:29:12.443Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T08:29:12.447Z [DEBUG] Writing to temp file: /app/.claude.json.tmp.23.1769156952447
+2026-01-23T08:29:12.447Z [DEBUG] Preserving file permissions: 100600
+2026-01-23T08:29:12.449Z [DEBUG] Temp file written successfully, size: 1067 bytes
+2026-01-23T08:29:12.449Z [DEBUG] Applied original permissions to temp file
+2026-01-23T08:29:12.449Z [DEBUG] Renaming /app/.claude.json.tmp.23.1769156952447 to /app/.claude.json
+2026-01-23T08:29:12.449Z [DEBUG] File /app/.claude.json written atomically
+2026-01-23T08:29:12.946Z [ERROR] Error in non-streaming fallback: 401 {"type":"error","error":{"type":"authentication_error","message":"Invalid bearer token"},"request_id":"req_011CXPzgU94q8JMvnYwyseo4"}
+2026-01-23T08:29:12.947Z [ERROR] "Error: Error: 401 {\"type\":\"error\",\"error\":{\"type\":\"authentication_error\",\"message\":\"Invalid bearer token\"},\"request_id\":\"req_011CXPzgU94q8JMvnYwyseo4\"}\n    at generate (/$bunfs/root/claude:883:2120)\n    at makeRequest (/$bunfs/root/claude:900:5435)\n    at processTicksAndRejections (native:7:39)"
+2026-01-23T08:29:12.960Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-23T08:29:12.960Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T08:29:12.960Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)

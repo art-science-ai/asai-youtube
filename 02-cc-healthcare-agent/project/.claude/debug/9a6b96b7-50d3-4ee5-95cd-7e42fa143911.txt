@@ -1,0 +1,129 @@
+2026-01-23T09:09:22.731Z [DEBUG] Watching for changes in setting files /app/.claude...
+2026-01-23T09:09:22.739Z [DEBUG] [init] configureGlobalMTLS starting
+2026-01-23T09:09:22.739Z [DEBUG] [init] configureGlobalMTLS complete
+2026-01-23T09:09:22.739Z [DEBUG] [init] configureGlobalAgents starting
+2026-01-23T09:09:22.739Z [DEBUG] [init] configureGlobalAgents complete
+2026-01-23T09:09:22.752Z [DEBUG] [STARTUP] Loading MCP configs...
+2026-01-23T09:09:22.752Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-01-23T09:09:22.753Z [DEBUG] [claudeai-mcp] Checking gate (cached)...
+2026-01-23T09:09:22.753Z [DEBUG] [claudeai-mcp] Gate returned: false
+2026-01-23T09:09:22.753Z [DEBUG] [claudeai-mcp] Disabled via gate
+2026-01-23T09:09:22.754Z [DEBUG] [STARTUP] MCP configs loaded in 2ms
+2026-01-23T09:09:22.754Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:09:22.755Z [DEBUG] [STARTUP] Running setup()...
+2026-01-23T09:09:22.757Z [DEBUG] Stats cache does not exist, returning empty cache
+2026-01-23T09:09:22.763Z [DEBUG] Stats cache empty, processing all historical data in background
+2026-01-23T09:09:22.792Z [DEBUG] Loading skills from: managed=/etc/claude-code/.claude/skills, user=/app/.claude/skills, project=[]
+2026-01-23T09:09:22.810Z [DEBUG] installed_plugins.json doesn't exist, returning empty V2 object
+2026-01-23T09:09:22.812Z [ERROR] Error: Error: ENOENT: no such file or directory, scandir '/etc/claude-code/.claude/skills'
+    at readdirSync (unknown)
+    at <anonymous> (/$bunfs/root/claude:12:1903)
+    at LJ (/$bunfs/root/claude:11:34882)
+    at readdirSync (/$bunfs/root/claude:12:1864)
+    at J5$ (/$bunfs/root/claude:1480:380)
+    at J5$ (/$bunfs/root/claude:1480:1350)
+    at <anonymous> (/$bunfs/root/claude:1480:4440)
+    at <anonymous> (/$bunfs/root/claude:1480:5171)
+    at A (/$bunfs/root/claude:11:7245)
+    at gU1 (/$bunfs/root/claude:4123:4342)
+    at async <anonymous> (/$bunfs/root/claude:5410:2332)
+2026-01-23T09:09:22.812Z [DEBUG] Error log sink initialized
+2026-01-23T09:09:22.822Z [DEBUG] Writing to temp file: /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json.tmp.355.1769159362822
+2026-01-23T09:09:22.825Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-01-23T09:09:22.825Z [DEBUG] Renaming /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json.tmp.355.1769159362822 to /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json
+2026-01-23T09:09:22.825Z [DEBUG] File /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json written atomically
+2026-01-23T09:09:22.826Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-01-23T09:09:22.826Z [DEBUG] Total plugin skills loaded: 0
+2026-01-23T09:09:22.826Z [DEBUG] Total plugin commands loaded: 0
+2026-01-23T09:09:22.833Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-01-23T09:09:22.836Z [DEBUG] [STARTUP] setup() completed in 81ms
+2026-01-23T09:09:22.836Z [DEBUG] [STARTUP] Loading commands and agents...
+2026-01-23T09:09:22.842Z [DEBUG] Total plugin agents loaded: 0
+2026-01-23T09:09:22.842Z [DEBUG] Loaded 0 unique skills (managed: 0, user: 0, project: 0, legacy commands: 0)
+2026-01-23T09:09:22.843Z [DEBUG] getSkills returning: 0 skill dir commands, 0 plugin skills, 0 bundled skills
+2026-01-23T09:09:22.849Z [DEBUG] [STARTUP] Commands and agents loaded in 13ms
+2026-01-23T09:09:22.849Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-01-23T09:09:22.850Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-01-23T09:09:22.850Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-01-23T09:09:22.850Z [DEBUG] Total LSP servers loaded: 0
+2026-01-23T09:09:22.850Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-01-23T09:09:22.850Z [DEBUG] LSP manager initialized with 0 servers
+2026-01-23T09:09:22.850Z [DEBUG] LSP server manager initialized successfully
+2026-01-23T09:09:22.850Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-01-23T09:09:22.853Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:09:22.858Z [DEBUG] Initialized versioned plugins system with 0 plugins
+2026-01-23T09:09:22.859Z [DEBUG] [Perfetto] initializePerfettoTracing called, env value: undefined
+2026-01-23T09:09:22.879Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-01-23T09:09:22.879Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T09:09:22.879Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-01-23T09:09:22.901Z [DEBUG] Session index: added 1, updated 0, removed 0, summaries generated 0 (total: 6)
+2026-01-23T09:09:22.910Z [DEBUG] Watching for changes in skill/command directories: /app/.claude/skills, /app/.claude/skills...
+2026-01-23T09:09:23.013Z [DEBUG] Total plugin output styles loaded: 0
+2026-01-23T09:09:23.015Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:09:23.025Z [DEBUG] Skills and commands included in Skill tool:
+2026-01-23T09:09:23.027Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T09:09:23.027Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T09:09:23.027Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T09:10:07.992Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T09:10:07.993Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T09:10:07.996Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T09:10:07.997Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T09:10:08.015Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-01-23T09:10:08.015Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T09:10:08.015Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-23T09:10:08.025Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-23T09:10:08.041Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:10:08.050Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T09:10:08.050Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T09:10:08.050Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T09:10:18.866Z [DEBUG] Stream started - received first chunk
+2026-01-23T09:10:18.912Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:10:18.922Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T09:10:18.922Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T09:10:18.922Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T09:10:18.922Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T09:10:18.932Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-23T09:10:18.940Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:10:18.940Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:10:18.940Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:10:18.940Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:10:18.942Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T09:10:18.942Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T09:10:18.942Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T09:11:09.879Z [DEBUG] Stream started - received first chunk
+2026-01-23T09:11:09.907Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-01-23T09:11:09.908Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-01-23T09:11:09.908Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T09:11:09.909Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-23T09:11:09.914Z [DEBUG] Writing to temp file: /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json.tmp.355.1769159469914
+2026-01-23T09:11:09.914Z [DEBUG] Preserving file permissions: 100644
+2026-01-23T09:11:09.916Z [DEBUG] Temp file written successfully, size: 511 bytes
+2026-01-23T09:11:09.916Z [DEBUG] Applied original permissions to temp file
+2026-01-23T09:11:09.916Z [DEBUG] Renaming /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json.tmp.355.1769159469914 to /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json
+2026-01-23T09:11:09.916Z [DEBUG] File /app/.claude/todos/9a6b96b7-50d3-4ee5-95cd-7e42fa143911-agent-9a6b96b7-50d3-4ee5-95cd-7e42fa143911.json written atomically
+2026-01-23T09:11:09.924Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-01-23T09:11:09.924Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T09:11:09.924Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-01-23T09:11:09.938Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.938Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-01-23T09:11:09.938Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-01-23T09:11:09.939Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-01-23T09:11:09.939Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-01-23T09:11:09.942Z [DEBUG] Tool search disabled: ToolSearchTool is not available (may have been disallowed via disallowedTools).
+2026-01-23T09:11:09.951Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.951Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.951Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.952Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.953Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.953Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.953Z [DEBUG] [ToolSearch:optimistic] mode=standard, ENABLE_TOOL_SEARCH=undefined, result=false
+2026-01-23T09:11:09.954Z [DEBUG] [API:request] Creating client, ANTHROPIC_CUSTOM_HEADERS present: false, has Authorization header: false
+2026-01-23T09:11:09.954Z [DEBUG] [API:auth] OAuth token check starting
+2026-01-23T09:11:09.954Z [DEBUG] [API:auth] OAuth token check complete
+2026-01-23T09:11:14.402Z [DEBUG] Stream started - received first chunk
+2026-01-23T09:11:16.493Z [DEBUG] Getting matching hook commands for Stop with query: undefined
+2026-01-23T09:11:16.493Z [DEBUG] Found 0 hook matchers in settings
+2026-01-23T09:11:16.493Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-01-23T09:14:23.332Z [DEBUG] Failed to check metrics opt-out status: Request failed with status code 401
+2026-01-23T09:14:23.332Z [ERROR] "AxiosError: Error\n    at Dx (/$bunfs/root/claude:42:1143)\n    at <anonymous> (/$bunfs/root/claude:47:10084)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:49:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-01-23T09:14:23.332Z [DEBUG] Metrics export disabled by organization setting

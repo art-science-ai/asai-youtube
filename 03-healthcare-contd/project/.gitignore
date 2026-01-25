@@ -1,0 +1,22 @@
+.env
+data/
+__pycache__/
+*.pyc
+.venv/
+
+# Chainlit runtime
+.chainlit/
+
+# Claude Code CLI runtime (only .claude/skills/ should be tracked)
+.claude.json
+.claude.json.backup
+.claude/debug/
+.claude/projects/
+.claude/session-env/
+.claude/shell-snapshots/
+.claude/statsig/
+.claude/todos/
+.claude/settings.local.json
+
+# Misc
+.files/

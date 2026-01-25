@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "sessionId": "568a7657-9ffa-4130-91be-0bd4e45ff154",
+      "fullPath": "/app/.claude/projects/-app/568a7657-9ffa-4130-91be-0bd4e45ff154.jsonl",
+      "fileMtime": 1769156952954,
+      "firstPrompt": "what can you do",
+      "messageCount": 2,
+      "created": "2026-01-23T08:29:12.355Z",
+      "modified": "2026-01-23T08:29:12.948Z",
+      "gitBranch": "",
+      "projectPath": "/app",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "06468187-bff2-458b-b6f6-429700fae4ec",
+      "fullPath": "/app/.claude/projects/-app/06468187-bff2-458b-b6f6-429700fae4ec.jsonl",
+      "fileMtime": 1769157836615,
+      "firstPrompt": "hi",
+      "messageCount": 2,
+      "created": "2026-01-23T08:43:56.565Z",
+      "modified": "2026-01-23T08:43:56.606Z",
+      "gitBranch": "",
+      "projectPath": "/app",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "ab81bbaf-1f4b-406a-b577-00a07dbfdb09",
+      "fullPath": "/app/.claude/projects/-app/ab81bbaf-1f4b-406a-b577-00a07dbfdb09.jsonl",
+      "fileMtime": 1769158270781,
+      "firstPrompt": "hi",
+      "messageCount": 7,
+      "created": "2026-01-23T08:49:59.997Z",
+      "modified": "2026-01-23T08:51:10.779Z",
+      "gitBranch": "",
+      "projectPath": "/app",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "3689e031-c815-41b6-81b4-a6a2266df099",
+      "fullPath": "/app/.claude/projects/-app/3689e031-c815-41b6-81b4-a6a2266df099.jsonl",
+      "fileMtime": 1769158977856,
+      "firstPrompt": "list the patients in the db",
+      "messageCount": 5,
+      "created": "2026-01-23T09:01:01.373Z",
+      "modified": "2026-01-23T09:02:57.854Z",
+      "gitBranch": "",
+      "projectPath": "/app",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "915bab99-58bc-4e47-846f-774b1ad07680",
+      "fullPath": "/app/.claude/projects/-app/915bab99-58bc-4e47-846f-774b1ad07680.jsonl",
+      "fileMtime": 1769159173145,
+      "firstPrompt": "Add a new patient record:  Patient: Maria Garcia Date of Birth: 1990-07-22 Visit Date: 2026-01-18  Doctor: Hi Maria, you're back for your follow-up. How's the cough? Patient: Much better actually! The…",
+      "messageCount": 7,
+      "created": "2026-01-23T09:04:10.845Z",
+      "modified": "2026-01-23T09:06:13.144Z",
+      "gitBranch": "",
+      "projectPath": "/app",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "c3fc1a87-04a5-4de9-8579-d543fece8fcd",
+      "fullPath": "/app/.claude/projects/-app/c3fc1a87-04a5-4de9-8579-d543fece8fcd.jsonl",
+      "fileMtime": 1769159322563,
+      "firstPrompt": "Which patients have back pain?",
+      "messageCount": 8,
+      "created": "2026-01-23T09:07:22.413Z",
+      "modified": "2026-01-23T09:08:42.559Z",
+      "gitBranch": "",
+      "projectPath": "/app",
+      "isSidechain": false
+    },
+    {
+      "sessionId": "9a6b96b7-50d3-4ee5-95cd-7e42fa143911",
+      "fullPath": "/app/.claude/projects/-app/9a6b96b7-50d3-4ee5-95cd-7e42fa143911.jsonl",
+      "fileMtime": 1769159418929,
+      "firstPrompt": "Hey here are my doctor's notes from a patient conversation I just had - please add it to the database:",
+      "messageCount": 2,
+      "created": "2026-01-23T09:10:08.009Z",
+      "modified": "2026-01-23T09:10:18.901Z",
+      "gitBranch": "",
+      "projectPath": "/app",
+      "isSidechain": false
+    }
+  ],
+  "originalPath": "/app"
+}

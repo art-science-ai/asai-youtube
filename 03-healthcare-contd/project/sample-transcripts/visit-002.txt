@@ -1,0 +1,20 @@
+Patient: Harper Jackson
+Date of Birth: 1971-02-23
+Visit Date: 2026-01-25T09:00:00
+
+Doctor: Hello, I see you've presented your 2-year-old son to the local ophthalmologist due to an issue with his left eye, and now you've been transferred to our pediatric emergency department for further evaluation. Can you please tell me more about the problem he's been experiencing?
+Patient's Parent: Yes, my son suddenly developed a dysfunction in the lateral movement of his left eye. It's causing a continuous abduction deficit and a fixated turn of his head to the left side.
+Doctor: I see. Has he had any history of trauma, headache, vomiting, or fever recently?
+Patient's Parent: No, he's generally fit and well. His medical history doesn't include any of those symptoms. He also hasn't had any vaccinations within the last few weeks.
+Doctor: That's good to know. Did you notice any other symptoms, such as gait instability or other neurological deficits?
+Patient's Parent: Well, he has had a mild gait instability, but no other concomitant symptoms or focal neurological deficits were found on his clinical examination.
+Doctor: Thank you for the information. Has your son been suffering from any chronic diseases or taking any regular medication?
+Patient's Parent: No, he doesn't suffer from any chronic diseases and doesn't take any regular medication. His vaccination status is complete according to national recommendations.
+Doctor: Alright. Have there been any recent illnesses in your family, like a respiratory tract infection or COVID-19?
+Patient's Parent: Yes, three weeks prior to these symptoms, my son had a respiratory tract infection with an increased respiratory rate, dry cough, intermittent fever, and loss of appetite. It lasted for about two weeks. His local pediatrician provided symptomatic treatment, thinking it was a common cold. No swab for SARS-CoV-2 or other viruses was done. Around the same time, his father and uncle developed cough, dyspnea, sore throat, and muscle aches. His uncle tested positive for SARS-CoV-2.
+Doctor: I see. Were the patient's relatives vaccinated for COVID-19?
+Patient's Parent: No, they were unvaccinated as the COVID-19 vaccines were still unavailable for the general public at that time.
+Doctor: Thank you for this information. On admission, we've conducted some tests. His laboratory inflammatory markers, including C-reactive protein, were negative. His full blood count showed mild thrombocytopenia but was unremarkable otherwise. We have also performed cranial contrast-enhanced magnetic resonance imaging.
+Patient's Parent: What do these test results mean for my son? What would be the next steps?
+Doctor: The test results are helpful in understanding your son's condition. We will carefully analyze the imaging and blood test results and discuss this with our team. Based on the findings, we will determine the best course of action and any necessary follow-up requirements. We will keep you informed about any further steps or treatments needed for your son.
+Patient's Parent: Thank you, doctor. We appreciate your help and attention to our son's case.

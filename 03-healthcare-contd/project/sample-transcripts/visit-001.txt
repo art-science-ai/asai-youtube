@@ -1,0 +1,22 @@
+Patient: Liam Harris
+Date of Birth: 1961-05-24
+Visit Date: 2026-01-23T10:15:00
+
+Doctor: Hello, how can I help you today?
+Patient: Hi, I'm a 32-year-old transgender woman with no previous medical history. I've been having this terrible pain in my right forearm along with redness and blistering.
+Doctor: I see. When did you first notice these symptoms?
+Patient: I got a solar branding tattoo on my right forearm about 2 weeks ago, and I noticed the blistering 3 days after that. It's been getting worse since then.
+Doctor: Oh, I understand. Have you sought any medical care for this issue yet?
+Patient: Yes, I went to a local urgent care center. They diagnosed me with a superficial infection of my right forearm full thickness burn and prescribed me oral clindamycin.
+Doctor: And how has that treatment been working for you?
+Patient: Not well at all. I've been developing more painful blisters and the cellulitis hasn't improved despite taking the antibiotic for a week.
+Doctor: I'm sorry to hear that. Let's take a look at your arm during the physical examination. Hmm, I can see the painful blisters, redness, and swelling of the right forearm and hand. Can you move your hand for me?
+Patient: Yes, I have a full range of motion, but there's mild pain when I flex my hand.
+Doctor: Good to know. I don't see any signs of sepsis, and your vital signs and white blood cell count are within normal limits. I'll admit you to the Burn Surgery Service for intravenous antibiotics and possible operative interventions.
+Patient: Okay, thank you.
+Doctor: We'll start you on IV clindamycin 600 mg every 8 hours. Once we achieve adequate pain control, we'll perform a bedside debridement in the Burn Unit.
+Patient: Alright, what happens after that?
+Doctor: The next day, you'll be taken to the operating room for a tangential excision of the wound and a split-thickness skin autograft placement onto your right forearm. We'll use your left anterolateral thigh as the donor site.
+Patient: I see, thank you for explaining everything to me.
+Doctor: You're welcome. We'll monitor your progress closely and make sure you receive the proper care. If you have any questions or concerns, please don't hesitate to ask.
+Patient: Thanks, I appreciate your help.

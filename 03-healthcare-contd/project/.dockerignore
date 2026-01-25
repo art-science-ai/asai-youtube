@@ -1,0 +1,15 @@
+.env
+.venv/
+data/
+__pycache__/
+.chainlit/
+.claude.json
+.claude.json.backup
+.claude/debug/
+.claude/projects/
+.claude/session-env/
+.claude/shell-snapshots/
+.claude/statsig/
+.claude/todos/
+.claude/settings.local.json
+.files/

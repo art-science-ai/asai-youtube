@@ -1,0 +1,21 @@
+Patient: Alexander Davis
+Date of Birth: 1984-02-14
+Visit Date: 2026-01-14T14:15:00
+
+Doctor: Hello, I see you've been referred to our center with complaints of painless jaundice. Before we begin, do you have any family history of cancer?
+Patient: No, I don't have any family history of cancer.
+Doctor: Alright. What about your medical history? Are there any significant conditions you've been treated for?
+Patient: Yes, I had pulmonary tuberculosis in the past and I was treated with medications for that.
+Doctor: Thank you for the information. When you were admitted, we performed a physical examination and found moderately icteric sclera and jaundice. The circulatory, respiratory, and abdominal examinations were unremarkable. We also conducted some laboratory tests. The results showed elevated total bilirubin of 403 μmol/L, aspartate aminotransaminase of 153 U/L, alanine aminophosphatase of 93 U/L, carcinoembryonic antigen (CEA) of 10.2 ng/mL, and carbohydrate antigen 19-9 (CA19-9) of 1073.6 U/mL. 
+Patient: Hmm, I see. What do those numbers mean?
+Doctor: These numbers indicate that you have high levels of bilirubin and certain enzymes, as well as elevated tumor markers, which could suggest a possible malignancy. We also performed a pulmonary computed tomography (CT) scan, which was negative except for a few areas of fibrosis resulting from your previous tuberculosis infection. Additionally, we conducted a magnetic resonance cholangiopancreatography, which showed severe stenosis at the junction of the left and right common hepatic ducts and marked dilation of the intrahepatic bile ducts.
+Patient: Oh, okay. What about my abdomen?
+Doctor: An abdominal enhanced CT scan revealed a 2-cm mass in the hepatic hilum and regional lymph node enlargement. To relieve cholestasis and improve your liver function, we performed a percutaneous transhepatic biliary drainage.
+Patient: So, what's the diagnosis?
+Doctor: Based on all these findings, we made a tentative diagnosis of Bismuth IV type pCCA. You underwent surgical resection, which included a left hemihepatectomy, cholecystectomy, and lymphadenectomy. The reconstruction was achieved by Roux-en-Y hepaticojejunostomy.
+Patient: Was the procedure successful?
+Doctor: Yes, the procedure was considered curative since intraoperative frozen examination showed that the resection margin was free of atypical cells. Within the resected specimen, we found a yellowish tumor measuring 2 cm × 0.5 cm × 1 cm in the hilar bile duct. Microscopically, the tumor showed a nested organoid growth pattern.
+Patient: What does that mean for my recovery?
+Doctor: It means that the surgery was successful in removing the tumor and we believe that the cancer has been treated. However, it is important to have regular follow-up appointments to monitor your recovery and ensure that there are no signs of recurrence.
+Patient: Thank you, doctor. I appreciate your help and I'll make sure to schedule those follow-up appointments.
+Doctor: You're welcome. If you have any questions or concerns in the meantime, please don't hesitate to reach out. Take care and best wishes for your recovery.

@@ -1,0 +1,25 @@
+Patient: William Smith
+Date of Birth: 1981-02-24
+Visit Date: 2026-01-17T15:15:00
+
+Doctor: Hello, I see you've been admitted to our hospital due to low back pain and left posterior thigh and calf pain. Can you tell me more about these symptoms?
+Patient: Yeah, I've been having this pain for about 2 months now. It started as sciatica, and it's been really bothering me.
+Doctor: I understand. It appears that you underwent radiography and magnetic resonance imaging (MRI) of the lumbar spine at another hospital. The results showed a vertebral tumor in your lumbar spine. Do you remember anything about the sensory exam they performed?
+Patient: Hmm, I think they said it was normal.
+Doctor: That's correct. Your patellar tendon and Achilles tendon reflexes were normal. However, it was noted that your left tibialis anterior (TA) muscle and extensor hallucis longus (EHL) muscle were manual muscle testing (MMT) grade 3, while the other muscles were MMT grade 5. 
+Patient: Oh, okay.
+Doctor: The laboratory blood tests revealed hypoalbuminemia, anemia, and increased levels of alkaline phosphatase and C-reactive protein. You also had a resection of retroperitoneal DDL 5 years ago, and then a repeated resection for recurrence 3 years ago. Is that correct?
+Patient: Yes, that's right.
+Doctor: It seems that there was another recurrence 1 year ago, and spinal metastasis of WDL component occurred in your L2 vertebrae 8 months ago. The tumor gradually increased in size, as seen in computed tomography (CT) scans.
+Patient: Yeah, I remember that.
+Doctor: Unfortunately, no additional treatment was done at that time. The MRI showed a mass with high signal intensity on both T1-weighted and T2-weighted images, and no enhancement on gadolinium-enhanced T1-weighted images. Based on the revised Tokuhashi score and the Spinal Instability Neoplastic Score (SINP), we diagnosed the vertebral tumor as metastasis of WDL component in DDL.
+Patient: Oh, I see.
+Doctor: Given your situation, we've planned surgery for symptomatic improvement. The procedure will involve tumor curettage and L1 laminectomy, followed by percutaneous pedicle screw fixation from Th11 to L3 using intraoperative 3-D CT computer navigation.
+Patient: Okay, that sounds like a good plan.
+Doctor: The histological examination of the primary lesion showed mixed well-differentiated and dedifferentiated liposarcoma. Lipoblasts containing hyperchromatic nuclei were apparent in the well-differentiated area.
+Patient: What does that mean?
+Doctor: It means that the tumor is a mix of well-differentiated and dedifferentiated liposarcoma, which is a type of cancer. The presence of lipoblasts with hyperchromatic nuclei indicates that the cancer is indeed active and growing.
+Patient: I understand. What should I do after the surgery?
+Doctor: After the surgery, we will closely monitor your recovery and follow up with any additional treatments or care as needed. It's important to attend all scheduled appointments and follow the instructions provided by your healthcare team.
+Patient: Alright, I'll do my best to follow all the instructions. Thank you for helping me understand my condition better.
+Doctor: You're welcome. If you have any further questions or concerns, please don't hesitate to ask. We're here to help you through this process.

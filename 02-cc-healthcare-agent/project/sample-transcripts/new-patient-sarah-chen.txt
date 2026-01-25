@@ -1,0 +1,13 @@
+Patient: Sarah Chen
+Date of Birth: 1995-04-12
+Visit Date: 2026-01-20
+
+Doctor: Welcome Sarah, I see this is your first visit with us. What brings you in?
+Patient: I've been having this sharp pain in my right knee for about two weeks now. It started after a trail run.
+Doctor: Did you twist it or fall during the run?
+Patient: No, but I had increased my distance pretty significantly that week. Went from 5K to 10K.
+Doctor: Any swelling or instability?
+Patient: Some swelling, especially after I'm on my feet all day. No giving out though.
+Doctor: Let me take a look. Based on my examination, I'm seeing some tenderness along the lateral aspect of the knee. This is consistent with iliotibial band syndrome, which is very common with sudden increases in running distance. I'd recommend you take a break from running for 2-3 weeks, do daily foam rolling of the IT band, and apply ice after any activity. I'll prescribe Ibuprofen 600mg for the inflammation.
+Patient: When can I start running again?
+Doctor: Start with short, flat runs after 2-3 weeks if pain-free. Increase distance by no more than 10% per week. If the pain returns, we may need to refer you to physical therapy.

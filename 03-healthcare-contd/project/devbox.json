@@ -1,0 +1,25 @@
+{
+  "packages": [
+    "python312@latest",
+    "nodejs_22@latest",
+    "sqlite@latest",
+    "uv@latest",
+    "visidata@latest",
+    "lazysql@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "export LD_LIBRARY_PATH=$(nix eval --raw nixpkgs#stdenv.cc.cc.lib)/lib:$LD_LIBRARY_PATH",
+      "rm -rf .venv 2>/dev/null",
+      "uv venv --python python3.12 .venv",
+      "source .venv/bin/activate",
+      "uv pip install -r requirements.txt -q"
+    ],
+    "scripts": {
+      "dev": "chainlit run app.py --watch",
+      "seed": "python -c 'from database.seed import seed_database; seed_database()'",
+      "reset": "rm -rf data/patients.db && python -c 'from database.seed import seed_database; seed_database()'",
+      "download": "./scripts/download-transcripts.py --labeled 7 --unlabeled 5 --clean"
+    }
+  }
+}
