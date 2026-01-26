@@ -172,7 +172,92 @@ TODO:
 - [ ] Container isolation — set `HOME=/tmp/claude-home` so CLI state doesn't pollute the bind mount
 - [ ] Error handling — surface SDK connection errors to the user
 - [ ] Langfuse integration — capture latency, token usage, and quality metrics
-- [ ] Expose on the internet — reverse proxy with TLS termination
+- [x] Expose on the internet — reverse proxy with TLS termination
+
+
+## Deployment
+
+The app follows 12-factor principles and can be deployed anywhere that runs containers.
+
+### Container Interface
+
+| Requirement | Value |
+|-------------|-------|
+| **Port** | 8000 (HTTP) |
+| **Health check** | `GET /` returns 200 |
+| **Data volume** | `/app/data` (SQLite database) |
+| **Graceful shutdown** | Handles SIGTERM |
+
+### Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `ANTHROPIC_API_KEY` | Yes | Anthropic API key |
+| `ANTHROPIC_BASE_URL` | No | API endpoint (default: `https://api.anthropic.com`) |
+| `API_TIMEOUT_MS` | No | Request timeout in ms (default: 300000) |
+
+### Running with Docker
+
+```bash
+docker run -d \
+  --name healthcare-demo \
+  -p 8000:8000 \
+  -v healthcare-data:/app/data \
+  -e ANTHROPIC_API_KEY=sk-ant-... \
+  ghcr.io/nikhilmaddirala/healthcare-demo:latest
+```
+
+### Running with Docker Compose
+
+```yaml
+services:
+  healthcare-demo:
+    image: ghcr.io/nikhilmaddirala/healthcare-demo:latest
+    ports:
+      - "8000:8000"
+    volumes:
+      - healthcare-data:/app/data
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    restart: unless-stopped
+
+volumes:
+  healthcare-data:
+```
+
+### CI/CD
+
+The GitHub Actions workflow (`.github/workflows/healthcare-demo-build.yml`):
+- Triggers on push to `main` when files in `03-healthcare-contd/project/` change
+- Builds and pushes to GHCR with `latest` and SHA tags
+- Uses build cache for faster builds
+
+### Production Considerations
+
+When deploying to production, you'll typically want:
+- **Reverse proxy**: Terminate TLS and add security headers (nginx, caddy, traefik, etc.)
+- **Authentication**: Basic auth, OAuth, or API keys at the proxy layer
+- **Secrets management**: Inject `ANTHROPIC_API_KEY` via your platform's secrets system
+- **Persistent storage**: Mount `/app/data` to durable storage for the SQLite database
+- **Auto-updates**: Pull new images periodically and restart the container
+
+### Operations
+
+**Database access:**
+```bash
+docker exec -it healthcare-demo sqlite3 /app/data/patients.db
+```
+
+**Reset database:**
+```bash
+docker exec -it healthcare-demo rm /app/data/patients.db
+docker restart healthcare-demo
+```
+
+**View logs:**
+```bash
+docker logs -f healthcare-demo
+```
 
 
 ## References
