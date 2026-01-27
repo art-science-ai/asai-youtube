@@ -65,7 +65,7 @@ Devbox:
 
 Only changes to `requirements.txt` require a Docker rebuild. Everything else (skills, app code, database schema) is picked up on restart.
 
-### Architecture
+- [ ] ### Architecture
 - `app.py` creates a `ClaudeSDKClient` per chat session, maintaining conversation state across messages
 - The client is configured with `allowed_tools=["Bash"]` and `setting_sources=["project"]`
 - `setting_sources=["project"]` loads the skills from `.claude/skills/` at runtime
@@ -154,9 +154,13 @@ uvx sqlit-tui data/patients.db
 
 # lazysql — Go TUI inspired by lazygit (refresh with R)
 lazysql "file:data/patients.db"
+
+# whodb — web UI with schema graphs, inline editing, and AI-powered queries
+docker run -it -p 8080:8080 -v ./data/patients.db:/db/patients.db clidey/whodb
+# Open http://localhost:8080, select SQLite3, enter path: /db/patients.db
 ```
 
-The TUI tools don't auto-refresh — use `R` or re-run the query after each chat interaction.
+The TUI tools don't auto-refresh — use `R` or re-run the query after each chat interaction. WhoDB runs as a web UI and provides a more visual experience with schema exploration.
 
 
 ## Roadmap

@@ -4,7 +4,6 @@
     "nodejs_22@latest",
     "sqlite@latest",
     "uv@latest",
-    "visidata@latest",
     "lazysql@latest"
   ],
   "shell": {
